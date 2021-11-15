@@ -2,10 +2,11 @@ import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-load
 import { useState, useEffect, useRef } from "react";
 
 import s from "../styles/map.module.css";
+import "mapbox-gl/dist/mapbox-gl.css";
+
 
 function MapboxMap({ points }) {
   const [map, setMap] = useState();
-  const [loading, setLoading] = useState(true);
 
   const mapNode = useRef(null);
 
@@ -25,15 +26,10 @@ function MapboxMap({ points }) {
     setMap(mapboxMap);
     addPiontsToMap(mapboxMap);
 
-    mapboxMap.once("load", (e) => {
-      e.target.resize();
-      setLoading(false);
-    });
-
     return () => {
       mapboxMap.remove();
     };
-  });
+  }, []);
 
   const addPiontsToMap = (map) => {
     points
