@@ -1,7 +1,6 @@
-import mapboxgl from "mapbox-gl";
+import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import { useState, useEffect, useRef } from "react";
 
-import "mapbox-gl/dist/mapbox-gl.css";
 import s from "../styles/map.module.css";
 
 function MapboxMap({ points }) {
