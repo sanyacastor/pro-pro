@@ -7,7 +7,6 @@ import path from "path";
 import styles from "../styles/Home.module.css";
 
 function Home({ posts }) {
-  console.log(posts);
   return (
     <div className={styles.container}>
       <Head>

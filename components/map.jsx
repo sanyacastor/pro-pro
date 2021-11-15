@@ -34,7 +34,7 @@ function MapboxMap({ points }) {
     return () => {
       mapboxMap.remove();
     };
-  }, []);
+  });
 
   const addPiontsToMap = (map) => {
     points
