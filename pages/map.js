@@ -1,4 +1,5 @@
 import Map from "../components/map";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 import { promises as fs } from "fs";
 import path from "path";
