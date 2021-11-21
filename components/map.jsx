@@ -87,7 +87,9 @@ function MapboxMap({ places }) {
     <>
       <div className={s.mapToolBar}>
         {types.map((name) => (
-          <span className={s.mapToolBarTag}>{name}</span>
+          <span className={s.mapToolBarTag} key={name}>
+            {name}
+          </span>
         ))}
       </div>
       <section className={s.mapWrapper}>
