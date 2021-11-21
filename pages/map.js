@@ -4,7 +4,7 @@ import { promises as fs } from "fs";
 import path from "path";
 
 export default function Home({ points }) {
-  return <Map points={points} />;
+  return <Map places={points} />;
 }
 
 export async function getStaticProps() {
