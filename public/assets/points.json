@@ -1,314 +1,618 @@
-[
-  {
-    "exist": true,
-    "type": "детские площадки",
-    "title": "Паук",
-    "coordinates": ""
-  },
-  {
-    "exist": true,
-    "type": "детские площадки",
-    "title": "Сфера",
-    "coordinates": "54.8653, 37.22184"
-  },
-  {
-    "exist": true,
-    "type": "детские площадки",
-    "title": "Ракета",
-    "coordinates": "54.865263, 37.216613"
-  },
-  {
-    "exist": true,
-    "type": "детские площадки",
-    "title": "Радуга",
-    "coordinates": "54.877312, 37.213643"
-  },
-  {
-    "exist": false,
-    "type": "детские площадки",
-    "title": "Змейка",
-    "coordinates": "54.874756, 37.222447"
-  },
-  {
-    "exist": false,
-    "type": "детские площадки",
-    "title": "Черепаха и бассейн",
-    "coordinates": "54.862656, 37.214711"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Дом ученых",
-    "coordinates": "54.866975, 37.219185"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Теоркорпус",
-    "coordinates": "54.867646, 37.202600"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Школа №3",
-    "coordinates": "54.870290, 37.213062"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Дом культуры",
-    "coordinates": "54.864774, 37.215873"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Гостиница \"Протва\"",
-    "coordinates": "54.865024, 37.210094"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Пентагон",
-    "coordinates": "54.874906, 37.221290"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Болгарские башни",
-    "coordinates": "54.871829, 37.221829"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Французские башни",
-    "coordinates": "54.867093, 37.217651"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Пила",
-    "coordinates": "54.869425, 37.218119"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Муравейники",
-    "coordinates": "54.875838, 37.218190"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "АТС",
-    "coordinates": "54.875408, 37.220661"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Летняя танцевальная площадка",
-    "coordinates": "54.863270, 37.210222"
-  },
-  {
-    "exist": true,
-    "type": "Архитектура",
-    "title": "Торговые ряды",
-    "coordinates": "54.865534, 37.212926"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Сграффито \"Павлин\"",
-    "coordinates": "54.865865, 37.211537"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Мозаика \"От простого к сложному\"",
-    "coordinates": "54.865164, 37.215313"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Мозаика \"Энергия и космос\"",
-    "coordinates": "54.864719, 37.215426"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Панно \"Юность\" на ПТУ",
-    "coordinates": "54.879008, 37.208911"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Панно \"Цветы\" на ДУ",
-    "coordinates": "54.86717, 37.2193"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Флюгер",
-    "coordinates": "54.873983, 37.217069"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Мемориал \"Рубеж обороны\"",
-    "coordinates": "54.856553, 37.206760"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Фонтан и внутренний дворик Теоркорпуса",
-    "coordinates": "54.86778, 37.20296"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Скульптура \"Атом\"",
-    "coordinates": "54.86829, 37.19574"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Вывеска ИФВЭ",
-    "coordinates": "54.86797, 37.19547"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Барельеф на Школе N°3",
-    "coordinates": "54.86981, 37.21294"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Барельеф на Лицее N°2",
-    "coordinates": "54.86986, 37.21994"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Мозаика \"Рыбки\"",
-    "coordinates": "54.86496, 37.21373"
-  },
-  {
-    "exist": true,
-    "type": "Арт",
-    "title": "Мозаика на жилом доме",
-    "coordinates": "54.868861, 37.216327"
-  },
-  {
-    "exist": true,
-    "type": "Культура",
-    "title": "Музыкальная школа, Школа Искусств",
-    "coordinates": "54.869982, 37.214113"
-  },
-  {
-    "exist": true,
-    "type": "Культура",
-    "title": "Художественная школа",
-    "coordinates": "54.874673, 37.211713"
-  },
-  {
-    "exist": true,
-    "type": "Культура",
-    "title": "Выставочный центр",
-    "coordinates": "54.868027, 37.215967"
-  },
-  {
-    "exist": true,
-    "type": "Культура",
-    "title": "Камертон",
-    "coordinates": "54.870510, 37.223598"
-  },
-  {
-    "exist": true,
-    "type": "Спорт",
-    "title": "Велотрек",
-    "coordinates": "54.862280, 37.200334"
-  },
-  {
-    "exist": true,
-    "type": "Спорт",
-    "title": "Старт",
-    "coordinates": "54.874092, 37.216430"
-  },
-  {
-    "exist": true,
-    "type": "Спорт",
-    "title": "Волейбольная площадка",
-    "coordinates": "54.874440, 37.215589"
-  },
-  {
-    "exist": true,
-    "type": "Спорт",
-    "title": "Баскетбольная площадка",
-    "coordinates": ""
-  },
-  {
-    "exist": true,
-    "type": "Спорт",
-    "title": "Стадио Протва",
-    "coordinates": "54.856263, 37.211227"
-  },
-  {
-    "exist": true,
-    "type": "Туризм",
-    "title": "Железный мост, бывшая плотина",
-    "coordinates": "54.852709, 37.183787"
-  },
-  {
-    "exist": true,
-    "type": "Туризм",
-    "title": "Старая мельница купцов Бобровых",
-    "coordinates": "54.852355, 37.184801"
-  },
-  {
-    "exist": true,
-    "type": "Туризм",
-    "title": "Подвесной мост",
-    "coordinates": "54.850431, 37.198630"
-  },
-  {
-    "exist": true,
-    "type": "Туризм",
-    "title": "Мемориал \"Рубеж обороны\"",
-    "coordinates": "54.856553, 37.206760"
-  },
-  {
-    "exist": true,
-    "type": "МАФ СССР утрачено",
-    "title": "Юбилейный",
-    "coordinates": "54.868290, 37.217182"
-  },
-  {
-    "exist": true,
-    "type": "МАФ СССР утрачено",
-    "title": "Русь",
-    "coordinates": "54.875951, 37.216287"
-  },
-  {
-    "exist": true,
-    "type": "МАФ СССР утрачено",
-    "title": "Рябинка",
-    "coordinates": "54.865133, 37.217498"
-  },
-  {
-    "exist": true,
-    "type": "МАФ СССР утрачено",
-    "title": "Дружба",
-    "coordinates": "54.872555, 37.210144"
-  },
-  {
-    "exist": true,
-    "type": "МАФ СССР утрачено",
-    "title": "Бар",
-    "coordinates": "54.872625, 37.209276"
-  },
-  {
-    "exist": true,
-    "type": "МАФ СССР утрачено",
-    "title": "Ока",
-    "coordinates": "54.870250, 37.225402"
-  }
-]
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.8653, 37.22184]
+      },
+      "properties": {
+        "exist": true,
+        "type": "kids",
+        "title": "Сфера"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.865263, 37.216613]
+      },
+      "properties": {
+        "exist": true,
+        "type": "kids",
+        "title": "Ракета"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.877312, 37.213643]
+      },
+      "properties": {
+        "exist": true,
+        "type": "kids",
+        "title": "Радуга"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.874756, 37.222447]
+      },
+      "properties": {
+        "exist": false,
+        "type": "kids",
+        "title": "Змейка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.862656, 37.214711]
+      },
+      "properties": {
+        "exist": false,
+        "type": "kids",
+        "title": "Черепаха и бассейн"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.866975, 37.219185]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Дом ученых"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.867646, 37.2026]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Теоркорпус"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.87029, 37.213062]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Школа №3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.864774, 37.215873]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Дом культуры"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.865024, 37.210094]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Гостиница \"Протва\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.874906, 37.22129]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Пентагон"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.871829, 37.221829]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Болгарские башни"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.867093, 37.217651]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Французские башни"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.869425, 37.218119]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Пила"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.875838, 37.21819]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Муравейники"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.875408, 37.220661]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "АТС"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.86327, 37.210222]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Летняя танцевальная площадка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.865534, 37.212926]
+      },
+      "properties": {
+        "exist": true,
+        "type": "arch",
+        "title": "Торговые ряды"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.865865, 37.211537]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Сграффито \"Павлин\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.865164, 37.215313]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Мозаика \"От простого к сложному\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.864719, 37.215426]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Мозаика \"Энергия и космос\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.879008, 37.208911]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Панно \"Юность\" на ПТУ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.86717, 37.2193]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Панно \"Цветы\" на ДУ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.873983, 37.217069]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Флюгер"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.856553, 37.20676]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Мемориал \"Рубеж обороны\"",
+        "marker-symbol": "monument"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.86778, 37.20296]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Фонтан и внутренний дворик Теоркорпуса"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.86829, 37.19574]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Скульптура \"Атом\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.86797, 37.19547]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Вывеска ИФВЭ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.86981, 37.21294]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Барельеф на Школе N°3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.86986, 37.21994]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Барельеф на Лицее N°2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.86496, 37.21373]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Мозаика \"Рыбки\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.868861, 37.216327]
+      },
+      "properties": {
+        "exist": true,
+        "type": "art",
+        "title": "Мозаика на жилом доме"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.869982, 37.214113]
+      },
+      "properties": {
+        "exist": true,
+        "type": "culture",
+        "title": "Музыкальная школа, Школа Искусств"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.874673, 37.211713]
+      },
+      "properties": {
+        "exist": true,
+        "type": "culture",
+        "title": "Художественная школа"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.868027, 37.215967]
+      },
+      "properties": {
+        "exist": true,
+        "type": "culture",
+        "title": "Выставочный центр"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.87051, 37.223598]
+      },
+      "properties": {
+        "exist": true,
+        "type": "culture",
+        "title": "Камертон"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.86228, 37.200334]
+      },
+      "properties": {
+        "exist": true,
+        "type": "sport",
+        "title": "Велотрек"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.874092, 37.21643]
+      },
+      "properties": {
+        "exist": true,
+        "type": "sport",
+        "title": "Стart"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.87444, 37.215589]
+      },
+      "properties": {
+        "exist": true,
+        "type": "sport",
+        "title": "Волейбольная площадка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      },
+      "properties": {
+        "exist": true,
+        "type": "sport",
+        "title": "Баскетбольная площадка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.856263, 37.211227]
+      },
+      "properties": {
+        "exist": true,
+        "type": "sport",
+        "title": "Стадио Протва"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.852709, 37.183787]
+      },
+      "properties": {
+        "exist": true,
+        "type": "tourism",
+        "title": "Железный мост, бывшая плотина"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.852355, 37.184801]
+      },
+      "properties": {
+        "exist": true,
+        "type": "tourism",
+        "title": "Старая мельница купцов Бобровых"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.850431, 37.19863]
+      },
+      "properties": {
+        "exist": true,
+        "type": "tourism",
+        "title": "Подвесной мост"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.856553, 37.20676]
+      },
+      "properties": {
+        "exist": true,
+        "type": "tourism",
+        "title": "Мемориал \"Рубеж обороны\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.86829, 37.217182]
+      },
+      "properties": {
+        "exist": false,
+        "type": "lost",
+        "title": "Юбилейный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.875951, 37.216287]
+      },
+      "properties": {
+        "exist": false,
+        "type": "lost",
+        "title": "Русь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.865133, 37.217498]
+      },
+      "properties": {
+        "exist": false,
+        "type": "lost",
+        "title": "Рябинка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.872555, 37.210144]
+      },
+      "properties": {
+        "exist": false,
+        "type": "lost",
+        "title": "Дружба"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.872625, 37.209276]
+      },
+      "properties": {
+        "exist": false,
+        "type": "lost",
+        "title": "Бар"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.87025, 37.225402]
+      },
+      "properties": {
+        "exist": true,
+        "type": "lost",
+        "title": "Ока"
+      }
+    }
+  ]
+}

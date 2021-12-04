@@ -26,8 +26,18 @@
 }
 .mapToolBarTag:hover {
   background: seagreen;
+  opacity: 0.5;
   color: white;
 }
 .mapToolBarTag + .mapToolBarTag {
   margin-left: 8px;
+}
+.active {
+  background: seagreen;
+  color: white;
+}
+
+.mapToolBarTag.active:hover {
+  background: seagreen;
+  opacity: 0.8;
 }
