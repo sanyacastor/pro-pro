@@ -4,20 +4,22 @@ import path from "path";
 import matter from "gray-matter";
 import Image from "next/image";
 
+import s from "../../styles/post.module.css";
+
 import ReactMarkdown from "react-markdown";
 
 const renderers = {
   image: (image) => {
-    return <Image src={image.src} alt={image.alt} height="200" width="355" />;
+    return <Image src={image.src} alt={image.alt} height="200" width="300" />;
   },
 };
 
 export default function Post({ content, frontmatter }) {
   return (
     <article>
-      <ReactMarkdown components={renderers}>
-        {content}
-      </ReactMarkdown>
+      <div className={s.post__container}>
+        <ReactMarkdown components={renderers}>{content}</ReactMarkdown>
+      </div>
     </article>
   );
 }
