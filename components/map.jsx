@@ -6,9 +6,6 @@ import s from "../styles/map.module.css";
 
 function MapboxMap({ places }) {
   const [myMap, setMap] = useState();
-  const [loading, setLoading] = useState(true);
-  const [points, setPoints] = useState(places);
-
   const [tags, setTags] = useState();
 
   const mapNode = useRef(null);
@@ -20,6 +17,7 @@ function MapboxMap({ places }) {
   useEffect(() => {
     const node = mapNode.current;
     const tagObj = {};
+
     types.forEach((t) => (tagObj[t] = true));
     setTags(tagObj);
 
@@ -67,41 +65,35 @@ function MapboxMap({ places }) {
             visibility: "visible",
           },
           paint: {
-            "circle-radius": 8,
-            "circle-color": "rgba(55,148,179,1)",
+            "circle-radius": 5,
+            "circle-color": "greenyellow",
           },
         });
       });
-
-      setLoading(false);
     });
 
-    mapboxMap.on("click", "art", (e) => {
-      // Copy coordinates array.
-      const coordinates = e.features[0].geometry.coordinates.slice();
-      const description = e.features[0].properties.title;
+    types.map((tag) => {
+      mapboxMap.on("click", tag, (e) => {
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        const description = e.features[0].properties.title;
 
-      // Ensure that if the map is zoomed out such that multiple
-      // copies of the feature are visible, the popup appears
-      // over the copy being pointed to.
-      while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-      }
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
 
-      new mapboxgl.Popup()
-        .setLngLat(coordinates)
-        .setHTML(description)
-        .addTo(mapboxMap);
-    });
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(description)
+          .addTo(mapboxMap);
+      });
 
-    // Change the cursor to a pointer when the mouse is over the places layer.
-    mapboxMap.on("mouseenter", "art", () => {
-      mapboxMap.getCanvas().style.cursor = "pointer";
-    });
+      mapboxMap.on("mouseenter", tag, () => {
+        mapboxMap.getCanvas().style.cursor = "pointer";
+      });
 
-    // Change it back to a pointer when it leaves.
-    mapboxMap.on("mouseleave", "art", () => {
-      mapboxMap.getCanvas().style.cursor = "";
+      mapboxMap.on("mouseleave", tag, () => {
+        mapboxMap.getCanvas().style.cursor = "";
+      });
     });
 
     return () => {
@@ -128,7 +120,7 @@ function MapboxMap({ places }) {
         {types.map((name) => (
           <span
             className={`${s.mapToolBarTag} ${
-              tags && tags[name] ? s.active : ""
+              tags && tags[name] ? "" : s.active
             }`}
             key={name}
             onClick={() => filterPoints(name)}
