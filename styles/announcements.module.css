@@ -1,0 +1,34 @@
+.announcementSection {
+  width: 100%;
+  background: #fff;
+  text-align: right;
+}
+
+.announcementTitle {
+  text-decoration: underline;
+  display: block;
+  margin-left: auto;
+  text-align: left;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1;
+  margin: 8px 0;
+}
+
+.announcementHeader {
+  text-transform: uppercase;
+}
+
+.announcementContent {
+  background-image: url("/images/posts/poly/image4.jpg");
+  background-position: 50% 35%;
+  background-size: cover;
+  height: 400px;
+}
+
+.announcementSection small {
+  display: block;
+  text-align: left;
+  line-height: 1;
+  font-size: 1em;
+}

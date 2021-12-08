@@ -5,6 +5,7 @@ import { promises as fs } from "fs";
 import path from "path";
 
 import styles from "../styles/Home.module.css";
+import Announcement from "../components/announcement";
 
 function Home({ posts }) {
   return (
@@ -12,9 +13,12 @@ function Home({ posts }) {
       <Head>
         <title>Про про | locals for locals</title>
       </Head>
+
       <main className={styles.main}>
+        <Announcement />
         <Events events={posts} />
       </main>
+
       <footer className={styles.footer}>про протвино © 2021</footer>
     </div>
   );
