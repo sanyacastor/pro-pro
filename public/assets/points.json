@@ -613,6 +613,174 @@
         "type": "lost",
         "title": "Ока"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Blue plane, 2019 / Observer it, 2019",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.876899, 37.137873]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "This house is not empty, 2019",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.865308, 37.16198]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Colder than yesterday, 2018",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.8588174, 37.1954368]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Sleep of leaves, 2018",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.85409, 37.171686]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Finish II 2018",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.885026, 37.242406]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "And the water will come down, 2018",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.854685, 37.17601]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "The Return point, 2018",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.8638589, 37.1917905]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Mirror green, 2017",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.892846, 37.240633]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Into a long voyage, 2017",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.8523031, 37.2192923]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Blue boat, 2020",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.859432, 37.197093]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "House on a house, 2020",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.200977, 54.859969]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Last waves of freedom, 2020",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.8517422, 37.1678063]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Тишина мысли, 2021",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.8634993, 37.2105972]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "На работу и домой,, 2020",
+        "type": "ninety"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.865285, 37.2066956]
+      }
     }
   ]
 }

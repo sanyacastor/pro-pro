@@ -35,7 +35,7 @@ function MapboxMap({ places }) {
       e.target.resize();
       setMap(mapboxMap);
 
-      let replacedPoints = places.features.map((p) => {
+      places.features.map((p) => {
         const t1 = p.geometry.coordinates[0];
         const t2 = p.geometry.coordinates[1];
 
