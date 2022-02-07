@@ -2,11 +2,26 @@ import mapboxgl from "mapbox-gl";
 import { useState, useEffect, useRef } from "react";
 
 import "mapbox-gl/dist/mapbox-gl.css";
-import s from "../styles/map.module.css";
+import s from "../../styles/map.module.css";
+import AsideInfo from "./asideInfo";
 
 function MapboxMap({ places }) {
   const [myMap, setMap] = useState();
   const [tags, setTags] = useState();
+  const [currentPoint, setCurrentPoint] = useState({});
+  const [asideVisible, setAsideVisible] = useState(false);
+
+  const colors = {
+    kids: "OrangeRed",
+    arch: "LightSeaGreen",
+    art: "Sienna",
+    culture: "DeepPink",
+    sport: "DarkTurquoise",
+    tourism: "Olive",
+    lost: "coral",
+    orbit: "PaleVioletRed",
+    ninety: "OliveDrab",
+  };
 
   const mapNode = useRef(null);
 
@@ -62,11 +77,11 @@ function MapboxMap({ places }) {
           type: "circle",
           source: `${type}-src`,
           layout: {
-            visibility: "visible",
+            visibility: "none",
           },
           paint: {
-            "circle-radius": 5,
-            "circle-color": "greenyellow",
+            "circle-radius": 8,
+            "circle-color": colors[type],
           },
         });
       });
@@ -76,15 +91,16 @@ function MapboxMap({ places }) {
       mapboxMap.on("click", tag, (e) => {
         const coordinates = e.features[0].geometry.coordinates.slice();
         const description = e.features[0].properties.title;
+        setCurrentPoint({
+          title: e.features[0].properties.title,
+          description: e.features[0].properties.description,
+        });
 
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
           coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
 
-        new mapboxgl.Popup()
-          .setLngLat(coordinates)
-          .setHTML(description)
-          .addTo(mapboxMap);
+        setAsideVisible(true);
       });
 
       mapboxMap.on("mouseenter", tag, () => {
@@ -109,13 +125,19 @@ function MapboxMap({ places }) {
     myMap.setLayoutProperty(name, "visibility", visibility);
 
     const updatedTags = { ...tags };
-    updatedTags[name] = visibility === "visible" ? true : false;
+    updatedTags[name] = visibility === "visible" ? false : true;
 
     setTags(updatedTags);
   };
 
   return (
     <>
+      <AsideInfo
+        title={currentPoint.title}
+        description={currentPoint.description}
+        onClose={() => setAsideVisible(false)}
+        visible={asideVisible}
+      />
       <div className={s.mapToolBar}>
         {types.map((name) => (
           <span
@@ -123,6 +145,11 @@ function MapboxMap({ places }) {
               tags && tags[name] ? "" : s.active
             }`}
             key={name}
+            style={
+              tags && tags[name]
+                ? { borderColor: colors[name] }
+                : { background: colors[name] }
+            }
             onClick={() => filterPoints(name)}
           >
             {name}
