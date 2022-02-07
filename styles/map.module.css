@@ -1,6 +1,6 @@
 .mapWrapper {
   width: 100%;
-  height: calc(100vh - 121px);
+  height: calc(100vh - 51px);
   overflow: hidden;
   padding: 0;
 }
@@ -10,34 +10,42 @@
 }
 .mapToolBar {
   height: 70px;
-  border-bottom: 1px solid #000;
-  padding: 1em 2em;
+  padding: 1em 1em;
   white-space: nowrap;
-  max-width: 100%;
+  width: calc(100% - 400px);
+  overflow: hidden;
+  background: transparent;
+  position: absolute;
+  z-index: 20;
+  left: 400px;
 }
 .mapToolBarTag {
   display: inline-block;
-  padding: 0.6em 2em;
-  border-radius: 0.8em;
+  padding: 6px 14px;
   transition: all 250ms ease;
   cursor: pointer;
-  border: 1px solid #fff;
-  background-color: greenyellow;
+  border: 2px solid transparent;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 18.5px;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
 }
+
 .mapToolBarTag:hover {
   opacity: 0.5;
-  color: #000;
-  border: 1px solid #000;
 }
 .mapToolBarTag + .mapToolBarTag {
   margin-left: 8px;
   box-sizing: border-box;
 }
-.active {
+.mapToolBarTag.active {
   opacity: 1;
-  color: #000;
-  border: 1px solid #000;
-  background-color: #fff;
+  color: #fff;
+  border: none;
+  border: 2px solid transparent;
 }
 .mapToolBarTag.active:hover {
   opacity: 0.6;

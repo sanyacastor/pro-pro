@@ -1,0 +1,54 @@
+.asideInfo {
+  position: absolute;
+  padding-top: 0;
+  left: 0;
+  top: 51px;
+  width: 400px;
+  height: calc(100vh - 51px);
+  background: #fff;
+  z-index: 20;
+  transform: translateX(0);
+  transition: all ease 350ms;
+}
+
+.asideInfo_hidden {
+  transform: translateX(-100%);
+}
+
+.asideInfo__header {
+  background: linear-gradient(360deg, #ff7a7a 0%, rgba(255, 122, 122, 0) 100%);
+  /* height: 80px; */
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.asideInfo__header h3 {
+  margin: 0;
+  padding-left: 52px;
+  padding-right: 12px;
+  padding-top: 24px;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 12px;
+}
+
+.asideInfo__description {
+  padding: 0 24px;
+}
+
+.asideInfo__closeButton {
+  cursor: pointer;
+  position: absolute;
+  top: 28px;
+  left: 12px;
+  border: none;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='18' viewBox='0 0 10 18' fill='none'%3E%3Cpath d='M9 1L1 9L9 17' stroke='black'/%3E%3C/svg%3E");
+}

@@ -1,4 +1,4 @@
-import Map from "../components/map";
+import Map from "../components/mapPage/map";
 
 import { promises as fs } from "fs";
 import path from "path";
