@@ -20,7 +20,7 @@ function MapboxMap({ places }) {
     tourism: "Olive",
     lost: "coral",
     orbit: "PaleVioletRed",
-    ninety: "OliveDrab",
+    ninety: "OliveDrab"
   };
 
   const mapNode = useRef(null);
@@ -41,9 +41,9 @@ function MapboxMap({ places }) {
     const mapboxMap = new mapboxgl.Map({
       container: node,
       accessToken: process.env.NEXT_PUBLIC_MAPBOX_TOKEN,
-      style: "mapbox://styles/mapbox/navigation-night-v1",
+      style: "mapbox://styles/mapbox/light-v10",
       center: [37.215213, 54.872224],
-      zoom: 13,
+      zoom: 13
     });
 
     mapboxMap.once("load", (e) => {
@@ -68,8 +68,8 @@ function MapboxMap({ places }) {
           type: "geojson",
           data: {
             type: "FeatureCollection",
-            features: filteredPoints,
-          },
+            features: filteredPoints
+          }
         });
 
         mapboxMap.addLayer({
@@ -77,12 +77,12 @@ function MapboxMap({ places }) {
           type: "circle",
           source: `${type}-src`,
           layout: {
-            visibility: "none",
+            visibility: "none"
           },
           paint: {
             "circle-radius": 8,
-            "circle-color": colors[type],
-          },
+            "circle-color": colors[type]
+          }
         });
       });
     });
@@ -93,7 +93,7 @@ function MapboxMap({ places }) {
         const description = e.features[0].properties.title;
         setCurrentPoint({
           title: e.features[0].properties.title,
-          description: e.features[0].properties.description,
+          description: e.features[0].properties.description
         });
 
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
