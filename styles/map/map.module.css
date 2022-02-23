@@ -19,6 +19,14 @@
   z-index: 20;
   left: 400px;
 }
+
+@media (max-width: 780px) {
+  .mapToolBar {
+    left: 0;
+    width: 100%;
+  }
+}
+
 .mapToolBarTag {
   display: inline-block;
   padding: 6px 14px;

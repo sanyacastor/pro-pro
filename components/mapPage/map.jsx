@@ -2,7 +2,7 @@ import mapboxgl from "mapbox-gl";
 import { useState, useEffect, useRef } from "react";
 
 import "mapbox-gl/dist/mapbox-gl.css";
-import s from "../../styles/map.module.css";
+import s from "../../styles/map/map.module.css";
 import AsideInfo from "./asideInfo";
 
 function MapboxMap({ places }) {
@@ -93,7 +93,8 @@ function MapboxMap({ places }) {
         const description = e.features[0].properties.title;
         setCurrentPoint({
           title: e.features[0].properties.title,
-          description: e.features[0].properties.description
+          description: e.features[0].properties.description,
+          image: e.features[0].properties.image
         });
 
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
@@ -137,6 +138,7 @@ function MapboxMap({ places }) {
         description={currentPoint.description}
         onClose={() => setAsideVisible(false)}
         visible={asideVisible}
+        image={currentPoint.image}
       />
       <div className={s.mapToolBar}>
         {types.map((name) => (
