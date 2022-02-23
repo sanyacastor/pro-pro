@@ -2,13 +2,20 @@
   position: absolute;
   padding-top: 0;
   left: 0;
-  top: 51px;
+  top: 52px;
   width: 400px;
-  height: calc(100vh - 51px);
+  height: calc(100vh - 52px);
   background: #fff;
   z-index: 20;
   transform: translateX(0);
   transition: all ease 350ms;
+}
+
+@media (max-width: 780px) {
+  .asideInfo {
+    width: 100vw;
+    z-index: 50;
+  }
 }
 
 .asideInfo_hidden {
@@ -16,11 +23,15 @@
 }
 
 .asideInfo__header {
-  background: linear-gradient(360deg, #ff7a7a 0%, rgba(255, 122, 122, 0) 100%);
+  background: linear-gradient(360deg, #ff7a7a 0%, rgba(255, 122, 122, 0) 75%),
+    url(/images/map/map_bg.png);
+  background-size: cover;
+  background-position: 50% 50%;
   /* height: 80px; */
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
+  padding-bottom: 16px;
 }
 
 .asideInfo__header h3 {
@@ -32,6 +43,14 @@
   text-transform: uppercase;
   color: #fff;
   padding-bottom: 12px;
+}
+
+.asideInfo__image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
 }
 
 .asideInfo__description {
