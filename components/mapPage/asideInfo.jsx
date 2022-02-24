@@ -22,10 +22,12 @@ export default function AsideInfo({
         <div className={s.asideInfo__image}>
           <Image
             src={`/images/map/${image}`}
+            key={image}
             alt={title}
             width={350}
             height={250}
-            quality={50}
+            quality={100}
+            priority
           />
         </div>
         <div className={s.asideInfo__description}>
