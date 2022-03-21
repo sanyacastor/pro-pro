@@ -23,8 +23,6 @@
 }
 
 .asideInfo__header {
-  background: linear-gradient(360deg, #ff7a7a 0%, rgba(255, 122, 122, 0) 75%),
-    url(/images/map/map_bg.png);
   background-size: cover;
   background-position: 50% 50%;
   /* height: 80px; */

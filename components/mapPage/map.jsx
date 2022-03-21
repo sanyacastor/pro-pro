@@ -8,19 +8,47 @@ import AsideInfo from "./asideInfo";
 function MapboxMap({ places }) {
   const [myMap, setMap] = useState();
   const [tags, setTags] = useState();
+
   const [currentPoint, setCurrentPoint] = useState({});
+  const [currentLayer, setCurrentLayer] = useState({});
   const [asideVisible, setAsideVisible] = useState(false);
 
   const colors = {
-    kids: "OrangeRed",
-    arch: "LightSeaGreen",
-    art: "Sienna",
-    culture: "DeepPink",
-    sport: "DarkTurquoise",
-    tourism: "Olive",
-    lost: "coral",
-    orbit: "PaleVioletRed",
-    ninety: "OliveDrab"
+    kids: "rgb(255,69,0)", //) OrangeRed
+    arch: "rgb(32,178,170)", // LightSeaGreen
+    art: "rgb(160,82,45)", // Sienna
+    culture: "rgb(255,20,147)", // DeepPink
+    sport: "rgb(0,206,209) ", // DarkTurquoise
+    tourism: "rgb(128,128,0) ", // Olive
+    lost: "rgb(240,128,128) ", // Coral
+    orbit: "rgb(219,112,147) ", // PaleVioletRed
+    ninety: "rgb(107,142,35) ", //	OliveDrab
+  };
+
+  const layersDescription = {
+    kids: "Мы выделили детские площадки, которые были построены в Протвино во времена СССР в 1960-1980е года, в отдельный слой, так как считаем, что они заслуживают внимания. Интересен и сам подход проектирования площадок, например, различные тематики - морское дно, космос, народные сказки и зодчество, и материалы, формы и в целом масштаб, которые сейчас редко можно встретить в строительстве подобных объектов - монолитный бетон, гнутый металл (много металла), цельные деревья, кирпичи и прочее.",
+    arch: "Протвино проектировали с нуля, этим занималась команда московских архитекторов из Государственного специализированного проектного института (ГСПИ). Главный архитектором города и создателем генерального плана строительства был Д.М. Корин. В городе мало типовых жилых зданий, некоторые построены по переботанным проектам стран соцлагеря. Также среди нежилых объектов есть много интересных с архитектурной точки зрения. Мы отметили на карте все,  на что по нашему мнению нужно обратить внимание.",
+    art: "Для оформления жилых и нежилых архитектурных форм в Протвино привлекались художники-монументалисты, скульпторы и многие другие. Над внешним обликом города потрудилось множество профессионалов, чтобы сама среда в городе вдохновляла. На слое Арт мы показываем артефакты, которые формируют неповторимое пространство города.", // Sienna
+    culture: "",
+    sport: "",
+    tourism:
+      "На этот слой мы вынесли интересные места, которые стоит посетить в окрестностях Протвино. Все их можно обойти за несколько часов в рамках прогулочного маршрута", // Olive
+    lost: "Малые архитектурные формы Протвино (универсамы, магазины, парикмахерские и т.д.) были построены в едином ключе, свойственном архитектуре советского модернизма: большие витрины, натуральные материалы, стилизованные вывески. Некоторые были спроектированы в определенном стиле, например, Русь с отсылками к русскому зодчеству как снаружи, так и в интерьерах. В настоящее время торговые помещения отданы под аренду сетевым ритейлерам, ограничений по изменению облика нет, поэтому магазины потеряли свою идентичность и, как правило, замурованы пластиком релевантного ритейлеру цвета. Редакция нашего сайта осуждает такое варварское отношение к архитектуре, для полноты картины мы представляем фото в формате было-стало, чтобы вы самостоятельно смогли оценить изменения.", // Coral
+    orbit:
+      "Кафе 'Орбита' было открыто в 1965 г. на улице Победы, здесь принимали и обслуживали представителей иностранных делегаций из разных стран, проводили праздничные события для сотрудников ИФВЭ, в частности праздновали историческое событие – запуск Ускорителя. Одноименная кондитерская 'Орбита' работает с до сих пор и обеспечивает город своими кондитерскими изделиями. В сети киосков можно купить торты, эклеры, шу, буше, и многое другое. Самые популярные, можно сказать, фирменные блюда - торт 'Медовик' и эклеры. Кто ни разу не пробовал Протвинские эклеры, ищите на карте ближайшую точку и вперед!",
+    ninety: "Ivan Ninety",
+  };
+
+  const layersTitles = {
+    kids: "детские площадки",
+    arch: "архитектура",
+    art: "Арт",
+    culture: "",
+    sport: "C",
+    tourism: "Туризм",
+    lost: "Утрачено",
+    orbit: "Кафе «Орбита» ",
+    ninety: "Иван Ninety",
   };
 
   const mapNode = useRef(null);
@@ -43,7 +71,7 @@ function MapboxMap({ places }) {
       accessToken: process.env.NEXT_PUBLIC_MAPBOX_TOKEN,
       style: "mapbox://styles/mapbox/light-v10",
       center: [37.215213, 54.872224],
-      zoom: 13
+      zoom: 13,
     });
 
     mapboxMap.once("load", (e) => {
@@ -68,8 +96,8 @@ function MapboxMap({ places }) {
           type: "geojson",
           data: {
             type: "FeatureCollection",
-            features: filteredPoints
-          }
+            features: filteredPoints,
+          },
         });
 
         mapboxMap.addLayer({
@@ -77,12 +105,12 @@ function MapboxMap({ places }) {
           type: "circle",
           source: `${type}-src`,
           layout: {
-            visibility: "none"
+            visibility: "none",
           },
           paint: {
             "circle-radius": 8,
-            "circle-color": colors[type]
-          }
+            "circle-color": colors[type],
+          },
         });
       });
     });
@@ -90,11 +118,10 @@ function MapboxMap({ places }) {
     types.map((tag) => {
       mapboxMap.on("click", tag, (e) => {
         const coordinates = e.features[0].geometry.coordinates.slice();
-        const description = e.features[0].properties.title;
         setCurrentPoint({
           title: e.features[0].properties.title,
           description: e.features[0].properties.description,
-          image: e.features[0].properties.image
+          image: e.features[0].properties.image,
         });
 
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
@@ -123,12 +150,26 @@ function MapboxMap({ places }) {
       myMap.getLayoutProperty(name, "visibility") === "none"
         ? "visible"
         : "none";
+
     myMap.setLayoutProperty(name, "visibility", visibility);
 
     const updatedTags = { ...tags };
     updatedTags[name] = visibility === "visible" ? false : true;
 
     setTags(updatedTags);
+
+    if (!updatedTags[name]) {
+      setCurrentPoint({
+        title: layersTitles[name],
+        description: layersDescription[name],
+        type: name,
+      });
+      setAsideVisible(true);
+    }
+
+    if (asideVisible && updatedTags[name]) {
+      setAsideVisible(false);
+    }
   };
 
   return (
@@ -139,24 +180,27 @@ function MapboxMap({ places }) {
         onClose={() => setAsideVisible(false)}
         visible={asideVisible}
         image={currentPoint.image}
+        bgColor={colors[currentPoint.type]}
       />
       <div className={s.mapToolBar}>
-        {types.map((name) => (
-          <span
-            className={`${s.mapToolBarTag} ${
-              tags && tags[name] ? "" : s.active
-            }`}
-            key={name}
-            style={
-              tags && tags[name]
-                ? { borderColor: colors[name] }
-                : { background: colors[name] }
-            }
-            onClick={() => filterPoints(name)}
-          >
-            {name}
-          </span>
-        ))}
+        <div className={s.mapToolBarTagList}>
+          {types.map((name) => (
+            <span
+              className={`${s.mapToolBarTag} ${
+                tags && tags[name] ? "" : s.active
+              }`}
+              key={name}
+              style={
+                tags && tags[name]
+                  ? { borderColor: colors[name] }
+                  : { background: colors[name] }
+              }
+              onClick={() => filterPoints(name)}
+            >
+              {layersTitles[name]}
+            </span>
+          ))}
+        </div>
       </div>
       <section className={s.mapWrapper}>
         <div ref={mapNode} className={s.mapContainer} />

@@ -7,7 +7,9 @@ export default function AsideInfo({
   description,
   image,
   onClose,
-  visible
+  visible,
+  bgColor,
+  bgImage,
 }) {
   return (
     <aside
@@ -16,20 +18,28 @@ export default function AsideInfo({
       }
     >
       <article className={s.asideInfo__inner}>
-        <div className={s.asideInfo__header}>
+        <div
+          className={s.asideInfo__header}
+          style={{
+            background: `${bgColor}`,
+            //linearGradient(360deg, ${bgColor} 0%, rgba(255, 122, 122, 0) 75%),url(${bgImage})
+          }}
+        >
           <h3>{title}</h3>
         </div>
-        <div className={s.asideInfo__image}>
-          <Image
-            src={`/images/map/${image}`}
-            key={image}
-            alt={title}
-            width={350}
-            height={250}
-            quality={100}
-            priority
-          />
-        </div>
+        {image && (
+          <div className={s.asideInfo__image}>
+            <Image
+              src={`/images/map/${image}`}
+              key={image}
+              alt={title}
+              width={350}
+              height={250}
+              quality={100}
+              priority
+            />
+          </div>
+        )}
         <div className={s.asideInfo__description}>
           <p>{description}</p>
         </div>
