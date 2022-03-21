@@ -1,6 +1,6 @@
 .mapWrapper {
   width: 100%;
-  height: calc(100vh - 52px);
+  height: calc(100vh - 51px);
   overflow: hidden;
   padding: 0;
 }
@@ -9,40 +9,19 @@
   height: 100%;
 }
 .mapToolBar {
-  /* height: 140px; */
+  height: 70px;
   padding: 1em 1em;
-  /* white-space: nowrap; */
-  /* width: calc(100% - 400px);
-   */
-  width: 100%;
+  white-space: nowrap;
+  width: calc(100% - 400px);
   overflow: hidden;
   background: transparent;
   position: absolute;
-  z-index: 10;
-  /* left: 400px; */
+  z-index: 20;
+  left: 400px;
 }
-
-.mapToolBarTagList {
-  width: 60%;
-  margin: 0 auto;
-}
-
-@media (max-width: 780px) {
-  .mapToolBarTagList {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .mapToolBar {
-    left: 0;
-    width: 100%;
-  }
-}
-
 .mapToolBarTag {
   display: inline-block;
-  padding: 6px 12px;
-  padding-top: 8px;
+  padding: 6px 14px;
   transition: all 250ms ease;
   cursor: pointer;
   border: 2px solid transparent;
@@ -53,9 +32,8 @@
   position: relative;
   font-weight: 400;
   font-size: 18px;
-  margin-bottom: 6px;
 }
-
+ 
 .mapToolBarTag:hover {
   opacity: 0.5;
 }
