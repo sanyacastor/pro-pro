@@ -2,9 +2,9 @@
   position: absolute;
   padding-top: 0;
   left: 0;
-  top: 52px;
-  width: 400px;
-  height: calc(100vh - 52px);
+  top: 51px;
+  width: 600px;
+  height: calc(100vh - 51px);
   background: #fff;
   z-index: 20;
   transform: translateX(0);
