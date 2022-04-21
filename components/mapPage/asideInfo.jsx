@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import s from "../../styles/map/asideInfo.module.css";
-import Image from "next/image";
+import React, { useState } from 'react';
+import s from '../../styles/map/asideInfo.module.css';
+import Image from 'next/image';
 
 export default function AsideInfo({
   title,
@@ -33,8 +33,8 @@ export default function AsideInfo({
               src={`/images/map/${image}`}
               key={image}
               alt={title}
-              width={350}
-              height={250}
+              width={550}
+              height={350}
               quality={100}
               priority
             />
