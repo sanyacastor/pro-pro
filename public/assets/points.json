@@ -669,6 +669,7 @@
         "exist": true,
         "title": "Blue plane, 2019 / Observer it, 2019",
         "type": "ninety",
+        "image": "nnt_blue_palin_2019.jpg",
         "description": ""
       },
       "geometry": {
@@ -682,6 +683,7 @@
         "exist": true,
         "title": "This house is not empty, 2019",
         "type": "ninety",
+        "image": "nnt_house_is_not_empty_2019.jpg",
         "description": ""
       },
       "geometry": {
@@ -695,6 +697,7 @@
         "exist": true,
         "title": "Colder than yesterday, 2018",
         "type": "ninety",
+        "image": "nnt_colder_than_yesterday_2018.jpg",
         "description": ""
       },
       "geometry": {
@@ -708,6 +711,7 @@
         "exist": true,
         "title": "Sleep of leaves, 2018",
         "type": "ninety",
+        "image": "nnt_leafs_dream_2018.jpg",
         "description": ""
       },
       "geometry": {
@@ -721,6 +725,7 @@
         "exist": true,
         "title": "Finish II 2018",
         "type": "ninety",
+        "image": "nnt_finish_2_2018.jpg",
         "description": ""
       },
       "geometry": {
@@ -734,6 +739,7 @@
         "exist": true,
         "title": "And the water will come down, 2018",
         "type": "ninety",
+        "image": "nnt_and_water_2018.jpg",
         "description": ""
       },
       "geometry": {
@@ -745,21 +751,9 @@
       "type": "Feature",
       "properties": {
         "exist": true,
-        "title": "The Return point, 2018",
-        "type": "ninety",
-        "description": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [54.8638589, 37.1917905]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "exist": true,
         "title": "Mirror green, 2017",
         "type": "ninety",
+        "image": "nnt_green_mirror_2017.jpg",
         "description": ""
       },
       "geometry": {
@@ -773,6 +767,7 @@
         "exist": true,
         "title": "Into a long voyage, 2017",
         "type": "ninety",
+        "image": "nnt_long_voyage_2017.jpg",
         "description": ""
       },
       "geometry": {
@@ -786,6 +781,7 @@
         "exist": true,
         "title": "Blue boat, 2020",
         "type": "ninety",
+        "image": "nnt_blue_boat_2020.jpg",
         "description": ""
       },
       "geometry": {
@@ -799,6 +795,7 @@
         "exist": true,
         "title": "House on a house, 2020",
         "type": "ninety",
+        "image": "nnt_house_on_house_2020.jpg",
         "description": ""
       },
       "geometry": {
@@ -812,6 +809,7 @@
         "exist": true,
         "title": "Last waves of freedom, 2020",
         "type": "ninety",
+        "image": "nnt_last_waves_2020.jpg",
         "description": ""
       },
       "geometry": {
@@ -825,6 +823,7 @@
         "exist": true,
         "title": "Тишина мысли, 2021",
         "type": "ninety",
+        "image": "nnt_silece_thoughts_2021.jpg",
         "description": ""
       },
       "geometry": {
@@ -836,13 +835,70 @@
       "type": "Feature",
       "properties": {
         "exist": true,
-        "title": "На работу и домой,, 2020",
+        "title": "На работу и домой, 2020",
         "type": "ninety",
+        "image": "nnt_to_work_back_home_2020.jpg",
         "description": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [54.865285, 37.2066956]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Сквозь горы мусора. Розы цветут 2020",
+        "type": "ninety",
+        "image": "nnt_through_rubbish_mountains_2020.jpg",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.88674, 37.244457]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "29 2021",
+        "type": "ninety",
+        "image": "nnt_29_2021.jpg",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.857331, 37.20981]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Предчувствие войны 2021",
+        "type": "ninety",
+        "image": "nnt_war_anticipation_2021.jpg",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.857335, 37.20986]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "exist": true,
+        "title": "Лётчик 2021",
+        "type": "ninety",
+        "image": "nnt_pilot_2021.jpg",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [54.857339, 37.20989]
       }
     }
   ]
