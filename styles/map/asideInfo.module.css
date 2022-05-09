@@ -53,6 +53,7 @@
 
 .asideInfo__description {
   padding: 0 24px;
+  white-space: pre-line;
 }
 
 .asideInfo__closeButton {
