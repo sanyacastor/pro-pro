@@ -11,7 +11,7 @@ function Announcement() {
       <h2 className={s.announcementHeader}>У нас вышла статья:</h2>
 
       <Link href="/post/polyclinic">
-        <a>
+        <a className={s.announcementWrapper}>
           <div className={s.announcementContent}></div>
           <p className={s.announcementTitle}>
             Поликлиника как архитектурный памятник

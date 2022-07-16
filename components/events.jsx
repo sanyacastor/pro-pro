@@ -5,7 +5,9 @@ import s from "../styles/events.module.css";
 function Events({ events }) {
   return (
     <section className={s.eventsSection}>
-      <h2 className={s.eventsTitle}>Куда сходить:</h2>
+      <div className={s.eventsTitle}>
+        <h2 className={s.eventsTitleText}>Куда сходить:</h2>
+      </div>
       <div className={s.eventsSectionListContainer}>
         <ul className={s.eventsSectionList}>
           {events.map((e, i) => {

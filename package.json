@@ -17,7 +17,8 @@
   },
   "devDependencies": {
     "eslint": "7",
-    "eslint-config-next": "12.0.3"
+    "eslint-config-next": "12.0.3",
+    "sass": "^1.53.0"
   },
   "browser": {
     "fs": false,
