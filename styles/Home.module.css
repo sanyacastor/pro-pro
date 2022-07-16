@@ -9,7 +9,6 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background: rgb(77, 124, 101);
   max-width: 1400px;
 }
 
@@ -73,4 +72,14 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.post {
+  width: 100%;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+.post + .post {
+  border-bottom: 1px solid #000;
 }

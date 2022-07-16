@@ -15,9 +15,13 @@ function Home({ posts }) {
       </Head>
 
       <main className={styles.main}>
+        <h2 className={styles.post}>Все Статьи: </h2>
         {posts.map((p, i) => (
           <Link href={p.slug} key={i}>
-            <a>{p.title}</a>
+            <div className={styles.post}>
+              <a>{p.title}</a>
+              {p.author && <span>[{p.author}]</span>} ➝
+            </div>
           </Link>
         ))}
       </main>
@@ -33,10 +37,10 @@ export async function getStaticProps() {
   const meta = files.map((f) => {
     const md = fs.readFileSync(path.join("content/posts/" + f)).toString();
 
-    const title = matter(md).data.title;
+    const { title, author } = matter(md).data;
     const slug = "post/" + f.split(".md")[0];
 
-    return { title, slug };
+    return { title, slug, author: author || "" };
     // return { data, content } = matter(markdownWithMetadata)
   });
 
