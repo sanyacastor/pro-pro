@@ -1,3 +1,9 @@
+.container {
+  padding: 0 2em;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
 .eventsSection {
   width: 100%;
   background: #fff;
@@ -66,5 +72,4 @@
   margin-left: 36px;
   top: 0;
   margin-top: 0;
-  text-align: left;
 }

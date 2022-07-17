@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import s from "../styles/Home.module.css";
+import s from "../styles/Home.module.scss";
 
 export default function Header() {
   return (
