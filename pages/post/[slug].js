@@ -4,7 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import Image from "next/image";
 
-import s from "../../styles/post.module.css";
+import s from "../../styles/post.module.scss";
 
 import ReactMarkdown from "react-markdown";
 

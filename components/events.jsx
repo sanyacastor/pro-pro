@@ -4,7 +4,7 @@ import s from "../styles/events.module.css";
 
 function Events({ events }) {
   return (
-    <section className={s.eventsSection}>
+    <section className={`${s.eventsSection} ${s.container}`}>
       <div className={s.eventsTitle}>
         <h2 className={s.eventsTitleText}>Куда сходить:</h2>
       </div>

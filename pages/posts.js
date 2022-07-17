@@ -5,7 +5,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 
 function Home({ posts }) {
   return (
