@@ -1,0 +1,187 @@
+$map-lost-color: #e587fc;
+$map-art-color: #6775fc;
+$map-arch-color: #ed7f71;
+$map-orbit-color: #ff914f;
+$map-kids-color: #78d7e0;
+$map-tourism-color: #48d27e;
+$map-ninety-color: #ffd15a;
+
+$map-lost-url: "https://res.cloudinary.com/propromedia/image/upload/v1667645828/oka_u8koha.webp";
+$map-art-url: "https://res.cloudinary.com/propromedia/image/upload/v1667646698/cvety_du_chgbpp.webp";
+$map-arch-url: "https://res.cloudinary.com/propromedia/image/upload/v1667645947/3shkola_weftt1.webp";
+$map-orbit-url: "https://res.cloudinary.com/propromedia/image/upload/v1667646900/orbita_rus_n02rrw.webp";
+$map-kids-url: "https://res.cloudinary.com/propromedia/image/upload/v1667116172/kids_rainbow_cksrlf.webp";
+$map-tourism-url: "https://res.cloudinary.com/propromedia/image/upload/v1667646032/karier_kkdf7q.webp";
+$map-ninety-url: "https://res.cloudinary.com/propromedia/image/upload/v1667647196/nnt_silece_thoughts_2021_zwzc6x.webp";
+
+.asideInfo {
+  position: absolute;
+  padding-top: 0;
+  left: 0;
+  top: 51px;
+  width: 600px;
+  height: calc(100vh - 51px);
+  background: #fff;
+  z-index: 20;
+  transform: translateX(0);
+  transition: all ease 350ms;
+  overflow: scroll;
+}
+
+@media (max-width: 780px) {
+  .asideInfo {
+    width: 100vw;
+    z-index: 50;
+  }
+}
+
+.asideInfo_hidden {
+  transform: translateX(-100%);
+}
+
+.asideInfo__header {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 16px;
+  display: flex;
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.asideInfo__header h3 {
+  margin: 0;
+  margin-top: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  padding-bottom: 12px;
+  font-family: "Base&Bloom";
+  line-height: 1;
+}
+
+.asideInfo__header--base {
+  padding-top: 60px;
+  min-height: auto;
+}
+
+.asideInfo__image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.asideInfo__description {
+  padding: 0 24px;
+  white-space: pre-line;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.asideInfo__closeButton {
+  cursor: pointer;
+  position: absolute;
+  top: 28px;
+  left: 24px;
+  border: none;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("/images/icons/back_arrow.svg");
+}
+
+.asideInfo__header--kids {
+  background-image: linear-gradient(
+      360deg,
+      $map-kids-color 0%,
+      rgba(255, 122, 122, 0) 100%
+    ),
+    url($map-kids-url);
+}
+.asideInfo__header--base.asideInfo__header--kids {
+  background: $map-kids-color;
+}
+
+.asideInfo__header--arch {
+  background-image: linear-gradient(
+      360deg,
+      $map-arch-color 0%,
+      rgba(255, 122, 122, 0) 100%
+    ),
+    url($map-arch-url);
+}
+.asideInfo__header--base.asideInfo__header--arch {
+  background: $map-arch-color;
+}
+
+.asideInfo__header--art {
+  background-image: linear-gradient(
+      360deg,
+      $map-art-color 0%,
+      rgba(255, 122, 122, 0) 100%
+    ),
+    url($map-art-url);
+}
+.asideInfo__header--base.asideInfo__header--art {
+  background: $map-art-color;
+}
+
+.asideInfo__header--lost {
+  background-image: linear-gradient(
+      360deg,
+      $map-lost-color 0%,
+      rgba(255, 122, 122, 0) 100%
+    ),
+    url($map-lost-url);
+}
+.asideInfo__header--base.asideInfo__header--lost {
+  background: $map-lost-color;
+}
+
+.asideInfo__header--tourism {
+  background-image: linear-gradient(
+      360deg,
+      $map-tourism-color 0%,
+      rgba(255, 122, 122, 0) 100%
+    ),
+    url($map-tourism-url);
+}
+.asideInfo__header--base.asideInfo__header--tourism {
+  background: $map-tourism-color;
+}
+
+.asideInfo__header--ninety {
+  background-image: linear-gradient(
+      360deg,
+      $map-ninety-color 0%,
+      rgba(255, 122, 122, 0) 100%
+    ),
+    url($map-ninety-url);
+}
+.asideInfo__header--base.asideInfo__header--ninety {
+  background: $map-ninety-color;
+}
+
+.asideInfo__header--orbit {
+  background-image: linear-gradient(
+      360deg,
+      $map-orbit-color 0%,
+      rgba(255, 122, 122, 0) 100%
+    ),
+    url($map-orbit-url);
+}
+.asideInfo__header--base.asideInfo__header--orbit {
+  background: $map-orbit-color;
+}
