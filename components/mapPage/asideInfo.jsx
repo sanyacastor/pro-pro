@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import s from "../../styles/map/asideInfo.module.css";
+import s from "../../styles/map/asideInfo.module.scss";
 import Image from "next/image";
 
 export default function AsideInfo({
@@ -8,8 +8,7 @@ export default function AsideInfo({
   image,
   onClose,
   visible,
-  bgColor,
-  bgImage,
+  type,
 }) {
   return (
     <aside
@@ -19,24 +18,22 @@ export default function AsideInfo({
     >
       <article className={s.asideInfo__inner}>
         <div
-          className={s.asideInfo__header}
-          style={{
-            background: `${bgColor}`,
-            //linearGradient(360deg, ${bgColor} 0%, rgba(255, 122, 122, 0) 75%),url(${bgImage})
-          }}
+          className={`${s.asideInfo__header} ${
+            s[`asideInfo__header--${type}`]
+          } ${image ? s[`asideInfo__header--base`] : ""}`}
         >
           <h3>{title}</h3>
         </div>
         {image && (
           <div className={s.asideInfo__image}>
             <Image
-              src={`/images/map/${image}`}
+              src={image}
               key={image}
               alt={title}
               width={550}
               height={420}
               quality={100}
-              objectFit="cover"
+              objectFit='cover'
               priority
             />
           </div>
@@ -45,10 +42,7 @@ export default function AsideInfo({
           <p>{description}</p>
         </div>
       </article>
-      <button
-        className={s.asideInfo__closeButton}
-        onClick={() => onClose()}
-      ></button>
+      <button className={s.asideInfo__closeButton} onClick={onClose}></button>
     </aside>
   );
 }
