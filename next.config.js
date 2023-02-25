@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
-  output: 'standalone',
+  output: 'serverless',
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ['res.cloudinary.com'],
   },
 };
