@@ -1,0 +1,21 @@
+.footer {
+  background: #171f2e;
+  color: #fff;
+  font-family: "Piazzolla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.footerContainer {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 130px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerColumn {
+  width: 50%;
+}

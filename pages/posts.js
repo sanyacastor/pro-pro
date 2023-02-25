@@ -1,11 +1,11 @@
-import Head from "next/head";
-import Link from "next/link";
+import Head from 'next/head';
+import Link from 'next/link';
 
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 
-import styles from "../styles/Home.module.scss";
+import styles from '../styles/Home.module.scss';
 
 function Home({ posts }) {
   return (
@@ -32,15 +32,15 @@ function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const files = fs.readdirSync("content/posts");
+  const files = fs.readdirSync('content/posts');
 
   const meta = files.map((f) => {
-    const md = fs.readFileSync(path.join("content/posts/" + f)).toString();
+    const md = fs.readFileSync(path.join('content/posts/' + f)).toString();
 
     const { title, author } = matter(md).data;
-    const slug = "post/" + f.split(".md")[0];
+    const slug = 'post/' + f.split('.md')[0];
 
-    return { title, slug, author: author || "" };
+    return { title, slug, author: author || '' };
     // return { data, content } = matter(markdownWithMetadata)
   });
 
