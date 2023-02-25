@@ -1,12 +1,11 @@
-import React from "react";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import Image from "next/image";
+import React from 'react';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import Image from 'next/image';
+import ReactMarkdown from 'react-markdown';
 
-import s from "../../styles/post.module.scss";
-
-import ReactMarkdown from "react-markdown";
+import s from './styles.module.scss';
 
 const renderers = {
   image: (image) => {
@@ -25,11 +24,11 @@ export default function Post({ content, frontmatter }) {
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync("content/posts");
+  const files = fs.readdirSync('content/posts');
 
   const paths = files.map((filename) => ({
     params: {
-      slug: filename.replace(".md", ""),
+      slug: filename.replace('.md', ''),
     },
   }));
 
@@ -41,14 +40,14 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMetadata = fs
-    .readFileSync(path.join("content/posts/" + slug + ".md"))
+    .readFileSync(path.join('content/posts/' + slug + '.md'))
     .toString();
 
   const { data, content } = matter(markdownWithMetadata);
 
   // Convert post date to format: Month day, Year
-  const options = { year: "numeric", month: "long", day: "numeric" };
-  const formattedDate = data.date.toLocaleDateString("en-US", options);
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDate = data.date.toLocaleDateString('en-US', options);
 
   const frontmatter = {
     ...data,

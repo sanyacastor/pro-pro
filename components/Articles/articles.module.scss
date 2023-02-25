@@ -1,0 +1,56 @@
+.articlesSection {
+  width: 100%;
+  padding-top: 65px;
+  padding-bottom: 55px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.articlesContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(11, 1fr 40px) 1fr;
+}
+
+.articleColumn {
+  grid-column: span 10;
+}
+
+.articleColumn + .articleColumn {
+  grid-column: 14 / span 10;
+}
+
+.articleThumbnail {
+  height: 500px;
+  cursor: pointer;
+}
+
+.articleThumbnail__image {
+  height: 300px;
+  background: #68A372;
+}
+
+.articleThumbnail__title {
+  font-family: "Base&Bloom";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 90%;
+  color: #171f2e;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.articleThumbnail__author {
+  font-family: "Piazzolla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 134.5%;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  margin-top: 7px;
+  margin-bottom: 0;
+}

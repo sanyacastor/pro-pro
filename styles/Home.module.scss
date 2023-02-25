@@ -5,46 +5,9 @@
 }
 
 .main {
-  min-height: 100vh;
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.header {
-  padding: 1em 2em;
-  display: flex;
-  border-bottom: 1px solid #000;
-}
-
-.navigation {
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-}
-
-.navigation ul {
-  margin: 0;
-  display: flex;
-}
-
-.navigation li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.navigation li + li {
-  margin-left: 16px;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
   align-items: center;
 }
 

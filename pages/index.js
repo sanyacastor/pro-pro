@@ -1,37 +1,35 @@
-import Head from "next/head";
-import Events from "../components/events";
+import Head from 'next/head';
 
-import { promises as fs } from "fs";
-import path from "path";
+import styles from '../styles/Home.module.scss';
+import { Announcement } from '../components/Announcement';
+import { Header, Footer } from '../components/Layout';
+import { Articles } from '../components/Articles';
 
-import styles from "../styles/Home.module.scss";
-import Announcement from "../components/announcement";
-
-function Home({ posts }) {
+function Home() {
   return (
     <>
       <Head>
         <title>Про про | locals for locals</title>
       </Head>
+      <Header />
       <main className={styles.main}>
-        <Announcement />
-        <Events events={posts} />
+        <Announcement
+          image="https://res.cloudinary.com/propromedia/image/upload/v1673032656/duotone_5_1_kkfjrd.webp"
+          link="/post/polyclinic"
+          subtitle="Может добавить небольшое описание"
+          title={
+            <>
+              ПОЛИКЛИНИКА <br />
+              ИлИ АРХиТЕКТУРНЫЙ <br />
+              ПАМЯТНИК
+            </>
+          }
+        />
+        <Articles />
       </main>
-
-      <footer className={styles.footer}>про протвино © 2021</footer>
+      <Footer />
     </>
   );
-}
-
-export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), "/public/assets/mockData.json");
-  const fileContents = await fs.readFile(filePath, "utf-8");
-
-  return {
-    props: {
-      posts: JSON.parse(fileContents),
-    },
-  };
 }
 
 export default Home;
