@@ -1,3 +1,28 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "parser": "@babel/eslint-parser",
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "react/prop-types": "off"
+  },
+  "plugins": ["react", "prettier"]
 }
