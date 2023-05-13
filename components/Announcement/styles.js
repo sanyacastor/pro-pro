@@ -1,28 +1,33 @@
-.announcementSection {
+import Link from 'next/link';
+import styled from 'styled-components';
+
+export const Section = styled.div`
   width: 100%;
   height: 100vh;
+
+  background: ${({ $bgImage }) => `url(${$bgImage})`};
 
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: flex-end;
-}
+`;
 
-.announcementContainer {
+export const Container = styled.div`
   max-width: 1400px;
   margin: 0 auto;
-}
+`;
 
-.announcementHeader {
+export const Header = styled(Link)`
   width: 100%;
   display: block;
   color: #fff;
   padding-bottom: 42px;
-}
+`;
 
-.announcementTitle {
-  font-family: "Base&Bloom";
+export const Title = styled.div`
+  font-family: 'Base&Bloom';
   font-size: 90px;
   font-weight: 400;
   line-height: 74px;
@@ -30,10 +35,10 @@
   text-align: center;
   margin: 0;
   width: 100%;
-}
+`;
 
-.announcementSubtitle {
-  font-family: "Piazzolla";
+export const Subtitle = styled.div`
+  font-family: 'Piazzolla';
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -41,4 +46,4 @@
 
   text-align: center;
   margin-top: 32px;
-}
+`;

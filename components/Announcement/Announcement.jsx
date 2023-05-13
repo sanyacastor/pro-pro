@@ -1,20 +1,19 @@
 import React from 'react';
-import Link from 'next/link';
+import { HERO } from '../../config';
 
-import s from './announcements.module.scss';
+import { Container, Section, Title, Subtitle, Header } from './styles';
 
-export const Announcement = ({ link, image, title, subtitle }) => {
+export const Announcement = () => {
+  const { link, image, title, subtitle } = HERO;
+
   return (
-    <div
-      className={s.announcementSection}
-      style={{ backgroundImage: `url(${image})` }}
-    >
-      <div className={s.announcementContainer}>
-        <Link href={link} className={s.announcementHeader}>
-          <h3 className={s.announcementTitle}>{title}</h3>
-          <div className={s.announcementSubtitle}>{subtitle}</div>
-        </Link>
-      </div>
-    </div>
+    <Section $bgImage={image}>
+      <Container>
+        <Header href={link}>
+          <Title dangerouslySetInnerHTML={{ __html: title }} />
+          <Subtitle>{subtitle}</Subtitle>
+        </Header>
+      </Container>
+    </Section>
   );
 };

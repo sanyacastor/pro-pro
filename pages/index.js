@@ -2,8 +2,10 @@ import Head from 'next/head';
 
 import styles from '../styles/Home.module.scss';
 import { Announcement } from '../components/Announcement';
-import { Header, Footer } from '../components/Layout';
-import { Articles } from '../components/Articles';
+import { Layout } from '../components/Layout/Layout';
+import { Articles } from '../components/Articles/Articles';
+import { GurtourBanner, MapBanner, ZineBanner } from '../components/Banners';
+import { SingleArticleAnnouncement } from '../components/SingleArticleAnnouncement';
 
 function Home() {
   return (
@@ -11,23 +13,16 @@ function Home() {
       <Head>
         <title>Про про | locals for locals</title>
       </Head>
-      <Header />
-      <main className={styles.main}>
-        <Announcement
-          image="https://res.cloudinary.com/propromedia/image/upload/v1673032656/duotone_5_1_kkfjrd.webp"
-          link="/post/polyclinic"
-          subtitle="Может добавить небольшое описание"
-          title={
-            <>
-              ПОЛИКЛИНИКА <br />
-              ИлИ АРХиТЕКТУРНЫЙ <br />
-              ПАМЯТНИК
-            </>
-          }
-        />
-        <Articles />
-      </main>
-      <Footer />
+      <Layout>
+        <main className={styles.main}>
+          <Announcement />
+          <Articles />
+          <GurtourBanner />
+          <SingleArticleAnnouncement />
+          <ZineBanner />
+          <MapBanner />
+        </main>
+      </Layout>
     </>
   );
 }

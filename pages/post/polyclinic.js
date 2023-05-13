@@ -1,86 +1,124 @@
-import Image from 'next/image';
 import React from 'react';
+import Image from 'next/image';
 
 import s from './styles.module.scss';
+import 'react-tooltip/dist/react-tooltip.css';
 
-export default function polyclinic() {
+import {
+  PostContainer,
+  PostGrid,
+  PostHero,
+  PostTitle,
+  PostSubtitle,
+  PostAuthor,
+  PostImage,
+  Tooltip,
+  Paragraph,
+  SectionTitle,
+  CirceSquareCross,
+  ParagraphWithBackground,
+  SquareFigure,
+  Cross,
+  RedCrosses,
+} from '../../styles/post/policlinic';
+import { Layout } from '../../components/Layout/Layout';
+
+export default function Polyclinic() {
   return (
-    <div className={s.post__container}>
-      <article className={s.post}>
-        <h1 className={s.post__title}>
-          Поликлиника или архитектурный памятник
-        </h1>
-        <span className={s.post__author}>
-          <p>АВТОР: АННА МЕДВЕДКОВА</p>
-        </span>
+    <Layout>
+      <PostHero>
+        <PostContainer>
+          <PostTitle>
+            Поликлиника <br /> или архитектурный <br /> памятник
+          </PostTitle>
+          <PostAuthor>АВТОР: АННА МЕДВЕДКОВА</PostAuthor>
+        </PostContainer>
+      </PostHero>
+      <PostContainer>
+        <PostGrid>
+          <PostSubtitle>
+            «Говорящая архитектура» — <br /> что это такое?
+          </PostSubtitle>
+          <Tooltip id="robert" />
+          <Paragraph>
+            Главный американский постмодернист{' '}
+            <a
+              data-tooltip-id="robert"
+              data-tooltip-content="Роберт Вентури (англ. Robert Venturi, 25 июня 1925 — 18 сентября
+            2018) — американский архитектор, лауреат Притцкеровской премии, один
+            из родоначальников постмодернизма."
+            >
+              Роберт Вентури
+            </a>{' '}
+            разделил современную архитектуру на&nbsp;&laquo;сараи&raquo;
+            (абстрактные объемы с&nbsp;декоративными фасадами)
+            и&nbsp;&laquo;утки&raquo; (объекты, своей формой сообщающие
+            о&nbsp;назначении&nbsp;&mdash; например, гигантский пончик
+            у&nbsp;придорожного кафе). &laquo;Утки&raquo;&nbsp;&mdash;
+            и&nbsp;есть перемена вектора от&nbsp;самодостаточности модернизма
+            к&nbsp;говорящей архитектуре.
+          </Paragraph>
 
-        <h2 className={s.post__subtitle}>
-          «Говорящая архитектура» — что это такое?
-        </h2>
+          <Paragraph $indent={2} $size={28} $mt={56}>
+            Выражение{' '}
+            <span className={s.post__paragraph_accent}>
+              architecture parlante
+            </span>{' '}
+            (&laquo;говорящая архитектура&raquo;) относится к&nbsp;зданиям,
+            внешняя форма которых максимально выражает свою функцию или
+            художественную идею, предложенную архитектором.
+          </Paragraph>
 
-        <p className={s.post__paragraph}>
-          Главный американский постмодернист Роберт Вентури разделил современную
-          архитектуру на «сараи» (абстрактные объемы с декоративными фасадами) и
-          «утки» (объекты, своей формой сообщающие о назначении — например,
-          гигантский пончик у придорожного кафе). «Утки» — и есть перемена
-          вектора от самодостаточности модернизма к говорящей архитектуре.
-        </p>
+          <Paragraph $mt={32}>
+            В&nbsp;этой статье мы&nbsp;поговорим про яркие примеры советской
+            архитектурной мысли и&nbsp;их&nbsp;истоки в&nbsp;искусстве. Первый
+            пример: здание аптеки в&nbsp;типовом жилом микрорайоне Москвы
+            Борисово. Тут само здание является собственной вывеской
+            и&nbsp;превращается в&nbsp;архитектурный артефакт. Источником
+            вдохновения для авторов аптеки служило творчество Казимира Малевича.
+          </Paragraph>
 
-        <p className={`${s.post__paragraph_indent} ${s.post__paragraph_bold}`}>
-          Выражение{' '}
-          <span className={s.post__paragraph_accent}>
-            architecture parlante
-          </span>{' '}
-          («говорящая архитектура») относится к зданиям, внешняя форма которых
-          максимально выражает свою функцию или художественную идею,
-          предложенную архитектором.
-        </p>
+          <PostImage $mt={64} $indent={2}>
+            <Image
+              src="https://res.cloudinary.com/propromedia/image/upload/v1674498115/articles/policlinic/image_3_1_ipsui5.webp"
+              width={660}
+              height={388}
+              alt="Архитекторы: А.Ларин, Е.Асс, Л.Волчек, 1973 год"
+            />
+            <figcaption>
+              Архитекторы: А.Ларин, Е.Асс, Л.Волчек, 1973 год{' '}
+            </figcaption>
+          </PostImage>
 
-        <p className={s.post__paragraph}>
-          В этой статье мы поговорим про яркие примеры советской архитектурной
-          мысли и их истоки в искусстве. Первый пример: здание аптеки в типовом
-          жилом микрорайоне Москвы Борисово. Тут само здание является
-          собственной вывеской и превращается в архитектурный артефакт.
-          Источником вдохновения для авторов аптеки служило творчество Казимира
-          Малевича.
-        </p>
-        <figure className={s.post__image}>
-          <Image
-            src="https://res.cloudinary.com/propromedia/image/upload/v1674498115/articles/policlinic/image_3_1_ipsui5.webp"
-            width={660}
-            height={388}
-            alt="Архитекторы: А.Ларин, Е.Асс, Л.Волчек, 1973 год"
-          />
-          <figcaption className={s.post__image_caption}>
-            Архитекторы: А.Ларин, Е.Асс, Л.Волчек, 1973 год{' '}
-          </figcaption>
-        </figure>
-        <div className={s.post__part}>
-          <h3 className={s.post__subtitle}>Малевич, дух и форма</h3>
-          <p className={`${s.post__paragraph_indent} ${s.post__paragraph}`}>
+          <SectionTitle>Малевич, дух и форма</SectionTitle>
+          <Paragraph $mt={32} $indent={1}>
             Малевич, дух и форма Малевич создал беспредметное искусство. Он
             считал, что живопись самоценна, что форма и чистый цвет способны
             выразить духовное ощущение художника. И создав новое направление в
             живописи – супрематизм, он предложил новое восприятие формы.
-          </p>
-          <p className={`${s.post__paragraph_indent} ${s.post__paragraph}`}>
+          </Paragraph>
+          <Paragraph $mt={32} $indent={1}>
             Супрематизм (от лат.supremus — превосходный) — на начальном этапе
             этот термин, восходивший к латинскому корню – «supremus», означал
             доминирование, превосходство цвета над всеми остальными свойствами
             живописи. В основание художник положил три формы: квадрат, крест и
             круг. Из этих форм рождаются все отношения в супрематической
             композиции.
-          </p>
-
-          <p className={s.post__paragraph}>
-            И в архитектуре Малевич дал толчок новым идеям. «Черный крест»
-            1915-го года трансформировался в его концепцию архитектонов. Это
-            объемные композиции из гипса, которые создавал художник. Они были
-            составлены из супрематических «блоков», которые врезались друг в
-            друга под прямым углом. Блоки – бруски, кубы, параллелепипеды,
-            которые в свою очередь, являлись объемными аналогами супрематических
-            фигур ‒ квадратов и прямоугольников.
-          </p>
+          </Paragraph>
+          <ParagraphWithBackground $mt={38}>
+            <Paragraph>
+              И&nbsp;в&nbsp;архитектуре Малевич дал толчок новым идеям.
+              &laquo;Черный крест&raquo; 1915-го года трансформировался
+              в&nbsp;его концепцию архитектонов. Это объемные композиции
+              из&nbsp;гипса, которые создавал художник. Они были составлены
+              из&nbsp;супрематических &laquo;блоков&raquo;, которые врезались
+              друг в&nbsp;друга под прямым углом. Блоки&nbsp;&mdash; бруски,
+              кубы, параллелепипеды, которые в&nbsp;свою очередь, являлись
+              объемными аналогами супрематических фигур ‒ квадратов
+              и&nbsp;прямоугольников.
+            </Paragraph>
+            <CirceSquareCross />
+          </ParagraphWithBackground>
 
           <div className={s.post__collage}>
             <figure className={s.post__image}>
@@ -111,24 +149,29 @@ export default function polyclinic() {
               />
             </figure>
           </div>
-          <div className={s.post__greenfigures}>
-            <p className={s.post__paragraph}>
-              C помощью этой концепции художник предлагал переосмыслить
-              принципы, по которым люди придают форму зданиям. Малевич называл
-              архитектоны «чистой архитектурой», так как эти конструкции
-              оперировали архитектурными категориями: массой, объемом,
-              тектоникой, масштабом.
-            </p>
-            <p className={s.post__paragraph}>
-              Архитектоны как таковые не имели утилитарного назначения и не
-              проектировались для реальной городской среды. Их цель заключалась
-              в создании принципиально новой эстетики, «супрематического
-              ордера», который, по мнению Малевича, должен был быть положен в
-              основу современной архитектуры.
-            </p>
-          </div>
+          <ParagraphWithBackground $mt={38}>
+            <Paragraph $indent={2}>
+              С&nbsp;помощью этой концепции художник предлагал переосмыслить
+              принципы, по&nbsp;которым люди придают форму зданиям. Малевич
+              называл архитектоны &laquo;чистой архитектурой&raquo;, так как эти
+              конструкции оперировали архитектурными категориями: массой,
+              объемом, тектоникой, масштабом.
+            </Paragraph>
+            <SquareFigure />
+          </ParagraphWithBackground>
+          <ParagraphWithBackground $mt={38}>
+            <Paragraph $indent={2}>
+              Архитектоны как таковые не&nbsp;имели утилитарного назначения
+              и&nbsp;не&nbsp;проектировались для реальной городской среды.
+              Их&nbsp;цель заключалась в&nbsp;создании принципиально новой
+              эстетики, &laquo;супрематического ордера&raquo;, который,
+              по&nbsp;мнению Малевича, должен был быть положен в&nbsp;основу
+              современной архитектуры.
+            </Paragraph>
+            <Cross />
+          </ParagraphWithBackground>
 
-          <figure className={s.post__image}>
+          <PostImage $mt={64}>
             <Image
               src="https://res.cloudinary.com/propromedia/image/upload/v1674499764/articles/policlinic/image_1_1_khobnx.webp"
               width={628}
@@ -138,85 +181,84 @@ export default function polyclinic() {
             <figcaption className={s.post__image_caption}>
               К.С. Малевич. Архитектон «Альфа», 1920. Гипс.
             </figcaption>
-          </figure>
+          </PostImage>
 
-          <p className={s.post__paragraph}>
-            В набросках Ильи Чашника (ученика Малевича), который работал над
-            проектированием «чистой архитектуры», фронтальные изображения
-            архитектонов демонстрируют осмысление пространственных
+          <Paragraph $mt={64}>
+            В&nbsp;набросках Ильи Чашника (ученика Малевича), который работал
+            над проектированием &laquo;чистой архитектуры&raquo;, фронтальные
+            изображения архитектонов демонстрируют осмысление пространственных
             супрематических конструкций как полноценных архитектурных
-            сооружений. Он варьировал пропорциональные соотношения элементов
-            и использовал цветовые контрасты, добиваясь тем самым динамического
-            равновесия и монументальности архитектурной конструкции.
-          </p>
-        </div>
-        <div className={s.post__part}>
-          <h3 className={s.post__subtitle}>Поликлиника Протвино</h3>
-          <p className={`${s.post__paragraph_indent} ${s.post__paragraph}`}>
-            Скоро стало ясно, что архитекторы приняли эти идеи. Мы видим это
-            в том числе на примере архитектурных объектов, которые нас окружают.
-            Вероятно, концепцией архитектонов в том числе вдохновлялись и авторы
-            проекта поликлиники в Протвино. Архитектура поликлиники насыщена
-            разными элементами, например, ребристым украшением при виде с улицы,
-            свойственным модернизму, огромным крестом-кубом на фасаде и так
-            далее. А если посмотреть на общий объем здания, прослеживается связь
-            с архитектонами.
-          </p>
+            сооружений. Он&nbsp;варьировал пропорциональные соотношения
+            элементов и&nbsp;использовал цветовые контрасты, добиваясь тем самым
+            динамического равновесия и&nbsp;монументальности архитектурной
+            конструкции.
+          </Paragraph>
 
-          <div className={s.post__collageRow}>
-            <figure className={s.post__image}>
-              <Image
-                src="https://res.cloudinary.com/propromedia/image/upload/v1674500032/articles/policlinic/image_1_2_jwokez.webp"
-                width={460}
-                height={316}
-                alt="Поликлиника фасад"
-              />
-            </figure>
-            <figure className={s.post__image}>
-              <Image
-                src="https://res.cloudinary.com/propromedia/image/upload/v1674500019/articles/policlinic/image_4_1_zijeto.webp"
-                width={435}
-                height={317}
-                alt="Чашник Илья «Архитектон» 1925-1926. Гипс"
-              />
-              <figcaption className={s.post__image_caption}>
-                Чашник Илья «Архитектон» 1925-1926. Гипс
-              </figcaption>
-            </figure>
-          </div>
+          <SectionTitle>Поликлиника Протвино</SectionTitle>
+          <Paragraph $mt={32} $indent={1}>
+            Скоро стало ясно, что архитекторы приняли эти идеи. Мы&nbsp;видим
+            это в&nbsp;том числе на&nbsp;примере архитектурных объектов, которые
+            нас окружают. Вероятно, концепцией архитектонов в&nbsp;том числе
+            вдохновлялись и&nbsp;авторы проекта поликлиники в&nbsp;Протвино.
+            Архитектура поликлиники насыщена разными элементами, например,
+            ребристым украшением при виде с&nbsp;улицы, свойственным модернизму,
+            огромным крестом-кубом на&nbsp;фасаде и&nbsp;так далее. А&nbsp;если
+            посмотреть на&nbsp;общий объем здания, прослеживается связь
+            с&nbsp;архитектонами.
+          </Paragraph>
 
-          <p className={s.post__paragraph}>
+          <PostImage $mt={64}>
+            <Image
+              src="https://res.cloudinary.com/propromedia/image/upload/v1674500032/articles/policlinic/image_1_2_jwokez.webp"
+              width={460}
+              height={316}
+              alt="Поликлиника фасад"
+            />
+
+            <Image
+              src="https://res.cloudinary.com/propromedia/image/upload/v1674500019/articles/policlinic/image_4_1_zijeto.webp"
+              width={435}
+              height={317}
+              alt="Чашник Илья «Архитектон» 1925-1926. Гипс"
+            />
+            <figcaption className={s.post__image_caption}>
+              Чашник Илья «Архитектон» 1925-1926. Гипс
+            </figcaption>
+          </PostImage>
+
+          <Paragraph $mt={64}>
             Сама поликлиника спроектирована очень удобно для посетителей: левое
-            крыло – детская поликлиника, правое крыло – взрослая поликлиника.
-            Между собой они соединены проходом между лифтовыми холлами. Вход по
-            парадной лестнице со 2-го этажа к регистратурам, на первом этаже –
-            аптека. Причем войти можно и с первого этажа и подняться на лифте на
-            нужный, что удобно для женщин с колясками и пенсионеров.
-          </p>
+            крыло&nbsp;&mdash; детская поликлиника, правое крыло&nbsp;&mdash;
+            взрослая поликлиника. Между собой они соединены проходом между
+            лифтовыми холлами. Вход по&nbsp;парадной лестнице со&nbsp;2-го этажа
+            к&nbsp;регистратурам, на&nbsp;первом этаже&nbsp;&mdash; аптека.
+            Причем войти можно и&nbsp;с&nbsp;первого этажа и&nbsp;подняться
+            на&nbsp;лифте на&nbsp;нужный, что удобно для женщин с&nbsp;колясками
+            и&nbsp;пенсионеров.
+          </Paragraph>
 
-          <div className={s.post__collage}>
-            <p className={s.post__paragraph}>
-              Что в этом уникального, скажет читатель, например, в Зеленограде,
-              тоже есть поликлиника с похожим замыслом:
-            </p>
-            <figure className={s.post__image}>
-              <Image
-                src="https://res.cloudinary.com/propromedia/image/upload/v1674500033/articles/policlinic/image_5_1_ijcjfw.webp"
-                width={361}
-                height={266}
-                alt="Поликлиника в Зеленограде"
-              />
-            </figure>
-          </div>
+          <Paragraph $mt={32}>
+            Что в&nbsp;этом уникального, скажет читатель, например,
+            в&nbsp;Зеленограде, тоже есть поликлиника с&nbsp;похожим замыслом:
+          </Paragraph>
 
-          <p className={s.post__paragraph}>
-            Замысел похож, но здание Протвинской поликлиники далеко от
-            типичного. Посмотрите на фасад, что вы видите? «Черный крест»
-            Малевича в кубе! А также графичные лестницы, свойственные парадным
-            входам зданий совмода.
-          </p>
+          <PostImage $mt={64} $indent={1}>
+            <Image
+              src="https://res.cloudinary.com/propromedia/image/upload/v1674500033/articles/policlinic/image_5_1_ijcjfw.webp"
+              width={460}
+              height={339}
+              alt="Поликлиника в Зеленограде"
+            />
+          </PostImage>
 
-          <figure className={s.post__image}>
+          <Paragraph $mt={32}>
+            Замысел похож, но&nbsp;здание Протвинской поликлиники далеко
+            от&nbsp;типичного. Посмотрите на&nbsp;фасад, что вы&nbsp;видите?
+            &laquo;Черный крест&raquo; Малевича в&nbsp;кубе! А&nbsp;также
+            графичные лестницы, свойственные парадным входам зданий совмода.
+          </Paragraph>
+
+          <PostImage $mt={64}>
             <Image
               src="https://res.cloudinary.com/propromedia/image/upload/v1674500033/articles/policlinic/image_37_c5ecmu.webp"
               width={455}
@@ -226,23 +268,23 @@ export default function polyclinic() {
             <figcaption className={s.post__image_caption}>
               Чашник Илья «Архитектон» 1925-1926. Гипс
             </figcaption>
-          </figure>
+          </PostImage>
 
-          <p className={s.post__paragraph}>
-            Сама поликлиника состоит из двух объемов: непосредственно здание
-            поликлиники (детская и взрослая) и МСЧ № 57 (корпус для сотрудников
-            ИФВЭ). Между ними надземный закрытый переход, а также зона парковки
-            скорой помощи.
-          </p>
-          <p className={s.post__paragraph}>
-            С обратной стороны (стороны МСЧ) поликлиника расположена на
-            Т-образном перекрестке. Центральная часть с ребристым декором, а по
-            бокам окна 2-х этажного здания выполнены таким образом, что мы видим
-            два ряда красных крестов.
-          </p>
-          <div>crosses</div>
-
-          <figure className={s.post__image}>
+          <Paragraph $mt={64} $indent={1}>
+            Сама поликлиника состоит из&nbsp;двух объемов: непосредственно
+            здание поликлиники (детская и&nbsp;взрослая) и&nbsp;МСЧ
+            &#8470;&nbsp;57&nbsp;(корпус для сотрудников ИФВЭ). Между ними
+            надземный закрытый переход, а&nbsp;также зона парковки скорой
+            помощи.
+          </Paragraph>
+          <Paragraph $mt={32} $indent={1}>
+            С&nbsp;обратной стороны (стороны МСЧ) поликлиника расположена
+            на&nbsp;Т-образном перекрестке. Центральная часть с&nbsp;ребристым
+            декором, а&nbsp;по&nbsp;бокам окна двухэтаж-ного здания выполнены
+            таким образом, что мы&nbsp;видим два ряда красных крестов.
+          </Paragraph>
+          <RedCrosses />
+          <PostImage $mt={64}>
             <Image
               src="https://res.cloudinary.com/propromedia/image/upload/q_auto:best/v1674500034/articles/policlinic/image_6_1_rszwy4.jpg"
               width={960}
@@ -252,101 +294,113 @@ export default function polyclinic() {
             <figcaption className={s.post__image_caption}>
               Чашник Илья «Архитектон» 1925-1926. Гипс
             </figcaption>
-          </figure>
-
-          <p className={s.post__paragraph}>
-            Примечательно, что объем поликлиники вписан в единый ансамбль с
-            рядом стоящими зданиями общежитий по улице Ленина. А с другой
-            стороны своей плоской частью вписывается в параллель с главной
-            пешеходной улицей города.
-          </p>
-          <p className={s.post__paragraph}>
-            Цвета поликлиники: белый кирпич и светлая каменная штукатурка с
-            добавлением крошки декоративного камня, за счет которого поверхность
-            сверкает на солнце. Для цветовых акцентов выбран натуральный
-            терракотовый цвет. Сочетание этих материалов и цветов первоначально
-            задумано архитектором Д.И. Кориным при проектировании Протвино. 
-            Подобные решения мы можем видеть на других зданиях города:
-            Музыкальная школа, теоретический корпус ИФВЭ, Дом Ученых, Школа №3 и
-            другие.
-          </p>
-          <p className={s.post__paragraph}>
-            Что касается внутреннего убранства: как и во всем Протвино,
-            использованы натуральные материалы – дерево, натуральный камень.
-          </p>
-
-          <figure className={s.post__image}>
+          </PostImage>
+          <Paragraph $mt={64} $indent={1}>
+            Примечательно, что объем поликлиники вписан в&nbsp;единый ансамбль
+            с&nbsp;рядом стоящими зданиями общежитий по&nbsp;улице Ленина.
+            А&nbsp;с&nbsp;другой стороны своей плоской частью вписывается
+            в&nbsp;параллель с&nbsp;главной пешеходной улицей города.
+          </Paragraph>
+          <Paragraph $mt={32} $indent={1}>
+            Цвета поликлиники: белый кирпич и&nbsp;светлая каменная штукатурка
+            с&nbsp;добавлением крошки декоративного камня, за&nbsp;счет которого
+            поверхность сверкает на&nbsp;солнце. Для цветовых акцентов выбран
+            натуральный терракотовый цвет. Сочетание этих материалов
+            и&nbsp;цветов первоначально задумано архитектором Д.И. Кориным при
+            проектировании Протвино. Подобные решения мы&nbsp;можем видеть
+            на&nbsp;других зданиях города: Музыкальная школа, теоретический
+            корпус ИФВЭ, Дом Ученых, Школа &#8470;&nbsp;3&nbsp;и&nbsp;другие.
+          </Paragraph>
+          <Paragraph $mt={32} $indent={1}>
+            Что касается внутреннего убранства: как и&nbsp;во&nbsp;всем
+            Протвино, использованы натуральные материалы&nbsp;&mdash; дерево,
+            натуральный камень.
+          </Paragraph>
+          <PostImage $mt={64}>
             <Image
-              src="https://res.cloudinary.com/propromedia/image/upload/v1674500033/articles/policlinic/image_3_2_zfkzqn.webp "
+              src="https://res.cloudinary.com/propromedia/image/upload/v1683998248/articles/policlinic/image_1_eyaz43.webp"
               width={359}
-              height={245}
-              alt="Флюгер и поликлиника"
+              height={479}
+              alt="Лестничные марши рядом с лифтами"
             />
-          </figure>
-          <p className={s.post__paragraph}>
-            Еще одним памятником той эпохи являются металлические вывески –
-            яркий пример советского леттеринга этого периода.
-          </p>
-
-          <div className={s.post__collage}>
-            <figure className={s.post__image}>
-              <Image
-                src="https://res.cloudinary.com/propromedia/image/upload/v1674500033/articles/policlinic/image_11_wpfwo6.webp"
-                width={403}
-                height={264}
-                alt="Поликлиника фасад"
-              />
-            </figure>
-            <figure className={s.post__image}>
-              <Image
-                src="https://res.cloudinary.com/propromedia/image/upload/v1674500033/articles/policlinic/image_10_tn3snc.webp"
-                width={418}
-                height={264}
-                alt="Поликлиника фасад"
-              />
-            </figure>
-          </div>
-        </div>
-        <div className={s.post__part}>
-          <h3 className={s.post__subtitle}>Настоящее и будущее</h3>
-          <p className={s.post__paragraph}>
-            В новую эпоху гуманистический подтекст лечебных заведений померк —
-            знаменитую аптеку в Москве перекрасили, а потом переделали в
-            продуктовый. С нашей же поликлиники сняли родные вывески, по
-            официальной информации от администрации поликлиники они безвозвратно
-            утеряны.
-          </p>
-          <p className={s.post__paragraph}>
-            Фасад здания в рамках капитального ремонта на данный момент покрашен
-            в желто-коричневый цвет. Вместо 2-х вывесок будет одна типовая синяя
-            вывеска «Моя поликлиника».
-          </p>
-
-          <figure className={s.post__image}>
             <Image
-              src="https://res.cloudinary.com/propromedia/image/upload/v1674500033/articles/policlinic/image_9_1_qqj0yz.webp"
-              width={542}
-              height={406}
+              src="https://res.cloudinary.com/propromedia/image/upload/v1683998248/articles/policlinic/image_km6rtk.webp"
+              width={359}
+              height={479}
+              alt="Oткрытые пространства напротив окон дневного света."
+            />
+            <figcaption>
+              Лестничные марши рядом с лифтами, открытые пространства напротив
+              окон дневного света.
+            </figcaption>
+          </PostImage>
+          <PostImage $mt={64}>
+            <Image
+              src="https://res.cloudinary.com/propromedia/image/upload/v1683998248/articles/policlinic/image_2_2_xkf0yo.webp"
+              width={960}
+              height={598}
+              alt="Переход между зданиями поликлиники и МСЧ-57"
+            />
+            <figcaption>Переход между зданиями поликлиники и МСЧ-57</figcaption>
+          </PostImage>
+          <Paragraph $mt={64}>
+            Еще одним памятником той эпохи являются металлические
+            вывески&nbsp;&mdash; яркий пример советского леттеринга этого
+            периода.
+          </Paragraph>
+          <PostImage $mt={64}>
+            <Image
+              src="https://res.cloudinary.com/propromedia/image/upload/v1674500033/articles/policlinic/image_11_wpfwo6.webp"
+              width={403}
+              height={264}
+              alt="Поликлиника фасад"
+            />
+            <Image
+              src="https://res.cloudinary.com/propromedia/image/upload/v1674500033/articles/policlinic/image_10_tn3snc.webp"
+              width={418}
+              height={264}
+              alt="Поликлиника фасад"
+            />
+          </PostImage>
+
+          <SectionTitle>Настоящее и будущее</SectionTitle>
+          <Paragraph $mt={32} $indent={1}>
+            В&nbsp;новую эпоху гуманистический подтекст лечебных заведений
+            померк&nbsp;&mdash; знаменитую аптеку в&nbsp;Москве перекрасили,
+            а&nbsp;потом переделали в&nbsp;продуктовый. С&nbsp;нашей&nbsp;же
+            поликлиники сняли родные вывески, по&nbsp;официальной информации
+            от&nbsp;администрации поликлиники они безвозвратно утеряны.
+          </Paragraph>
+          <Paragraph $mt={32} $indent={1}>
+            Фасад здания в&nbsp;рамках капитального ремонта на&nbsp;данный
+            момент покрашен в&nbsp;желто-коричневый цвет. Вместо двух вывесок
+            будет одна типовая синяя вывеска &laquo;Моя поликлиника&raquo;.
+          </Paragraph>
+
+          <PostImage $mt={64}>
+            <Image
+              src="https://res.cloudinary.com/propromedia/image/upload/v1683999347/articles/policlinic/image_9_1_l0o0ds.webp"
+              width={960}
+              height={419}
               alt="Поликлиника перекрашенный фасад"
             />
-          </figure>
+          </PostImage>
 
-          <p className={s.post__paragraph}>
-            Как мы видим на этом примере, современная администрация не видит
-            архитектурной ценности исторических зданий и не воспринимает город
-            как единое целое. Результат этого печальный: город стремительно
-            теряет свой облик.
-          </p>
-          <p className={s.post__paragraph}>
-            Корень проблемы лежит в первую очередь в отсутствии позиции
-            архитектора и контроля этого вопроса на уровне города.
-          </p>
-          <p className={s.post__paragraph}>
-            Мы надеемся, что это ошибочное решение будет исправлено и
-            поликлинике вернут её «родной», задуманный архитекторами, цвет.
-          </p>
-        </div>
-      </article>
-    </div>
+          <Paragraph $mt={64}>
+            Как мы&nbsp;видим на&nbsp;этом примере, современная администрация
+            не&nbsp;видит архитектурной ценности исторических зданий
+            и&nbsp;не&nbsp;воспринимает город как единое целое. Результат этого
+            печальный: город стремительно теряет свой облик.
+          </Paragraph>
+          <Paragraph $mt={32}>
+            Корень проблемы лежит в&nbsp;первую очередь в&nbsp;отсутствии
+            позиции архитектора и&nbsp;контроля этого вопроса на&nbsp;уровне
+            города. Мы&nbsp;надеемся, что это ошибочное решение будет исправлено
+            и&nbsp;поликлинике вернут её&nbsp;&laquo;родной&raquo;, задуманный
+            архитекторами, цвет.
+          </Paragraph>
+        </PostGrid>
+      </PostContainer>
+    </Layout>
   );
 }
