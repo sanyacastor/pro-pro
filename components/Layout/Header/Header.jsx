@@ -30,7 +30,9 @@ export const Header = () => {
               </S.NavListItem>
             </S.Links>
             <S.NavListSocials>
-              <Link target="_blank" href={SOCIAL.instagram}>инст</Link>
+              <Link target="_blank" href={SOCIAL.instagram}>
+                инст
+              </Link>
             </S.NavListSocials>
             <S.MenuIcon
               $cross={menuVisible}
