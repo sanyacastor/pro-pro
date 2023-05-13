@@ -28,8 +28,9 @@ export default function AsideInfo({
       <div className={`${s.asideInfo__header}`}>
         <button className={s.asideInfo__closeButton} onClick={onClose}></button>
         <div
-          className={`${s.asideInfo__image} ]
-          }`}
+          className={[
+            `${s.asideInfo__image} ${s[`asideInfo__image--${type}`]}}`,
+          ]}
         >
           <Image
             src={image || images[type]}

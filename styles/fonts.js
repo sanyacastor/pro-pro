@@ -27,7 +27,7 @@ export const FontStyles = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    background: #e5e5e5;
+    background: #F8F3F3;
   }
 
   a {

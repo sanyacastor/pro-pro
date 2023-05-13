@@ -6,13 +6,13 @@ $map-kids-color: #78d7e0;
 $map-tourism-color: #48d27e;
 $map-ninety-color: #ffd15a;
 
-$map-lost-url: "https://res.cloudinary.com/propromedia/image/upload/v1667645828/oka_u8koha.webp";
-$map-art-url: "https://res.cloudinary.com/propromedia/image/upload/v1667646698/cvety_du_chgbpp.webp";
-$map-arch-url: "https://res.cloudinary.com/propromedia/image/upload/v1667645947/3shkola_weftt1.webp";
-$map-orbit-url: "https://res.cloudinary.com/propromedia/image/upload/v1667646900/orbita_rus_n02rrw.webp";
-$map-kids-url: "https://res.cloudinary.com/propromedia/image/upload/c_scale,w_1200/v1669533148/duotone_ekvwlp.webp";
-$map-tourism-url: "https://res.cloudinary.com/propromedia/image/upload/v1667646032/karier_kkdf7q.webp";
-$map-ninety-url: "https://res.cloudinary.com/propromedia/image/upload/v1667647196/nnt_silece_thoughts_2021_zwzc6x.webp";
+$map-lost-url: 'https://res.cloudinary.com/propromedia/image/upload/v1667645828/oka_u8koha.webp';
+$map-art-url: 'https://res.cloudinary.com/propromedia/image/upload/v1667646698/cvety_du_chgbpp.webp';
+$map-arch-url: 'https://res.cloudinary.com/propromedia/image/upload/v1667645947/3shkola_weftt1.webp';
+$map-orbit-url: 'https://res.cloudinary.com/propromedia/image/upload/v1667646900/orbita_rus_n02rrw.webp';
+$map-kids-url: 'https://res.cloudinary.com/propromedia/image/upload/c_scale,w_1200/v1669533148/duotone_ekvwlp.webp';
+$map-tourism-url: 'https://res.cloudinary.com/propromedia/image/upload/v1667646032/karier_kkdf7q.webp';
+$map-ninety-url: 'https://res.cloudinary.com/propromedia/image/upload/v1667647196/nnt_silece_thoughts_2021_zwzc6x.webp';
 
 .asideInfo {
   position: absolute;
@@ -71,7 +71,7 @@ $map-ninety-url: "https://res.cloudinary.com/propromedia/image/upload/v166764719
   text-transform: uppercase;
   color: #fff;
   font-weight: 400;
-  font-family: "Base&Bloom";
+  font-family: 'Base&Bloom';
   line-height: 1;
 }
 
@@ -87,17 +87,25 @@ $map-ninety-url: "https://res.cloudinary.com/propromedia/image/upload/v166764719
   margin-top: 12px;
   position: relative;
   font-size: 18px;
-  font-family: "Lack";
+  font-family: 'Lack';
   cursor: pointer;
 }
 
 .asideInfo__listItem::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   width: 24px;
   height: 24px;
   border-radius: 50%;
+}
+
+.asideInfo__image--lost {
+  background-color: $map-lost-color;
+}
+
+.asideInfo__image--art {
+  background-color: $map-art-color;
 }
 
 .asideInfo--lost {
@@ -186,7 +194,7 @@ $map-ninety-url: "https://res.cloudinary.com/propromedia/image/upload/v166764719
   overflow: scroll;
   margin: 24px 0;
 
-  font-family: "Piazzolla";
+  font-family: 'Piazzolla';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -209,5 +217,5 @@ $map-ninety-url: "https://res.cloudinary.com/propromedia/image/upload/v166764719
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 7px;
-  background-image: url("/images/icons/back_arrow.svg");
+  background-image: url('/images/icons/back_arrow.svg');
 }
