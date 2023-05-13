@@ -18,6 +18,7 @@ export const Wrapper = styled(Link)`
 
 export const BannerContainer = styled.div`
   max-width: 1600px;
+  padding: 0 32px;
   margin: 0 auto;
 
   display: flex;
