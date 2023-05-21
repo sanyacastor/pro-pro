@@ -11,7 +11,6 @@ export const Announcement = () => {
       <Container>
         <Header href={link}>
           <Title dangerouslySetInnerHTML={{ __html: title }} />
-          <Subtitle>{subtitle}</Subtitle>
         </Header>
       </Container>
     </Section>

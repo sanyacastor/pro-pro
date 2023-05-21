@@ -3,6 +3,10 @@ import Link from 'next/link';
 
 export const Footer = styled.footer`
   padding-bottom: 104px;
+
+  @media (max-width: 1160px) {
+    padding-bottom: 33px;
+  }
 `;
 
 export const FooterContainer = styled.div`
@@ -15,6 +19,14 @@ export const FooterContainer = styled.div`
   border-top: 2px solid #283428;
   padding: 0 70px;
   padding-top: 74px;
+
+  @media (max-width: 1160px) {
+    border-top: none;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 8px;
+    padding: 0 27px;
+  }
 `;
 
 export const LogoColumn = styled.div`
@@ -29,11 +41,23 @@ export const LogoSubtitle = styled.div`
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
+
+  @media (max-width: 1160px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 `;
 
 export const LogoText = styled.span`
   font-size: 80px;
   line-height: 1;
+
+  @media (max-width: 1160px) {
+    font-size: 40px;
+    display: block;
+    border-top: 1px solid #283428;
+    padding-top: 8px;
+  }
 `;
 
 export const DescriptionColumn = styled.div`
@@ -50,6 +74,10 @@ export const AboutUs = styled(Link)`
   font-style: italic;
 
   text-decoration-line: underline;
+
+  @media (max-width: 1160px) {
+    margin-top: 16px;
+  }
 `;
 
 export const Paragraph = styled.div``;
@@ -57,6 +85,12 @@ export const Paragraph = styled.div``;
 export const SocialColumn = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1160px) {
+    flex-direction: row;
+    gap: 36px;
+    margin-top: 26px;
+  }
 `;
 
 export const SocialLink = styled(Link)`
@@ -74,5 +108,19 @@ export const SocialLink = styled(Link)`
 
   & + & {
     margin-top: 16px;
+  }
+
+  @media (max-width: 1160px) {
+    width: 142px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 0;
+
+    & + & {
+      margin-top: 0;
+    }
   }
 `;

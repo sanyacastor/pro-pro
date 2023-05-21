@@ -14,6 +14,12 @@ export const Wrapper = styled(Link)`
 
   margin-bottom: 104px;
   overflow: hidden;
+
+  @media (max-width: 1160px) {
+    margin-bottom: 32px;
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
 `;
 
 export const BannerContainer = styled.div`
@@ -34,6 +40,11 @@ export const Subtitle = styled.div`
   font-size: 36px;
 
   color: #ffffff;
+
+  @media (max-width: 1160px) {
+    font-size: 18px;
+    line-height: 105%;
+  }
 `;
 
 export const Title = styled.div`
@@ -44,6 +55,11 @@ export const Title = styled.div`
   line-height: 106.5%;
 
   color: #ffffff;
+
+  @media (max-width: 1160px) {
+    font-size: 36px;
+    line-height: 90%;
+  }
 `;
 
 export const ColorDot = styled.div`

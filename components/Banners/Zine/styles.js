@@ -17,9 +17,15 @@ export const Wrapper = styled(Link)`
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: 50% 20%;
+
+  @media (max-width: 1160px) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
 `;
 
 export const BannerContainer = styled.div`
+  text-align: center;
   max-width: 1160px;
   margin: 0 auto;
 
@@ -27,12 +33,22 @@ export const BannerContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1160px) {
+    flex-direction: column-reverse;
+  }
 `;
+
 export const Subtitle = styled.div`
   font-family: 'Piazzolla';
   font-style: italic;
   font-weight: 500;
   font-size: 36px;
+
+  @media (max-width: 1160px) {
+    font-size: 18px;
+    line-height: 105%;
+  }
 `;
 
 export const Title = styled.div`
@@ -42,4 +58,9 @@ export const Title = styled.div`
   font-size: 100px;
   line-height: 106.5%;
   text-transform: uppercase;
+
+  @media (max-width: 1160px) {
+    font-size: 36px;
+    line-height: 90%;
+  }
 `;

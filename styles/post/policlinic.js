@@ -6,10 +6,16 @@ export const PostContainer = styled.div`
   width: 1160px;
   margin: 0 auto;
   font-size: 18px;
+  overflow: hidden;
 
   a {
     cursor: pointer;
     text-decoration: underline;
+  }
+
+  @media (max-width: 1160px) {
+    width: 100%;
+    padding: 8px;
   }
 `;
 
@@ -20,6 +26,11 @@ export const PostGrid = styled.div`
   flex-direction: column;
   position: relative;
   padding-bottom: 128px;
+
+  @media (max-width: 1160px) {
+    padding: 0 28px;
+    padding-bottom: 70px;
+  }
 `;
 
 export const PostHero = styled.div`
@@ -50,6 +61,11 @@ export const PostTitle = styled.h1`
   line-height: 70px;
   margin: 0;
   grid-column: 3/21;
+
+  @media (max-width: 1160px) {
+    font-size: 36px;
+    line-height: 32px;
+  }
 `;
 
 export const PostSubtitle = styled.h2`
@@ -109,6 +125,10 @@ export const Paragraph = styled.p`
   padding-left: ${({ $indent }) => $indent && `${$indent * 100}px`};
   margin-top: ${({ $mt }) => ($mt ? `${$mt}px` : `0`)};
   z-index: 11;
+
+  @media (max-width: 1160px) {
+    padding-left: 0;
+  }
 `;
 
 export const Tooltip = styled(ReactTooltip)`
@@ -134,6 +154,19 @@ export const PostImage = styled.figure`
 
   img + img {
     margin-left: 40px;
+  }
+
+  @media (max-width: 1160px) {
+    padding-left: 0;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    img + img {
+      margin-left: 0;
+    }
   }
 
   figcaption {

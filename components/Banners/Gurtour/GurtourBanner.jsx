@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, BannerContainer } from './styles';
+import { Wrapper, BannerContainer, ImageWrapper } from './styles';
 import Image from 'next/image';
 import { ParallaxProvider, useParallax } from 'react-scroll-parallax';
 
@@ -10,14 +10,14 @@ const CheburekImage = () => {
   });
 
   return (
-    <div ref={ref}>
+    <ImageWrapper ref={ref}>
       <Image
         src="/images/content/cheburek.png"
         width={126}
         height={126}
         alt="cheesy cheburek"
       />
-    </div>
+    </ImageWrapper>
   );
 };
 

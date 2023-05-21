@@ -14,6 +14,22 @@ export const Wrapper = styled(Link)`
   border-bottom: 1px solid #d9d9d9;
 
   margin-bottom: 104px;
+
+  @media (max-width: 1160px) {
+    font-size: 32px;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  @media (max-width: 1160px) {
+    width: 40px;
+    height: 40px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
 `;
 
 export const BannerContainer = styled.div`
@@ -24,4 +40,8 @@ export const BannerContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1160px) {
+    padding: 0 8px;
+  }
 `;

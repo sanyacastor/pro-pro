@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { MobileMenu } from './components';
 import { SOCIAL } from '../../../config';
 
 import * as S from './styles';
 
 export const Header = () => {
-  const [menuVisible, setMenuVisible] = useState(true);
+  const [menuVisible, setMenuVisible] = useState(false);
 
   return (
     <header>
@@ -38,13 +39,14 @@ export const Header = () => {
               $cross={menuVisible}
               onClick={() => setMenuVisible(!menuVisible)}
             >
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
+              <div className="bar1"></div>
+              <div className="bar2"></div>
+              <div className="bar3"></div>
             </S.MenuIcon>
           </S.NavList>
         </S.Navigation>
       </S.Header>
+      <MobileMenu isVisible={menuVisible} />
     </header>
   );
 };

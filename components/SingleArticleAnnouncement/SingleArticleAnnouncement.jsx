@@ -24,8 +24,8 @@ export const SingleArticleAnnouncement = () => {
             выбора:
           </ArticleTitle>
           <ArticleDescriptionText>
-            как молодые девушки принимали решение переехать в маленький городок
-            в лесу
+            как молодые девушки принимали решение переехать в&nbsp;маленький
+            городок в&nbsp;лесу
           </ArticleDescriptionText>
         </ArticleDescription>
       </Container>

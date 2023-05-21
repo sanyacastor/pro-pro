@@ -7,7 +7,7 @@ import s from './articles.module.scss';
 export const Articles = () => {
   return (
     <div className={s.articlesSection}>
-      <div className={s.articlesContainer}>
+      {/* <div className={s.articlesContainer}>
         <div className={s.articleColumn}>
           <a className={s.articleThumbnail}>
             <div className={s.articleThumbnail__image}>
@@ -28,7 +28,7 @@ export const Articles = () => {
             <p className={s.articleThumbnail__author}>анна медведкова</p>
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

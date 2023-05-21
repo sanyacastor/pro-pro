@@ -4,6 +4,11 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   width: 100%;
   margin-bottom: 104px;
+
+  @media (max-width: 1160px) {
+    padding: 0 27px;
+    overflow: hidden;
+  }
 `;
 
 export const Container = styled.div`
@@ -11,17 +16,31 @@ export const Container = styled.div`
   min-height: 480px;
 
   margin: 0 auto;
+  width: 100%;
   max-width: 1160px;
 
   display: flex;
   flex-direction: row;
   gap: 60px;
+
+  @media (max-width: 1160px) {
+    flex-direction: column;
+    gap: 32px;
+  }
 `;
 
-export const ArticleImage = styled(Image)``;
+export const ArticleImage = styled(Image)`
+  width: 100%;
+  height: auto;
+`;
 
 export const ArticleDescription = styled.div`
   max-width: 380px;
+
+  @media (max-width: 1160px) {
+    padding: 0 27px;
+    padding-bottom: 43px;
+  }
 `;
 
 export const ArticleTitle = styled.h3`
@@ -33,6 +52,10 @@ export const ArticleTitle = styled.h3`
   text-transform: uppercase;
   margin-top: 48px;
   margin-bottom: 0;
+
+  @media (max-width: 1160px) {
+    margin-top: 0;
+  }
 `;
 
 export const ArticleDescriptionText = styled.div`
@@ -52,5 +75,11 @@ export const ArticleDescriptionText = styled.div`
     height: 184px;
     background-image: url('/images/icons/preview_selection_icon.svg');
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 1160px) {
+      width: 305px;
+      height: 148px;
+    }
   }
 `;
