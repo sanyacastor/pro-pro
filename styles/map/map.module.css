@@ -19,20 +19,25 @@
 
 .mapToolBarTagList {
   width: 60%;
-  /* margin: 0 auto; */
 }
 
 @media (max-width: 780px) {
   .mapToolBarTagList {
     width: 100%;
     margin: 0 auto;
+    padding: 0 8px;
   }
 
   .mapToolBar {
     left: 0;
     width: 100%;
   }
+
+  .mapToolBar {
+    top: 82px;
+  }
 }
+
 
 .mapToolBarTag {
   font-family: "Lack";
