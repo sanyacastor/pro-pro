@@ -33,8 +33,10 @@ $map-ninety-url: 'https://res.cloudinary.com/propromedia/image/upload/v166764719
 
 @media (max-width: 780px) {
   .asideInfo {
-    width: 100vw;
+    width: Calc(100vw - 8px);
     z-index: 50;
+    left: 4px;
+    top: 60%
   }
 }
 
@@ -46,10 +48,8 @@ $map-ninety-url: 'https://res.cloudinary.com/propromedia/image/upload/v166764719
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
-  // padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  // min-height: 240px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
