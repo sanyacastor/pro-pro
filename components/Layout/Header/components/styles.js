@@ -4,13 +4,12 @@ export const MenuContainer = styled.div`
   height: 100vh;
   width: 100vw;
   position: fixed;
-  top: 75px;
   left: 0;
-  padding-top: 50px;
+  padding-top: 75px;
   background-color: #d9d9d9;
   transform: translateX(-100%);
   transition: all 0.3s ease;
-  z-index: 20;
+  z-index: 15;
 
   ${({ $isVisible }) =>
     $isVisible &&
