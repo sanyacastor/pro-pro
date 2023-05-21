@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Header = styled.div`
+export const Header = styled.header`
   padding: 25px 140px;
   display: flex;
   background: rgba(0, 0, 0, 0.4);
@@ -8,12 +8,11 @@ export const Header = styled.div`
   font-family: 'Lack';
   font-size: 20px;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 20;
-
   transition: background 0.3s ease;
 
   :hover {
@@ -82,6 +81,14 @@ export const NavListSocials = styled.li`
   @media screen and (max-width: 580px) {
     display: none;
   }
+`;
+
+export const MobileMenu = styled.div`
+  width: 100vw;
+  background: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
 `;
 
 export const MenuIcon = styled.div`

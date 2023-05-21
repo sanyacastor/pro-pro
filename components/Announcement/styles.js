@@ -17,6 +17,11 @@ export const Section = styled.div`
 export const Container = styled.div`
   max-width: 1400px;
   margin: 0 auto;
+
+  @media (max-width: 1160px) {
+    width: 100%;
+    padding: 0 28px;
+  }
 `;
 
 export const Header = styled(Link)`
@@ -35,6 +40,12 @@ export const Title = styled.div`
   text-align: center;
   margin: 0;
   width: 100%;
+
+  @media (max-width: 1160px) {
+    font-size: 36px;
+    line-height: 89%;
+    text-align: left;
+  }
 `;
 
 export const Subtitle = styled.div`
