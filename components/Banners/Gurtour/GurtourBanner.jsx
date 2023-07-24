@@ -1,7 +1,7 @@
 import React from 'react';
-import { Wrapper, BannerContainer, ImageWrapper } from './styles';
 import Image from 'next/image';
 import { ParallaxProvider, useParallax } from 'react-scroll-parallax';
+import { Wrapper, BannerContainer, ImageWrapper } from './styles';
 
 const CheburekImage = () => {
   const start = Math.floor(Math.random() * 360);
@@ -15,7 +15,8 @@ const CheburekImage = () => {
         src="/images/content/cheburek.png"
         width={126}
         height={126}
-        alt="cheesy cheburek"
+        alt="Cheesy cheburek"
+        loader={({ src }) => src}
       />
     </ImageWrapper>
   );
@@ -23,7 +24,7 @@ const CheburekImage = () => {
 
 export const GurtourBanner = () => (
   <ParallaxProvider>
-    <Wrapper href={'/'}>
+    <Wrapper href={'/gurtour'}>
       <BannerContainer>
         Г<CheburekImage />
         У<CheburekImage />

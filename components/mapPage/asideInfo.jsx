@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import s from '../../styles/map/asideInfo.module.scss';
 import Image from 'next/image';
 import { images } from './consts';
+import { CldImage } from 'next-cloudinary';
 
 export default function AsideInfo({
   currentPoint,
@@ -12,6 +13,15 @@ export default function AsideInfo({
   myMap,
 }) {
   const { title, description, image, type } = currentPoint;
+
+  const imageLoader = ({ src, width, quality }) => {
+    const local = src.includes('/images/');
+    const url = local
+      ? src
+      : `https://res.cloudinary.com/propromedia/image/upload/c_scale,w_1000/${src}`;
+
+    return url;
+  };
 
   const list = places.features.filter(
     (place) => place.properties.type === type
@@ -33,12 +43,12 @@ export default function AsideInfo({
           ]}
         >
           <Image
+            loader={imageLoader}
             src={image || images[type]}
-            key={image + images[type]}
+            key={image || images[type]}
             alt={title}
             width={380}
             height={285}
-            quality={100}
             objectFit="cover"
             priority
           />

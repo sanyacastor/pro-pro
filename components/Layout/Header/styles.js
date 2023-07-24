@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Header = styled.header`
   padding: 25px 140px;
@@ -14,10 +14,6 @@ export const Header = styled.header`
   width: 100%;
   z-index: 20;
   transition: background 0.3s ease;
-
-  :hover {
-    background: rgba(0, 0, 0, 0.8);
-  }
 
   @media screen and (max-width: 830px) {
     padding: 25px 25px;
@@ -66,6 +62,13 @@ export const NavListItem = styled.li`
   & + li {
     margin-left: 40px;
   }
+
+  ${({ $isCurrent }) =>
+    $isCurrent &&
+    css`
+      text-decoration: underline;
+      font-style: italic;
+    `}
 `;
 
 export const NavListSocials = styled.li`
@@ -85,7 +88,6 @@ export const NavListSocials = styled.li`
 
 export const MobileMenu = styled.div`
   width: 100vw;
-  background: blue;
   position: absolute;
   top: 0;
   left: 0;

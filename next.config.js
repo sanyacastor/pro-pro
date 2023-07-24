@@ -1,9 +1,16 @@
 const { withPlaiceholder } = require('@plaiceholder/next');
 
-const config = {
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+});
+
+const nextConfig = {
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   images: {
-    domains: ['res.cloudinary.com'],
+    loaders: ['cloudinary'],
+    path: 'https://res.cloudinary.com/propromedia/image/upload',
   },
 };
 
-module.exports = withPlaiceholder(config);
+const configWithMdx = withMDX(nextConfig);
+module.exports = withPlaiceholder(configWithMdx);

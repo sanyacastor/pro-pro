@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { MobileMenu } from './components';
 import { SOCIAL } from '../../../config';
@@ -7,6 +8,7 @@ import * as S from './styles';
 
 export const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const { pathname } = useRouter();
 
   return (
     <header>
@@ -17,14 +19,14 @@ export const Header = () => {
               <Link href="/">ПРО ПРО</Link>
             </S.NavListItem>
             <S.Links>
-              <S.NavListItem>
+              <S.NavListItem $isCurrent={pathname === '/map'}>
                 <Link href="/map">крта</Link>
               </S.NavListItem>
               <S.NavListItem>
                 <Link href="/">статьи</Link>
               </S.NavListItem>
-              <S.NavListItem>
-                <Link href="/">гуртур</Link>
+              <S.NavListItem $isCurrent={pathname === '/gurtour'}>
+                <Link href="/gurtour">гуртур</Link>
               </S.NavListItem>
               <S.NavListItem>
                 <Link href="/">о проекте</Link>

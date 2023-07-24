@@ -152,6 +152,10 @@ export const PostImage = styled.figure`
   margin-top: ${({ $mt }) => ($mt ? `${$mt}px` : `0`)};
   padding-left: ${({ $indent }) => $indent && `${$indent * 100}px`};
 
+  img {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
   img + img {
     margin-left: 40px;
   }

@@ -1,8 +1,8 @@
-import MapPage from '../components/mapPage/MapPage';
-
-import { promises as fs } from 'fs';
 import path from 'path';
+import { promises as fs } from 'fs';
+
 import { Header } from '../components/Layout';
+import MapPage from '../components/mapPage/MapPage';
 
 export default function Home({ points }) {
   return (
