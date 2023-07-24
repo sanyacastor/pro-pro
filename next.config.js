@@ -10,6 +10,19 @@ const nextConfig = {
     loaders: ['cloudinary'],
     path: 'https://res.cloudinary.com/propromedia/image/upload',
   },
+  async headers() {
+    return [
+      {
+        source: '/fonts/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 const configWithMdx = withMDX(nextConfig);
