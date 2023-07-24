@@ -5,7 +5,7 @@ export const Wrapper = styled(Link)`
   position: relative;
   display: block;
   width: 100%;
-  background-image: url('/images/content/map_banner.jpg');
+  background-image: url('/images/content/map_banner.webp');
   background-repeat: no-repeat;
   background-size: cover;
 

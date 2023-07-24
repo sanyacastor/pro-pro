@@ -16,6 +16,7 @@ export const SingleArticleAnnouncement = () => {
           src="/images/posts/preview_selection_history.jpg"
           width={600}
           height={480}
+          loader={({ src }) => src}
         />
         <ArticleDescription>
           <ArticleTitle>

@@ -1,6 +1,6 @@
 export const COVERS = {
   policlinic:
-    'https://res.cloudinary.com/propromedia/image/upload/v1683551526/articles/policlinic/Vector_sp1h7k.webp',
+    'https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/Vector_sp1h7k.webp',
 };
 
 export const HERO = {

@@ -4,7 +4,7 @@
     "exist": true,
     "type": "kids",
     "title": "Сфера",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/c_scale,w_1000/v1669540149/map/kids/sphera_dqjbpj.webp",
+    "image": "/c_scale,w_1000/v1669540149/map/kids/sphera_dqjbpj.webp",
     "description": "Конструкция в форме полусферы, в народе называют Сфера (иногда Луна и Сыр), выполнена из монолитного бетона"
   },
   {
@@ -12,7 +12,7 @@
     "exist": true,
     "type": "kids",
     "title": "Ракета",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/c_scale,w_1000/v1669540148/map/kids/raketa_gcwg7h.webp",
+    "image": "/c_scale,w_1000/v1669540148/map/kids/raketa_gcwg7h.webp",
     "description": "Конструкция в форме ракеты, выполнена из монолитного бетона "
   },
   {
@@ -284,7 +284,7 @@
     "exist": true,
     "type": "tourism",
     "title": "Старая мельница купцов Бобровых",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/c_scale,w_1000/v1674584227/map/tourism/melnica_vkb3kw.webp",
+    "image": "/c_scale,w_1000/v1674584227/map/tourism/melnica_vkb3kw.webp",
     "description": "Мельница с богатой историей, была построена в 1885 году, разрушена во время ВОВ и заброшена через какое-то время после. Естественный памятник героизму русских солдат, а также пример дореволюционной инженерной постройки."
   },
   {
@@ -292,7 +292,7 @@
     "exist": true,
     "type": "tourism",
     "title": "Подвесной мост",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/c_scale,w_1000/v1674584224/map/tourism/podvesnoi_jgn7bi.webp",
+    "image": "/c_scale,w_1000/v1674584224/map/tourism/podvesnoi_jgn7bi.webp",
     "description": "Действующий подвестной мост и одновременно фотогеничная достопримечательность, сделана руками жителей Протвино и д.Юрятино."
   },
   {
@@ -300,7 +300,7 @@
     "exist": true,
     "type": "tourism",
     "title": "Мемориал \"Рубеж обороны\"",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/c_scale,w_1000/v1674584224/map/tourism/rubezh_bue_i4q1eg.webp",
+    "image": "/c_scale,w_1000/v1674584224/map/tourism/rubezh_bue_i4q1eg.webp",
     "description": "В 1981 году по инициативе Совета ветеранов Великой Отечественной войны по проекту архитектора Лисицына на рубеже обороны воздвигнут памятник в честь воинов, остановивших врага. Памятник выполнен в виде гранитного куба, на вершину которого возложен лавровый венок, отлитый из чугуна. Рядом, на постаменте установлена противотанковая пушка. Восстановлены окопы и ходы сообщения, артиллерийские позиции. В 2021 году произведено благоустройство мемориала, которое внесло непоправимые изменения в его первоначальный вид."
   },
   {
@@ -308,7 +308,7 @@
     "exist": true,
     "type": "tourism",
     "title": "Карьер",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/c_scale,w_1000/v1674584226/map/tourism/karier_vdnexq.webp",
+    "image": "/c_scale,w_1000/v1674584226/map/tourism/karier_vdnexq.webp",
     "description": "Карьер был вырыт с целью добычи песка во время строительства ИФВЭ, после этого он был затоплен водой. Сейчас это излюбленное место отдыха местных жителей: песчаный пляж, прозрачная вода и сосны."
   },
   {
@@ -324,7 +324,7 @@
     "exist": false,
     "type": "lost",
     "title": "Юбилейный",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/v1674583399/map/lost/ubileinyi_jkoxrb.webp",
+    "image": "/v1674583399/map/lost/ubileinyi_jkoxrb.webp",
     "description": ""
   },
   {
@@ -332,7 +332,7 @@
     "exist": false,
     "type": "lost",
     "title": "Русь",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/v1674583399/map/lost/rus_bndkpj.webp",
+    "image": "/v1674583399/map/lost/rus_bndkpj.webp",
     "description": ""
   },
   {
@@ -340,7 +340,7 @@
     "exist": false,
     "type": "lost",
     "title": "Рябинка",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/v1674583399/map/lost/ryabinka_l9jljq.webp",
+    "image": "/v1674583399/map/lost/ryabinka_l9jljq.webp",
     "description": ""
   },
   {
@@ -373,7 +373,7 @@
     "exist": false,
     "type": "lost",
     "title": "Дружба",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/v1674583399/map/lost/druzhba_fjg6z3.webp",
+    "image": "/v1674583399/map/lost/druzhba_fjg6z3.webp",
     "description": ""
   },
   {
@@ -381,7 +381,7 @@
     "exist": false,
     "type": "lost",
     "title": "Бар",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/v1674583399/map/lost/bar_rvr8sv.webp",
+    "image": "/v1674583399/map/lost/bar_rvr8sv.webp",
     "description": ""
   },
   {
@@ -389,7 +389,7 @@
     "exist": true,
     "type": "lost",
     "title": "Ока",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/v1674583400/map/lost/oka_dmpwdu.webp",
+    "image": "/v1674583400/map/lost/oka_dmpwdu.webp",
     "description": ""
   },
 
@@ -398,7 +398,7 @@
     "exist": true,
     "type": "orbit",
     "title": "Точка на Крытом",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/v1667649946/map/Orbit/orbitakrytyi2_cxqdj5.webp",
+    "image": "/v1667649946/map/Orbit/orbitakrytyi2_cxqdj5.webp",
     "description": "Точка находится на Крытом рынке в торговом ряду."
   },
   {
@@ -406,7 +406,7 @@
     "exist": true,
     "type": "orbit",
     "title": "Точка около \"Руси\"",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/v1667649946/map/Orbit/orbita_rus_mhpaqf.webp",
+    "image": "/v1667649946/map/Orbit/orbita_rus_mhpaqf.webp",
     "description": "Точка находится около Руси в отдельно стоящем торговом павильоне."
   },
   {
@@ -414,7 +414,7 @@
     "exist": true,
     "type": "orbit",
     "title": "Точка на Бродвее",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/v1667649945/map/Orbit/orbita_broadway_zjhsps.webp",
+    "image": "/v1667649945/map/Orbit/orbita_broadway_zjhsps.webp",
     "description": "Точка находится на Бродвее в отдельно стоящем торговом павильоне."
   },
   {
@@ -422,7 +422,7 @@
     "exist": true,
     "type": "orbit",
     "title": "Точка на Молодежном",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/v1667649946/map/Orbit/orbita_molodesh_j86f0q.webp",
+    "image": "/v1667649946/map/Orbit/orbita_molodesh_j86f0q.webp",
     "description": "Точка находится около Пилы вдоль пешеходной дорожки в отдельно стоящем торговом павильоне."
   },
   {
@@ -430,7 +430,7 @@
     "exist": true,
     "type": "orbit",
     "title": "Точка в Центре",
-    "image": "https://res.cloudinary.com/propromedia/image/upload/v1667649945/map/Orbit/orbita_centr_ofhv1m.webp",
+    "image": "/v1667649945/map/Orbit/orbita_centr_ofhv1m.webp",
     "description": "Точка находится в палатке в торговых рядах напротив ДК."
   },
   {

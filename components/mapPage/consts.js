@@ -19,17 +19,13 @@ export const titles = {
 };
 
 export const images = {
-  kids: 'https://res.cloudinary.com/propromedia/image/upload/v1673030161/duotone_1_ntv5nd.webp',
-  arch: 'https://res.cloudinary.com/propromedia/image/upload/v1673030489/duotone_2_sbqgqj.webp',
-  lost: 'https://res.cloudinary.com/propromedia/image/upload/v1673030580/duotone_3_kmioi2.webp',
-  tourism:
-    'https://res.cloudinary.com/propromedia/image/upload/v1673030685/duotone_4_hndnpn.png',
-
-  art: 'https://res.cloudinary.com/propromedia/image/upload/v1673030886/duotone_5_rqsykt.webp',
-  orbit:
-    'https://res.cloudinary.com/propromedia/image/upload/v1673031107/duotone_7_xpf6ue.webp',
-  ninety:
-    'https://res.cloudinary.com/propromedia/image/upload/v1673031070/duotone_6_u3sqad.webp',
+  kids: '/v1673030161/duotone_1_ntv5nd.webp',
+  arch: '/v1673030489/duotone_2_sbqgqj.webp',
+  lost: '/v1673030580/duotone_3_kmioi2.webp',
+  tourism: '/v1673030685/duotone_4_hndnpn.png',
+  art: '/v1673030886/duotone_5_rqsykt.webp',
+  orbit: '/v1673031107/duotone_7_xpf6ue.webp',
+  ninety: '/v1673031070/duotone_6_u3sqad.webp',
 };
 
 export const descriptions = {
