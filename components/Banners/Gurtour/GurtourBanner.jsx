@@ -13,8 +13,8 @@ const CheburekImage = () => {
     <ImageWrapper ref={ref}>
       <Image
         src="/images/content/cheburek.png"
-        width={126}
-        height={126}
+        width={100}
+        height={100}
         alt="Cheesy cheburek"
         loader={({ src }) => src}
       />

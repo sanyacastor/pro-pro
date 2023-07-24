@@ -15,19 +15,19 @@ export const Wrapper = styled(Link)`
 
   margin-bottom: 104px;
 
-  @media (max-width: 1160px) {
+  @media (max-width: 760px) {
     font-size: 32px;
   }
 `;
 
 export const ImageWrapper = styled.div`
-  @media (max-width: 1160px) {
-    width: 40px;
-    height: 40px;
+  @media (max-width: 760px) {
+    width: 50px;
+    height: 50px;
 
     img {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
     }
   }
 `;
@@ -41,7 +41,7 @@ export const BannerContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 1160px) {
+  @media (max-width: 760px) {
     padding: 0 8px;
   }
 `;

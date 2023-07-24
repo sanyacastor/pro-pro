@@ -1,14 +1,14 @@
 import styled, { css } from 'styled-components';
 
 export const Header = styled.header`
-  padding: 25px 140px;
+  padding: 15px 140px;
   display: flex;
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
   font-family: 'Lack';
   font-size: 20px;
 
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -16,7 +16,7 @@ export const Header = styled.header`
   transition: background 0.3s ease;
 
   @media screen and (max-width: 830px) {
-    padding: 25px 25px;
+    padding: 15px 15px;
   }
 `;
 
