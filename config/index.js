@@ -5,7 +5,7 @@ export const COVERS = {
 
 export const HERO = {
   image: COVERS.policlinic,
-  link: '/post/polyclinic',
+  link: '/article/polyclinic',
   subtitle: 'Может добавить небольшое описание',
   title: 'ПОЛИКЛИНИКА <br /> ИлИ АРХиТЕКТУРНЫЙ <br /> ПАМЯТНИК',
 };

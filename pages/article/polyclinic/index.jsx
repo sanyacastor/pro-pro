@@ -1,7 +1,6 @@
 import React from 'react';
 import { CldImage } from 'next-cloudinary';
 
-import s from './styles.module.scss';
 import 'react-tooltip/dist/react-tooltip.css';
 
 import {
@@ -12,19 +11,22 @@ import {
   PostSubtitle,
   PostAuthor,
   PostImage,
+  PoliclinicCollage,
   Tooltip,
   Paragraph,
+  ItalicAccent,
   SectionTitle,
   CirceSquareCross,
   ParagraphWithBackground,
   SquareFigure,
   Cross,
   RedCrosses,
-} from '../../../styles/post/policlinic';
+} from '../../../components/UI/Article';
+import { Layout } from '../../../components/Layout';
 
 export default function Polyclinic() {
   return (
-    <>
+    <Layout>
       <PostHero>
         <PostContainer>
           <PostTitle>
@@ -59,10 +61,7 @@ export default function Polyclinic() {
           </Paragraph>
 
           <Paragraph $indent={2} $size={28} $mt={56}>
-            Выражение{' '}
-            <span className={s.post__paragraph_accent}>
-              architecture parlante
-            </span>{' '}
+            Выражение <ItalicAccent>architecture parlante</ItalicAccent>{' '}
             (&laquo;говорящая архитектура&raquo;) относится к&nbsp;зданиям,
             внешняя форма которых максимально выражает свою функцию или
             художественную идею, предложенную архитектором.
@@ -83,6 +82,7 @@ export default function Polyclinic() {
               width={660}
               height={388}
               alt="Архитекторы: А.Ларин, Е.Асс, Л.Волчек, 1973 год"
+              quality={70}
             />
             <figcaption>
               Архитекторы: А.Ларин, Е.Асс, Л.Волчек, 1973 год{' '}
@@ -118,36 +118,36 @@ export default function Polyclinic() {
             </Paragraph>
             <CirceSquareCross />
           </ParagraphWithBackground>
-
-          <div className={s.post__collage}>
-            <figure className={s.post__image}>
+          <PoliclinicCollage>
+            <figure>
               <CldImage
                 src="/articles/policlinic/image_2_1_kwz9jz"
                 width={462}
                 height={440}
                 alt="К. С. Малевич, “Чёрный крест”, 1915"
+                quality={70}
               />
-              <figcaption className={s.post__image_caption}>
-                К. С. Малевич, “Чёрный крест”, 1915
-              </figcaption>
+              <figcaption>К. С. Малевич, “Чёрный крест”, 1915</figcaption>
             </figure>
-            <figure className={s.post__image}>
+            <figure>
               <CldImage
                 src="/articles/policlinic/image_14_xq2poo"
                 width={260}
                 height={451}
                 alt="Композиция из гипса"
+                quality={70}
               />
             </figure>
-            <figure className={s.post__image}>
+            <figure>
               <CldImage
                 src="/articles/policlinic/image_34_mlavlb"
                 width={360}
                 height={286}
                 alt="Композиция из гипса"
+                quality={70}
               />
             </figure>
-          </div>
+          </PoliclinicCollage>
           <ParagraphWithBackground $mt={38}>
             <Paragraph $indent={2}>
               С&nbsp;помощью этой концепции художник предлагал переосмыслить
@@ -177,7 +177,7 @@ export default function Polyclinic() {
               height={437}
               alt="К.С. Малевич. Архитектон «Альфа», 1920. Гипс."
             />
-            <figcaption className={s.post__image_caption}>
+            <figcaption>
               К.С. Малевич. Архитектон «Альфа», 1920. Гипс.
             </figcaption>
           </PostImage>
@@ -220,9 +220,7 @@ export default function Polyclinic() {
               height={317}
               alt="Чашник Илья «Архитектон» 1925-1926. Гипс"
             />
-            <figcaption className={s.post__image_caption}>
-              Чашник Илья «Архитектон» 1925-1926. Гипс
-            </figcaption>
+            <figcaption>Чашник Илья «Архитектон» 1925-1926. Гипс</figcaption>
           </PostImage>
 
           <Paragraph $mt={64}>
@@ -264,9 +262,7 @@ export default function Polyclinic() {
               height={321}
               alt="Поликлиника фасад"
             />
-            <figcaption className={s.post__image_caption}>
-              Чашник Илья «Архитектон» 1925-1926. Гипс
-            </figcaption>
+            <figcaption>Чашник Илья «Архитектон» 1925-1926. Гипс</figcaption>
           </PostImage>
 
           <Paragraph $mt={64} $indent={1}>
@@ -290,9 +286,7 @@ export default function Polyclinic() {
               height={615}
               alt="Поликлиника фасад"
             />
-            <figcaption className={s.post__image_caption}>
-              Чашник Илья «Архитектон» 1925-1926. Гипс
-            </figcaption>
+            <figcaption>Чашник Илья «Архитектон» 1925-1926. Гипс</figcaption>
           </PostImage>
           <Paragraph $mt={64} $indent={1}>
             Примечательно, что объем поликлиники вписан в&nbsp;единый ансамбль
@@ -317,6 +311,9 @@ export default function Polyclinic() {
           </Paragraph>
           <PostImage $mt={64}>
             <CldImage
+              config={{
+                quality: 100,
+              }}
               src="/articles/policlinic/image_1_eyaz43.jpg"
               width={359}
               height={479}
@@ -324,9 +321,13 @@ export default function Polyclinic() {
             />
             <CldImage
               src="/articles/policlinic/image_km6rtk"
+              quality={100}
               width={359}
               height={479}
               alt="Oткрытые пространства напротив окон дневного света."
+              config={{
+                quality: 100,
+              }}
             />
             <figcaption>
               Лестничные марши рядом с лифтами, открытые пространства напротив
@@ -335,6 +336,7 @@ export default function Polyclinic() {
           </PostImage>
           <PostImage $mt={64}>
             <CldImage
+              quality={100}
               src="/articles/policlinic/image_2_2_xkf0yo"
               width={960}
               height={598}
@@ -400,6 +402,6 @@ export default function Polyclinic() {
           </Paragraph>
         </PostGrid>
       </PostContainer>
-    </>
+    </Layout>
   );
 }

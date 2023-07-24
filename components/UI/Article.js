@@ -6,7 +6,6 @@ export const PostContainer = styled.div`
   width: 1160px;
   margin: 0 auto;
   font-size: 18px;
-  overflow: hidden;
 
   a {
     cursor: pointer;
@@ -16,6 +15,7 @@ export const PostContainer = styled.div`
   @media (max-width: 1160px) {
     width: 100%;
     padding: 8px;
+    overflow: hidden;
   }
 `;
 
@@ -166,10 +166,12 @@ export const PostImage = styled.figure`
     img {
       max-width: 100%;
       height: auto;
+      width: 100%;
     }
 
     img + img {
       margin-left: 0;
+      margin-top: 16px;
     }
   }
 
@@ -233,4 +235,61 @@ export const RedCrosses = styled.div`
   margin-left: -100px;
   margin-top: 64px;
   z-index: 1;
+`;
+
+export const ItalicAccent = styled.span`
+  font-family: 'Piazzolla';
+  font-style: italic;
+  color: #e07031;
+`;
+
+export const PoliclinicCollage = styled.div`
+  grid-column: 3/21;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: repeat(11, 1fr 40px) 1fr;
+  margin-top: 245px;
+  margin-bottom: 115px;
+
+  figure:nth-child(1) {
+    margin-top: 120px;
+    grid-row: 1/3;
+    grid-column: 3/12;
+  }
+
+  figure:nth-child(2) {
+    grid-row: 1/1;
+    grid-column: 15/20;
+  }
+
+  figure:nth-child(3) {
+    margin-top: 24px;
+    grid-row: 2/2;
+    grid-column: 15/22;
+  }
+
+  figcaption {
+    font-family: 'Lack';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 80%;
+    color: #5f5f5f;
+    margin-top: 8px;
+  }
+
+  @media (max-width: 1160px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+
+    figure {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    figure + figure {
+      margin-top: 16px;
+    }
+  }
 `;

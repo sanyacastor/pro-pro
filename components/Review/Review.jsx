@@ -2,7 +2,7 @@ import React from 'react';
 import { CldImage } from 'next-cloudinary';
 
 import { ReviewContainer } from '../UI/Container';
-import { Paragraph } from '../../styles/post/policlinic';
+import { Paragraph } from '../UI/Article';
 import { Stat } from './components/Stat';
 
 import { Features } from './components/Features';

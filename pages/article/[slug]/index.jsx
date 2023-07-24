@@ -5,6 +5,7 @@ import matter from 'gray-matter';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import { useRouter } from 'next/router';
+import { Layout } from '../../../components/Layout';
 
 const renderers = {
   image: (image) => {
@@ -50,21 +51,20 @@ export async function getStaticProps({ params }) {
 
 export default function Post({ content }) {
   return (
-    <article>
-      <div>
-        {/* {query?.slug} */}
-        {content && (
-          <ReactMarkdown components={renderers}>{content}</ReactMarkdown>
-        )}
-      </div>
-    </article>
+    <Layout>
+      <article>
+        <div>
+          {content && (
+            <ReactMarkdown components={renderers}>{content}</ReactMarkdown>
+          )}
+        </div>
+      </article>
+    </Layout>
   );
 }
 
 export async function getStaticPaths() {
   const files = fs.readdirSync('content/posts');
-
-  console.log('FILES', files);
 
   const paths = files.map((filename) => ({
     params: {

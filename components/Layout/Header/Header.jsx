@@ -11,7 +11,7 @@ export const Header = () => {
   const { pathname } = useRouter();
 
   return (
-    <header>
+    <>
       <S.Header>
         <S.Navigation>
           <S.NavList>
@@ -49,6 +49,6 @@ export const Header = () => {
         </S.Navigation>
       </S.Header>
       <MobileMenu isVisible={menuVisible} />
-    </header>
+    </>
   );
 };
