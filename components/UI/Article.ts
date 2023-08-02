@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
-import { COVERS } from '../../config';
 
 export const PostContainer = styled.div`
   width: 1160px;
@@ -25,7 +24,7 @@ export const PostGrid = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-bottom: 128px;
+  padding-bottom: 100px;
 
   @media (max-width: 1160px) {
     padding: 0 28px;
@@ -33,9 +32,9 @@ export const PostGrid = styled.div`
   }
 `;
 
-export const PostHero = styled.div`
-  background: ${() => ` linear-gradient(180deg, rgba(217, 217, 217, 0) -8.33%, rgba(51, 0, 0, 0.29) 55.43%, rgba(51, 0, 0, 0.42) 99.44%), url(${COVERS.policlinic});
-`};
+export const PostHero = styled.div<{ cover: string }>`
+  background: ${({ cover }) =>
+    `linear-gradient(180deg, rgba(217, 217, 217, 0) -8.33%, rgba(51, 0, 0, 0.29) 55.43%, rgba(51, 0, 0, 0.42) 99.44%), url(${cover});`};
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -109,7 +108,12 @@ export const PostAuthor = styled.span`
   color: #eceaea;
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.p<{
+  $size?: number;
+  $indent?: number;
+  $mt?: number;
+  $mb?: number;
+}>`
   position: relative;
   font-family: 'Piazzolla';
   font-style: normal;
@@ -124,6 +128,7 @@ export const Paragraph = styled.p`
 
   padding-left: ${({ $indent }) => $indent && `${$indent * 100}px`};
   margin-top: ${({ $mt }) => ($mt ? `${$mt}px` : `0`)};
+  margin-bottom: ${({ $mb }) => ($mb ? `${$mb}px` : `0`)};
   z-index: 11;
 
   @media (max-width: 1160px) {
@@ -147,8 +152,13 @@ export const Tooltip = styled(ReactTooltip)`
   max-width: 300px;
 `;
 
-export const PostImage = styled.figure`
+export const PostImage = styled.figure<{
+  $size?: number;
+  $indent?: number;
+  $mt?: number;
+}>`
   margin: 0;
+  padding: 0;
   margin-top: ${({ $mt }) => ($mt ? `${$mt}px` : `0`)};
   padding-left: ${({ $indent }) => $indent && `${$indent * 100}px`};
 
@@ -179,13 +189,15 @@ export const PostImage = styled.figure`
     font-family: 'Lack';
     font-weight: 400;
     font-size: 14px;
-    line-height: 80%;
+    line-height: 120%;
     color: #5f5f5f;
     margin-top: 8px;
   }
 `;
 
-export const ParagraphWithBackground = styled.div`
+export const ParagraphWithBackground = styled.div<{
+  $mt?: number;
+}>`
   margin-top: ${({ $mt }) => ($mt ? `${$mt}px` : `0`)};
   position: relative;
 `;

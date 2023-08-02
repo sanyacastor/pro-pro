@@ -23,11 +23,12 @@ import {
   RedCrosses,
 } from '../../../components/UI/Article';
 import { Layout } from '../../../components/Layout';
+import { COVERS } from '../../../config';
 
 export default function Polyclinic() {
   return (
     <Layout>
-      <PostHero>
+      <PostHero cover={COVERS.policlinic}>
         <PostContainer>
           <PostTitle>
             Поликлиника <br /> или архитектурный <br /> памятник

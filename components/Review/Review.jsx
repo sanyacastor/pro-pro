@@ -9,7 +9,6 @@ import { Features } from './components/Features';
 import { MDXRemote } from 'next-mdx-remote';
 
 import * as S from './styles';
-import 'swiper/css';
 
 const PostImage = ({ children }) => <S.Image>{children}</S.Image>;
 
@@ -35,6 +34,7 @@ const components = {
         height={height}
         width={width}
         sizes="100vw"
+        quality={100}
       />
     );
   },
