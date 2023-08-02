@@ -1,74 +1,52 @@
 import React from 'react';
 import fs from 'fs';
-import path from 'path';
 import matter from 'gray-matter';
-import Image from 'next/image';
-import ReactMarkdown from 'react-markdown';
-import { useRouter } from 'next/router';
-import { Layout } from '../../../components/Layout';
+import { serialize } from 'next-mdx-remote/serialize';
 
-const renderers = {
-  image: (image) => {
-    return <Image src={image.src} alt={image.alt} height="200" width="300" />;
-  },
-};
+import { Article } from '../../../components/Article/Article';
+
+export default function Post({ markdown, title, author, heroImage }) {
+  return (
+    <Article
+      markdown={markdown}
+      title={title}
+      author={author}
+      heroImage={heroImage}
+    />
+  );
+}
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
 
-  const folder = 'content/posts/';
+  const folder = 'content/articles/';
+
   const markdownWithMetadata = fs
-    .readFileSync(`${folder}${slug}.md`, 'utf-8')
+    .readFileSync(`${folder}${slug}.mdx`, 'utf-8')
     .toString();
 
-  const { data, content } = matter(markdownWithMetadata);
+  const { content, data } = matter(markdownWithMetadata);
+  const mdxSource = await serialize(content);
+
+  const { title, author, heroImage } = data;
 
   return {
     props: {
       slug,
-      content: content,
+      title,
+      author,
+      heroImage,
+      markdown: mdxSource,
     },
   };
-
-  // // Convert post date to format: Month day, Year
-  // const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  // const formattedDate = data.date.toLocaleDateString('en-US', options);
-
-  // return frontmatter;
-
-  // // const frontmatter = {
-  // //   ...data,
-  // //   date: formattedDate,
-  // // };
-
-  // // return {
-  // //   props: {
-  // //     content: `# ${data.title}\n${content}`,
-  // //     frontmatter,
-  // //   },
-  // // };
-}
-
-export default function Post({ content }) {
-  return (
-    <Layout>
-      <article>
-        <div>
-          {content && (
-            <ReactMarkdown components={renderers}>{content}</ReactMarkdown>
-          )}
-        </div>
-      </article>
-    </Layout>
-  );
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync('content/posts');
+  const files = fs.readdirSync('content/articles/');
 
   const paths = files.map((filename) => ({
     params: {
-      slug: filename.replace('.md', ''),
+      slug: filename.replace('.mdx', ''),
     },
   }));
 
