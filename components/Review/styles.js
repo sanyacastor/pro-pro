@@ -42,10 +42,21 @@ export const PostContainer = styled.div`
   margin-bottom: 107px;
 `;
 
+export const ImagesRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  figure + figure {
+    margin-left: 40px;
+  }
+`;
+
 export const Image = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  width: 100%;
 
   margin-top: 64px;
 
@@ -60,5 +71,12 @@ export const Image = styled.div`
 
   img {
     width: 100%;
+  }
+
+  @media (max-width: 760px) {
+    img {
+      /* width: 90vw; */
+      height: auto;
+    }
   }
 `;

@@ -1,23 +1,25 @@
 import { SwiperSlide, Swiper } from 'swiper/react';
 
+import * as S from './style';
+
 import {
   Bullet,
   PostSubtitle,
   PostTitle,
   ArticleImage,
   Paragraph,
-} from 'components/UI';
+} from '../UI';
 
 export const components = {
   h1: PostTitle,
   h3: PostSubtitle,
   Bullet,
   Slider: ({ children }) => (
-    <div style={{ width: '640px', marginLeft: '60px' }}>
+    <S.SliderWrapper>
       <Swiper spaceBetween={0} slidesPerView={1} navigation={true}>
         {children}
       </Swiper>
-    </div>
+    </S.SliderWrapper>
   ),
   Slide: SwiperSlide,
   p: ({ children, ...restProps }) => (
@@ -25,5 +27,7 @@ export const components = {
       {children}
     </Paragraph>
   ),
-  img: ({ alt, src }) => <ArticleImage meta={alt} src={src} />,
+  img: ({ alt, src }) => {
+    return <ArticleImage meta={alt} src={src} />;
+  },
 };
