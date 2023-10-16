@@ -7,9 +7,11 @@ export const ArticleImage = ({ src, meta }) => {
   const substrings = meta?.split('{');
   const alt = substrings[0].trim();
 
-  const width = substrings[1]?.match(/(?<=w:\s?)\d+/g)[0] || 800;
-  const height = substrings[1]?.match(/(?<=h:\s?)\d+/g)[0] || 400;
-  const pl = substrings[1]?.match(/(?<=pl:\s?)\d+/g) || 0;
+  const width = substrings[1]?.match(/w\s*:\s*(\d+)/)[1] || 800;
+  const height = substrings[1]?.match(/h\s*:\s*(\d+)/)[1] || 400;
+  const pl = substrings[1]?.match(/pl\s*:\s*(\d+)/)
+    ? substrings[1]?.match(/pl\s*:\s*(\d+)/)[1]
+    : 0;
 
   return (
     <S.SliderImage $pl={pl}>
