@@ -1,5 +1,6 @@
-import Head from 'next/head';
 import React from 'react';
+import Head from 'next/head';
+import remarkUnwrapImages from 'remark-unwrap-images';
 import { Layout } from '../../components/Layout';
 import { Hero } from '../../components/shared/PostHero';
 
@@ -48,7 +49,11 @@ export async function getStaticProps({ params }) {
     .toString();
 
   const { content, data } = matter(markdownWithMetadata);
-  const mdxSource = await serialize(content);
+  const mdxSource = await serialize(content, {
+    mdxOptions: {
+      remarkPlugins: [remarkUnwrapImages],
+    },
+  });
 
   const { avgPrice, workingHours, address, title, description, features } =
     data;

@@ -18,7 +18,14 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-export const Title = styled.div``;
+export const Title = styled.div`
+  @media (max-width: 760px) {
+    img {
+      max-width: 80vw;
+      height: auto;
+    }
+  }
+`;
 export const Subtitle = styled.div`
   font-family: 'Piazzolla';
   font-weight: 500;

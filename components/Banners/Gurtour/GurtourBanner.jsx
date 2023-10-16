@@ -17,6 +17,7 @@ const CheburekImage = () => {
         height={100}
         alt="Cheesy cheburek"
         loader={({ src }) => src}
+        unoptimized
       />
     </ImageWrapper>
   );
