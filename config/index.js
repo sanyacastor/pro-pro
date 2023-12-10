@@ -1,4 +1,5 @@
 export const COVERS = {
+  istoriiVybora: '/article/istorii_vybora/thumbnail.png',
   policlinic:
     'https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/Vector_sp1h7k.webp',
   chtoTakoeSovetskyModernizm:
