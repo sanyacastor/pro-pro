@@ -13,8 +13,6 @@ export const Wrapper = styled(Link)`
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
-  margin-bottom: 104px;
-
   @media (max-width: 760px) {
     font-size: 32px;
   }

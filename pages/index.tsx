@@ -6,8 +6,6 @@ import { Articles } from '../components/Articles/Articles';
 import { GurtourBanner, MapBanner, ZineBanner } from '../components/Banners';
 import { SingleArticleAnnouncement } from '../components/SingleArticleAnnouncement';
 
-import styles from '../styles/Home.module.scss';
-
 function Home() {
   return (
     <>
@@ -15,14 +13,12 @@ function Home() {
         <title>Про про | locals for locals</title>
       </Head>
       <Layout>
-        <main className={styles.main}>
-          <Announcement />
-          <Articles />
-          <GurtourBanner />
-          <SingleArticleAnnouncement />
-          <ZineBanner />
-          <MapBanner />
-        </main>
+        <Announcement />
+        <Articles />
+        <GurtourBanner />
+        <SingleArticleAnnouncement />
+        <ZineBanner />
+        <MapBanner />
       </Layout>
     </>
   );

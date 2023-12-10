@@ -25,6 +25,7 @@ export const FontStyles = createGlobalStyle`
 
   html,
   body {
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     background: #F8F3F3;
