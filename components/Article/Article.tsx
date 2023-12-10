@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
 import { Layout } from '../Layout';
-import {
-  PostAuthor,
-  PostContainer,
-  PostHero,
-  PostTitle,
-  PostGrid,
-} from '../UI/Article';
-import { MDXRemote } from 'next-mdx-remote';
-import { components } from './helpers';
+// import { PostAuthor, PostHero, PostGrid } from '../UI/Article';
+// import { MDXRemote } from 'next-mdx-remote';
+// import { components } from './helpers';
 
 import 'swiper/css';
 
@@ -24,7 +18,7 @@ export const Article = ({ markdown, title, author, heroImage }) => {
 
   return (
     <Layout>
-      <PostHero cover={heroImage}>
+      {/* <PostHero cover={heroImage}>
         <PostContainer>
           {title && <PostTitle>{title}</PostTitle>}
           {author && <PostAuthor>АВТОР: {author}</PostAuthor>}
@@ -34,7 +28,7 @@ export const Article = ({ markdown, title, author, heroImage }) => {
         <PostGrid padding={2}>
           <MDXRemote {...markdown} components={components} />
         </PostGrid>
-      </PostContainer>
+      </PostContainer> */}
     </Layout>
   );
 };

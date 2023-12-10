@@ -11,7 +11,6 @@ import {
   PoliclinicCollage,
   Tooltip,
   Paragraph,
-  SectionTitle,
   CirceSquareCross,
   ParagraphWithBackground,
   SquareFigure,
@@ -26,6 +25,7 @@ import { COVERS } from '../../../config';
 
 import { ArticleContainer } from '../../../components/UI/Generic';
 import { Container } from './styles';
+import { SectionTitle } from '../../../components/UI';
 
 export default function Polyclinic() {
   return (
