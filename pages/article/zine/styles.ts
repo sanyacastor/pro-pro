@@ -45,3 +45,5 @@ export const HeroInner = styled.div`
     }
   }
 `;
+
+export default function () {}

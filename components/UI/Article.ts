@@ -75,18 +75,6 @@ export const PostSubtitle = styled.h2`
   line-height: 100%;
 `;
 
-export const SectionTitle = styled.h3`
-  margin-top: 128px;
-  margin-bottom: 0;
-  grid-column: 3/21;
-
-  font-family: 'Piazzolla';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 100%;
-`;
-
 export const PostAuthor = styled.span`
   margin-top: 16px;
   display: block;
