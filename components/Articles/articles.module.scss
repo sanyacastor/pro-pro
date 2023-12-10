@@ -23,24 +23,12 @@
 }
 
 .articleThumbnail {
-  height: 500px;
   cursor: pointer;
 }
 
 .articleThumbnail__image {
-  height: 300px;
-  background: #68a372;
-}
-
-.articleThumbnail__title {
-  font-family: 'Base&Bloom';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 90%;
-  color: #171f2e;
-  margin-top: 16px;
-  margin-bottom: 0;
+  width: 100%;
+  height: auto;
 }
 
 .articleThumbnail__author {

@@ -5,14 +5,19 @@ import * as S from './style';
 import {
   Bullet,
   PostSubtitle,
-  PostTitle,
   ArticleImage,
   Paragraph,
+  SectionTitle,
+  ArticleTitle,
 } from '../UI';
 
 export const components = {
-  h1: PostTitle,
-  h3: PostSubtitle,
+  h1: ArticleTitle,
+  h2: PostSubtitle,
+  h3: SectionTitle,
+  Section: ({ children, color }) => (
+    <section style={{ background: color }}>{children}</section>
+  ),
   Bullet,
   Slider: ({ children }) => (
     <S.SliderWrapper>

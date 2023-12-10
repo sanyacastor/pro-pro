@@ -26,12 +26,12 @@ export const Article = ({ markdown, title, author, heroImage }) => {
     <Layout>
       <PostHero cover={heroImage}>
         <PostContainer>
-          <PostTitle>{title}</PostTitle>
-          <PostAuthor>АВТОР: {author}</PostAuthor>
+          {title && <PostTitle>{title}</PostTitle>}
+          {author && <PostAuthor>АВТОР: {author}</PostAuthor>}
         </PostContainer>
       </PostHero>
       <PostContainer>
-        <PostGrid>
+        <PostGrid padding={2}>
           <MDXRemote {...markdown} components={components} />
         </PostGrid>
       </PostContainer>
