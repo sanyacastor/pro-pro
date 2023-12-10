@@ -2,10 +2,6 @@ import { withPlaiceholder } from '@plaiceholder/next';
 
 const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-  images: {
-    loaders: ['cloudinary'],
-    path: 'https://res.cloudinary.com/propromedia/image/upload',
-  },
   async headers() {
     return [
       {
