@@ -10,7 +10,7 @@ import {
 
 export const SingleArticleAnnouncement = () => {
   return (
-    <Wrapper>
+    <Wrapper href="/article/istorii-vybora">
       <Container>
         <ArticleImage
           src="/images/posts/preview_selection_history.jpg"

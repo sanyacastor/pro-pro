@@ -1,38 +1,19 @@
 import styled from 'styled-components';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 
-export const PostContainer = styled.div`
-  width: 1160px;
-  margin: 0 auto;
-  font-size: 18px;
-
-  a {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-
-  @media (max-width: 1160px) {
-    width: 100%;
-    padding: 8px;
-    overflow: hidden;
-  }
-`;
-
 export const PostGrid = styled.div`
-  margin-top: 64px;
-  padding: 0 100px;
+  padding: ${({ padding = 1 }) => `0 ${padding * 100}px`};
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-bottom: 100px;
 
-  @media (max-width: 1160px) {
-    padding: 0 28px;
+  @media (max-width: 960px) {
+    padding: 0;
     padding-bottom: 70px;
   }
 `;
 
-export const PostHero = styled.div<{ cover: string }>`
+export const PostHero = styled.div<{ cover: string; bgColor?: string }>`
   background: ${({ cover }) =>
     `linear-gradient(180deg, rgba(217, 217, 217, 0) -8.33%, rgba(51, 0, 0, 0.29) 55.43%, rgba(51, 0, 0, 0.42) 99.44%), url(${cover});`};
   background-size: cover;
@@ -40,6 +21,9 @@ export const PostHero = styled.div<{ cover: string }>`
   text-align: center;
   padding-top: 130px;
   padding-bottom: 53px;
+  min-height: 430px;
+
+  background: ${({ bgColor }) => bgColor};
 
   font-family: 'BASE&BLOOM';
   font-style: normal;
@@ -48,9 +32,22 @@ export const PostHero = styled.div<{ cover: string }>`
   line-height: 88%;
 
   color: #ebe6da;
+
+  @media (max-width: 960px) {
+    min-height: 375px;
+
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    padding: 42px;
+  }
 `;
 
-export const PostTitle = styled.h1`
+export const ArticleTitle = styled.h1`
   font-family: 'Base&Bloom';
   text-transform: uppercase;
   line-height: 120%;
@@ -59,16 +56,15 @@ export const PostTitle = styled.h1`
   font-size: 80px;
   line-height: 70px;
   margin: 0;
-  grid-column: 3/21;
 
-  @media (max-width: 1160px) {
+  @media (max-width: 960px) {
     font-size: 36px;
     line-height: 32px;
   }
 `;
 
 export const PostSubtitle = styled.h2`
-  margin-top: 56px;
+  margin: 0;
   margin-bottom: 32px;
   grid-column: 3/21;
 
@@ -113,6 +109,7 @@ export const Paragraph = styled.p<{
   $indent?: number;
   $mt?: number;
   $mb?: number;
+  italic?: boolean;
 }>`
   position: relative;
   font-family: 'Piazzolla';
@@ -130,6 +127,8 @@ export const Paragraph = styled.p<{
   margin-top: ${({ $mt }) => ($mt ? `${$mt}px` : `0`)};
   margin-bottom: ${({ $mb }) => ($mb ? `${$mb}px` : `0`)};
   z-index: 11;
+
+  font-style: ${({ italic }) => italic && `italic`};
 
   @media (max-width: 1160px) {
     padding-left: 0;
@@ -170,7 +169,7 @@ export const PostImage = styled.figure<{
     margin-left: 40px;
   }
 
-  @media (max-width: 1160px) {
+  @media (max-width: 960px) {
     padding-left: 0;
 
     img {
@@ -249,9 +248,8 @@ export const RedCrosses = styled.div`
   z-index: 1;
 `;
 
-export const ItalicAccent = styled.span`
+export const Accent = styled.span`
   font-family: 'Piazzolla';
-  font-style: italic;
   color: #e07031;
 `;
 
@@ -289,12 +287,13 @@ export const PoliclinicCollage = styled.div`
     margin-top: 8px;
   }
 
-  @media (max-width: 1160px) {
+  @media (max-width: 960px) {
     display: flex;
     flex-direction: column;
     margin-top: 32px;
 
     figure {
+      text-align: center;
       width: 100%;
       margin: 0;
       padding: 0;
@@ -303,5 +302,24 @@ export const PoliclinicCollage = styled.div`
     figure + figure {
       margin-top: 16px;
     }
+  }
+`;
+
+export const ArticleSubtitle = styled.h2`
+  font-family: 'Piazzolla';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 100%;
+
+  margin: 0;
+  margin-bottom: 32px;
+
+  @media (max-width: 960px) {
+    font-size: 28px;
+    line-height: 100%;
+
+    margin-top: 32px;
+    margin-bottom: 16px;
   }
 `;

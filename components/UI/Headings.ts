@@ -19,14 +19,13 @@ export const Subtitle = styled.p`
   margin-top: 8px;
 `;
 
-export const Heading = styled.h3`
+export const SectionTitle = styled.h3`
   font-family: 'Piazzolla';
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
   line-height: 48px;
   line-height: 100%;
-  margin-top: 64px;
 `;
 
 export const Bullet = styled.span<{ mt?: number }>`
