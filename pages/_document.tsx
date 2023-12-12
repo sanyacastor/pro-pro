@@ -47,6 +47,13 @@ export default class MyDocument extends Document {
           />
           <link
             rel="preload"
+            href="/fonts/Piazzolla-Italic.woff2"
+            as="font"
+            type="font/woff"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
             href="/fonts/lack-regular-webfont.woff"
             as="font"
             type="font/woff"

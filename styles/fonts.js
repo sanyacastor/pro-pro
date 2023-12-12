@@ -23,6 +23,13 @@ export const FontStyles = createGlobalStyle`
     font-style: normal;
   }
 
+  @font-face {
+    font-family: "Piazzolla";
+    src: url('/fonts/Piazzolla-Italic.woff2') format("woff2");
+    font-weight: 400;
+    font-style: italic;
+  }
+
   html,
   body {
     scroll-behavior: smooth;
