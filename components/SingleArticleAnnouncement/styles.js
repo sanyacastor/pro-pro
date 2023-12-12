@@ -41,8 +41,11 @@ export const Container = styled.div`
 `;
 
 export const ArticleImage = styled(Image)`
-  width: 100%;
   height: auto;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
 `;
 
 export const ArticleDescription = styled.div`
