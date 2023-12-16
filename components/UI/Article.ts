@@ -57,6 +57,8 @@ export const ArticleTitle = styled.h1`
   line-height: 70px;
   margin: 0;
 
+  color: #f8f3f3;
+
   @media (max-width: 960px) {
     font-size: 36px;
     line-height: 32px;
@@ -117,6 +119,10 @@ export const Paragraph = styled.p<{
   z-index: 11;
 
   font-style: ${({ italic }) => italic && `italic`};
+
+  & + & {
+    margin-top: 32px;
+  }
 
   @media (max-width: 1160px) {
     padding-left: 0;

@@ -26,6 +26,7 @@ export const Title = styled.div`
     }
   }
 `;
+
 export const Subtitle = styled.div`
   font-family: 'Piazzolla';
   font-weight: 500;
@@ -37,3 +38,21 @@ export const Subtitle = styled.div`
 
   color: #fff282;
 `;
+
+export const ReviewList = styled.ul`
+  margin-top: 52px;
+
+  list-style: none;
+
+  color: #fff282;
+
+  text-align: center;
+  font-family: 'Piazzolla';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 134.5%;
+  text-transform: uppercase;
+`;
+
+export const ReviewLink = styled.li``;

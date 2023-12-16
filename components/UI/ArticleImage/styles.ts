@@ -36,14 +36,12 @@ export const ArticleImage = styled.figure<{
 
 export const SliderImage = styled.figure<{
   $pl?: number;
+  $mt?: number;
 }>`
   margin: 0;
   padding: 0;
   padding-left: ${({ $pl }) => $pl && `${$pl}px`};
-
-  img {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+  margin-top: ${({ $mt }) => ($mt ? '0px' : `${$mt}px`)};
 
   @media (max-width: 1160px) {
     padding-left: 0;
