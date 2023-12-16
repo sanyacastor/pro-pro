@@ -47,6 +47,8 @@ export const ImagesRow = styled.div`
   flex-direction: row;
   flex-wrap: nowrap;
 
+  margin-top: 64px;
+
   figure + figure {
     margin-left: 40px;
   }

@@ -39,7 +39,7 @@ export const Review = ({
       <S.Title>{title}</S.Title>
       <S.Subtitle>{description}</S.Subtitle>
       <S.StatsRow>
-        <Stat title="Адресс" content={address} />
+        <Stat title="Адрес" content={address} />
         <Stat title="Часы работы" content={workingHours} />
         <Stat title="Средний чек" content={avgPrice} />
       </S.StatsRow>

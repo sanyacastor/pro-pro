@@ -88,7 +88,7 @@ export const ArticleDescriptionText = styled.div`
     content: '';
     position: absolute;
     left: -33px;
-    width: 376px;
+    width: 380px;
     height: 184px;
     background-image: url('/images/icons/preview_selection_icon.svg');
     background-repeat: no-repeat;

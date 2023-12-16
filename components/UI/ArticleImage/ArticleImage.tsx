@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as S from './styles';
-import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 
 export const ArticleImage = ({ src, meta }) => {
   const substrings = meta?.split('{');
@@ -9,13 +9,17 @@ export const ArticleImage = ({ src, meta }) => {
 
   const width = substrings[1]?.match(/w\s*:\s*(\d+)/)[1] || 800;
   const height = substrings[1]?.match(/h\s*:\s*(\d+)/)[1] || 400;
+
   const pl = substrings[1]?.match(/pl\s*:\s*(\d+)/)
     ? substrings[1]?.match(/pl\s*:\s*(\d+)/)[1]
     : 0;
+  const mt = substrings[1]?.match(/ml\s*:\s*(\d+)/)
+    ? substrings[1]?.match(/ml\s*:\s*(\d+)/)[1]
+    : 0;
 
   return (
-    <S.SliderImage $pl={pl}>
-      <CldImage
+    <S.SliderImage $pl={pl} $mt={mt}>
+      <Image
         src={src}
         alt={alt}
         height={height}
