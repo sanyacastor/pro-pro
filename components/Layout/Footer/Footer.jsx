@@ -21,7 +21,7 @@ export const Footer = () => (
           Вместе с вами исследуем Протвино, его наследие и развитие, создаем,
           поддерживаем и освещаем локальные инициативы.
         </S.Paragraph>
-        <S.AboutUs href={'/'}>Подробнее о проекте</S.AboutUs>
+        <S.AboutUs href={'/about-us'}>Подробнее о проекте</S.AboutUs>
       </S.DescriptionColumn>
 
       <S.SocialColumn>

@@ -24,13 +24,13 @@ export const Articles = () => {
             thumbnail="/article/chto-takoe-sovetsky-modernizm/thumbnail.png"
             url="/article/chto-takoe-sovetsky-modernizm"
             title="ПРО СОВЕТСКИЙ МОДЕРНИЗМ"
-            author={null}
+            author="анна медведкова"
           />
           <ArticleThumbnail
-            thumbnail="/article/chto-takoe-sovetsky-modernizm/thumbnail.png"
+            thumbnail="/article/fizika-v-protvino/thumbnail.png"
             url="/article/chto-takoe-sovetsky-modernizm"
             title="ФИЗИКА В ПРОТВИНО"
-            author="анна медведкова"
+            author="Катя Алейникова"
           />
         </Styled.Articles>
       </Styled.ArticlesContainer>
