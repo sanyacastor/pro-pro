@@ -20,7 +20,7 @@ export const Header = () => {
             </S.NavListItem>
             <S.Links>
               <S.NavListItem $isCurrent={pathname === '/map'}>
-                <Link href="/map">крта</Link>
+                <Link href="/map">карта</Link>
               </S.NavListItem>
               <S.NavListItem>
                 <Link href="/">статьи</Link>
