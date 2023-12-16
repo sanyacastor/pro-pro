@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import s from '../../styles/map/asideInfo.module.scss';
 import Image from 'next/image';
 import { images } from './consts';
-import { CldImage } from 'next-cloudinary';
 
 export default function AsideInfo({
   currentPoint,

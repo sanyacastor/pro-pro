@@ -22,14 +22,14 @@ export const Header = () => {
               <S.NavListItem $isCurrent={pathname === '/map'}>
                 <Link href="/map">карта</Link>
               </S.NavListItem>
-              <S.NavListItem>
+              <S.NavListItem $isCurrent={pathname === '/'}>
                 <Link href="/">статьи</Link>
               </S.NavListItem>
               <S.NavListItem $isCurrent={pathname === '/gurtour'}>
                 <Link href="/gurtour">гуртур</Link>
               </S.NavListItem>
-              <S.NavListItem>
-                <Link href="/">о проекте</Link>
+              <S.NavListItem $isCurrent={pathname === '/about-us'}>
+                <Link href="/about-us">о проекте</Link>
               </S.NavListItem>
             </S.Links>
             <S.NavListSocials>

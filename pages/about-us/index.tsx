@@ -1,57 +1,59 @@
 import React from 'react';
 
-import {
-  ArticleSubtitle,
-  Paragraph,
-  PostHero,
-  SectionTitle,
-} from '../../components/UI';
+import { ArticleSubtitle, Paragraph, SectionTitle } from '../../components/UI';
 import {
   ArticleContainer,
   Container,
   Section,
 } from '../../components/UI/Generic';
-import { Header, Layout } from '../../components/Layout';
+import { Layout } from '../../components/Layout';
+
+import * as S from './styles';
+import { FeedbackBanner, SocialBanner } from '../../components/Banners';
 
 export default function GurTourPage() {
   return (
     <Layout>
-      <PostHero cover="/article/chto-takoe-sovetsky-modernizm/hero.png" />
+      <S.Hero>
+        <S.HeroTitle>ПРОПРО</S.HeroTitle>
+        <S.HeroSubtitle>
+          локАльное медиа
+          <br /> о Протвино
+        </S.HeroSubtitle>
+      </S.Hero>
       <ArticleContainer>
         <Container>
-          <ArticleSubtitle>
-            Протвино в кармане — у города есть зин!
-          </ArticleSubtitle>
+          <S.SectionTitle>кто мы</S.SectionTitle>
           <Paragraph>
-            Так звучал заголовок газеты «Протвино Сегодня» в августе 2022-го.
+            Всех нас, создателей этого локального медиа, объединяет одно: мы
+            выросли в&nbsp;Протвино. Наши родители приехали сюда сразу после
+            института в&nbsp;новую жизнь.
           </Paragraph>
-          <Section>
-            <SectionTitle>О протвинском зине</SectionTitle>
-            <Paragraph>
-              Зин, он&nbsp;же zine (сокращение от&nbsp;англ.
-              Magazine)&nbsp;&mdash; это малотиражный журнал, любительское
-              независимое издание о&nbsp;чем-либо, которое выпускается
-              энтузиастами. Скорее это предмет искусства, чем периодическое
-              издание. Ценность зина в&nbsp;его уникальности, дизайне
-              и&nbsp;личном отношении к&nbsp;производству, ведь каждый экземпляр
-              складывается и&nbsp;нумеруется вручную. Зин, который
-              мы&nbsp;сделали, про Протвино&nbsp;&mdash; город, в&nbsp;котором
-              мы&nbsp;родились и&nbsp;выросли, город, который сильно изменился
-              за&nbsp;последние годы. У&nbsp;Протвино множество уникальных
-              и&nbsp;самобытных аспектов: архитектурных, визуальных,
-              исторических. Но&nbsp;с&nbsp;каждым годом они все меньше заметны,
-              и&nbsp;мы&nbsp;все реже говорим о&nbsp;них. В&nbsp;нашем зине
-              мы&nbsp;собрали основные факты про историю Протвино и&nbsp;его
-              особенности. А&nbsp;ещё рассказали про места, которые пока еще
-              можно посетить&nbsp;&mdash; подготовили маршрут для
-              самостоятельной прогулки и&nbsp;взаимодействия с&nbsp;городом.
-              Таким образом для тех, кто никогда не&nbsp;был в&nbsp;Протвино,
-              эта маленькая книжечка может стать путеводителем, а&nbsp;жителям
-              она напомнит о&nbsp;том, какая интересная история у&nbsp;нашего
-              уютного городка.
-            </Paragraph>
-          </Section>
+          <Paragraph>
+            Здесь все были так или иначе связаны с&nbsp;физикой. Здесь дружили
+            семьями. Детьми мы&nbsp;шагали по&nbsp;тропам среди сосен
+            в&nbsp;школу и&nbsp;музыкалку. Все окружающее казалось естественным.
+            Невозможно было представить, что где-то живут по-другому.
+          </Paragraph>
+          <Paragraph>
+            Что где-то нет деревьев и&nbsp;сосен прямо в&nbsp;твоем дворе. Что
+            нельзя пройти весь город пешком и&nbsp;дойти в&nbsp;любую точку
+            за&nbsp;15&nbsp;минут. Что нет пентагона, муравейников, пил
+            и&nbsp;других замысловатых домов.
+          </Paragraph>
+          <S.SectionTitle>что вы найдете на сайте</S.SectionTitle>
+          <Paragraph>
+            Наш амбициозный план – собрать и визуализировать информацию о
+            Протвино, а также дать возможность другим людям узнать про него
+            больше и поделиться своими воспоминания и впечатлениями. Тут вы не
+            найдете энциклопедию о городе, но найдете опыт как прошлого, так и
+            настоящего.
+          </Paragraph>
         </Container>
+        <S.Banners>
+          <FeedbackBanner />
+          <SocialBanner />
+        </S.Banners>
       </ArticleContainer>
     </Layout>
   );

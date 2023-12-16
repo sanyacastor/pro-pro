@@ -18,7 +18,7 @@ export const MobileMenu = ({ isVisible }) => (
         <Link href="/gurtour">гуртур</Link>
       </S.NavListItem>
       <S.NavListItem>
-        <Link href="/">о проекте</Link>
+        <Link href="/about-us">о проекте</Link>
       </S.NavListItem>
       <S.NavListSocials>
         <Link target="_blank" href={SOCIAL.instagram}>

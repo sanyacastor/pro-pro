@@ -1,7 +1,6 @@
-import Link from 'next/link';
 import styled from 'styled-components';
 
-export const Wrapper = styled(Link)`
+export const Wrapper = styled.section`
   position: relative;
   display: block;
   width: 100%;

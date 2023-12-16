@@ -1,7 +1,6 @@
-import Link from 'next/link';
 import styled from 'styled-components';
 
-export const Wrapper = styled(Link)`
+export const Wrapper = styled.section`
   display: block;
   font-family: 'Base&Bloom';
   font-style: normal;

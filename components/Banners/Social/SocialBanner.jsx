@@ -2,7 +2,7 @@ import React from 'react';
 import { Wrapper, BannerContainer, Subtitle, Title } from './styles';
 
 export const SocialBanner = () => (
-  <Wrapper href="#">
+  <Wrapper>
     <BannerContainer>
       <Title>Подписывайтесь на наши соцсети,</Title>
       <Subtitle>
