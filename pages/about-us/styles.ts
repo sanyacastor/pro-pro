@@ -74,4 +74,4 @@ export const Banners = styled.div`
   margin-top: 125px;
 `;
 
-export default {}
+export default function () {}
