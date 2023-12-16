@@ -6,11 +6,10 @@ import { SOCIAL } from '../../../../config';
 import * as S from './styles';
 
 export const MobileMenu = ({ isVisible }) => (
-  //   <S.MobileMenu $isVisible={isVisible}>
   <S.MenuContainer $isVisible={isVisible}>
     <S.Links>
       <S.NavListItem>
-        <Link href="/map">крта</Link>
+        <Link href="/map">карта</Link>
       </S.NavListItem>
       <S.NavListItem>
         <Link href="/">статьи</Link>
@@ -33,5 +32,4 @@ export const MobileMenu = ({ isVisible }) => (
       </S.NavListSocials>
     </S.Links>
   </S.MenuContainer>
-  //   </S.MobileMenu>
 );
