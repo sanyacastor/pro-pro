@@ -1,15 +1,12 @@
 import React from 'react';
 
-import { ArticleSubtitle, Paragraph, SectionTitle } from '../../components/UI';
-import {
-  ArticleContainer,
-  Container,
-  Section,
-} from '../../components/UI/Generic';
+import { Paragraph } from '../../components/UI';
+import { ArticleContainer, Container } from '../../components/UI/Generic';
 import { Layout } from '../../components/Layout';
 
 import * as S from './styles';
 import { FeedbackBanner, SocialBanner } from '../../components/Banners';
+import Image from 'next/image';
 
 export default function GurTourPage() {
   return (
@@ -22,12 +19,28 @@ export default function GurTourPage() {
         </S.HeroSubtitle>
       </S.Hero>
       <ArticleContainer>
-        <Container>
+        <S.Container>
           <S.SectionTitle>кто мы</S.SectionTitle>
+          <S.DashaImage>
+            <Image
+              src="/images/about-us/d.png"
+              width={184}
+              height={184}
+              alt=""
+            />
+          </S.DashaImage>
           <Paragraph>
             Всех нас, создателей этого локального медиа, объединяет одно: мы
             выросли в&nbsp;Протвино. Наши родители приехали сюда сразу после
             института в&nbsp;новую жизнь.
+            <S.AnnImage>
+              <Image
+                src="/images/about-us/andn.png"
+                width={184}
+                height={184}
+                alt=""
+              />
+            </S.AnnImage>
           </Paragraph>
           <Paragraph>
             Здесь все были так или иначе связаны с&nbsp;физикой. Здесь дружили
@@ -48,8 +61,24 @@ export default function GurTourPage() {
             больше и поделиться своими воспоминания и впечатлениями. Тут вы не
             найдете энциклопедию о городе, но найдете опыт как прошлого, так и
             настоящего.
+            <S.SanyaImage>
+              <Image
+                src="/images/about-us/s.png"
+                width={184}
+                height={184}
+                alt=""
+              />
+            </S.SanyaImage>
+            <S.NadyaImage>
+              <Image
+                src="/images/about-us/n.png"
+                width={184}
+                height={184}
+                alt=""
+              />
+            </S.NadyaImage>
           </Paragraph>
-        </Container>
+        </S.Container>
         <S.Banners>
           <FeedbackBanner />
           <SocialBanner />

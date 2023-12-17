@@ -1,5 +1,22 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  width: 560px;
+  margin: 0 auto;
+  font-size: 18px;
+  position: relative;
+
+  @media (max-width: 560px) {
+    max-width: 560px;
+
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+  position: relative;
+`;
+
 export const Hero = styled.div<{ bgColor?: string }>`
   background: linear-gradient(
       180deg,
@@ -72,6 +89,28 @@ export const SectionTitle = styled.h3`
 
 export const Banners = styled.div`
   margin-top: 125px;
+`;
+
+export const DashaImage = styled.div`
+  position: absolute;
+  left: -240px;
+`;
+
+export const AnnImage = styled.div`
+  position: absolute;
+  right: -190px;
+`;
+
+export const SanyaImage = styled.div`
+  position: absolute;
+  top: 0;
+  left: -220px;
+`;
+
+export const NadyaImage = styled.div`
+  position: absolute;
+  top: 20px;
+  right: -230px;
 `;
 
 export default function () {}

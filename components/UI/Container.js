@@ -13,7 +13,6 @@ export const PostContainer = styled.div`
 
   @media (max-width: 1160px) {
     width: 100%;
-    padding: 8px;
   }
 `;
 
@@ -32,6 +31,6 @@ export const ReviewContainer = styled.div`
 
   @media (max-width: 760px) {
     width: 100%;
-    padding: 8px;
+    padding: 0 8px;
   }
 `;
