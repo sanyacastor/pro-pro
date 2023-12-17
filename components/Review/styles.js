@@ -5,6 +5,17 @@ export const StatsRow = styled.div`
   flex-direction: row;
   width: 100%;
   gap: 100px;
+
+  @media (max-width: 760px) {
+    gap: 16px;
+    flex-wrap: wrap;
+
+    padding-top: 10px;
+    padding-bottom: 18px;
+
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+  }
 `;
 
 export const Title = styled.h2`
@@ -15,6 +26,10 @@ export const Title = styled.h2`
   line-height: 80%;
   text-transform: uppercase;
   margin-bottom: 0;
+
+  @media (max-width: 760px) {
+    font-size: 36px;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -24,6 +39,11 @@ export const Subtitle = styled.p`
   font-size: 50px;
   line-height: 48px;
   margin-top: 8px;
+
+  @media (max-width: 760px) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 `;
 
 export const Heading = styled.h3`
@@ -40,6 +60,10 @@ export const FeaturesRow = styled.div``;
 
 export const PostContainer = styled.div`
   margin-bottom: 107px;
+
+  @media (max-width: 760px) {
+    margin-bottom: 32px;
+  }
 `;
 
 export const ImagesRow = styled.div`
@@ -51,6 +75,14 @@ export const ImagesRow = styled.div`
 
   figure + figure {
     margin-left: 40px;
+  }
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+
+    figure + figure {
+      margin-left: 0;
+    }
   }
 `;
 

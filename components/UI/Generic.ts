@@ -12,7 +12,7 @@ export const Container = styled.div`
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 8px;
   }
 `;
 
@@ -50,6 +50,7 @@ export const Figure = styled.figure<{ pl: number }>`
 
   @media (max-width: 960px) {
     margin: 32px 0;
+    padding-left: 0;
   }
 `;
 

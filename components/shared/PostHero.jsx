@@ -19,6 +19,11 @@ const PostHero = styled.div`
   line-height: 88%;
 
   color: #ebe6da;
+
+  img {
+    max-width: 80%;
+    height: auto;
+  }
 `;
 
 export const Hero = () => {

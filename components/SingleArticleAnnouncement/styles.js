@@ -11,7 +11,7 @@ export const Wrapper = styled(Link)`
   margin-bottom: 104px;
 
   @media (max-width: 960px) {
-    padding: 0 27px;
+    padding: 0 8px;
 
     margin-top: 45px;
     margin-bottom: 26px;
@@ -50,7 +50,7 @@ export const ArticleImage = styled(Image)`
 
 export const ArticleDescription = styled.div`
   @media (max-width: 960px) {
-    padding: 0 27px;
+    padding: 0 8px;
     padding-bottom: 43px;
     background: #d8cbff;
     max-width: 100%;
