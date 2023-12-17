@@ -24,6 +24,8 @@ export const Navigation = styled.nav`
   margin: 0;
   padding: 0;
   width: 100%;
+  display: flex;
+  align-items: center
 `;
 
 export const Links = styled.div`
