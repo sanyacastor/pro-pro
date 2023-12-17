@@ -20,8 +20,6 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   @media (max-width: 760px) {
-    background: blue;
-
     img {
       max-width: 80vw;
       height: auto;

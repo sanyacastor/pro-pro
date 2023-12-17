@@ -45,7 +45,6 @@ export const Navigation = styled.div`
     height: 26px;
 
     border-radius: 50%;
-    background: blue;
   }
 
   #olga-link::before {
