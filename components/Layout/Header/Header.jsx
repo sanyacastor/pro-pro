@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useLockBodyScroll } from 'react-use';
+
 import { MobileMenu } from './components';
 import { SOCIAL } from '../../../config';
 
@@ -9,6 +11,8 @@ import * as S from './styles';
 export const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
   const { pathname } = useRouter();
+
+  useLockBodyScroll(menuVisible);
 
   return (
     <>
