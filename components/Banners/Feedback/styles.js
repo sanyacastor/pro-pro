@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 
-export const Wrapper = styled.section`
+export const Wrapper = styled(Link)`
   position: relative;
   display: block;
   width: 100%;
@@ -14,7 +15,7 @@ export const Wrapper = styled.section`
   overflow: hidden;
 
   @media (max-width: 1160px) {
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
     padding-top: 52px;
     padding-bottom: 52px;
   }
@@ -34,7 +35,7 @@ export const BannerContainer = styled.div`
 export const Subtitle = styled.div`
   font-family: 'Piazzolla';
   font-style: italic;
-  font-weight: 500;
+  font-weight: normal;
 
   font-size: 26px;
   line-height: 35px;

@@ -24,12 +24,12 @@ export const Articles = () => {
             thumbnail="/article/chto-takoe-sovetsky-modernizm/thumbnail.png"
             url="/article/chto-takoe-sovetsky-modernizm"
             title="ПРО СОВЕТСКИЙ МОДЕРНИЗМ"
-            author="анна медведкова"
+            author="Аня Медведкова"
           />
           <ArticleThumbnail
-            thumbnail="/article/fizika-v-protvino/thumbnail.png"
-            url="/article/chto-takoe-sovetsky-modernizm"
-            title="ФИЗИКА В ПРОТВИНО"
+            thumbnail="/article/uskoritel-v-protvino/thumbnail.png"
+            url="/article/uskoritel-v-protvino"
+            title="УСКОРИТЕЛЬ В ПРОТВИНО"
             author="Катя Алейникова"
           />
         </Styled.Articles>

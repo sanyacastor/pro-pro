@@ -2,5 +2,11 @@
   "[mdx]": {
     "editor.wordWrap": "on"
   },
-  "cSpell.words": ["Cheburek", "Piazzolla", "plaiceholder", "webfont"]
+  "cSpell.words": [
+    "Cheburek",
+    "Piazzolla",
+    "plaiceholder",
+    "Swiper",
+    "webfont"
+  ]
 }

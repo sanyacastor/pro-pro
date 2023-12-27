@@ -1,8 +1,8 @@
 import React from 'react';
-import { Wrapper, BannerContainer, Subtitle, Title } from './styles';
+import { Wrapper, BannerContainer, Subtitle } from './styles';
 
 export const FeedbackBanner = () => (
-  <Wrapper href={null}>
+  <Wrapper href="mailto:eclair.canonique@gmail.com">
     <BannerContainer>
       <Subtitle>
         Если у вас есть какие-то истории, идеи,

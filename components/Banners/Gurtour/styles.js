@@ -14,18 +14,21 @@ export const Wrapper = styled(Link)`
   border-bottom: 1px solid #d9d9d9;
 
   @media (max-width: 760px) {
-    font-size: 32px;
+    font-size: 28px;
   }
 `;
 
 export const ImageWrapper = styled.div`
+  font-size: 12px;
+  font-family: monospace;
+
   @media (max-width: 760px) {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 
     img {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
     }
   }
 `;

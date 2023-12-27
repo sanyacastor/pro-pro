@@ -1,11 +1,12 @@
 import mapboxgl from 'mapbox-gl';
 import { useState, useEffect, useRef } from 'react';
 
-import 'mapbox-gl/dist/mapbox-gl.css';
-import AsideInfo from './asideInfo';
 import { colors, titles, descriptions } from './consts';
+import AsideInfo from './asideInfo';
 import { Toolbar } from './Toolbar';
 import { Map } from './map';
+
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 function MapboxMap({ places }) {
   const [myMap, setMap] = useState();

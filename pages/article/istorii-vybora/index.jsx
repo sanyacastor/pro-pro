@@ -22,6 +22,8 @@ import {
   GradientSectionPurple,
   Navigation,
   NavigationWrapper,
+  CustomArticleTitle,
+  TopHeaderSection,
 } from './styles';
 
 import {
@@ -55,13 +57,15 @@ export default function Article() {
           </Navigation>
         </NavigationWrapper>
         <Container>
-          <ArticleTitle>Истории выбора:</ArticleTitle>
-          <ArticleSubtitle>
-            <i>
-              как молодые девушки принимали решение переехать в маленький
-              городок в лесу
-            </i>
-          </ArticleSubtitle>
+          <TopHeaderSection>
+            <CustomArticleTitle>Истории выбора:</CustomArticleTitle>
+            <ArticleSubtitle>
+              <i>
+                как молодые девушки принимали решение переехать в маленький
+                городок в лесу
+              </i>
+            </ArticleSubtitle>
+          </TopHeaderSection>
           <Paragraph>
             Протвино не&nbsp;только архитектурный, но&nbsp;и&nbsp;исторический
             памятник. Если спросить жителя города старше 50&nbsp;лет о&nbsp;том,

@@ -21,26 +21,10 @@ export default function GurTourPage() {
       <ArticleContainer>
         <S.Container>
           <S.SectionTitle>кто мы</S.SectionTitle>
-          <S.DashaImage>
-            <Image
-              src="/images/about-us/d.png"
-              width={184}
-              height={184}
-              alt=""
-            />
-          </S.DashaImage>
           <Paragraph>
             Всех нас, создателей этого локального медиа, объединяет одно: мы
             выросли в&nbsp;Протвино. Наши родители приехали сюда сразу после
             института в&nbsp;новую жизнь.
-            <S.AnnImage>
-              <Image
-                src="/images/about-us/andn.png"
-                width={184}
-                height={184}
-                alt=""
-              />
-            </S.AnnImage>
           </Paragraph>
           <Paragraph>
             Здесь все были так или иначе связаны с&nbsp;физикой. Здесь дружили
@@ -54,13 +38,24 @@ export default function GurTourPage() {
             за&nbsp;15&nbsp;минут. Что нет пентагона, муравейников, пил
             и&nbsp;других замысловатых домов.
           </Paragraph>
-          <S.SectionTitle>что вы найдете на сайте</S.SectionTitle>
-          <Paragraph>
-            Наш амбициозный план – собрать и визуализировать информацию о
-            Протвино, а также дать возможность другим людям узнать про него
-            больше и поделиться своими воспоминания и впечатлениями. Тут вы не
-            найдете энциклопедию о городе, но найдете опыт как прошлого, так и
-            настоящего.
+
+          <S.ImagesContainer>
+            <S.DashaImage>
+              <Image
+                src="/images/about-us/d.png"
+                width={184}
+                height={184}
+                alt=""
+              />
+            </S.DashaImage>
+            <S.AnnImage>
+              <Image
+                src="/images/about-us/andn.png"
+                width={184}
+                height={184}
+                alt=""
+              />
+            </S.AnnImage>
             <S.SanyaImage>
               <Image
                 src="/images/about-us/s.png"
@@ -77,6 +72,15 @@ export default function GurTourPage() {
                 alt=""
               />
             </S.NadyaImage>
+          </S.ImagesContainer>
+
+          <S.SectionTitle>что вы найдете на сайте</S.SectionTitle>
+          <Paragraph>
+            Наш амбициозный план – собрать и визуализировать информацию о
+            Протвино, а также дать возможность другим людям узнать про него
+            больше и поделиться своими воспоминания и впечатлениями. Тут вы не
+            найдете энциклопедию о городе, но найдете опыт как прошлого, так и
+            настоящего.
           </Paragraph>
         </S.Container>
         <S.Banners>

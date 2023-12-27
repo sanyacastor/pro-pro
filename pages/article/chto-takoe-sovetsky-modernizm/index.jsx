@@ -1,14 +1,18 @@
 import React from 'react';
 
-import { SwiperSlide, Swiper } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
+
 import Image from 'next/image';
 
 import 'swiper/css';
+import 'swiper/css/navigation';
 
 import {
   PostHero,
   ArticleSubtitle,
   Accent,
+  ArticleTitle,
+  PostAuthor,
 } from '../../../components/UI/Article';
 
 import {
@@ -28,11 +32,17 @@ import {
 } from '../../../components/Typography';
 
 import { Layout } from '../../../components/Layout';
+import { Slider } from '../../../components/UI/Slider/Slider';
 
 export default function Article() {
   return (
     <Layout>
-      <PostHero cover="/article/chto-takoe-sovetsky-modernizm/hero.png" />
+      <PostHero cover="/article/chto-takoe-sovetsky-modernizm/hero.png">
+        <ArticleTitle>
+          Про советский <br /> модернизм
+        </ArticleTitle>
+        <PostAuthor>автор: Аня Медведкова</PostAuthor>
+      </PostHero>
       <ArticleContainer>
         <Container>
           <ArticleSubtitle>Что такое советский модернизм</ArticleSubtitle>
@@ -128,7 +138,7 @@ export default function Article() {
                 стен.
               </Paragraph>
               <SliderWrapper>
-                <Swiper spaceBetween={0} slidesPerView={1} navigation={true}>
+                <Slider>
                   <SwiperSlide>
                     <Figure>
                       <Image
@@ -177,7 +187,7 @@ export default function Article() {
                       </Figcaption>
                     </Figure>
                   </SwiperSlide>
-                </Swiper>
+                </Slider>
               </SliderWrapper>
             </SubSection>
             <SubSectionTitle>2. Декор.</SubSectionTitle>
@@ -188,7 +198,7 @@ export default function Article() {
               металлоконструкции и&nbsp;прочее.
             </Paragraph>
             <SliderWrapper>
-              <Swiper spaceBetween={0} slidesPerView={1} navigation={true}>
+              <Slider>
                 <SwiperSlide>
                   <Figure>
                     <Image
@@ -248,7 +258,7 @@ export default function Article() {
                     </Figcaption>
                   </Figure>
                 </SwiperSlide>
-              </Swiper>
+              </Slider>
             </SliderWrapper>
 
             <SubSectionTitle>3. материалы.</SubSectionTitle>
@@ -260,7 +270,7 @@ export default function Article() {
               (например, сфера, паук, черепаха).
             </Paragraph>
             <SliderWrapper>
-              <Swiper spaceBetween={0} slidesPerView={1} navigation={true}>
+              <Slider>
                 <SwiperSlide>
                   <Figure>
                     <Image
@@ -301,7 +311,7 @@ export default function Article() {
                     </Figcaption>
                   </Figure>
                 </SwiperSlide>
-              </Swiper>
+              </Slider>
             </SliderWrapper>
             <Paragraph>
               Ракушечник можно встретить в&nbsp;отделке фойе гостиницы
@@ -309,7 +319,7 @@ export default function Article() {
               в&nbsp;первоначальном виде.
             </Paragraph>
             <SliderWrapper>
-              <Swiper spaceBetween={0} slidesPerView={1} navigation={true}>
+              <Slider>
                 <SwiperSlide>
                   <Figure>
                     <Image
@@ -336,7 +346,7 @@ export default function Article() {
                     </Figcaption>
                   </Figure>
                 </SwiperSlide>
-              </Swiper>
+              </Slider>
             </SliderWrapper>
             <Paragraph>
               Изюминкой в&nbsp;облицовке фасадов зданий в&nbsp;Протвино является
@@ -386,7 +396,7 @@ export default function Article() {
             </Paragraph>
 
             <SliderWrapper>
-              <Swiper spaceBetween={0} slidesPerView={1} navigation={true}>
+              <Slider>
                 <SwiperSlide>
                   <Figure>
                     <Image
@@ -431,7 +441,7 @@ export default function Article() {
                     <Figcaption>Магазин/кафе «Ока», г. Протвино</Figcaption>
                   </Figure>
                 </SwiperSlide>
-              </Swiper>
+              </Slider>
             </SliderWrapper>
             <Paragraph>
               Несмотря на&nbsp;то, что в&nbsp;рамках периода советского
