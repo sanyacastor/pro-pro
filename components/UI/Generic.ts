@@ -105,11 +105,15 @@ export const Figcaption = styled.figcaption`
 `;
 
 export const SliderWrapper = styled.div`
-  width: 640px;
-  margin-left: 60px;
+  width: 840px;
+  margin: 0 auto;
+  padding: 0 100px;
 
-  @media (max-width: 760px) {
-    margin-left: 0px;
-    width: 100%;
+  @media (max-width: 960px) {
+    width: 640px;
+
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
   }
 `;

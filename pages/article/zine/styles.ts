@@ -40,7 +40,7 @@ export const HeroInner = styled.div`
     width: 100%;
 
     img {
-      width: 80px;
+      width: 48px;
       height: auto;
     }
   }

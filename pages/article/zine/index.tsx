@@ -16,7 +16,7 @@ import TreeIcon from '../../../public/images/icons/zin-tree.svg.svg';
 
 import { Paragraph, SectionTitle } from '../../../components/Typography';
 
-import { Header, Layout } from '../../../components/Layout';
+import { Layout } from '../../../components/Layout';
 
 import * as S from './styles';
 

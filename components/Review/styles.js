@@ -27,6 +27,8 @@ export const Title = styled.h2`
   text-transform: uppercase;
   margin-bottom: 0;
 
+  white-space: nowrap;
+
   @media (max-width: 760px) {
     font-size: 36px;
   }

@@ -31,12 +31,10 @@ export default function Polyclinic() {
   return (
     <Layout>
       <PostHero cover={COVERS.policlinic}>
-        {/* <Container> */}
         <ArticleTitle>
           Поликлиника <br /> или архитектурный <br /> памятник
         </ArticleTitle>
-        <PostAuthor>АВТОР: АННА МЕДВЕДКОВА</PostAuthor>
-        {/* </Container> */}
+        <PostAuthor>АВТОР: АНЯ МЕДВЕДКОВА</PostAuthor>
       </PostHero>
       <ArticleContainer>
         <PostGrid>
@@ -408,19 +406,6 @@ export default function Polyclinic() {
                 alt="Поликлиника перекрашенный фасад"
               />
             </PostImage>
-            <Paragraph $mt={64}>
-              Как мы&nbsp;видим на&nbsp;этом примере, современная администрация
-              не&nbsp;видит архитектурной ценности исторических зданий
-              и&nbsp;не&nbsp;воспринимает город как единое целое. Результат
-              этого печальный: город стремительно теряет свой облик.
-            </Paragraph>
-            <Paragraph $mt={32}>
-              Корень проблемы лежит в&nbsp;первую очередь в&nbsp;отсутствии
-              позиции архитектора и&nbsp;контроля этого вопроса на&nbsp;уровне
-              города. Мы&nbsp;надеемся, что это ошибочное решение будет
-              исправлено и&nbsp;поликлинике вернут её&nbsp;&laquo;родной&raquo;,
-              задуманный архитекторами, цвет.
-            </Paragraph>
           </Container>
         </PostGrid>
       </ArticleContainer>

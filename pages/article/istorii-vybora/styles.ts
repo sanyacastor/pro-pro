@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { ArticleTitle } from '../../../components/UI/Article';
+
 export const NavigationWrapper = styled.div`
   width: 760px;
   margin: 0 auto;
@@ -92,6 +94,18 @@ export const GradientSectionPurple = styled.div`
     #f1e4fb 82.81%,
     rgba(241, 228, 251, 0) 100%
   );
+`;
+
+export const CustomArticleTitle = styled(ArticleTitle)`
+  color: #232323;
+`;
+
+export const TopHeaderSection = styled.div`
+  margin-bottom: 56px;
+
+  @media (max-width: 960px) {
+    margin-bottom: 32px;
+  }
 `;
 
 export default function () {}

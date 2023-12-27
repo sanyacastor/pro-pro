@@ -14,16 +14,20 @@ export const PostGrid = styled.div`
 `;
 
 export const PostHero = styled.div<{ cover: string; bgColor?: string }>`
-  background: ${({ cover }) =>
-    `linear-gradient(180deg, rgba(217, 217, 217, 0) -8.33%, rgba(51, 0, 0, 0.29) 55.43%, rgba(51, 0, 0, 0.42) 99.44%), url(${cover});`};
+  background: ${({ bgColor, cover }) =>
+    bgColor
+      ? bgColor
+      : `linear-gradient(180deg, rgba(217, 217, 217, 0) -8.33%, rgba(51, 0, 0, 0.29) 55.43%, rgba(51, 0, 0, 0.42) 99.44%), url(${cover});`};
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding-top: 130px;
-  padding-bottom: 53px;
-  min-height: 430px;
 
-  background: ${({ bgColor }) => bgColor};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 70px;
+  height: 430px;
 
   font-family: 'BASE&BLOOM';
   font-style: normal;
@@ -41,9 +45,9 @@ export const PostHero = styled.div<{ cover: string; bgColor?: string }>`
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     text-align: center;
-    padding: 42px;
+    padding: 8px;
   }
 `;
 
@@ -80,7 +84,6 @@ export const PostSubtitle = styled.h2`
 export const PostAuthor = styled.span`
   margin-top: 16px;
   display: block;
-  grid-column: 3/20;
 
   font-family: 'Piazzolla';
   font-style: normal;
@@ -90,7 +93,6 @@ export const PostAuthor = styled.span`
   text-transform: uppercase;
 
   text-align: center;
-
   color: #eceaea;
 `;
 
@@ -295,6 +297,11 @@ export const PoliclinicCollage = styled.div`
 
     figure + figure {
       margin-top: 16px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
     }
   }
 `;

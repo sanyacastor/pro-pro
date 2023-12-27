@@ -113,4 +113,32 @@ export const NadyaImage = styled.div`
   right: -230px;
 `;
 
+export const ImagesContainer = styled.div`
+  @media (max-width: 960px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    ${NadyaImage}, ${SanyaImage}, ${AnnImage}, ${DashaImage} {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 50%;
+    }
+
+    ${SanyaImage} {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    ${DashaImage} {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+`;
+
 export default function () {}

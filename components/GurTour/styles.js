@@ -48,7 +48,7 @@ export const ReviewList = styled.ul`
 
   text-align: center;
   font-family: 'Piazzolla';
-  font-size: 20px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 500;
   line-height: 134.5%;
