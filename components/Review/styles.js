@@ -27,8 +27,6 @@ export const Title = styled.h2`
   text-transform: uppercase;
   margin-bottom: 0;
 
-  white-space: nowrap;
-
   @media (max-width: 760px) {
     font-size: 36px;
   }
@@ -114,5 +112,15 @@ export const Image = styled.div`
       /* width: 90vw; */
       height: auto;
     }
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+  @media (max-width: 760px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 `;
