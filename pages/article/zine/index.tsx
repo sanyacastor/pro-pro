@@ -23,7 +23,7 @@ import * as S from './styles';
 export default function GurTourPage() {
   return (
     <Layout>
-      <PostHero cover="" bgColor="#4AAD7C">
+      <S.PostHero>
         <S.HeroInner>
           <Image src={TreeIcon} width="184" height="232" alt="" />
           <ArticleTitle>
@@ -32,7 +32,7 @@ export default function GurTourPage() {
           </ArticleTitle>
           <Image src={TreeIcon} width="184" height="232" alt="" />
         </S.HeroInner>
-      </PostHero>
+      </S.PostHero>
       <ArticleContainer>
         <Container>
           <ArticleSubtitle>
