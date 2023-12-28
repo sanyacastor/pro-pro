@@ -24,7 +24,7 @@ export const Section = styled.section`
   margin-top: 64px;
 
   @media (max-width: 960px) {
-    margin-top: 32px;
+    margin-top: 30px;
   }
 `;
 
@@ -43,6 +43,41 @@ export const HeroInner = styled.div`
       width: 48px;
       height: auto;
     }
+  }
+`;
+
+export const PostHero = styled.div`
+  background: #4aad7c;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 70px;
+  height: 430px;
+
+  font-family: 'BASE&BLOOM';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 88%;
+
+  @media (max-width: 960px) {
+    overflow: hidden;
+
+    height: 240px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding-top: 70px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 `;
 
