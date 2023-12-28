@@ -41,9 +41,9 @@ export const Hero = styled.div<{ bgColor?: string }>`
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     text-align: center;
-    padding: 42px;
+    padding-top: 50px;
   }
 `;
 
@@ -58,6 +58,10 @@ export const HeroTitle = styled.h2`
   font-weight: 400;
   line-height: 60%;
   text-transform: uppercase;
+
+  @media (max-width: 960px) {
+    font-size: 74px;
+  }
 `;
 
 export const HeroSubtitle = styled.h1`
@@ -72,7 +76,13 @@ export const HeroSubtitle = styled.h1`
   font-style: normal;
   font-weight: 400;
   line-height: 96.667%;
-  text-transform: uppercase;
+
+  @media (max-width: 960px) {
+    font-size: 35px;
+    line-height: 32px;
+
+    margin-top: 24px;
+  }
 `;
 
 export const SectionTitle = styled.h3`
@@ -93,7 +103,8 @@ export const Banners = styled.div`
 
 export const DashaImage = styled.div`
   position: absolute;
-  left: -240px;
+  top: 0;
+  left: -220px;
 `;
 
 export const AnnImage = styled.div`
@@ -103,8 +114,7 @@ export const AnnImage = styled.div`
 
 export const SanyaImage = styled.div`
   position: absolute;
-  top: 0;
-  left: -220px;
+  left: -240px;
 `;
 
 export const NadyaImage = styled.div`
@@ -125,6 +135,11 @@ export const ImagesContainer = styled.div`
       top: 0;
       left: 0;
       width: 50%;
+
+      img {
+        width: 160px;
+        height: 160px;
+      }
     }
 
     ${SanyaImage} {

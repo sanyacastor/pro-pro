@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Swiper as SwiperCore } from 'swiper/types';
 
 import { Navigation } from 'swiper/modules';
@@ -11,15 +11,21 @@ import 'swiper/css/navigation';
 
 export const Slider = ({ children }) => {
   const swiperRef = useRef<SwiperCore>();
-
-  const onBeforeInit = (swiper: SwiperCore) => {
-    swiperRef.current = swiper;
-  };
+  const [isBeginning, setIsBeginning] = useState(null);
+  const [isEnd, setIsEnd] = useState(null);
 
   return (
     <S.Wrapper>
       <Swiper
-        onBeforeInit={onBeforeInit}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+          setIsBeginning(swiper.isBeginning);
+          setIsEnd(swiper.isEnd);
+        }}
+        onSlideChange={(swiper) => {
+          setIsBeginning(swiper.isBeginning);
+          setIsEnd(swiper.isEnd);
+        }}
         spaceBetween={0}
         slidesPerView={1}
         modules={[Navigation]}
@@ -27,11 +33,11 @@ export const Slider = ({ children }) => {
         {children}
       </Swiper>
       <S.PrevSlideButton
-        disabled={swiperRef.current?.isEnd}
+        disabled={isBeginning}
         onClick={() => swiperRef.current?.slidePrev()}
       />
       <S.NextSlideButton
-        disabled={swiperRef.current?.isBeginning}
+        disabled={isEnd}
         onClick={() => swiperRef.current?.slideNext()}
       />
     </S.Wrapper>

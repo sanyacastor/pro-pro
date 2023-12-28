@@ -62,6 +62,7 @@ export const NavListSocials = styled.li`
 
   font-size: 24px;
   line-height: 20px;
+  margin-bottom: 18px;
 
   a {
     display: block;
@@ -70,9 +71,5 @@ export const NavListSocials = styled.li`
     padding: 20px 0;
     width: 180px;
     text-align: center;
-  }
-
-  & + & {
-    margin-top: 18px;
   }
 `;
