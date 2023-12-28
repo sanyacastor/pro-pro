@@ -123,7 +123,7 @@ export default function Article() {
           </Paragraph>
 
           <Section>
-            <SectionTitle>Особенности стиля</SectionTitle>
+            <SectionTitle mb="32">Особенности стиля</SectionTitle>
             <Paragraph>
               Мы&nbsp;выделили четыре стилеобразующих элемента, которые
               указывают на&nbsp;то, что перед нами постройка в&nbsp;стиле

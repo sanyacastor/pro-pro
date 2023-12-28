@@ -8,6 +8,8 @@ import { Stat } from './components/Stat';
 import { Features } from './components/Features';
 import { MDXRemote } from 'next-mdx-remote';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import * as S from './styles';
 
 const components = {
@@ -15,6 +17,12 @@ const components = {
   h3: S.Heading,
   img: ({ alt, src }) => <ArticleImage meta={alt} src={src} />,
   ImagesRow: S.ImagesRow,
+  Slider: ({ children }) => (
+    <S.ImageWrapper>
+      <Swiper>{children}</Swiper>
+    </S.ImageWrapper>
+  ),
+  Slide: SwiperSlide,
 };
 
 export const Review = ({
