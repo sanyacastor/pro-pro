@@ -14,8 +14,8 @@ export default function GurTourPage() {
       <S.Hero>
         <S.HeroTitle>ПРОПРО</S.HeroTitle>
         <S.HeroSubtitle>
-          локАльное медиа
-          <br /> о Протвино
+          ЛОКАлЬнОЕ МЕдИА
+          <br /> О ПРОТВиНО
         </S.HeroSubtitle>
       </S.Hero>
       <ArticleContainer>
