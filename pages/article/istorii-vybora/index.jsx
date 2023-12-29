@@ -59,7 +59,7 @@ export default function Article() {
         <meta property="og:image:height" content="600" />
       </Head>
       <Layout>
-        <PostHero cover="/article/istorii_vybora/thumbnail.png" />
+        <PostHero cover="url(/article/istorii_vybora/thumbnail.png)" />
         <ArticleContainer>
           <NavigationWrapper>
             <Navigation>
