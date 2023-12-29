@@ -26,7 +26,7 @@ export default function AbutUsPage() {
         <meta property="og:locale" content="ru_RU" />
 
         <meta
-          property="og:image:url"
+          property="og:image"
           content="https://propro-media-dev.netlify.app/images/content/about_us_thumbnail.jpg"
         />
         <meta property="og:image:width" content="800" />
