@@ -17,11 +17,27 @@ export default function GurTourPage({
   title,
   description,
   features,
+  slug,
 }) {
   return (
     <>
       <Head>
-        <title>Про про | Гур тур</title>
+        <title>{`Гур тур | ${title}`}</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="ru_RU" />
+        <meta property="og:site_name" content="Propro.media" />
+
+        <meta property="og:title" content={`Гур тур | ${title}`} />
+        <meta property="og:description" content={description} />
+
+        <meta
+          property="og:url"
+          content={`https://propro.media/gurtour/${slug}`}
+        />
+
+        <meta property="og:image:url" content="" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="600" />
       </Head>
       <Layout>
         <Hero />
