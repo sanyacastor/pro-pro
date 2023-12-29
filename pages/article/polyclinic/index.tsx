@@ -55,7 +55,9 @@ export default function Polyclinic() {
         <meta property="og:image:height" content="600" />
       </Head>
       <Layout>
-        <PostHero cover={COVERS.policlinic}>
+        <PostHero
+          cover={`linear-gradient(180deg, rgba(217, 217, 217, 0) -8.33%, rgba(51, 0, 0, 0.29) 55.43%, rgba(51, 0, 0, 0.42) 99.44%), url(${COVERS.policlinic})`}
+        >
           <ArticleTitle>
             Поликлиника <br /> или архитектурный <br /> памятник
           </ArticleTitle>

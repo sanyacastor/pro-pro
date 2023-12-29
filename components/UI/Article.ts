@@ -14,10 +14,7 @@ export const PostGrid = styled.div`
 `;
 
 export const PostHero = styled.div<{ cover: string; bgColor?: string }>`
-  background: ${({ bgColor, cover }) =>
-    bgColor
-      ? bgColor
-      : `linear-gradient(180deg, rgba(217, 217, 217, 0) -8.33%, rgba(51, 0, 0, 0.29) 55.43%, rgba(51, 0, 0, 0.42) 99.44%), url(${cover});`};
+  background: ${({ bgColor, cover }) => (bgColor ? bgColor : cover)};
   background-size: cover;
   background-position: center;
   text-align: center;

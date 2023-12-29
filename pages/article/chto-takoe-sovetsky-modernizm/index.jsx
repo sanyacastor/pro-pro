@@ -62,7 +62,7 @@ export default function Article() {
         <meta property="og:image:height" content="600" />
       </Head>
       <Layout>
-        <PostHero cover="/article/chto-takoe-sovetsky-modernizm/hero.png">
+        <PostHero cover="url(/article/chto-takoe-sovetsky-modernizm/hero.png)">
           <ArticleTitle>
             Про советский <br /> модернизм
           </ArticleTitle>
