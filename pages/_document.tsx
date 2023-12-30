@@ -31,6 +31,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link rel="icon" href="/icon.svg" type="image/svg+xml" />
           <link
             rel="preload"
             href="/fonts/Base&Bloom-Base&Bloom-Web.woff2"
