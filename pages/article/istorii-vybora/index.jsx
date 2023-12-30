@@ -30,6 +30,7 @@ import {
   Navigation,
   NavigationWrapper,
   CustomArticleTitle,
+  CustomArticleSubtitle,
   TopHeaderSection,
 } from './styles';
 
@@ -79,12 +80,12 @@ export default function Article() {
           <Container>
             <TopHeaderSection>
               <CustomArticleTitle>Истории выбора:</CustomArticleTitle>
-              <ArticleSubtitle>
+              <CustomArticleSubtitle>
                 <i>
                   как молодые девушки принимали решение переехать в маленький
                   городок в лесу
                 </i>
-              </ArticleSubtitle>
+              </CustomArticleSubtitle>
             </TopHeaderSection>
             <Paragraph>
               Протвино не&nbsp;только архитектурный, но&nbsp;и&nbsp;исторический

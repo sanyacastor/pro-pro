@@ -100,6 +100,25 @@ export const CustomArticleTitle = styled(ArticleTitle)`
   color: #232323;
 `;
 
+export const CustomArticleSubtitle = styled.h2`
+  font-family: 'Piazzolla';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 100%;
+
+  margin: 0;
+  margin-bottom: 32px;
+
+  @media (max-width: 960px) {
+    font-size: 36px;
+    line-height: 100%;
+
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+`;
+
 export const TopHeaderSection = styled.div`
   margin-bottom: 56px;
 
