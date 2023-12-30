@@ -36,17 +36,26 @@ export const Paragraph = styled.p<{
 
 export const SubSection = styled.div`
   margin-top: 64px;
+
+  @media (max-width: 1160px) {
+    margin-top: 32px;
+  }
 `;
 
 export const SectionTitle = styled.h3<{ mb: boolean }>`
   font-family: 'Piazzolla';
   font-size: 48px;
-  font-style: normal;
   font-weight: 500;
   line-height: 100%;
   margin: 0;
 
   margin-bottom: ${({ mb }) => mb && `32px`};
+
+  @media (max-width: 1160px) {
+    font-size: 36px;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
 `;
 
 export const SubSectionTitle = styled.h4`
@@ -58,4 +67,10 @@ export const SubSectionTitle = styled.h4`
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 14px;
+
+  @media (max-width: 1160px) {
+    font-size: 20px;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
 `;

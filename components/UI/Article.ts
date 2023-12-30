@@ -314,10 +314,10 @@ export const ArticleSubtitle = styled.h2`
   margin-bottom: 32px;
 
   @media (max-width: 960px) {
-    font-size: 28px;
+    font-size: 36px;
     line-height: 100%;
 
-    margin-top: 32px;
+    margin: 0;
     margin-bottom: 16px;
   }
 `;
