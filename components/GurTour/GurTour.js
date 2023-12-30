@@ -18,7 +18,7 @@ export const GurTour = () => {
             <Link href="/gurtour/staraya-melnitsa">Старая мельница</Link>
           </S.ReviewLink>
           <S.ReviewLink>
-            <Link href="/gurtour/cream-coffee">крем кофе</Link>
+            <Link href="/gurtour/cream-coffee">крем-коффе</Link>
           </S.ReviewLink>
         </S.ReviewList>
       </S.Container>
