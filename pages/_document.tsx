@@ -31,6 +31,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link rel="icon" href="/favicon_48x48.png" sizes="48x48" />
           <link rel="icon" href="/icon.svg" type="image/svg+xml" />
           <link
             rel="preload"
