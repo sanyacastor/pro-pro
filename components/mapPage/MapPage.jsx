@@ -150,7 +150,12 @@ function MapboxMap({ places }) {
         setCurrentPoint={setCurrentPoint}
         myMap={myMap}
       />
-      <Toolbar tags={tags} types={types} filterPoints={filterPoints} />
+      <Toolbar
+        tags={tags}
+        types={types}
+        filterPoints={filterPoints}
+        isOpen={asideVisible}
+      />
       <Map mapNode={mapNode} />
     </>
   );

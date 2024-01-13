@@ -2,8 +2,8 @@ import React from 'react';
 import s from '../../styles/map/map.module.css';
 import { colors, titles } from './consts';
 
-export const Toolbar = ({ tags, types, filterPoints }) => (
-  <div className={s.mapToolBar}>
+export const Toolbar = ({ tags, types, filterPoints, isOpen }) => (
+  <div className={`${s.mapToolBar} ${isOpen && s.mapToolBarOpen}`}>
     <div className={s.mapToolBarTagList}>
       {types.map((name) => (
         <span
