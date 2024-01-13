@@ -568,5 +568,21 @@
     "image": "/images/map/nnt_pilot_2021.jpg",
     "description": "",
     "coordinates": [54.857339, 37.20989]
+  },
+  {
+    "exist": true,
+    "title": "Собирательный образ на тему советского Протвино 2022",
+    "type": "ninety",
+    "image": "/images/map/nnt_protvino_2022.jpeg",
+    "description": "",
+    "coordinates": [54.877388, 37.232743]
+  },
+  {
+    "exist": true,
+    "title": "Пустой дом III 2022",
+    "type": "ninety",
+    "image": "/images/map/nnt_empty_house_3_2022.jpeg",
+    "description": "",
+    "coordinates": [54.855984, 37.230478]
   }
 ]
