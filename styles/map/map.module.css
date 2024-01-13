@@ -4,21 +4,30 @@
   overflow: hidden;
   padding: 0;
 }
+
 .mapContainer {
   width: 100%;
   height: 100%;
 }
+
 .mapToolBar {
   top: 101px;
   width: 100%;
   overflow: hidden;
   position: absolute;
   z-index: 10;
-  left: 420px;
+  padding: 0 16px;
+  left: 0;
+  transition: all 350ms ease;
 }
 
 .mapToolBarTagList {
-  width: 60%;
+  width: 100%;
+}
+
+.mapToolBarOpen {
+  left: 420px;
+  width: calc(100% - 420px);
 }
 
 @media (max-width: 780px) {
@@ -38,9 +47,8 @@
   }
 }
 
-
 .mapToolBarTag {
-  font-family: "Lack";
+  font-family: 'Lack';
   font-weight: 400;
   font-size: 15px;
 
