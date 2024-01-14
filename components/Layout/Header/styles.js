@@ -15,7 +15,7 @@ export const Header = styled.header`
   z-index: 20;
   transition: background 0.3s ease;
 
-  @media screen and (max-width: 830px) {
+  @media screen and (max-width: 1000px) {
     padding: 15px 15px;
   }
 `;
@@ -35,7 +35,7 @@ export const Links = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 780px) {
     display: none;
   }
 `;
@@ -48,7 +48,7 @@ export const NavList = styled.ul`
   justify-content: space-around;
   align-items: center;
 
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 780px) {
     justify-content: space-between;
     align-items: center;
   }
@@ -83,7 +83,7 @@ export const NavListSocials = styled.li`
   border-radius: 50%;
   padding: 4px 8px;
 
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 780px) {
     display: none;
   }
 `;
@@ -126,7 +126,7 @@ export const MenuIcon = styled.div`
     transform: ${({ $cross }) => $cross && 'translate(0, -6px) rotate(45deg)'};
   }
 
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 780px) {
     display: block;
   }
 `;

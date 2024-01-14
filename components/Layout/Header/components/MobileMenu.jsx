@@ -6,7 +6,7 @@ import { SOCIAL } from '../../../../config';
 import * as S from './styles';
 import { useRouter } from 'next/router';
 
-export const MobileMenu = ({ isVisible, onClose }) => {
+export const MobileMenu = ({ isVisible }) => {
   const { pathname } = useRouter();
 
   return (
