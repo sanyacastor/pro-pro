@@ -4,6 +4,8 @@ import { useWindowSize } from 'usehooks-ts';
 
 import { AsideList } from './AsideList';
 
+import * as S from './styles';
+
 export default function AsideInfo({
   currentPoint,
   onClose,
@@ -16,10 +18,10 @@ export default function AsideInfo({
   const snapPoint = size?.height - 60;
 
   return size.width < 768 ? (
-    <Sheet isOpen={visible} onClose={onClose} snapPoints={[snapPoint]}>
+    <S.SheetWrapper isOpen={visible} onClose={onClose} snapPoints={[snapPoint]}>
       <Sheet.Container>
         <Sheet.Header />
-        <Sheet.Content>
+        <Sheet.Content disableDrag>
           <AsideList
             currentPoint={currentPoint}
             places={places}
@@ -29,7 +31,7 @@ export default function AsideInfo({
           />
         </Sheet.Content>
       </Sheet.Container>
-    </Sheet>
+    </S.SheetWrapper>
   ) : (
     <AsideList
       visible={visible}
