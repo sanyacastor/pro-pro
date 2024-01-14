@@ -30,28 +30,6 @@
   width: calc(100% - 420px);
 }
 
-@media (max-width: 780px) {
-  .mapToolBarTagList {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 8px;
-  }
-
-  .mapToolBar {
-    left: 0;
-    width: 100%;
-  }
-
-  .mapToolBar {
-    top: 82px;
-  }
-
-  .mapToolBarOpen {
-    left: 0;
-    width: 100%;
-  }
-}
-
 .mapToolBarTag {
   font-family: 'Lack';
   font-weight: 400;
@@ -87,4 +65,31 @@
 .mapToolBarTag.active:hover {
   opacity: 0.6;
   box-sizing: border-box;
+}
+
+@media (max-width: 780px) {
+  .mapToolBarTagList {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .mapToolBar {
+    left: 0;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .mapToolBar {
+    top: 62px;
+  }
+
+  .mapToolBarOpen {
+    left: 0;
+    width: 100%;
+  }
+
+  .mapToolBarTag {
+    font-size: 12px;
+  }
 }
