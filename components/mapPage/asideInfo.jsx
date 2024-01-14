@@ -13,7 +13,7 @@ export default function AsideInfo({
   myMap,
 }) {
   const size = useWindowSize();
-  const snapPoint = size?.height - 65;
+  const snapPoint = size?.height - 60;
 
   return size.width < 768 ? (
     <Sheet isOpen={visible} onClose={onClose} snapPoints={[snapPoint]}>
