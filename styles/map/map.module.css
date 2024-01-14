@@ -45,6 +45,11 @@
   .mapToolBar {
     top: 82px;
   }
+
+  .mapToolBarOpen {
+    left: 0;
+    width: 100%;
+  }
 }
 
 .mapToolBarTag {

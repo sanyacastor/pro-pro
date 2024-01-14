@@ -105,6 +105,7 @@ export default function Article() {
                 width="760"
                 height="450"
                 alt=""
+                quality={100}
               />
             </Figure>
 
@@ -153,6 +154,7 @@ export default function Article() {
                   width="760"
                   height="450"
                   alt=""
+                  quality={100}
                 />
               </Figure>
 
@@ -223,6 +225,7 @@ export default function Article() {
                   width="760"
                   height="450"
                   alt=""
+                  quality={100}
                 />
               </Figure>
             </Section>
@@ -276,6 +279,7 @@ export default function Article() {
                   width="760"
                   height="450"
                   alt=""
+                  quality={100}
                 />
               </Figure>
             </Section>
@@ -324,6 +328,7 @@ export default function Article() {
                 width="760"
                 height="450"
                 alt=""
+                quality={100}
               />
             </Figure>
 
