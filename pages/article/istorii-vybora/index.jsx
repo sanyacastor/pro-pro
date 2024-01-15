@@ -55,9 +55,12 @@ export default function Article() {
           content="https://propro.media/article/istorii-vybora"
         />
 
-        <meta property="og:image:url" content="" />
-        <meta property="og:image:width" content="800" />
-        <meta property="og:image:height" content="600" />
+        <meta
+          property="og:image:url"
+          content="https://propro.media/article/istorii-vybora/istorii_vybora_openGraph.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </Head>
       <Layout>
         <PostHero cover="url(/article/istorii_vybora/thumbnail.png)" />

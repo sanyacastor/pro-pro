@@ -47,12 +47,10 @@ export default function Polyclinic() {
 
         <meta
           property="og:url"
-          content="https://propro.media/article/polyclinic"
+          content="https://propro.media/article/polyclinic/polyclinic_openGraph.png"
         />
-
-        <meta property="og:image:url" content="" />
-        <meta property="og:image:width" content="800" />
-        <meta property="og:image:height" content="600" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </Head>
       <Layout>
         <PostHero

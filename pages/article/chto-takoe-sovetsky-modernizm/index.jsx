@@ -57,9 +57,12 @@ export default function Article() {
           content="https://propro.media/article/chto-takoe-sovetsky-modernizm"
         />
 
-        <meta property="og:image:url" content="" />
-        <meta property="og:image:width" content="800" />
-        <meta property="og:image:height" content="600" />
+        <meta
+          property="og:image:url"
+          content="https://propro.media/article/chto-takoe-sovetsky-modernizm/sovmod_openGraph.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </Head>
       <Layout>
         <PostHero cover="url(/article/chto-takoe-sovetsky-modernizm/hero.png)">

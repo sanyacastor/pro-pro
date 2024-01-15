@@ -40,7 +40,10 @@ export default function Article() {
           content="https://propro.media/article/uskoritel-v-protvino"
         />
 
-        <meta property="og:image:url" content="" />
+        <meta
+          property="og:image:url"
+          content="https://propro.media/article/uskoritel-v-protvino/uskoritel-v-protvino_openGraph.png"
+        />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
       </Head>
