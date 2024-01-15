@@ -30,7 +30,7 @@ export const Articles = () => {
             thumbnail="/article/uskoritel-v-protvino/thumbnail.png"
             url="/article/uskoritel-v-protvino"
             title="УСКОРИТЕЛЬ В&nbsp;ПРОТВИНО"
-            author="Катя Алейникова"
+            author="Екатерина Алейникова"
           />
         </Styled.Articles>
       </Styled.ArticlesContainer>

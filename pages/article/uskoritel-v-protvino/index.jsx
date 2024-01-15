@@ -53,7 +53,7 @@ export default function Article() {
             <ArticleTitle>
               ускоритель <br />в протвино
             </ArticleTitle>
-            <PostAuthor>АВТОР: КАТЯ АЛЕЙНИКОВА</PostAuthor>
+            <PostAuthor>АВТОР: ЕКАТЕРИНА АЛЕЙНИКОВА</PostAuthor>
           </S.PostHero>
         </S.PostHeroWrapper>
         <ArticleContainer>
