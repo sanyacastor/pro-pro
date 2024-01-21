@@ -31,8 +31,10 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/favicon_48x48.png" sizes="48x48" />
-          <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+          <link rel="icon" href="/favicon.ico" sizes="32x32" />
+          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+          <link rel="icon" href="/favicon_16x16.png" sizes="16x16" />
+          <link rel="icon" href="/favicon_32x32.png" sizes="32x32" />
           <link
             rel="preload"
             href="/fonts/Base&Bloom-Base&Bloom-Web.woff2"
