@@ -15,7 +15,7 @@ export default function AsideInfo({
   myMap,
 }) {
   const size = useWindowSize();
-  const snapPoint = size?.height - 60;
+  const snapPoint = size?.height - 70;
 
   return size.width < 768 ? (
     <S.SheetWrapper isOpen={visible} onClose={onClose} snapPoints={[snapPoint]}>

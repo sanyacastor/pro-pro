@@ -8,5 +8,8 @@ export const theme = {
     mapKids: '#78d7e0',
     mapTourism: '#48d27e',
     mapNinety: '#ffd15a',
+
+    gurTourMainColor: '#ec500e',
+    gurTourSecondaryColor: '#ffc229',
   },
 };

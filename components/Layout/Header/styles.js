@@ -1,12 +1,14 @@
 import styled, { css } from 'styled-components';
 
 export const Header = styled.header`
-  padding: 15px 140px;
+  height: 70px;
+
   display: flex;
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
   font-family: 'Lack';
   font-size: 20px;
+  line-height: 80%;
 
   position: absolute;
   top: 0;
@@ -15,9 +17,22 @@ export const Header = styled.header`
   z-index: 20;
   transition: background 0.3s ease;
 
-  @media screen and (max-width: 1000px) {
-    padding: 15px 15px;
-  }
+  padding: 16px 16px;
+
+  ${({ mode, theme }) =>
+    mode === 'gurTour' &&
+    css`
+      background-color: ${() => theme.colors.gurTourMainColor};
+      color: ${() => theme.colors.gurTourSecondaryColor};
+    `}
+`;
+
+export const Container = styled.div`
+  display: flex;
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 1160px;
 `;
 
 export const Navigation = styled.nav`
@@ -60,20 +75,34 @@ export const NavListItem = styled.li`
   list-style: none;
   text-transform: uppercase;
   white-space: nowrap;
+  padding-bottom: 2px;
 
   & + li {
     margin-left: 40px;
   }
 
-  ${({ $isCurrent }) =>
-    $isCurrent &&
+  ${({ isUnderlined }) =>
+    isUnderlined &&
     css`
-      text-decoration: underline;
+      padding-bottom: 0;
       font-style: italic;
+      border-bottom: 1px solid #fff;
+    `}
+
+  ${({ mode, theme }) =>
+    mode === 'gurTour' &&
+    css`
+      font-style: italic;
+      border-color: ${() => theme.colors.gurTourSecondaryColor};
     `}
 `;
 
 export const NavListSocials = styled.li`
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+
   margin: 0;
   padding: 0;
   list-style: none;
@@ -81,7 +110,13 @@ export const NavListSocials = styled.li`
 
   border: 1px solid #fff;
   border-radius: 50%;
-  padding: 4px 8px;
+  padding: 8px 10px;
+
+  ${({ mode, theme }) =>
+    mode === 'gurTour' &&
+    css`
+      border-color: ${() => theme.colors.gurTourSecondaryColor};
+    `}
 
   @media screen and (max-width: 780px) {
     display: none;
@@ -105,25 +140,23 @@ export const MenuIcon = styled.div`
   .bar3 {
     width: 25px;
     height: 2px;
-    background-color: #fff;
     margin: 6px 0;
     transition: 0.4s;
+
+    background-color: ${({ theme, mode }) =>
+      mode === 'gurTour' ? theme.colors.gurTourSecondaryColor : '#fff'};
   }
 
-  /* Rotate first bar */
   .bar1 {
-    transform: ${(props) =>
-      props.$cross && 'translate(0, 10px) rotate(-45deg)'};
+    transform: ${({ cross }) => cross && 'translate(0, 10px) rotate(-45deg)'};
   }
 
-  /* Fade out the second bar */
   .bar2 {
-    opacity: ${(props) => (props.$cross ? '0' : '1')};
+    opacity: ${({ cross }) => (cross ? '0' : '1')};
   }
 
-  /* Rotate last bar */
   .bar3 {
-    transform: ${({ $cross }) => $cross && 'translate(0, -6px) rotate(45deg)'};
+    transform: ${({ cross }) => cross && 'translate(0, -6px) rotate(45deg)'};
   }
 
   @media screen and (max-width: 780px) {
