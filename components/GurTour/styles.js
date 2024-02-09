@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100svw;
+  height: 100vh;
   height: 100svh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('/images/content/gur_tour_background.webp');
