@@ -251,13 +251,14 @@ export default function Polyclinic() {
                   src="/articles/policlinic/image_4_1_zijeto"
                   width={435}
                   height={317}
-                  alt="Чашник Илья «Архитектон» 1925-1926. Гипс"
+                  alt="Поликлиника фасад"
                 />
+
                 <CldImage
                   src="/articles/policlinic/image_1_2_jwokez"
                   width={460}
                   height={316}
-                  alt="Поликлиника фасад"
+                  alt="Чашник Илья «Архитектон» 1925-1926. Гипс"
                 />
                 <figcaption>
                   Чашник Илья «Архитектон» 1925-1926. Гипс
@@ -307,9 +308,6 @@ export default function Polyclinic() {
                   height={321}
                   alt="Поликлиника фасад"
                 />
-                <figcaption>
-                  Чашник Илья «Архитектон» 1925-1926. Гипс
-                </figcaption>
               </PostImage>
 
               <Paragraph $mt={64} $indent={1}>
@@ -337,9 +335,6 @@ export default function Polyclinic() {
                   height={615}
                   alt="Поликлиника фасад"
                 />
-                <figcaption>
-                  Чашник Илья «Архитектон» 1925-1926. Гипс
-                </figcaption>
               </PostImage>
 
               <Paragraph $mt={64} $indent={1}>
