@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Logo from '../../public/images/icons/gurtour-logo.svg';
+import Logo from '../../public/images/gurtour/gur_tour_logo.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PostHero = styled.div`
   background: ${() => ` linear-gradient(180deg, rgba(217, 217, 217, 0) -8.33%, rgba(51, 0, 0, 0.29) 55.43%, rgba(51, 0, 0, 0.42) 99.44%), url('/images/content/gur_tour_background.webp');
 `};
   background-size: cover;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 105px;
   padding-bottom: 53px;
 
   font-family: 'BASE&BLOOM';
@@ -21,7 +22,7 @@ const PostHero = styled.div`
   color: #ebe6da;
 
   img {
-    max-width: 80%;
+    max-width: 200px;
     height: auto;
   }
 `;
@@ -29,7 +30,9 @@ const PostHero = styled.div`
 export const Hero = () => {
   return (
     <PostHero>
-      <Image priority src={Logo} alt="Gur tour logo" />
+      <Link href="/gurtour">
+        <Image priority src={Logo} alt="Gur tour logo" />
+      </Link>
     </PostHero>
   );
 };

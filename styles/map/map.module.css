@@ -11,7 +11,7 @@
 }
 
 .mapToolBar {
-  top: 101px;
+  top: 86px;
   width: 100%;
   overflow: hidden;
   position: absolute;
@@ -79,10 +79,6 @@
     left: 0;
     width: 100%;
     padding: 0 8px;
-  }
-
-  .mapToolBar {
-    top: 62px;
   }
 
   .mapToolBarOpen {
