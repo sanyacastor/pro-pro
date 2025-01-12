@@ -24,9 +24,20 @@ export const ReviewContainer = styled.div`
   line-height: 130%;
   overflow: hidden;
 
+  font-family: 'Piazzolla';
+
   a {
     cursor: pointer;
     text-decoration: underline;
+  }
+
+  ul {
+    margin: 12px 0;
+  }
+
+  li {
+    margin-left: 0;
+    padding-left: 0;
   }
 
   @media (max-width: 760px) {

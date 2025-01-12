@@ -112,6 +112,18 @@ export const ReviewLink = styled.li`
     }
   }
 
+  :nth-child(3) {
+    top: 510px;
+    left: 120px;
+    transform: rotate(-6deg);
+
+    @media screen and (max-width: 780px) {
+      top: auto;
+      bottom: 220px;
+      left: 16px;
+    }
+  }
+
   :hover {
     transform: scale(1.1) rotate(0);
   }
