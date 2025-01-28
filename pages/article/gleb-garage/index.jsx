@@ -14,7 +14,6 @@ import { ArticleHeadMeta } from '../../../components/';
 import {
   Container,
   ArticleContainer,
-  Section,
   Figure,
   ImageContainer,
   Images,
@@ -23,14 +22,11 @@ import {
 import {
   Paragraph,
   SubSection,
-  SectionTitle,
   SubSectionTitle,
 } from '../../../components/Typography';
 import { Layout } from '../../../components/Layout';
 
-import * as S from './styles';
-import { SwiperSlide, Swiper } from 'swiper/react';
-import { Slider } from '../../../components/UI/Slider/Slider';
+import { SwiperSlide } from 'swiper/react';
 
 import 'react-tooltip/dist/react-tooltip.css';
 
