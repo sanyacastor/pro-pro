@@ -117,3 +117,17 @@ export const SliderWrapper = styled.div`
     max-width: 100%;
   }
 `;
+
+export const ImageContainer = styled.div`
+  margin: 64px 0;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 960px) {
+    margin: 32px 0;
+    padding-left: 0;
+  }
+`;

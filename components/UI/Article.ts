@@ -13,7 +13,11 @@ export const PostGrid = styled.div`
   }
 `;
 
-export const PostHero = styled.div<{ cover: string; bgColor?: string }>`
+export const PostHero = styled.div<{
+  cover: string;
+  bgColor?: string;
+  color?: string;
+}>`
   background: ${({ bgColor, cover }) => (bgColor ? bgColor : cover)};
   background-size: cover;
   background-position: center;

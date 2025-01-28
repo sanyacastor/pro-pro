@@ -29,6 +29,10 @@ export const Paragraph = styled.p<{
     margin-top: 32px;
   }
 
+  a {
+    text-decoration: underline;
+  }
+
   @media (max-width: 1160px) {
     padding-left: 0;
   }
