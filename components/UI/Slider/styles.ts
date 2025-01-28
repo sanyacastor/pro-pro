@@ -5,6 +5,23 @@ export const Swiper = styled(SwiperLib)``;
 
 export const Wrapper = styled.div`
   position: relative;
+
+  .swiper-slide {
+    display: flex; /* Center the content */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width of container */
+    height: 100%; /* Full height of container */
+    overflow: hidden; /* Hide any overflow from large images */
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensure the image scales down horizontally */
+    max-height: 100%; /* Ensure the image scales down vertically */
+    object-fit: contain; /* Keep the aspect ratio intact */
+  }
 `;
 
 export const PrevSlideButton = styled.button<{ isDisabled: boolean }>`
