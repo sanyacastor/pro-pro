@@ -27,6 +27,7 @@ import {
 import { Layout } from '../../../components/Layout';
 
 import { SwiperSlide } from 'swiper/react';
+import { Slider } from '../../../components/UI/Slider/Slider';
 
 import 'react-tooltip/dist/react-tooltip.css';
 
