@@ -30,7 +30,7 @@ export const Paragraph = styled.p<{
   }
 
   a {
-    text-decoration: underline;
+    border-bottom: 1px solid #000;
   }
 
   @media (max-width: 1160px) {
