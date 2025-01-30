@@ -19,11 +19,7 @@ import {
   Images,
 } from '../../../components/UI/Generic';
 
-import {
-  Paragraph,
-  SubSection,
-  SubSectionTitle,
-} from '../../../components/Typography';
+import { Paragraph, SubSection } from '../../../components/Typography';
 import { Layout } from '../../../components/Layout';
 
 import { SwiperSlide } from 'swiper/react';
@@ -56,7 +52,7 @@ export default function Article() {
               за&nbsp;металлическими дверями.
             </Paragraph>
             <Paragraph>
-              <Tooltip id="olivia" />
+              <Tooltip id="olivia" data-tooltip-place="top-end" />
               <a
                 data-tooltip-id="olivia"
                 data-tooltip-content="Оливия Эрлангер, исследовательница гаражной культуры как символа
@@ -127,7 +123,7 @@ export default function Article() {
             </Paragraph>
 
             <SubSection>
-              <SubSectionTitle mb={16}>С чего все начиналось</SubSectionTitle>
+              <ArticleSubtitle>С чего все начиналось</ArticleSubtitle>
               <Paragraph>
                 У&nbsp;меня был некоторый музыкальный бэкграунд: я&nbsp;окончил
                 музыкальную школу по&nbsp;классу фортепиано, по-дворовому освоил
@@ -179,9 +175,9 @@ export default function Article() {
             </ImageContainer>
 
             <SubSection>
-              <SubSectionTitle>
-                СОЗДАНИЕ ГАРАЖНОГО КОЛЛЕКТИВА И ПЕРВЫЕ КОНЦЕРТЫ
-              </SubSectionTitle>
+              <ArticleSubtitle>
+                Создание гаражного коллектива и первые концерты
+              </ArticleSubtitle>
 
               <Paragraph>
                 Коллектив собрался по&nbsp;цепочке. Как только у&nbsp;меня
@@ -329,16 +325,16 @@ export default function Article() {
                 <SwiperSlide>
                   <Image
                     src="/article/gleb-garage/kostik-dacha_1.jpg"
-                    width="760"
-                    height="471"
+                    width="1200"
+                    height="768"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="/article/gleb-garage/kostik-dacha_2.png"
-                    width="760"
-                    height="471"
+                    src="/article/gleb-garage/kostik-dacha_2.jpg"
+                    width="1200"
+                    height="768"
                     alt=""
                   />
                 </SwiperSlide>
@@ -400,9 +396,9 @@ export default function Article() {
             </Paragraph>
 
             <SubSection>
-              <SubSectionTitle>
-                КАК СТЕНЫ ГАРАЖА ВЫВЕЛИ НА БОЛЬШУЮ СЦЕНУ
-              </SubSectionTitle>
+              <ArticleSubtitle>
+                Как стены гаража вывели на большую сцену
+              </ArticleSubtitle>
 
               <Paragraph>
                 В&nbsp;2018 году у&nbsp;нас стало меньше активностей,
@@ -480,9 +476,9 @@ export default function Article() {
             </SubSection>
 
             <SubSection>
-              <SubSectionTitle>
-                ГАРАЖНЫЕ КОНЦЕРТЫ, МЕРОПРИЯТИЯ, ИВЕНТЫ
-              </SubSectionTitle>
+              <ArticleSubtitle>
+                Гаражные мероприятия, концерты, ивенты
+              </ArticleSubtitle>
 
               <Paragraph>
                 Не&nbsp;смотря на&nbsp;то, что наш первоначальный протвинский
@@ -517,33 +513,14 @@ export default function Article() {
               </Paragraph>
 
               <ImageContainer>
-                <Slider>
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/love_concert.jpg"
-                      width="760"
-                      height="471"
-                      alt=""
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/love-architects-back.jpg"
-                      width="760"
-                      height="471"
-                      alt=""
-                    />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/love-architects.jpg"
-                      width="760"
-                      height="471"
-                      alt=""
-                    />
-                  </SwiperSlide>
-                </Slider>
+                <SwiperSlide>
+                  <Image
+                    src="/article/gleb-garage/love_concert.jpg"
+                    width="760"
+                    height="471"
+                    alt=""
+                  />
+                </SwiperSlide>
               </ImageContainer>
 
               <Paragraph>
@@ -616,8 +593,7 @@ export default function Article() {
             </SubSection>
 
             <SubSection>
-              <SubSectionTitle>ИНСТРУМЕНТЫ И АППАРАТУРА</SubSectionTitle>
-
+              <ArticleSubtitle>Инстументы и аппаратура</ArticleSubtitle>
               <Paragraph>
                 Первоначально гараж был очень гулким, потому что стены
                 и&nbsp;само помещение были пустые. Да&nbsp;и&nbsp;вообще
@@ -744,33 +720,34 @@ export default function Article() {
                 сделанный ламповый предусилитель.
               </Paragraph>
 
-              <Figure>
-                <Image
-                  src="/article/gleb-garage/lamp-amp.png"
-                  width="760"
-                  height="471"
-                  alt=""
-                />
-              </Figure>
-              <Images gap={8}>
-                <Figure>
-                  <Image
-                    src="/article/gleb-garage/pedal.png"
-                    width="760"
-                    height="471"
-                    alt=""
-                  />
-                </Figure>
-
-                <Figure>
-                  <Image
-                    src="/article/gleb-garage/adapteres-mangement.png"
-                    width="760"
-                    height="471"
-                    alt=""
-                  />
-                </Figure>
-              </Images>
+              <ImageContainer>
+                <Slider>
+                  <SwiperSlide>
+                    <Image
+                      src="/article/gleb-garage/lamp-amp.png"
+                      width="1280"
+                      height="720"
+                      alt=""
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="/article/gleb-garage/pedal.png"
+                      width="1280"
+                      height="720"
+                      alt=""
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="/article/gleb-garage/adapteres-mangement.png"
+                      width="1280"
+                      height="720"
+                      alt=""
+                    />
+                  </SwiperSlide>
+                </Slider>
+              </ImageContainer>
               <Paragraph>
                 Еще одна работа: у&nbsp;меня была ретро радиола Rigonda
                 в&nbsp;нерабочем состоянии, нужно было сделать профилактику.
@@ -806,7 +783,7 @@ export default function Article() {
             </Paragraph>
 
             <SubSection>
-              <SubSectionTitle>АТМОСФЕРА</SubSectionTitle>
+              <ArticleSubtitle>Атмосфера</ArticleSubtitle>
 
               <Paragraph>
                 Как я уже упоминал ранее, первоначально это был обычный
