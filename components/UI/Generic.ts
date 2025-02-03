@@ -54,6 +54,17 @@ export const Figure = styled.figure<{ pl: number }>`
   }
 `;
 
+export const AudioFigure = styled.figure`
+  margin: 0;
+  padding: 0;
+
+  margin-top: 16px;
+
+  audio {
+    width: 100%;
+  }
+`;
+
 export const Images = styled.div<{ gap?: number }>`
   display: flex;
   gap: ${({ gap }) => (gap ? `${gap}px` : '40px')};

@@ -12,6 +12,8 @@ export const Section = styled.div`
   background-size: cover;
   display: flex;
   align-items: flex-end;
+
+  cursor: pointer;
 `;
 
 export const Container = styled.div`
@@ -24,7 +26,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Header = styled(Link)`
+export const Header = styled.div`
   width: 100%;
   display: block;
   color: #fff;
@@ -57,4 +59,17 @@ export const Subtitle = styled.div`
 
   text-align: center;
   margin-top: 32px;
+`;
+
+export const Author = styled.div`
+  font-family: 'Lack';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 134%;
+
+  text-align: center;
+  margin-top: 18px;
+
+  text-transform: uppercase;
 `;

@@ -16,7 +16,7 @@ import {
   ArticleContainer,
   Figure,
   ImageContainer,
-  Images,
+  AudioFigure,
 } from '../../../components/UI/Generic';
 
 import { Paragraph, SubSection } from '../../../components/Typography';
@@ -35,9 +35,9 @@ export default function Article() {
         ogDescription="Музыкальный гараж Глеба"
       />
       <Layout>
-        <PostHero cover="url(/article/gleb-garage/hero.jpg)">
+        <PostHero cover="url(/article/gleb-garage/thumbnail-header.jpeg)">
           <ArticleTitle>
-            МУЗЫКАЛЬНЫЙ ГАРАЖ <br /> разговор с кем?кем?
+            МУЗЫКАЛЬНЫЙ ГАРАЖ <br /> разговор с Глебом Маккартни
           </ArticleTitle>
           <PostAuthor>АВТОР: Анна Медведкова</PostAuthor>
         </PostHero>
@@ -157,17 +157,17 @@ export default function Article() {
               <Slider>
                 <SwiperSlide>
                   <Image
-                    src="/article/gleb-garage/garage_1.jpg"
-                    width="760"
-                    height="570"
+                    src="/article/gleb-garage/garage_2.jpg"
+                    width="1200"
+                    height="675"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="/article/gleb-garage/garage_2.jpg"
-                    width="760"
-                    height="427"
+                    src="/article/gleb-garage/garage_1.jpg"
+                    width="1200"
+                    height="675"
                     alt=""
                   />
                 </SwiperSlide>
@@ -188,7 +188,7 @@ export default function Article() {
                 в&nbsp;тесном контакте с&nbsp;еще одним нашим одноклассником
                 Серегой Глазковым, у&nbsp;которого тоже была электрогитара.
                 И&nbsp;что не&nbsp;менее важно, у&nbsp;него была жена
-                с&nbsp;клавишами Даша. Еще одним участником намечавшегося бэнда
+                с&nbsp;клавишами, Даша. Еще одним участником намечавшегося бэнда
                 стал Костик,с которым оба Сергея играли в&nbsp;теннис
                 и&nbsp;тоже хорошо знали друг друга.
               </Paragraph>
@@ -461,6 +461,35 @@ export default function Article() {
                 И&nbsp;я&nbsp;согласился.
               </Paragraph>
 
+              <ImageContainer>
+                <Slider>
+                  <SwiperSlide>
+                    <Image
+                      src="/article/gleb-garage/beatlove_1.jpeg"
+                      width="1280"
+                      height="853"
+                      alt=""
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="/article/gleb-garage/beatlove_2.jpeg"
+                      width="1280"
+                      height="853"
+                      alt=""
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src="/article/gleb-garage/gleb-piano.jpeg"
+                      width="847"
+                      height="561"
+                      alt=""
+                    />
+                  </SwiperSlide>
+                </Slider>
+              </ImageContainer>
+
               <Paragraph>
                 Ту&nbsp;же роль что сейчас исполняю в&nbsp;BeatLove&nbsp;&mdash;
                 ее&nbsp;репетировал и&nbsp;осваивал в&nbsp;стенах гаража. Играл
@@ -710,6 +739,9 @@ export default function Article() {
                   height="471"
                   alt=""
                 />
+                <AudioFigure>
+                  <audio controls src="/article/gleb-garage/proton.wav"></audio>
+                </AudioFigure>
               </Figure>
 
               <Paragraph>
