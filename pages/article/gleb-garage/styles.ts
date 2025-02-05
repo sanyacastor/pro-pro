@@ -21,3 +21,5 @@ export const ImagesGridOfFour = styled.div`
   grid-template-rows: 1fr 1fr;
   gap: 4px;
 `;
+
+export default function () {}
