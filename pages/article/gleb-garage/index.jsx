@@ -17,6 +17,7 @@ import {
   Figure,
   ImageContainer,
   AudioFigure,
+  Figcaption,
 } from '../../../components/UI/Generic';
 
 import { Paragraph, SubSection } from '../../../components/Typography';
@@ -24,6 +25,8 @@ import { Layout } from '../../../components/Layout';
 
 import { SwiperSlide } from 'swiper/react';
 import { Slider } from '../../../components/UI/Slider/Slider';
+
+import { FullWidthImage, ImagesGridOfFour, ImagesRow } from './styles';
 
 import 'react-tooltip/dist/react-tooltip.css';
 
@@ -35,12 +38,15 @@ export default function Article() {
         ogDescription="Музыкальный гараж Глеба"
       />
       <Layout>
-        <PostHero cover="url(/article/gleb-garage/thumbnail-header.jpeg)">
+        <PostHero cover="url(/article/gleb-garage/gleb-header.jpg)">
           <ArticleTitle>
-            МУЗЫКАЛЬНЫЙ ГАРАЖ <br /> разговор с Глебом Маккартни
+            КАК ПРЕвРАТИТЬ ГаРаж
+            <br /> В МЕСТО ПРИТЯЖЕнИЯ
+            <br /> МУЗЫкаНТОВ
           </ArticleTitle>
           <PostAuthor>АВТОР: Анна Медведкова</PostAuthor>
         </PostHero>
+
         <ArticleContainer>
           <Container>
             <ArticleSubtitle>Музыкальный гараж</ArticleSubtitle>
@@ -90,16 +96,22 @@ export default function Article() {
               а&nbsp;начинаем с&nbsp;вдохновляющей истории о&nbsp;музыке, дружбе
               и&nbsp;о&nbsp;пути от&nbsp;гаража к&nbsp;большой сцене.
             </Paragraph>
-
+          </Container>
+          <FullWidthImage>
             <ImageContainer>
               <Image
-                src="/article/gleb-garage/hero.jpg"
-                width="1440"
-                height="759"
+                quality={100}
+                src="/article/gleb-garage/gleb-wide.jpg"
+                width="1280"
+                height="854"
                 alt="Глеб Сорокин - Владелец гаража"
               />
+              <Container>
+                <Figcaption>Глеб Сорокин</Figcaption>
+              </Container>
             </ImageContainer>
-
+          </FullWidthImage>
+          <Container>
             <Paragraph>
               В&nbsp;этом материале говорим с&nbsp;Глебом Сорокиным. Сейчас Глеб
               играет в&nbsp;двух музыкальных коллективах&nbsp;&mdash; The
@@ -107,19 +119,18 @@ export default function Article() {
               <a href="https://beatlove.net/" target="_blank" rel="noreferrer">
                 The Beatles
               </a>
-              , и&nbsp;столичной инди-поп группе &laquo;
+              , и&nbsp;столичной инди-поп группе&nbsp;
               <a
                 href="https://vk.com/lavmusicru?ysclid=m5vleq0a2b148378429"
                 target="_blank"
                 rel="noreferrer"
               >
-                ЛАВ
+                &laquo;ЛАВ&raquo;
               </a>
-              &raquo;. Концертную деятельность Глеб умудряется сочетать
-              с&nbsp;работой на&nbsp;полный день в&nbsp;банке,
-              а&nbsp;в&nbsp;свободное от&nbsp;работы, концертов и&nbsp;прочих
-              увлечений время является владельцем &laquo;музыкального
-              гаража&raquo;.
+              . Концертную деятельность Глеб умудряется сочетать с&nbsp;работой
+              на&nbsp;полный день в&nbsp;банке, а&nbsp;в&nbsp;свободное
+              от&nbsp;работы, концертов и&nbsp;прочих увлечений время является
+              владельцем &laquo;музыкального гаража&raquo;.
             </Paragraph>
 
             <SubSection>
@@ -154,24 +165,15 @@ export default function Article() {
             </SubSection>
 
             <ImageContainer>
-              <Slider>
-                <SwiperSlide>
-                  <Image
-                    src="/article/gleb-garage/garage_2.jpg"
-                    width="1200"
-                    height="675"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="/article/gleb-garage/garage_1.jpg"
-                    width="1200"
-                    height="675"
-                    alt=""
-                  />
-                </SwiperSlide>
-              </Slider>
+              <SwiperSlide>
+                <Image
+                  quality={100}
+                  src="/article/gleb-garage/garage_1.jpg"
+                  width="760"
+                  height="428"
+                  alt="Глеб за барабанами в гараже"
+                />
+              </SwiperSlide>
             </ImageContainer>
 
             <SubSection>
@@ -222,6 +224,7 @@ export default function Article() {
 
               <ImageContainer>
                 <Image
+                  quality={100}
                   src="/article/gleb-garage/jazz-do-it.png"
                   width="760"
                   height="471"
@@ -249,40 +252,13 @@ export default function Article() {
             </SubSection>
 
             <ImageContainer>
-              <Slider>
-                <SwiperSlide>
-                  <Image
-                    src="/article/gleb-garage/jazz-do-it-dacha_1.jpg"
-                    width="1280"
-                    height="720"
-                    alt=""
-                  />
-                </SwiperSlide>
-                {/* <SwiperSlide>
-                <Image
-                  src="/article/gleb-garage/jazz-do-it-dacha_2.jpg"
-                  width="1024"
-                  height="680"
-                  alt=""
-                />
-              </SwiperSlide> */}
-                <SwiperSlide>
-                  <Image
-                    src="/article/gleb-garage/jazz-do-it-dacha_3.jpg"
-                    width="1280"
-                    height="720"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="/article/gleb-garage/jazz-do-it-dacha_4.jpg"
-                    width="1280"
-                    height="720"
-                    alt=""
-                  />
-                </SwiperSlide>
-              </Slider>
+              <Image
+                quality={100}
+                src="/article/gleb-garage/collage-jazztoit-dacha.jpg"
+                width="759"
+                height="627"
+                alt="Первый концерт группы Jazzdoit и фотосессия в Высокиинчах"
+              />
             </ImageContainer>
 
             <Paragraph>
@@ -298,15 +274,6 @@ export default function Article() {
               на&nbsp;сцену&nbsp;&mdash; гитары, барабаны, комбики.
             </Paragraph>
 
-            <ImageContainer>
-              <Image
-                src="/article/gleb-garage/drakino.jpg"
-                width="1280"
-                height="850"
-                alt=""
-              />
-            </ImageContainer>
-
             <Paragraph>
               Мы&nbsp;вышли, спели три песни. Я&nbsp;очень переживал, голос
               дрожал, казалось вообще ничего не&nbsp;мог. Сейчас пересматриваю
@@ -321,24 +288,16 @@ export default function Article() {
             </Paragraph>
 
             <ImageContainer>
-              <Slider>
-                <SwiperSlide>
-                  <Image
-                    src="/article/gleb-garage/kostik-dacha_1.jpg"
-                    width="1200"
-                    height="768"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="/article/gleb-garage/kostik-dacha_2.jpg"
-                    width="1200"
-                    height="768"
-                    alt=""
-                  />
-                </SwiperSlide>
-              </Slider>
+              <Image
+                quality={100}
+                src="/article/gleb-garage/kostik-dacha_1.jpg"
+                width="1200"
+                height="768"
+                alt=""
+              />
+              <Figcaption>
+                После концерта в парке Дракино, концерт для себя на даче
+              </Figcaption>
             </ImageContainer>
 
             <Paragraph>
@@ -349,36 +308,6 @@ export default function Article() {
               В&nbsp;Абриколе до&nbsp;сих пор часто играет живая музыка, хозяева
               хорошие и&nbsp;отзывчивые, всегда рады принять музыкантов.
             </Paragraph>
-
-            <ImageContainer>
-              <Slider>
-                <SwiperSlide>
-                  <Image
-                    src="/article/gleb-garage/skazka.jpg"
-                    width="760"
-                    height="471"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="/article/gleb-garage/angel-rom.jpg"
-                    width="760"
-                    height="471"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src="/article/gleb-garage/protva.jpg"
-                    width="760"
-                    height="471"
-                    alt=""
-                  />
-                </SwiperSlide>
-              </Slider>
-            </ImageContainer>
-
             <Paragraph>
               На&nbsp;концерт обычно уезжает добрая половина оборудования
               гаража, потом сюда возвращается, мучительно долго расставляется,
@@ -414,6 +343,29 @@ export default function Article() {
                 круто. Приходил он&nbsp;нечасто, но&nbsp;метко. Разумеется, Паша
                 тоже битломан.
               </Paragraph>
+
+              <ImageContainer>
+                <ImagesRow>
+                  <Image
+                    quality={100}
+                    src="/article/gleb-garage/lav-powerhouse_2.jpg"
+                    width="756"
+                    height="1008"
+                    alt="Группа лав, концерт в клубе Powerhouse"
+                  />
+
+                  <Image
+                    quality={100}
+                    src="/article/gleb-garage/lav-powerhouse_1.jpg"
+                    width="756"
+                    height="1008"
+                    alt="Группа лав, концерт в клубе Powerhouse"
+                  />
+                </ImagesRow>
+                <Figcaption>
+                  Концерт группы ЛАВ в клубе Powerhouse в Москве
+                </Figcaption>
+              </ImageContainer>
 
               <Paragraph>
                 С&nbsp;Beatlove история такая. Играя каверы на&nbsp;Битлз,
@@ -462,32 +414,13 @@ export default function Article() {
               </Paragraph>
 
               <ImageContainer>
-                <Slider>
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/beatlove_1.jpeg"
-                      width="1280"
-                      height="853"
-                      alt=""
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/beatlove_2.jpeg"
-                      width="1280"
-                      height="853"
-                      alt=""
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/gleb-piano.jpeg"
-                      width="847"
-                      height="561"
-                      alt=""
-                    />
-                  </SwiperSlide>
-                </Slider>
+                <Image
+                  quality={100}
+                  src="/article/gleb-garage/gleb-piano.jpeg"
+                  width="847"
+                  height="561"
+                  alt="Глеб игарет на рояле"
+                />
               </ImageContainer>
 
               <Paragraph>
@@ -542,14 +475,30 @@ export default function Article() {
               </Paragraph>
 
               <ImageContainer>
-                <SwiperSlide>
-                  <Image
-                    src="/article/gleb-garage/love_concert.jpg"
-                    width="760"
-                    height="471"
-                    alt=""
-                  />
-                </SwiperSlide>
+                <ImagesRow>
+                  <div>
+                    <Image
+                      quality={100}
+                      src="/article/gleb-garage/love_concert.jpg"
+                      width="960"
+                      height="1280"
+                      alt="Концерт группы ЛАВ для архитекторов в гараже"
+                    />
+                    <Figcaption>
+                      Концерт группы ЛАВ для архитекторов в гараже
+                    </Figcaption>
+                  </div>
+                  <div>
+                    <Image
+                      quality={100}
+                      src="/article/gleb-garage/dasha.png"
+                      width="756"
+                      height="1008"
+                      alt="Даша сидит на ковре"
+                    />
+                    <Figcaption>A это Даша на ковре</Figcaption>
+                  </div>
+                </ImagesRow>
               </ImageContainer>
 
               <Paragraph>
@@ -570,14 +519,7 @@ export default function Article() {
                 руками поддерживаю и&nbsp;рад и&nbsp;помочь, и&nbsp;сам
                 участвовать.
               </Paragraph>
-              <Figure>
-                <Image
-                  src="/article/gleb-garage/dasha.png"
-                  width="760"
-                  height="471"
-                  alt=""
-                />
-              </Figure>
+
               <Paragraph>
                 Этим летом мы&nbsp;провели первый концерт на&nbsp;широкую
                 аудиторию&nbsp;&mdash; играли The Beatles. Собрали уличную
@@ -589,38 +531,27 @@ export default function Article() {
                 и&nbsp;слушали музыку до&nbsp;последнего. Я&nbsp;чувствовал
                 радость и&nbsp;эстетически, и&nbsp;музыкально.
               </Paragraph>
-              <ImageContainer>
-                <Slider>
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/garage-public-concert.png"
-                      width="760"
-                      height="471"
-                      alt=""
-                    />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/garage-public-concert-inside.png"
-                      width="760"
-                      height="471"
-                      alt=""
-                    />
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/van.png"
-                      width="760"
-                      height="471"
-                      alt=""
-                    />
-                  </SwiperSlide>
-                </Slider>
-              </ImageContainer>
             </SubSection>
+          </Container>
 
+          <FullWidthImage>
+            <ImageContainer>
+              <Image
+                quality={100}
+                src="/article/gleb-garage/van-wide.jpg"
+                width="1280"
+                height="853"
+                alt="Гаражный концерт каверов The Beatles в Протвино, август 2024"
+              />
+              <Container>
+                <Figcaption>
+                  Гаражный концерт каверов The Beatles в Протвино, август 2024
+                </Figcaption>
+              </Container>
+            </ImageContainer>
+          </FullWidthImage>
+
+          <Container>
             <SubSection>
               <ArticleSubtitle>Инстументы и аппаратура</ArticleSubtitle>
               <Paragraph>
@@ -638,34 +569,15 @@ export default function Article() {
                 не&nbsp;привыкли к&nbsp;громкому звучанию акустической установки
                 в&nbsp;столь малом помещении.
               </Paragraph>
-              <ImageContainer>
-                <Slider>
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/construction-craft.jpg"
-                      width="760"
-                      height="471"
-                      alt=""
-                    />
-                  </SwiperSlide>
 
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/construction-mount.jpg"
-                      width="760"
-                      height="471"
-                      alt=""
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/construction-test.jpg"
-                      width="760"
-                      height="471"
-                      alt=""
-                    />
-                  </SwiperSlide>
-                </Slider>
+              <ImageContainer>
+                <Image
+                  quality={100}
+                  src="/article/gleb-garage/collage-construction.jpg"
+                  width="760"
+                  height="627"
+                  alt="Монтаж звуковых панелей в гараже"
+                />
               </ImageContainer>
 
               <Paragraph>
@@ -689,15 +601,6 @@ export default function Article() {
                 полезной площади, и&nbsp;звук в&nbsp;помещении стал комфортнее.
               </Paragraph>
 
-              <Figure>
-                <Image
-                  src="/article/gleb-garage/gleb-on-drums.png"
-                  width="760"
-                  height="471"
-                  alt=""
-                />
-              </Figure>
-
               <Paragraph>
                 Когда ребята из&nbsp;Beatlove сюда первый раз приехали,
                 им&nbsp;очень понравилось. А&nbsp;они поиграли на&nbsp;массе
@@ -715,15 +618,6 @@ export default function Article() {
                 что-то, чтобы можно было музыку писать.
               </Paragraph>
 
-              <Figure>
-                <Image
-                  src="/article/gleb-garage/mixer.png"
-                  width="760"
-                  height="471"
-                  alt=""
-                />
-              </Figure>
-
               <Paragraph>
                 Одним из&nbsp;последних приобретений стал цифровой микшер.
                 Помимо того, чтобы управлять общим звуком из&nbsp;колонок,
@@ -731,19 +625,30 @@ export default function Article() {
                 по&nbsp;отдельным дорожкам. Например, не&nbsp;так давно
                 мы&nbsp;записали Вальс Протон, который написал Паша Алексеев.
               </Paragraph>
+            </SubSection>
+          </Container>
 
-              <Figure>
-                <Image
-                  src="/article/gleb-garage/pasha.png"
-                  width="760"
-                  height="471"
-                  alt=""
-                />
-                <AudioFigure>
-                  <audio controls src="/article/gleb-garage/proton.wav"></audio>
-                </AudioFigure>
-              </Figure>
+          <FullWidthImage>
+            <ImageContainer>
+              <Image
+                quality={100}
+                src="/article/gleb-garage/pavel-wide.jpg"
+                width="1280"
+                height="853"
+                alt="Павел - гитарист группы ЛАВ"
+              />
+              <Container>
+                <Figcaption>Павел - гитарист группы ЛАВ</Figcaption>
+              </Container>
+            </ImageContainer>
+          </FullWidthImage>
 
+          <Container>
+            <AudioFigure>
+              <audio controls src="/article/gleb-garage/proton.wav"></audio>
+            </AudioFigure>
+
+            <SubSection>
               <Paragraph>
                 Количество коммутаций росло, и&nbsp;моя музыкальная деятельность
                 развивалась одновременно с&nbsp;интересом ко&nbsp;всякому
@@ -753,32 +658,36 @@ export default function Article() {
               </Paragraph>
 
               <ImageContainer>
-                <Slider>
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/lamp-amp.png"
-                      width="1280"
-                      height="720"
-                      alt=""
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/pedal.png"
-                      width="1280"
-                      height="720"
-                      alt=""
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/article/gleb-garage/adapteres-mangement.png"
-                      width="1280"
-                      height="720"
-                      alt=""
-                    />
-                  </SwiperSlide>
-                </Slider>
+                <ImagesGridOfFour>
+                  <Image
+                    quality={100}
+                    src="/article/gleb-garage/pedal.png"
+                    width="1280"
+                    height="720"
+                    alt=""
+                  />
+                  <Image
+                    quality={100}
+                    src="/article/gleb-garage/adapteres-mangement.png"
+                    width="1280"
+                    height="720"
+                    alt=""
+                  />
+                  <Image
+                    quality={100}
+                    src="/article/gleb-garage/mixer.png"
+                    width="760"
+                    height="471"
+                    alt=""
+                  />
+                  <Image
+                    quality={100}
+                    src="/article/gleb-garage/lamp-amp.png"
+                    width="1280"
+                    height="720"
+                    alt=""
+                  />
+                </ImagesGridOfFour>
               </ImageContainer>
               <Paragraph>
                 Еще одна работа: у&nbsp;меня была ретро радиола Rigonda
@@ -786,16 +695,8 @@ export default function Article() {
                 Я&nbsp;целый месяц ее&nbsp;паял и&nbsp;переделал в&nbsp;еще один
                 гитарный комбик и еще немного его достроил.
               </Paragraph>
-
-              <Figure>
-                <Image
-                  src="/article/gleb-garage/radiola.jpg"
-                  width="760"
-                  height="471"
-                  alt=""
-                />
-              </Figure>
             </SubSection>
+
             <Paragraph>
               <b>
                 Какой сетап аппаратуры ты&nbsp;должен иметь, чтобы играть
@@ -826,15 +727,6 @@ export default function Article() {
                 не&nbsp;парковался ни&nbsp;разу.
               </Paragraph>
 
-              <Figure>
-                <Image
-                  src="/article/gleb-garage/mirror.jpg"
-                  width="760"
-                  height="471"
-                  alt=""
-                />
-              </Figure>
-
               <Paragraph>
                 Современный облик гаража вырисовывался постепенно. Постеры делал
                 еще мой отец, сначала они висели у&nbsp;нас в&nbsp;квартире,
@@ -843,15 +735,6 @@ export default function Article() {
                 рекламный постер на&nbsp;световом коробе, я&nbsp;взял этот короб
                 и&nbsp;заказал для него новые изображения.
               </Paragraph>
-
-              <Figure>
-                <Image
-                  src="/article/gleb-garage/light-box.jpg"
-                  width="760"
-                  height="471"
-                  alt=""
-                />
-              </Figure>
 
               <Paragraph>
                 Вот эта доска появилась первой. Она тожде переехала из магазина
@@ -865,15 +748,6 @@ export default function Article() {
                 &laquo;Какая угодно&raquo;, и&nbsp;она это подписала.
               </Paragraph>
 
-              <Figure>
-                <Image
-                  src="/article/gleb-garage/board.png"
-                  width="760"
-                  height="471"
-                  alt=""
-                />
-              </Figure>
-
               <Paragraph>
                 Эту лампу мне подарил протвинец, она светит разными цветами
                 и&nbsp;задает атмосферу. Рядом наша первая Афиша, 2018&nbsp;год,
@@ -883,15 +757,6 @@ export default function Article() {
                 отделением.
               </Paragraph>
 
-              <Figure>
-                <Image
-                  src="/article/gleb-garage/lamp.png"
-                  width="760"
-                  height="471"
-                  alt=""
-                />
-              </Figure>
-
               <Paragraph>
                 Я&nbsp;чувствую, что каждая вещь и&nbsp;предмет в&nbsp;этом
                 гараже содержит определенную энергетику, влияющую на&nbsp;общую
@@ -899,6 +764,39 @@ export default function Article() {
                 и&nbsp;гармония, в&nbsp;том числе ради нее хочется сюда
                 возвращаться.
               </Paragraph>
+
+              <ImageContainer>
+                <ImagesGridOfFour>
+                  <Image
+                    quality={100}
+                    src="/article/gleb-garage/mirror.jpg"
+                    width="760"
+                    height="471"
+                    alt=""
+                  />
+                  <Image
+                    quality={100}
+                    src="/article/gleb-garage/light-box.jpg"
+                    width="760"
+                    height="471"
+                    alt=""
+                  />
+                  <Image
+                    quality={100}
+                    src="/article/gleb-garage/board.png"
+                    width="760"
+                    height="471"
+                    alt=""
+                  />
+                  <Image
+                    quality={100}
+                    src="/article/gleb-garage/lamp.png"
+                    width="760"
+                    height="471"
+                    alt=""
+                  />
+                </ImagesGridOfFour>
+              </ImageContainer>
             </SubSection>
           </Container>
         </ArticleContainer>

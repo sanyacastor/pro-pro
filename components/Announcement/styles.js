@@ -7,7 +7,7 @@ export const Section = styled.div`
 
   background: ${({ $bgImage }) => `url(${$bgImage})`};
 
-  background-position: 100%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
