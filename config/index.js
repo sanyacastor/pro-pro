@@ -1,5 +1,5 @@
 export const COVERS = {
-  glebGarage: '/article/gleb-garage/thumbnail.jpg',
+  glebGarage: '/article/gleb-garage/garajane-gleb-heho.jpg',
   istoriiVybora: '/article/istorii_vybora/thumbnail.png',
   policlinic:
     'https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/Vector_sp1h7k.webp',
@@ -10,8 +10,7 @@ export const COVERS = {
 export const HERO = {
   image: COVERS.glebGarage,
   link: '/article/gleb-garage',
-  subtitle: 'Может добавить небольшое описание',
-  title: 'мУЗЫКАЛЬНЫЙ ГаРАЖ<br /> РАЗГоВОР <br /> С ГЛЕБОм МАККАРТНИ',
+  title: 'КАК ПРЕвРАТИТЬ ГаРаж<br/> В МЕСТО ПРИТЯЖЕнИЯ<br/> МУЗЫкаНТОВ',
   author: 'Аня Медведкова',
 };
 

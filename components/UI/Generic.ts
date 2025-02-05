@@ -39,7 +39,7 @@ export const SectionSubtitle = styled.p`
 `;
 
 export const Figure = styled.figure<{ pl: number }>`
-  margin: 64px 0;
+  margin: 32px 0;
 
   padding-left: ${({ pl }) => pl && `${pl}px`};
 
@@ -68,7 +68,7 @@ export const AudioFigure = styled.figure`
 export const Images = styled.div<{ gap?: number }>`
   display: flex;
   gap: ${({ gap }) => (gap ? `${gap}px` : '40px')};
-  margin: 64px 0;
+  margin: 32px 0;
 
   figure {
     margin: 0;
@@ -113,6 +113,8 @@ export const Figcaption = styled.figcaption`
   line-height: 120%; /* 16.8px */
   margin: 0;
   padding: 0;
+
+  margin-top: 8px;
 `;
 
 export const SliderWrapper = styled.div`
@@ -130,7 +132,7 @@ export const SliderWrapper = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  margin: 64px 0;
+  margin: 32px 0;
 
   img {
     max-width: 100%;
