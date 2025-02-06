@@ -14,7 +14,6 @@ import { ArticleHeadMeta } from '../../../components/';
 import {
   Container,
   ArticleContainer,
-  Figure,
   ImageContainer,
   AudioFigure,
   Figcaption,
@@ -22,9 +21,6 @@ import {
 
 import { Paragraph, SubSection } from '../../../components/Typography';
 import { Layout } from '../../../components/Layout';
-
-import { SwiperSlide } from 'swiper/react';
-import { Slider } from '../../../components/UI/Slider/Slider';
 
 import { FullWidthImage, ImagesGridOfFour, ImagesRow } from './styles';
 
@@ -58,7 +54,11 @@ export default function Article() {
               за&nbsp;металлическими дверями.
             </Paragraph>
             <Paragraph>
-              <Tooltip id="olivia" data-tooltip-place="top-end" />
+              <Tooltip
+                id="olivia"
+                data-tooltip-place="top-end"
+                border="1px solid blue"
+              />
               <a
                 data-tooltip-id="olivia"
                 data-tooltip-content="Оливия Эрлангер, исследовательница гаражной культуры как символа
@@ -165,15 +165,13 @@ export default function Article() {
             </SubSection>
 
             <ImageContainer>
-              <SwiperSlide>
-                <Image
-                  quality={100}
-                  src="/article/gleb-garage/garage_1.jpg"
-                  width="760"
-                  height="428"
-                  alt="Глеб за барабанами в гараже"
-                />
-              </SwiperSlide>
+              <Image
+                quality={100}
+                src="/article/gleb-garage/garage_1.jpg"
+                width="760"
+                height="428"
+                alt="Глеб за барабанами в гараже"
+              />
             </ImageContainer>
 
             <SubSection>
@@ -348,15 +346,14 @@ export default function Article() {
                 <ImagesRow>
                   <Image
                     quality={100}
-                    src="/article/gleb-garage/lav-powerhouse_2.jpg"
+                    src="/article/gleb-garage/lav-powerhouse_1.jpg"
                     width="756"
                     height="1008"
                     alt="Группа лав, концерт в клубе Powerhouse"
                   />
-
                   <Image
                     quality={100}
-                    src="/article/gleb-garage/lav-powerhouse_1.jpg"
+                    src="/article/gleb-garage/lav-powerhouse_2.jpg"
                     width="756"
                     height="1008"
                     alt="Группа лав, концерт в клубе Powerhouse"
@@ -653,8 +650,8 @@ export default function Article() {
                 Количество коммутаций росло, и&nbsp;моя музыкальная деятельность
                 развивалась одновременно с&nbsp;интересом ко&nbsp;всякому
                 оборудованию. Во&nbsp;мне открылась страсть к&nbsp;изготовлению
-                приборов, музыкальных примочек. Например, вот собственноручно
-                сделанный ламповый предусилитель.
+                приборов, музыкальных примочек. Например, я сам сделал ламповый
+                предусилитель.
               </Paragraph>
 
               <ImageContainer>
@@ -696,34 +693,37 @@ export default function Article() {
                 гитарный комбик и еще немного его достроил.
               </Paragraph>
             </SubSection>
+            <SubSection>
+              <Paragraph>
+                <b>
+                  Какой сетап аппаратуры ты&nbsp;должен иметь, чтобы играть
+                  гаражную музыку?
+                </b>
+              </Paragraph>
 
-            <Paragraph>
-              <b>
-                Какой сетап аппаратуры ты&nbsp;должен иметь, чтобы играть
-                гаражную музыку?
-              </b>
-            </Paragraph>
-            <Paragraph>
-              Это отличный вопрос! Все зависит от&nbsp;того, какую музыку
-              ты&nbsp;хочешь играть. Если это классический гаражный рок,
-              то&nbsp; начать стоит и инстументов: акустические барабаны,
-              гитара, бас, микрофон. Чтобы все это звучало, нужны комбики для
-              гитар и колонки для вокалиста. Плюсом будет наличие микшера, но на
-              первых порах можно обоийтись и без него. Ну&nbsp;а&nbsp;если
-              ты&nbsp;электронный музыкант или диджей, тебе не&nbsp;нужны
-              барабаны, не&nbsp;нужен гитарный комбик, тебе достаточно
-              компьютера и&nbsp;колонок. Это разные направления.
-            </Paragraph>
+              <Paragraph>
+                Это отличный вопрос! Все зависит от&nbsp;того, какую музыку
+                ты&nbsp;хочешь играть. Если это классический гаражный рок,
+                то&nbsp; начать стоит и инстументов: акустические барабаны,
+                гитара, бас, микрофон. Чтобы все это звучало, нужны комбики для
+                гитар и колонки для вокалиста. Плюсом будет наличие микшера, но
+                на первых порах можно обоийтись и без него. Ну&nbsp;а&nbsp;если
+                ты&nbsp;электронный музыкант или диджей, тебе не&nbsp;нужны
+                барабаны, не&nbsp;нужен гитарный комбик, тебе достаточно
+                компьютера и&nbsp;колонок. Это разные направления.
+              </Paragraph>
+            </SubSection>
+            <SubSection></SubSection>
 
             <SubSection>
               <ArticleSubtitle>Атмосфера</ArticleSubtitle>
 
               <Paragraph>
-                Как я уже упоминал ранее, первоначально это был обычный
+                Как я&nbsp;уже упоминал ранее, первоначально это был обычный
                 автомобильный гараж, который использвался по&nbsp;прямому
                 назначению. После репетиций мы&nbsp;расставляли все что там было
-                вдоль&nbsp;стен и&nbsp;загоняли машину обратно. Последний раз
-                это было в&nbsp;2014-м, с&nbsp;тех пор автомобиль тут
+                вдоль стен и&nbsp;загоняли машину обратно. Последний раз это
+                было в&nbsp;2014-м, с&nbsp;тех пор автомобиль тут
                 не&nbsp;парковался ни&nbsp;разу.
               </Paragraph>
 
@@ -737,24 +737,25 @@ export default function Article() {
               </Paragraph>
 
               <Paragraph>
-                Вот эта доска появилась первой. Она тожде переехала из магазина
-                моей мамы, после того как он закрылся. Когда она только
-                появилась на&nbsp;ней ничего не&nbsp;было нарисовано, потом
-                Костик прислонил к&nbsp;ней фломастер и&nbsp;он&nbsp;потек,
-                получился желтый подтек с&nbsp;ножками&nbsp;&mdash; человечек
-                и&nbsp;черная доска. Потом мы&nbsp;пририсовали глазки и ножки.
-                Потом Сережа написал &laquo;весна&raquo;, потому что была весна.
-                Даша спросила: &laquo;А&nbsp;какая весна?&raquo;, я&nbsp;сказал:
-                &laquo;Какая угодно&raquo;, и&nbsp;она это подписала.
+                Черная доска появилась первой. Она тоже переехала
+                из&nbsp;магазина моей мамы, после того как он&nbsp;закрылся.
+                Когда она только появилась на&nbsp;ней ничего не&nbsp;было
+                нарисовано, потом Костик прислонил к&nbsp;ней фломастер
+                и&nbsp;он&nbsp;потек, получился желтый подтек
+                с&nbsp;ножками&nbsp;&mdash; человечек и&nbsp;черная доска. Потом
+                мы&nbsp;пририсовали глазки и&nbsp;ножки. Потом Сережа написал
+                &laquo;весна&raquo;, потому что была весна. Даша спросила:
+                &laquo;А&nbsp;какая весна?&raquo;, я&nbsp;сказал: &laquo;Какая
+                угодно&raquo;, и&nbsp;она это подписала.
               </Paragraph>
 
               <Paragraph>
-                Эту лампу мне подарил протвинец, она светит разными цветами
+                Лампу мне подарил протвинец, она светит разными огнями
                 и&nbsp;задает атмосферу. Рядом наша первая Афиша, 2018&nbsp;год,
                 концерт на&nbsp;день Битлз в&nbsp;Абриколе, который был
                 организовывали совместно с&nbsp;Просвет. Приезжали
-                профессиональные музыканты из&nbsp;Тулы, а&nbsp;мы были первым
-                отделением.
+                профессиональные музыканты из&nbsp;Тулы, а&nbsp;мы&nbsp;были
+                первым отделением.
               </Paragraph>
 
               <Paragraph>
