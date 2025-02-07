@@ -94,47 +94,43 @@ export default function Article() {
               и&nbsp;о&nbsp;пути от&nbsp;гаража к&nbsp;большой сцене.
             </Paragraph>
 
-            <Container>
-              <Paragraph>
-                В&nbsp;этом материале говорим с&nbsp;Глебом Сорокиным. Сейчас
-                Глеб играет в&nbsp;двух музыкальных коллективах&nbsp;&mdash; The
-                BeatLove, официальном российском трибьюте группы{' '}
-                <a
-                  href="https://beatlove.net/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  The Beatles
-                </a>
-                , и&nbsp;столичной инди-поп группе&nbsp;
-                <a
-                  href="https://vk.com/lavmusicru?ysclid=m5vleq0a2b148378429"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  &laquo;ЛАВ&raquo;
-                </a>
-                . Концертную деятельность Глеб умудряется сочетать
-                с&nbsp;работой на&nbsp;полный день в&nbsp;банке,
-                а&nbsp;в&nbsp;свободное от&nbsp;работы, концертов и&nbsp;прочих
-                увлечений время является владельцем &laquo;музыкального
-                гаража&raquo;.
-              </Paragraph>
-            </Container>
-            <FullWidthImage>
-              <ImageContainer>
-                <Image
-                  quality={100}
-                  src="/article/gleb-garage/gleb-wide.jpg"
-                  width="1280"
-                  height="854"
-                  alt="Глеб Сорокин - Владелец гаража"
-                />
-                <Container>
-                  <Figcaption>Глеб Сорокин</Figcaption>
-                </Container>
-              </ImageContainer>
-            </FullWidthImage>
+            <Paragraph>
+              В&nbsp;этом материале говорим с&nbsp;Глебом Сорокиным. Сейчас Глеб
+              играет в&nbsp;двух музыкальных коллективах&nbsp;&mdash; The
+              BeatLove, официальном российском трибьюте группы{' '}
+              <a href="https://beatlove.net/" target="_blank" rel="noreferrer">
+                The Beatles
+              </a>
+              , и&nbsp;столичной инди-поп группе&nbsp;
+              <a
+                href="https://vk.com/lavmusicru?ysclid=m5vleq0a2b148378429"
+                target="_blank"
+                rel="noreferrer"
+              >
+                &laquo;ЛАВ&raquo;
+              </a>
+              . Концертную деятельность Глеб умудряется сочетать с&nbsp;работой
+              на&nbsp;полный день в&nbsp;банке, а&nbsp;в&nbsp;свободное
+              от&nbsp;работы, концертов и&nbsp;прочих увлечений время является
+              владельцем &laquo;музыкального гаража&raquo;.
+            </Paragraph>
+          </Container>
+
+          <FullWidthImage>
+            <ImageContainer>
+              <Image
+                quality={100}
+                src="/article/gleb-garage/gleb-wide.jpg"
+                width="1280"
+                height="854"
+                alt="Глеб Сорокин - Владелец гаража"
+              />
+              <Container>
+                <Figcaption>Глеб Сорокин</Figcaption>
+              </Container>
+            </ImageContainer>
+          </FullWidthImage>
+          <Container>
             <ArticleSubtitle>С чего все начиналось</ArticleSubtitle>
             <Paragraph>
               У&nbsp;меня был некоторый музыкальный бэкграунд: я&nbsp;окончил
