@@ -130,7 +130,6 @@ export default function Article() {
               от&nbsp;работы, концертов и&nbsp;прочих увлечений время является
               владельцем &laquo;музыкального гаража&raquo;.
             </Paragraph>
-
             <SubSection>
               <ArticleSubtitle>С чего все начиналось</ArticleSubtitle>
               <Paragraph>
@@ -161,7 +160,6 @@ export default function Article() {
                 и&nbsp;что-то играть.
               </Paragraph>
             </SubSection>
-
             <ImageContainer>
               <Image
                 quality={100}
@@ -250,7 +248,7 @@ export default function Article() {
             <ImageContainer>
               <Image
                 quality={100}
-                src="/article/gleb-garage/collage-jazztoit-dacha.jpg"
+                src="/article/gleb-garage/collage-jazztoit-dacha_blue.jpg"
                 width="759"
                 height="627"
                 alt="Первый концерт группы Jazzdoit и фотосессия в Высокиинчах"
@@ -453,12 +451,25 @@ export default function Article() {
                 кто-то пришел, ты&nbsp;кому-то позвонил тоже, другу-приятелю,
                 небольшой компанией закрылись и&nbsp;играете.
               </Paragraph>
+
               <Paragraph>
                 Во&nbsp;времена JazzDoIt были один или два концерта
                 в&nbsp;теплое время года, когда мы&nbsp;открывали ворота
                 и&nbsp;играли для своих родителей, друзей, приходили семьи
                 с&nbsp;детьми, ставили столики, но&nbsp;это тоже был узкий круг.
               </Paragraph>
+
+              <ImageContainer>
+                <Image
+                  quality={100}
+                  src="/article/gleb-garage/shaposhnikov.jpg"
+                  width="1280"
+                  height="854"
+                  alt=""
+                />
+                <Figcaption>Автор: Павел Шапошников</Figcaption>
+              </ImageContainer>
+
               <Paragraph>
                 В&nbsp;2022-м был первый раз, когда гараж открыл двери для
                 широкой аудитории. Это было мероприятие для архитекторов
@@ -507,6 +518,7 @@ export default function Article() {
                 новые протвинцы, и&nbsp;всех, мне кажется, интересовал уже
                 именно гараж, как определенное место, музыкальная площадка.
               </Paragraph>
+
               <Paragraph>
                 В&nbsp;этом направлении в&nbsp;первую очередь заслуга Даши как
                 организатора и&nbsp;одного из&nbsp;&laquo;управляющих&raquo;
@@ -656,7 +668,7 @@ export default function Article() {
               </Paragraph>
 
               <ImageContainer>
-                <ImagesGridOfFour>
+                {/* <ImagesGridOfFour>
                   <Image
                     quality={100}
                     src="/article/gleb-garage/pedal.png"
@@ -671,21 +683,15 @@ export default function Article() {
                     height="720"
                     alt=""
                   />
-                  <Image
-                    quality={100}
-                    src="/article/gleb-garage/mixer.png"
-                    width="760"
-                    height="471"
-                    alt=""
-                  />
-                  <Image
-                    quality={100}
-                    src="/article/gleb-garage/lamp-amp.png"
-                    width="1280"
-                    height="720"
-                    alt=""
-                  />
-                </ImagesGridOfFour>
+                 */}
+                <Image
+                  quality={100}
+                  src="/article/gleb-garage/lamp-amp.png"
+                  width="1280"
+                  height="720"
+                  alt=""
+                />
+                {/* </ImagesGridOfFour> */}
               </ImageContainer>
               <Paragraph>
                 Еще одна работа: у&nbsp;меня была ретро радиола Rigonda
@@ -694,6 +700,18 @@ export default function Article() {
                 гитарный комбик и еще немного его достроил.
               </Paragraph>
             </SubSection>
+
+            <ImageContainer>
+              <Image
+                quality={100}
+                src="/article/gleb-garage/radiola.jpg"
+                width="1999"
+                height="1333"
+                alt="радиола Rigonda"
+              />
+              <Figcaption>Та самая радиола Rigonda</Figcaption>
+            </ImageContainer>
+
             <SubSection>
               <Paragraph>
                 <b>
@@ -713,8 +731,17 @@ export default function Article() {
                 барабаны, не&nbsp;нужен гитарный комбик, тебе достаточно
                 компьютера и&nbsp;колонок. Это разные направления.
               </Paragraph>
+
+              <ImageContainer>
+                <Image
+                  quality={100}
+                  src="/article/gleb-garage/mixer.jpg"
+                  width="1200"
+                  height="675"
+                  alt=""
+                />
+              </ImageContainer>
             </SubSection>
-            <SubSection></SubSection>
 
             <SubSection>
               <ArticleSubtitle>Атмосфера</ArticleSubtitle>
