@@ -11,7 +11,7 @@ const ArticleThumbnail = ({ url, title, author, thumbnail }) => (
       <Image alt="" src={thumbnail} height="330" width="500" />
     </div>
     <Styled.ThumbnailTitle>{title}</Styled.ThumbnailTitle>
-    {author && <p className={s.articleThumbnail__author}>{author}</p>}
+    {author && <Styled.Author>АВТОР: {author}</Styled.Author>}
   </Styled.ArticleThumbnail>
 );
 
@@ -23,13 +23,13 @@ export const Articles = () => {
           <ArticleThumbnail
             thumbnail="/article/chto-takoe-sovetsky-modernizm/thumbnail.png"
             url="/article/chto-takoe-sovetsky-modernizm"
-            title="ПРО СОВЕТСКИЙ МОДЕРНИЗМ"
+            title="ПРО СОВеТСКИЙ МОдЕРНИЗМ"
             author="Аня Медведкова"
           />
           <ArticleThumbnail
             thumbnail="/article/uskoritel-v-protvino/thumbnail.png"
             url="/article/uskoritel-v-protvino"
-            title="УСКОРИТЕЛЬ В&nbsp;ПРОТВИНО"
+            title="УСкОРИТЕЛЬ В&nbsp;ПРОТвИНО"
             author="Екатерина Алейникова"
           />
         </Styled.Articles>
