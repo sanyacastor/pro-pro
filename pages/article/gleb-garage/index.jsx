@@ -416,6 +416,9 @@ export default function Article() {
                   height="561"
                   alt="Глеб игарет на рояле"
                 />
+                <Figcaption>
+                  Глеб Сорокин ака Пол Маккартни на концерте TheBeatlove
+                </Figcaption>
               </ImageContainer>
 
               <Paragraph>

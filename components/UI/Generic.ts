@@ -114,7 +114,7 @@ export const Figcaption = styled.figcaption`
   margin: 0;
   padding: 0;
 
-  margin-top: 8px;
+  margin-top: 4px;
 `;
 
 export const SliderWrapper = styled.div`
