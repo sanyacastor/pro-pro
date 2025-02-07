@@ -10,7 +10,7 @@ export const COVERS = {
 export const HERO = {
   image: COVERS.glebGarage,
   link: '/article/gleb-garage',
-  title: 'КАК ПРЕвРАТИТЬ ГаРаж<br/> В МЕСТО ПРИТЯЖЕнИЯ<br/> МУЗЫкаНТОВ',
+  title: 'В ГОСТЯХ<br/> У ГЛеБА МАКкАРТНИ',
   author: 'Аня Медведкова',
 };
 

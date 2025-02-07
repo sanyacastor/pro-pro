@@ -30,15 +30,14 @@ export default function Article() {
   return (
     <>
       <ArticleHeadMeta
-        title="Музыкальный гараж"
-        ogDescription="Музыкальный гараж Глеба"
+        title="Гаражане: В гостях у Глеба Маккартни"
+        ogDescription="Сейчас Глеб играет в двух музыкальных коллективах — The BeatLove, официальном российском трибьюте группы The Beatles, и столичной инди-поп группе «ЛАВ»."
       />
       <Layout>
         <PostHero cover="url(/article/gleb-garage/gleb-header.jpg)">
           <ArticleTitle>
-            КАК ПРЕвРАТИТЬ ГаРаж
-            <br /> В МЕСТО ПРИТЯЖЕнИЯ
-            <br /> МУЗЫкаНТОВ
+            В ГОСТЯХ
+            <br /> У ГЛеБА МАКкАРТНИ
           </ArticleTitle>
           <PostAuthor>АВТОР: Анна Медведкова</PostAuthor>
         </PostHero>
@@ -94,72 +93,75 @@ export default function Article() {
               а&nbsp;начинаем с&nbsp;вдохновляющей истории о&nbsp;музыке, дружбе
               и&nbsp;о&nbsp;пути от&nbsp;гаража к&nbsp;большой сцене.
             </Paragraph>
-          </Container>
-          <FullWidthImage>
-            <ImageContainer>
-              <Image
-                quality={100}
-                src="/article/gleb-garage/gleb-wide.jpg"
-                width="1280"
-                height="854"
-                alt="Глеб Сорокин - Владелец гаража"
-              />
-              <Container>
-                <Figcaption>Глеб Сорокин</Figcaption>
-              </Container>
-            </ImageContainer>
-          </FullWidthImage>
-          <Container>
-            <Paragraph>
-              В&nbsp;этом материале говорим с&nbsp;Глебом Сорокиным. Сейчас Глеб
-              играет в&nbsp;двух музыкальных коллективах&nbsp;&mdash; The
-              BeatLove, официальном российском трибьюте группы{' '}
-              <a href="https://beatlove.net/" target="_blank" rel="noreferrer">
-                The Beatles
-              </a>
-              , и&nbsp;столичной инди-поп группе&nbsp;
-              <a
-                href="https://vk.com/lavmusicru?ysclid=m5vleq0a2b148378429"
-                target="_blank"
-                rel="noreferrer"
-              >
-                &laquo;ЛАВ&raquo;
-              </a>
-              . Концертную деятельность Глеб умудряется сочетать с&nbsp;работой
-              на&nbsp;полный день в&nbsp;банке, а&nbsp;в&nbsp;свободное
-              от&nbsp;работы, концертов и&nbsp;прочих увлечений время является
-              владельцем &laquo;музыкального гаража&raquo;.
-            </Paragraph>
-            <SubSection>
-              <ArticleSubtitle>С чего все начиналось</ArticleSubtitle>
-              <Paragraph>
-                У&nbsp;меня был некоторый музыкальный бэкграунд: я&nbsp;окончил
-                музыкальную школу по&nbsp;классу фортепиано, по-дворовому освоил
-                гитару в&nbsp;формате дачно-костровых посиделок. Идея играть
-                и&nbsp;записывать музыку в&nbsp;гараже родилась случайно. Как-то
-                накануне моего дня рождения двоюродный брат предложил :
-                &laquo;Слушай, я&nbsp;тебя сколько знаю, ты&nbsp;каждую
-                свободную минуту &bdquo;настукиваешь&ldquo;, давай на&nbsp;день
-                рождения купим тебе барабаны. У&nbsp;тебя&nbsp;же есть
-                гараж&raquo;.
-              </Paragraph>
 
+            <Container>
               <Paragraph>
-                Это был момент, когда я&nbsp;подумал: &laquo;Классная идея!
-                Почему она не&nbsp;пришла мне раньше?&raquo; Меня всегда тянуло
-                к&nbsp;барабанам, хоть фортуна и&nbsp;шанс попасть барабанщиком
-                в&nbsp;школьный ансамбль от&nbsp;меня в&nbsp;свое время нелепым
-                образом отвернулись. В&nbsp;2013 году я&nbsp;уже работал
-                и&nbsp;мог позволить себе купить барабаны. Так на&nbsp;Авито
-                была приобретена весьма бюджетная барабанная установка,
-                получившая прописку в&nbsp;гараже. Он&nbsp;был еще совсем
-                &laquo;голый&raquo;&nbsp;&mdash; я&nbsp;продолжал загонять сюда
-                свою машину и&nbsp;обслуживал ее&nbsp;тут&nbsp;же.
-                Но&nbsp;с&nbsp;появлением ударной установки во&nbsp;мне
-                проснулась непреодолимая тяга и&nbsp;стремление сюда приходить
-                и&nbsp;что-то играть.
+                В&nbsp;этом материале говорим с&nbsp;Глебом Сорокиным. Сейчас
+                Глеб играет в&nbsp;двух музыкальных коллективах&nbsp;&mdash; The
+                BeatLove, официальном российском трибьюте группы{' '}
+                <a
+                  href="https://beatlove.net/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  The Beatles
+                </a>
+                , и&nbsp;столичной инди-поп группе&nbsp;
+                <a
+                  href="https://vk.com/lavmusicru?ysclid=m5vleq0a2b148378429"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  &laquo;ЛАВ&raquo;
+                </a>
+                . Концертную деятельность Глеб умудряется сочетать
+                с&nbsp;работой на&nbsp;полный день в&nbsp;банке,
+                а&nbsp;в&nbsp;свободное от&nbsp;работы, концертов и&nbsp;прочих
+                увлечений время является владельцем &laquo;музыкального
+                гаража&raquo;.
               </Paragraph>
-            </SubSection>
+            </Container>
+            <FullWidthImage>
+              <ImageContainer>
+                <Image
+                  quality={100}
+                  src="/article/gleb-garage/gleb-wide.jpg"
+                  width="1280"
+                  height="854"
+                  alt="Глеб Сорокин - Владелец гаража"
+                />
+                <Container>
+                  <Figcaption>Глеб Сорокин</Figcaption>
+                </Container>
+              </ImageContainer>
+            </FullWidthImage>
+            <ArticleSubtitle>С чего все начиналось</ArticleSubtitle>
+            <Paragraph>
+              У&nbsp;меня был некоторый музыкальный бэкграунд: я&nbsp;окончил
+              музыкальную школу по&nbsp;классу фортепиано, по-дворовому освоил
+              гитару в&nbsp;формате дачно-костровых посиделок. Идея играть
+              и&nbsp;записывать музыку в&nbsp;гараже родилась случайно. Как-то
+              накануне моего дня рождения двоюродный брат предложил :
+              &laquo;Слушай, я&nbsp;тебя сколько знаю, ты&nbsp;каждую свободную
+              минуту &bdquo;настукиваешь&ldquo;, давай на&nbsp;день рождения
+              купим тебе барабаны. У&nbsp;тебя&nbsp;же есть гараж&raquo;.
+            </Paragraph>
+
+            <Paragraph>
+              Это был момент, когда я&nbsp;подумал: &laquo;Классная идея! Почему
+              она не&nbsp;пришла мне раньше?&raquo; Меня всегда тянуло
+              к&nbsp;барабанам, хоть фортуна и&nbsp;шанс попасть барабанщиком
+              в&nbsp;школьный ансамбль от&nbsp;меня в&nbsp;свое время нелепым
+              образом отвернулись. В&nbsp;2013 году я&nbsp;уже работал
+              и&nbsp;мог позволить себе купить барабаны. Так на&nbsp;Авито была
+              приобретена весьма бюджетная барабанная установка, получившая
+              прописку в&nbsp;гараже. Он&nbsp;был еще совсем
+              &laquo;голый&raquo;&nbsp;&mdash; я&nbsp;продолжал загонять сюда
+              свою машину и&nbsp;обслуживал ее&nbsp;тут&nbsp;же.
+              Но&nbsp;с&nbsp;появлением ударной установки во&nbsp;мне проснулась
+              непреодолимая тяга и&nbsp;стремление сюда приходить и&nbsp;что-то
+              играть.
+            </Paragraph>
             <ImageContainer>
               <Image
                 quality={100}
@@ -668,22 +670,6 @@ export default function Article() {
               </Paragraph>
 
               <ImageContainer>
-                {/* <ImagesGridOfFour>
-                  <Image
-                    quality={100}
-                    src="/article/gleb-garage/pedal.png"
-                    width="1280"
-                    height="720"
-                    alt=""
-                  />
-                  <Image
-                    quality={100}
-                    src="/article/gleb-garage/adapteres-mangement.png"
-                    width="1280"
-                    height="720"
-                    alt=""
-                  />
-                 */}
                 <Image
                   quality={100}
                   src="/article/gleb-garage/lamp-amp.png"
@@ -691,7 +677,6 @@ export default function Article() {
                   height="720"
                   alt=""
                 />
-                {/* </ImagesGridOfFour> */}
               </ImageContainer>
               <Paragraph>
                 Еще одна работа: у&nbsp;меня была ретро радиола Rigonda
@@ -764,6 +749,16 @@ export default function Article() {
                 и&nbsp;заказал для него новые изображения.
               </Paragraph>
 
+              <ImageContainer>
+                <Image
+                  quality={100}
+                  src="/article/gleb-garage/light-box.jpg"
+                  width="760"
+                  height="471"
+                  alt=""
+                />
+              </ImageContainer>
+
               <Paragraph>
                 Черная доска появилась первой. Она тоже переехала
                 из&nbsp;магазина моей мамы, после того как он&nbsp;закрылся.
@@ -777,6 +772,16 @@ export default function Article() {
                 угодно&raquo;, и&nbsp;она это подписала.
               </Paragraph>
 
+              <ImageContainer>
+                <Image
+                  quality={100}
+                  src="/article/gleb-garage/board.png"
+                  width="760"
+                  height="471"
+                  alt=""
+                />
+              </ImageContainer>
+
               <Paragraph>
                 Лампу мне подарил протвинец, она светит разными огнями
                 и&nbsp;задает атмосферу. Рядом наша первая Афиша, 2018&nbsp;год,
@@ -786,6 +791,16 @@ export default function Article() {
                 первым отделением.
               </Paragraph>
 
+              <ImageContainer>
+                <Image
+                  quality={100}
+                  src="/article/gleb-garage/lamp.png"
+                  width="760"
+                  height="471"
+                  alt=""
+                />
+              </ImageContainer>
+
               <Paragraph>
                 Я&nbsp;чувствую, что каждая вещь и&nbsp;предмет в&nbsp;этом
                 гараже содержит определенную энергетику, влияющую на&nbsp;общую
@@ -793,39 +808,6 @@ export default function Article() {
                 и&nbsp;гармония, в&nbsp;том числе ради нее хочется сюда
                 возвращаться.
               </Paragraph>
-
-              <ImageContainer>
-                <ImagesGridOfFour>
-                  <Image
-                    quality={100}
-                    src="/article/gleb-garage/mirror.jpg"
-                    width="760"
-                    height="471"
-                    alt=""
-                  />
-                  <Image
-                    quality={100}
-                    src="/article/gleb-garage/light-box.jpg"
-                    width="760"
-                    height="471"
-                    alt=""
-                  />
-                  <Image
-                    quality={100}
-                    src="/article/gleb-garage/board.png"
-                    width="760"
-                    height="471"
-                    alt=""
-                  />
-                  <Image
-                    quality={100}
-                    src="/article/gleb-garage/lamp.png"
-                    width="760"
-                    height="471"
-                    alt=""
-                  />
-                </ImagesGridOfFour>
-              </ImageContainer>
             </SubSection>
           </Container>
         </ArticleContainer>
