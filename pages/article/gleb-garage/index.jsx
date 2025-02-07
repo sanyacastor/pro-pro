@@ -585,7 +585,7 @@ export default function Article() {
               <ImageContainer>
                 <Image
                   quality={100}
-                  src="/article/gleb-garage/collage-construction.jpg"
+                  src="/article/gleb-garage/collage-construction_blue.jpg"
                   width="760"
                   height="627"
                   alt="Монтаж звуковых панелей в гараже"
