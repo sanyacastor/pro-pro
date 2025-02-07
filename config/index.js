@@ -17,4 +17,5 @@ export const HERO = {
 export const SOCIAL = {
   instagram: 'https://www.instagram.com/pro.protvino',
   telegram: 'https://t.me/propromedia',
+  youtube: 'https://www.youtube.com/@eclair.canonique',
 };
