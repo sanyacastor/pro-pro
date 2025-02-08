@@ -462,7 +462,8 @@ export default function Article() {
                   alt=""
                 />
                 <Figcaption>
-                  Гаражный концерт каверов The Beatles в Протвино, август 2024<br/>
+                  Гаражный концерт каверов The Beatles в Протвино, август 2024
+                  <br />
                   Автор: Павел Шапошников
                 </Figcaption>
               </ImageContainer>
