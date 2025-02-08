@@ -9,7 +9,7 @@ export const Footer = () => (
       <S.LogoColumn>
         <S.LogoText>ПРОПРО</S.LogoText>
         <S.LogoSubtitle>
-          локальное медиа о прошлом настоящем и будущем
+          локальное медиа о прошлом, настоящем и будущем
         </S.LogoSubtitle>
       </S.LogoColumn>
 
