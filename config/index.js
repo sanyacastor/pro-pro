@@ -1,4 +1,5 @@
 export const COVERS = {
+  glebGarage: '/article/gleb-garage/thumbnail.jpg',
   istoriiVybora: '/article/istorii_vybora/thumbnail.png',
   policlinic:
     'https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/Vector_sp1h7k.webp',
@@ -7,13 +8,14 @@ export const COVERS = {
 };
 
 export const HERO = {
-  image: COVERS.policlinic,
-  link: '/article/polyclinic',
-  subtitle: 'Может добавить небольшое описание',
-  title: 'ПОЛИКЛИНИКА <br /> ИлИ АРХиТЕКТУРНЫЙ <br /> ПАМЯТНИК',
+  image: COVERS.glebGarage,
+  link: '/article/gleb-garage',
+  title: 'В ГОСТЯХ<br/> У ГЛеБА МАКкАРТНИ',
+  author: 'Аня Медведкова',
 };
 
 export const SOCIAL = {
   instagram: 'https://www.instagram.com/pro.protvino',
   telegram: 'https://t.me/propromedia',
+  youtube: 'https://www.youtube.com/@eclair.canonique',
 };

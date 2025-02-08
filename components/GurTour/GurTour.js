@@ -28,9 +28,9 @@ export const GurTour = () => {
               коффе
             </Link>
           </S.ReviewLink>
-          <S.ReviewLink>
+          {/* <S.ReviewLink>
             <Link href="/gurtour/segment">Сегмент</Link>
-          </S.ReviewLink>
+          </S.ReviewLink> */}
         </S.ReviewList>
       </S.Container>
     </S.Wrapper>

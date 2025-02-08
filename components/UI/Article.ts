@@ -13,7 +13,11 @@ export const PostGrid = styled.div`
   }
 `;
 
-export const PostHero = styled.div<{ cover: string; bgColor?: string }>`
+export const PostHero = styled.div<{
+  cover: string;
+  bgColor?: string;
+  color?: string;
+}>`
   background: ${({ bgColor, cover }) => (bgColor ? bgColor : cover)};
   background-size: cover;
   background-position: center;
@@ -79,10 +83,10 @@ export const PostSubtitle = styled.h2`
 `;
 
 export const PostAuthor = styled.span`
-  margin-top: 16px;
+  margin-top: 12px;
   display: block;
 
-  font-family: 'Piazzolla';
+  font-family: 'Lack';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
