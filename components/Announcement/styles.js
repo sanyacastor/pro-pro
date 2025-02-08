@@ -5,13 +5,22 @@ export const Section = styled.div`
   width: 100%;
   height: 100vh;
 
-  background: ${({ $bgImage }) => `url(${$bgImage})`};
+  background: ${({ bgImage }) => `url(${bgImage})`};
 
-  background-position: 100%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: flex-end;
+
+  cursor: pointer;
+
+  @media (max-width: 1160px) {
+    background: ${({ bgImageMobile }) => `url(${bgImageMobile})`};
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 `;
 
 export const Container = styled.div`
@@ -24,7 +33,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Header = styled(Link)`
+export const Header = styled.div`
   width: 100%;
   display: block;
   color: #fff;
@@ -42,9 +51,9 @@ export const Title = styled.div`
   width: 100%;
 
   @media (max-width: 1160px) {
-    font-size: 36px;
+    font-size: 48px;
     line-height: 89%;
-    text-align: left;
+    text-align: center;
   }
 `;
 
@@ -57,4 +66,22 @@ export const Subtitle = styled.div`
 
   text-align: center;
   margin-top: 32px;
+`;
+
+export const Author = styled.div`
+  font-family: 'Lack';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 134%;
+
+  text-align: center;
+  margin-top: 18px;
+
+  text-transform: uppercase;
+
+  @media (max-width: 1160px) {
+    font-size: 12px;
+    line-height: 89%;
+  }
 `;

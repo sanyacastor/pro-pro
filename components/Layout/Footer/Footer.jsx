@@ -9,10 +9,7 @@ export const Footer = () => (
       <S.LogoColumn>
         <S.LogoText>ПРОПРО</S.LogoText>
         <S.LogoSubtitle>
-          локальное медиа
-          <br />о прошлом
-          <br />
-          настоящем и будущем
+          локальное медиа о прошлом, настоящем и будущем
         </S.LogoSubtitle>
       </S.LogoColumn>
 
@@ -25,11 +22,14 @@ export const Footer = () => (
       </S.DescriptionColumn>
 
       <S.SocialColumn>
-        <S.SocialLink href={SOCIAL.instagram} target="_blank">
-          инст
-        </S.SocialLink>
         <S.SocialLink href={SOCIAL.telegram} target="_blank">
-          телеграм
+          Телеграм
+        </S.SocialLink>
+        <S.SocialLink href={SOCIAL.instagram} target="_blank">
+          Инстаграм
+        </S.SocialLink>
+        <S.SocialLink href={SOCIAL.youtube} target="_blank">
+          Ютуб
         </S.SocialLink>
       </S.SocialColumn>
     </S.FooterContainer>

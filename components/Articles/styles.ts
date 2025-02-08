@@ -54,7 +54,7 @@ export const ThumbnailTitle = styled.h2`
   font-family: 'Base&Bloom';
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 46px;
   line-height: 90%;
   color: #171f2e;
   margin-top: 16px;
@@ -67,4 +67,18 @@ export const ThumbnailTitle = styled.h2`
     line-height: 90%;
     text-transform: uppercase;
   }
+`;
+
+export const Author = styled.span`
+  display: block;
+
+  font-family: 'Lack';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 134.5%;
+  text-transform: uppercase;
+
+  margin-top: 8px;
+  margin-bottom: 0;
 `;

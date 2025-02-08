@@ -32,9 +32,9 @@ function Home() {
       </Head>
       <Layout>
         <Announcement />
-        <Articles />
-        <GurtourBanner />
         <SingleArticleAnnouncement />
+        <GurtourBanner />
+        <Articles />
         <ZineBanner />
         <MapBanner />
       </Layout>

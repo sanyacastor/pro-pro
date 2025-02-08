@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
-import { PostHero, ArticleSubtitle } from '../../../components/UI/Article';
+import { PostHero } from '../../../components/UI/Article';
 
 import {
   Container,
