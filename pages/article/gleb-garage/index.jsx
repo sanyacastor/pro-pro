@@ -453,21 +453,6 @@ export default function Article() {
                 с&nbsp;детьми, ставили столики, но&nbsp;это тоже был узкий круг.
               </Paragraph>
 
-              <ImageContainer>
-                <Image
-                  quality={100}
-                  src="/article/gleb-garage/shaposhnikov.jpg"
-                  width="1280"
-                  height="854"
-                  alt=""
-                />
-                <Figcaption>
-                  Гаражный концерт каверов The Beatles в Протвино, август 2024
-                  <br />
-                  Автор: Павел Шапошников
-                </Figcaption>
-              </ImageContainer>
-
               <Paragraph>
                 В&nbsp;2022-м был первый раз, когда гараж открыл двери для
                 широкой аудитории. Это было мероприятие для архитекторов
@@ -527,6 +512,21 @@ export default function Article() {
                 руками поддерживаю и&nbsp;рад и&nbsp;помочь, и&nbsp;сам
                 участвовать.
               </Paragraph>
+
+              <ImageContainer>
+                <Image
+                  quality={100}
+                  src="/article/gleb-garage/shaposhnikov.jpg"
+                  width="1520"
+                  height="1010"
+                  alt="Гаражный концерт каверов The Beatles в Протвино, август 2024"
+                />
+                <Figcaption>
+                  Гаражный концерт каверов The Beatles в Протвино, август 2024
+                  <br />
+                  Автор: Павел Шапошников
+                </Figcaption>
+              </ImageContainer>
 
               <Paragraph>
                 Этим летом мы&nbsp;провели первый концерт на&nbsp;широкую
