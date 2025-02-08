@@ -89,7 +89,6 @@ export const DescriptionColumn = styled.div`
   max-width: 360px;
 
   @media (max-width: 1160px) {
-    color: blue;
     font-size: 16px;
     margin: 0 auto;
     margin-top: 16px;

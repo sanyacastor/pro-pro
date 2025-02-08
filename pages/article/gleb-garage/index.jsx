@@ -53,11 +53,7 @@ export default function Article() {
               за&nbsp;металлическими дверями.
             </Paragraph>
             <Paragraph>
-              <Tooltip
-                id="olivia"
-                data-tooltip-place="top-end"
-                border="1px solid blue"
-              />
+              <Tooltip id="olivia" data-tooltip-place="top-end" />
               <a
                 data-tooltip-id="olivia"
                 data-tooltip-content="Оливия Эрлангер, исследовательница гаражной культуры как символа
@@ -465,7 +461,10 @@ export default function Article() {
                   height="854"
                   alt=""
                 />
-                <Figcaption>Автор: Павел Шапошников</Figcaption>
+                <Figcaption>
+                  Гаражный концерт каверов The Beatles в Протвино, август 2024<br/>
+                  Автор: Павел Шапошников
+                </Figcaption>
               </ImageContainer>
 
               <Paragraph>
@@ -551,11 +550,6 @@ export default function Article() {
                 height="853"
                 alt="Гаражный концерт каверов The Beatles в Протвино, август 2024"
               />
-              <Container>
-                <Figcaption>
-                  Гаражный концерт каверов The Beatles в Протвино, август 2024
-                </Figcaption>
-              </Container>
             </ImageContainer>
           </FullWidthImage>
 
