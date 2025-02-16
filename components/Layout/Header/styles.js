@@ -85,14 +85,12 @@ export const NavListItem = styled.li`
     isUnderlined &&
     css`
       padding-bottom: 0;
-      font-style: italic;
       border-bottom: 1px solid #fff;
     `}
 
   ${({ mode, theme }) =>
     mode === 'gurTour' &&
     css`
-      font-style: italic;
       border-color: ${() => theme.colors.gurTourSecondaryColor};
     `}
 `;
