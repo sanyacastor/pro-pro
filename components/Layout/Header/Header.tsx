@@ -45,11 +45,7 @@ export const Header = () => {
                 </S.NavListItem>
               </S.Links>
 
-              <S.NavListSocials mode={mode}>
-                <Link target="_blank" href={SOCIAL.instagram}>
-                  инст
-                </Link>
-              </S.NavListSocials>
+              <S.NavListSocials mode={mode}></S.NavListSocials>
 
               <S.MenuIcon
                 cross={menuVisible}

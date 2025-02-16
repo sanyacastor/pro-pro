@@ -34,12 +34,17 @@ export const MobileMenu = ({ isVisible }) => {
         )}
         <S.NavListSocials>
           <Link target="_blank" href={SOCIAL.instagram}>
-            инст
+            Инстаграм
           </Link>
         </S.NavListSocials>
         <S.NavListSocials>
           <Link target="_blank" href={SOCIAL.telegram}>
-            телеграм
+            Телеграм
+          </Link>
+        </S.NavListSocials>
+        <S.NavListSocials>
+          <Link target="_blank" href={SOCIAL.youtube}>
+            Ютуб
           </Link>
         </S.NavListSocials>
       </S.Links>
