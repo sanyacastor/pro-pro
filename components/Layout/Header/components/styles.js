@@ -66,10 +66,8 @@ export const NavListSocials = styled.li`
 
   a {
     display: block;
-    border: 1px solid #000;
-    border-radius: 50%;
-    padding: 20px 0;
     width: 180px;
     text-align: center;
+    text-decoration: underline;
   }
 `;

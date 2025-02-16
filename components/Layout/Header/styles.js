@@ -108,10 +108,6 @@ export const NavListSocials = styled.li`
   list-style: none;
   text-transform: uppercase;
 
-  border: 1px solid #fff;
-  border-radius: 50%;
-  padding: 8px 10px;
-
   ${({ mode, theme }) =>
     mode === 'gurTour' &&
     css`
