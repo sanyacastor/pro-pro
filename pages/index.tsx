@@ -24,7 +24,7 @@ function Home() {
         <Banner
           heights={[280, 430]}
           imageUrls={[
-            '/images/content/banner-zine_mobile.jpg',
+            '/images/content/banner-zine_mobile.png',
             '/images/content/banner-zine.jpg',
           ]}
           link="/article/zine"
@@ -32,7 +32,7 @@ function Home() {
         <Banner
           heights={[280, 430]}
           imageUrls={[
-            '/images/content/banner-map_mobile.jpg',
+            '/images/content/banner-map_mobile.png',
             '/images/content/banner-map.jpg',
           ]}
           link="/map"
