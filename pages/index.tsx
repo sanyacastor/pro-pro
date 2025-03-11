@@ -22,7 +22,7 @@ function Home() {
         <GurtourBanner />
         <Articles />
         <Banner
-          heights={[280, 430]}
+          heights={[180, 430]}
           imageUrls={[
             '/images/content/banner-zine_mobile.png',
             '/images/content/banner-zine.jpg',
@@ -30,7 +30,7 @@ function Home() {
           link="/article/zine"
         />
         <Banner
-          heights={[280, 430]}
+          heights={[180, 430]}
           imageUrls={[
             '/images/content/banner-map_mobile.png',
             '/images/content/banner-map.jpg',
