@@ -80,7 +80,7 @@ export const ArticleTitle = styled.h3`
 export const ArticleDescriptionText = styled.div`
   font-family: 'Piazzolla';
   font-style: italic;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 32px;
   line-height: 105%;
   margin-top: 8px;
