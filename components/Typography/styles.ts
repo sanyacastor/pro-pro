@@ -39,7 +39,7 @@ export const Paragraph = styled.p<{
 `;
 
 export const SubSection = styled.div`
-  margin-top: 64px;
+  margin-top: 32px;
 
   @media (max-width: 1160px) {
     margin-top: 32px;
