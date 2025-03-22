@@ -39,7 +39,7 @@ export default function Article() {
             В ГОСТЯХ
             <br /> У ГЛеБА МАКкАРТНИ
           </ArticleTitle>
-          <PostAuthor>АВТОР: Анна Медведкова</PostAuthor>
+          <PostAuthor>АВТОР: Аня Медведкова</PostAuthor>
         </PostHero>
 
         <ArticleContainer>
