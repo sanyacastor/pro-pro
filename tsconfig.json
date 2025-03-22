@@ -21,10 +21,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
-    "pages/gurtour/[slug].js",
-    "pages/gurtour/index.js",
-    "pages/article/dobrocake/index.jsx"
+    "**/*.tsx"
   ],
   "exclude": [
     "node_modules"
