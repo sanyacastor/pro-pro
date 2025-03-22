@@ -17,23 +17,35 @@ const ArticleThumbnail = ({ url, title, author, thumbnail }) => (
 
 export const Articles = () => {
   return (
-    <Styled.ArticlesSection>
-      <Styled.ArticlesContainer>
-        <Styled.Articles>
-          <ArticleThumbnail
-            thumbnail="/article/chto-takoe-sovetsky-modernizm/thumbnail.png"
-            url="/article/chto-takoe-sovetsky-modernizm"
-            title="ПРО СОВеТСКИЙ МОдЕРНИЗМ"
-            author="Аня Медведкова"
-          />
-          <ArticleThumbnail
-            thumbnail="/article/uskoritel-v-protvino/thumbnail.png"
-            url="/article/uskoritel-v-protvino"
-            title="УСкОРИТЕЛЬ В&nbsp;ПРОТвИНО"
-            author="Екатерина Алейникова"
-          />
-        </Styled.Articles>
-      </Styled.ArticlesContainer>
-    </Styled.ArticlesSection>
+    <>
+      <Styled.ArticlesSection>
+        <Styled.ArticlesContainer>
+          <Styled.Articles>
+            <ArticleThumbnail
+              thumbnail="/article/chto-takoe-sovetsky-modernizm/thumbnail.png"
+              url="/article/chto-takoe-sovetsky-modernizm"
+              title="ПРО СОВеТСКИЙ МОдЕРНИЗМ"
+              author="Аня Медведкова"
+            />
+            <ArticleThumbnail
+              thumbnail="/article/uskoritel-v-protvino/thumbnail.png"
+              url="/article/uskoritel-v-protvino"
+              title="УСкОРИТЕЛЬ В&nbsp;ПРОТвИНО"
+              author="Екатерина Алейникова"
+            />
+          </Styled.Articles>
+        </Styled.ArticlesContainer>
+        <Styled.ArticlesContainer>
+          <Styled.Articles>
+            <ArticleThumbnail
+              thumbnail="/article/dobrocake/thumbnail.png"
+              url="/article/dobrocake"
+              title="ДОБРОКЕЙК: СЕМЕЙНАЯ КОНДИТЕРСКАЯ"
+              author="Аня Медведкова"
+            />
+          </Styled.Articles>
+        </Styled.ArticlesContainer>
+      </Styled.ArticlesSection>
+    </>
   );
 };
