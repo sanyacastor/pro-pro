@@ -41,7 +41,6 @@ export const ArticleContainer = styled.article`
 
 export const ArticleSubtitle = styled.p`
   font-family: 'Piazzolla';
-  font-style: italic;
   font-weight: 300;
 
   font-size: 48px;
