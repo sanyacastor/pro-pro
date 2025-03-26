@@ -320,6 +320,29 @@ export default function Article() {
                 инструмент.
               </Paragraph>
             </SubSection>
+
+            <SubSection>
+              <ArticleSubtitle>Про Протвино</ArticleSubtitle>
+              <Paragraph>
+                Я&nbsp;очень люблю Протвино. Я&nbsp;здесь родилась и&nbsp;почти
+                всю жизнь здесь, за&nbsp;исключением периодов, пока ездила
+                учиться. Сначала думала, как и&nbsp;все тогда, что уеду
+                и&nbsp;больше никогда не&nbsp;вернусь, но&nbsp;сейчас нет. Мне
+                очень нравится здесь: тут живут очень классные люди, все
+                пытаются друг другу помочь.
+              </Paragraph>
+
+              <Paragraph>
+                Любимое место наверно карьер, потому что там круглый год
+                здорово&nbsp;&mdash; красиво и&nbsp;летом, и&nbsp;зимой.
+              </Paragraph>
+
+              <Paragraph>
+                Хочется, чтобы город развивался, чтобы люди приезжали сюда,
+                чтобы они видели, какой у&nbsp;нас замечательный город весь
+                в&nbsp;соснах.
+              </Paragraph>
+            </SubSection>
           </Container>
         </ArticleContainer>
       </Layout>
