@@ -2,7 +2,10 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 export const ArticlesSection = styled.div`
-  padding: 104px 0;
+  padding: 0;
+  margin-bottom: 104px;
+  margin-top: 104px;
+
   width: 100%;
 
   display: flex;
