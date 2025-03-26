@@ -21,6 +21,15 @@ function Home() {
         <SingleArticleAnnouncement />
         <GurtourBanner />
         <Articles />
+        <ArticleThumbnailWide
+          link="/article/polyclinic"
+          title="Поликлиника или архитектурный памятник"
+          description="черный крест Малевича, архитектоны, утки и сараи – что это и при чем тут наша поликлиника?"
+          author="Аня Медведкова"
+          bgColor="#F3815A"
+          textColor="#fff"
+          imageUrl="/images/posts/preview_section_polyclinic.jpg"
+        />
         <Banner
           heights={[180, 430]}
           imageUrls={[
@@ -37,15 +46,14 @@ function Home() {
           ]}
           link="/map"
         />
-
         <ArticleThumbnailWide
-          link="/article/polyclinic"
-          title="Поликлиника или архитектурный памятник"
-          description="черный крест Малевича, архитектоны, утки и сараи – что это и при чем тут наша поликлиника?"
+          link="/article/dobrocake"
+          title="Семейная кофейня доброкейк: "
+          description="все началось с того, что я заказала маме на день рождения торт"
           author="Аня Медведкова"
-          bgColor="#F3815A"
-          textColor="#fff"
-          imageUrl="/images/posts/preview_section_polyclinic.jpg"
+          bgColor="#D8CBFF"
+          textColor="#171F2E"
+          imageUrl="/article/dobrocake/thumbnail.png"
         />
       </Layout>
     </>
