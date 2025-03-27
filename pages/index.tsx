@@ -22,6 +22,15 @@ function Home() {
         <GurtourBanner />
         <Articles />
         <ArticleThumbnailWide
+          link="/article/dobrocake"
+          title="Семейная кофейня доброкейк: "
+          description="все началось с того, что я заказала маме на день рождения торт"
+          author="Аня Медведкова"
+          bgColor="#D8CBFF"
+          textColor="#171F2E"
+          imageUrl="/article/dobrocake/thumbnail.png"
+        />
+        <ArticleThumbnailWide
           link="/article/polyclinic"
           title="Поликлиника или архитектурный памятник"
           description="черный крест Малевича, архитектоны, утки и сараи – что это и при чем тут наша поликлиника?"
@@ -45,15 +54,6 @@ function Home() {
             '/images/content/banner-map.jpg',
           ]}
           link="/map"
-        />
-        <ArticleThumbnailWide
-          link="/article/dobrocake"
-          title="Семейная кофейня доброкейк: "
-          description="все началось с того, что я заказала маме на день рождения торт"
-          author="Аня Медведкова"
-          bgColor="#D8CBFF"
-          textColor="#171F2E"
-          imageUrl="/article/dobrocake/thumbnail.png"
         />
       </Layout>
     </>
