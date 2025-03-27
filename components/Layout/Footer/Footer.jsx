@@ -9,14 +9,14 @@ export const Footer = () => (
       <S.LogoColumn>
         <S.LogoText>ПРОПРО</S.LogoText>
         <S.LogoSubtitle>
-          локальное медиа о прошлом, настоящем и будущем
+          локальное медиа о&nbsp;прошлом, настоящем и&nbsp;будущем
         </S.LogoSubtitle>
       </S.LogoColumn>
 
       <S.DescriptionColumn>
         <S.Paragraph>
-          Вместе с вами исследуем Протвино, его наследие и развитие, создаем,
-          поддерживаем и освещаем локальные инициативы.
+          Вместе с вами исследуем Протвино, его наследие и&nbsp;развитие,
+          создаем, поддерживаем и&nbsp;освещаем локальные инициативы.
         </S.Paragraph>
         <S.AboutUs href={'/about-us'}>Подробнее о проекте</S.AboutUs>
       </S.DescriptionColumn>

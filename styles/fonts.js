@@ -25,9 +25,10 @@ export const FontStyles = createGlobalStyle`
 
   @font-face {
     font-family: "Piazzolla";
-    src: url('/fonts/Piazzolla-Italic.woff2') format("woff2");
-    font-weight: 400;
+    src: url('/fonts/Piazzolla-Italic.woff2') format('woff2');
+    font-weight: 300;
     font-style: italic;
+    font-display: swap;
   }
 
   html,

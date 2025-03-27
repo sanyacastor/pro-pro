@@ -2,7 +2,15 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 export const ArticlesSection = styled.div`
+  padding: 0;
+  margin-bottom: 104px;
+  margin-top: 104px;
+
   width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 `;
 
 export const ArticlesContainer = styled.section`
@@ -18,8 +26,6 @@ export const ArticlesContainer = styled.section`
 `;
 
 export const Articles = styled.div`
-  padding: 104px 0;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;

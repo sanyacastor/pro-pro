@@ -15,6 +15,7 @@ export const PostGrid = styled.div`
 
 export const PostHero = styled.div<{
   cover: string;
+  mobileCover?: string;
   bgColor?: string;
   color?: string;
 }>`
@@ -39,6 +40,11 @@ export const PostHero = styled.div<{
   color: #ebe6da;
 
   @media (max-width: 960px) {
+    background: ${({ mobileCover, cover, bgColor }) =>
+      mobileCover || cover || bgColor};
+    background-size: cover;
+    background-position: center;
+
     min-height: 375px;
 
     margin-top: 0;

@@ -54,7 +54,7 @@ export const ArticleDescription = styled.div`
   padding-bottom: 20px;
 
   @media (max-width: 960px) {
-    padding: 0 8px;
+    padding: 0 26px;
     padding-bottom: 28px;
     max-width: 100%;
     padding-top: 32px;
@@ -74,18 +74,24 @@ export const ArticleTitle = styled.h3`
 
   @media (max-width: 960px) {
     margin-top: 0;
+    font-size: 32px;
   }
 `;
 
 export const ArticleDescriptionText = styled.div`
   font-family: 'Piazzolla';
   font-style: italic;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 32px;
   line-height: 105%;
   margin-top: 8px;
   position: relative;
   max-width: 380px;
+
+  @media (max-width: 960px) {
+    margin-top: 0;
+    font-size: 28px;
+  }
 `;
 
 export const Author = styled.div`

@@ -52,7 +52,7 @@ export const LogoColumn = styled.div`
 
 export const LogoSubtitle = styled.div`
   text-transform: uppercase;
-  max-width: 340px;
+  max-width: 350px;
 
   font-size: 30px;
   line-height: 30px;

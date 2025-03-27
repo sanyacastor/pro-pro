@@ -22,7 +22,7 @@ import {
 import { Paragraph, SubSection } from '../../../components/Typography';
 import { Layout } from '../../../components/Layout';
 
-import { FullWidthImage, ImagesGridOfFour, ImagesRow } from './styles';
+import { FullWidthImage, ImagesRow } from './styles';
 
 import 'react-tooltip/dist/react-tooltip.css';
 
@@ -39,7 +39,7 @@ export default function Article() {
             В ГОСТЯХ
             <br /> У ГЛеБА МАКкАРТНИ
           </ArticleTitle>
-          <PostAuthor>АВТОР: Анна Медведкова</PostAuthor>
+          <PostAuthor>АВТОР: Аня Медведкова</PostAuthor>
         </PostHero>
 
         <ArticleContainer>
@@ -157,10 +157,10 @@ export default function Article() {
             <ImageContainer>
               <Image
                 quality={100}
-                src="/article/gleb-garage/garage_1.jpg"
+                src="/article/dobrocake/dobrocake_2.jpg"
                 width="760"
                 height="428"
-                alt="Глеб за барабанами в гараже"
+                alt=""
               />
             </ImageContainer>
 
