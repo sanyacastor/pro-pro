@@ -50,7 +50,7 @@ export const ArticleImage = styled(Image)`
 
 export const ArticleDescription = styled.div`
   @media (max-width: 960px) {
-    padding: 0 8px;
+    padding: 0 26px;
     padding-bottom: 43px;
     background: #d8cbff;
     max-width: 100%;
@@ -71,18 +71,23 @@ export const ArticleTitle = styled.h3`
 
   @media (max-width: 960px) {
     margin-top: 0;
+    font-size: 32px;
   }
 `;
 
 export const ArticleDescriptionText = styled.div`
   font-family: 'Piazzolla';
   font-style: italic;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 32px;
   line-height: 105%;
   margin-top: 8px;
   position: relative;
   max-width: 380px;
+
+  @media (max-width: 960px) {
+    font-size: 28px;
+  }
 
   ::before {
     content: '';
@@ -95,8 +100,27 @@ export const ArticleDescriptionText = styled.div`
     background-size: cover;
 
     @media (max-width: 960px) {
+      display: none;
       width: 305px;
       height: 148px;
     }
+  }
+`;
+
+export const ArticleAuthor = styled.div`
+  font-family: 'Lack';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 134%;
+
+  text-align: left;
+  margin-top: 18px;
+
+  text-transform: uppercase;
+
+  @media (max-width: 1160px) {
+    font-size: 12px;
+    line-height: 89%;
   }
 `;
