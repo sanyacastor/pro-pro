@@ -157,7 +157,7 @@ export default function Article() {
             <ImageContainer>
               <Image
                 quality={100}
-                src="/article/dobrocake/dobrocake_2.jpg"
+                src="/article/gleb-garage/garage_1.jpg"
                 width="760"
                 height="428"
                 alt=""
