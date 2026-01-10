@@ -392,47 +392,6 @@
     "image": "/v1674583400/map/lost/oka_dmpwdu.webp",
     "description": ""
   },
-
-  {
-    "coordinates": [54.877064, 37.222753],
-    "exist": true,
-    "type": "orbit",
-    "title": "Точка на Крытом",
-    "image": "/v1667649946/map/Orbit/orbitakrytyi2_cxqdj5.webp",
-    "description": "Точка находится на Крытом рынке в торговом ряду."
-  },
-  {
-    "coordinates": [54.876337, 37.216163],
-    "exist": true,
-    "type": "orbit",
-    "title": "Точка около \"Руси\"",
-    "image": "/v1667649946/map/Orbit/orbita_rus_mhpaqf.webp",
-    "description": "Точка находится около Руси в отдельно стоящем торговом павильоне."
-  },
-  {
-    "coordinates": [54.871185, 37.218379],
-    "exist": true,
-    "type": "orbit",
-    "title": "Точка на Бродвее",
-    "image": "/v1667649945/map/Orbit/orbita_broadway_zjhsps.webp",
-    "description": "Точка находится на Бродвее в отдельно стоящем торговом павильоне."
-  },
-  {
-    "coordinates": [54.867434, 37.215158],
-    "exist": true,
-    "type": "orbit",
-    "title": "Точка на Молодежном",
-    "image": "/v1667649946/map/Orbit/orbita_molodesh_j86f0q.webp",
-    "description": "Точка находится около Пилы вдоль пешеходной дорожки в отдельно стоящем торговом павильоне."
-  },
-  {
-    "coordinates": [54.865277, 37.214371],
-    "exist": true,
-    "type": "orbit",
-    "title": "Точка в Центре",
-    "image": "/v1667649945/map/Orbit/orbita_centr_ofhv1m.webp",
-    "description": "Точка находится в палатке в торговых рядах напротив ДК."
-  },
   {
     "exist": true,
     "title": "Blue plane, 2019 / Observer it, 2019",
@@ -584,5 +543,117 @@
     "image": "/images/map/nnt_empty_house_3_2022.jpeg",
     "description": "",
     "coordinates": [54.855984, 37.230478]
+  },
+  {
+    "coordinates": [54.873153, 37.212469],
+    "exist": true,
+    "type": "bars",
+    "title": "Дружба 1",
+    "image": "/images/map/bars_druzhba-1.webp",
+    "description": "Когда-то здесь совсем не было деревьев, а рядом была сушилка для белья. Сейчас остался только турник, и его не так сложно найти."
+  },
+  {
+    "coordinates": [54.873045, 37.213734],
+    "exist": true,
+    "type": "bars",
+    "title": "Дружба 5",
+    "image": "/images/map/bars_druzhba-5.webp",
+    "description": "Здесь можно подтягиваться сразу вдвоем."
+  },
+  {
+    "coordinates": [54.87202, 37.212693],
+    "exist": true,
+    "type": "bars",
+    "title": "Дружба 14",
+    "image": "/images/map/bars_druzhba-14.webp",
+    "description": "Если не боитесь крапивы, колючек и агрессивных насекомых, смело идите к этому турнику."
+  },
+  {
+    "coordinates": [54.875403, 37.223239],
+    "exist": true,
+    "type": "bars",
+    "title": "Пентагон 24Б",
+    "image": "/images/map/bars_pentagon-24b.webp",
+    "description": "Спратался на перепутье дорог в Пентагоновской лесу"
+  },
+  {
+    "coordinates": [54.869984, 37.219062],
+    "exist": true,
+    "type": "bars",
+    "title": "Пила Ленина 18",
+    "image": "/images/map/bars_lenina-18.webp",
+    "description": "Доступный турник в центре города номер 1"
+  },
+  {
+    "coordinates": [54.868704, 37.215731],
+    "exist": true,
+    "type": "bars",
+    "title": "Пила Ленина 9",
+    "image": "/images/map/bars_lenina-9.webp",
+    "description": "Доступный турник в центре города номер 2"
+  },
+  {
+    "coordinates": [54.863891, 37.205282],
+    "exist": true,
+    "type": "bars",
+    "title": "По дороге от южки к карьеру",
+    "image": "/images/map/bars_carier.webp",
+    "description": "Пару подтягиваний на пути к закату"
+  },
+  {
+    "coordinates": [54.869458, 37.222603],
+    "exist": true,
+    "type": "bars",
+    "title": "Гагарина 3-5",
+    "image": "/images/map/bars_gagarina.webp",
+    "description": "Немного нетипичный турник во дворе, но мы его включили"
+  },
+  {
+    "coordinates": [54.864606, 37.209309],
+    "exist": true,
+    "type": "bars",
+    "title": "За гостиницей",
+    "image": "/images/map/bars_gostinica.webp",
+    "description": "Чтоб найти этот турник, нужно постараться и смотреть в оба"
+  },
+  {
+    "coordinates": [54.876878, 37.226544],
+    "exist": true,
+    "type": "bars",
+    "title": "Корты",
+    "image": "/images/map/bars_court.webp",
+    "description": "Турник с видом на корты, удобно, если делаешь пробежку и бежишь с высоковольтки"
+  },
+  {
+    "coordinates": [54.866915, 37.212878],
+    "exist": true,
+    "type": "bars",
+    "title": "Молодёжка 3",
+    "image": "/images/map/bars_molodzheshka.webp",
+    "description": "Можно повисеть с видом на вавилонскую башню"
+  },
+  {
+    "coordinates": [54.864197, 37.20371],
+    "exist": true,
+    "type": "bars",
+    "title": "От импульса до карьера",
+    "image": "/images/map/bars_impuls-carier.webp",
+    "description": "Найдут те, кто задастся такой целью"
+  },
+  {
+    "coordinates": [54.873382, 37.231195],
+    "exist": true,
+    "type": "bars",
+    "title": "Высоковольтка за подстанцией",
+    "image": "/images/map/bars_vysokovoltka.webp",
+    "description": "Сложно сказать, кто теперь здесь чаще бывает - спортсмены или любители нездорового образа жизни"
+  },
+  {
+    "coordinates": [54.879164, 37.224398],
+    "exist": true,
+    "type": "bars",
+    "title": "Ленина 34",
+    "image": "/images/map/bars_lenina-34.webp",
+    "description": "Совместить спорт и полюбоваться крепким дворовым сообществом - это сюда."
   }
 ]
