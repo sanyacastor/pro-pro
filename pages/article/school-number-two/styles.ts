@@ -27,6 +27,7 @@ export const VideoContainer = styled.video`
 `;
 
 export const Materials = styled.div`
+  margin-top: 32px;
   font-size: 14px;
   li {
     font-style: italic;

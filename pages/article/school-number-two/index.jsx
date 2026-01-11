@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 
@@ -35,10 +37,9 @@ export default function Article() {
           <ArticleTitle>Новая старая школа</ArticleTitle>
           <PostAuthor>АВТОР: Аня Медведкова</PostAuthor>
         </PostHero>
-
         <ArticleContainer>
           <Container>
-            <ArticleSubtitle>Торжественное открытие, хроника</ArticleSubtitle>
+            <ArticleSubtitle>Хроника</ArticleSubtitle>
             <Paragraph>
               Вместо предисловия предлагаем вам погрузиться в уникальные кадры —
               атмосферу события более чем 50-ти летней давности. 1971 год,
@@ -94,7 +95,6 @@ export default function Article() {
                 но первые две имеют свою особенность: они построены по одному
                 проекту.
               </Paragraph>
-
               <Paragraph>
                 Архитектура здания была инновационной на то время: в проекте
                 объёмы младшего, старшего корпуса и даже столовой разнесены
@@ -107,7 +107,6 @@ export default function Article() {
               </Paragraph>
             </Container>
           </Section>
-
           <Container>
             <ImageContainer>
               <Image
@@ -117,12 +116,8 @@ export default function Article() {
                 height="489"
                 alt="План школы"
               />
-              <Container>
-                <Figcaption>План школы</Figcaption>
-              </Container>
             </ImageContainer>
           </Container>
-
           <Container>
             <Paragraph>
               Проект зданий сам по&nbsp;себе не&nbsp;уникален, школы были
@@ -139,9 +134,7 @@ export default function Article() {
               эстетически».
             </Paragraph>
             <Section>
-              <ArticleSubtitle>
-                Художественное оформление «второй» школы
-              </ArticleSubtitle>
+              <ArticleSubtitle>Художественное оформление</ArticleSubtitle>
               <ImageContainer>
                 <Image
                   quality={100}
@@ -198,7 +191,6 @@ export default function Article() {
                     width="369"
                     height="462"
                   />
-
                   <Image
                     alt=" Чеканка “Хочу воспеть свободу миру…”. Станция метро
                   Пушкинская, Москва."
@@ -208,7 +200,6 @@ export default function Article() {
                   />
                 </ImagesRow>
               </ImageContainer>
-
               <Paragraph>
                 Школу № 2 в Протвино М. А. Шмаков украсил четырьмя
                 монументальными рельефами. Тематически все они связаны
@@ -232,54 +223,47 @@ export default function Article() {
                 height="760"
                 alt="Барельеф на фасаде школы №2 г. Протвино"
               />
-              <Container>
-                <Figcaption>Барельеф на фасаде школы №2 г. Протвино</Figcaption>
-              </Container>
             </ImageContainer>
           </FullWidthImage>
-          <ImageContainer></ImageContainer>
           <Container>
-            <SubSection>
-              <Paragraph>
-                На углу актового зала располагается барельеф «Музыка»,
-                в композиции — сочетание различных музыкальных инструментов.
-                А на корпусе начальных классов, проходя по улице Гагарина, можно
-                увидеть рельеф «Школьное детство», где в центре расположены
-                главные символические атрибуты учения и пионерства. На корпусе
-                начальных классов со стороны внутреннего двора расположен более
-                символичный барельеф «По волнам».
-              </Paragraph>
-
-              <ImageContainer>
-                <Image
-                  quality={100}
-                  src="/article/school-number-two/po-volnam.jpg"
-                  width="760"
-                  height="467"
-                  alt=""
-                />
-              </ImageContainer>
-
-              <ImageContainer>
-                <Image
-                  quality={100}
-                  src="/article/school-number-two/truba.jpg"
-                  width="760"
-                  height="467"
-                  alt=""
-                />
-              </ImageContainer>
-
-              <ImageContainer>
-                <Image
-                  quality={100}
-                  src="/article/school-number-two/korabl.jpg"
-                  width="760"
-                  height="467"
-                  alt=""
-                />
-              </ImageContainer>
-
+            <Paragraph>
+              На углу актового зала располагается барельеф «Музыка»,
+              в композиции — сочетание различных музыкальных инструментов.
+              А на корпусе начальных классов, проходя по улице Гагарина, можно
+              увидеть рельеф «Школьное детство», где в центре расположены
+              главные символические атрибуты учения и пионерства. На корпусе
+              начальных классов со стороны внутреннего двора расположен более
+              символичный барельеф «По волнам».
+            </Paragraph>
+            <ImageContainer>
+              <Image
+                quality={100}
+                src="/article/school-number-two/po-volnam.jpg"
+                width="760"
+                height="467"
+                alt=""
+              />
+            </ImageContainer>
+            <ImageContainer>
+              <Image
+                quality={100}
+                src="/article/school-number-two/truba.jpg"
+                width="760"
+                height="467"
+                alt=""
+              />
+            </ImageContainer>
+            <ImageContainer>
+              <Image
+                quality={100}
+                src="/article/school-number-two/korabl.jpg"
+                width="760"
+                height="467"
+                alt=""
+              />
+            </ImageContainer>
+            <Section>
+              <ArticleSubtitle>Вместо послесловия</ArticleSubtitle>
               <Paragraph>
                 Мы согласны с архитекторами и художниками, которые работали над
                 созданием наших школ. Такой индивидуальный подход к облику
@@ -313,30 +297,26 @@ export default function Article() {
                 экстерьеров школы, получили ответ, что по возможности все будет
                 сохранено. Надеемся и верим, что это получится реализовать.
               </Paragraph>
-              <Paragraph>
-                Источники:
-                <Materials>
-                  <ol>
-                    <li>
-                      Голованов Н. Н. Г 61 М. А. Шмаков. - Л.: Художник РСФСР,
-                      1988, 48с.
-                    </li>
-                    <li>
-                      Город на Протве. Н.В. Поправко. 3-е изд., доп. - Калуга:
-                      Золотая аллея, 2015. - 352 с.
-                    </li>
-                    <li>
-                      Левашов В.Г.: М. Шмаков. Альбом. Серия: Мастера советского
-                      искусства г. Москва: Сов. Художник, 1987
-                    </li>
-                    <li>
-                      Авторы исследовательского проекта «8 смыслов Протвино»{' '}
-                    </li>
-                    <li>Журнал “Юный техник”, №12, 1963г.</li>
-                  </ol>
-                </Materials>
-              </Paragraph>
-            </SubSection>
+            </Section>
+            <Materials>
+              Источники:
+              <ol>
+                <li>
+                  Голованов Н. Н. Г 61 М. А. Шмаков. - Л.: Художник РСФСР, 1988,
+                  48с.
+                </li>
+                <li>
+                  Город на Протве. Н.В. Поправко. 3-е изд., доп. - Калуга:
+                  Золотая аллея, 2015. - 352 с.
+                </li>
+                <li>
+                  Левашов В.Г.: М. Шмаков. Альбом. Серия: Мастера советского
+                  искусства г. Москва: Сов. Художник, 1987
+                </li>
+                <li>Авторы исследовательского проекта «8 смыслов Протвино» </li>
+                <li>Журнал “Юный техник”, №12, 1963г.</li>
+              </ol>
+            </Materials>
           </Container>
         </ArticleContainer>
       </Layout>
