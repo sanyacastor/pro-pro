@@ -49,7 +49,7 @@ export default function Article() {
             </Paragraph>
             <ImageContainer>
               <VideoContainer
-                src="/article/school-number-two/shkola-cut.webm"
+                src="/article/school-number-two/shkola-cut.mp4"
                 type="video/webm"
                 width="760"
                 controls
