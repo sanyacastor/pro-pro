@@ -638,7 +638,7 @@
     "type": "bars",
     "title": "За гостиницей",
     "image": "/images/map/bars_gostinica.webp",
-    "description": "Чтоб найти этот турник, нужно постараться и смотреть в оба"
+    "description": "Чтобы найти этот турник, нужно постараться и смотреть в оба"
   },
   {
     "coordinates": [54.864197, 37.20371],
@@ -654,7 +654,7 @@
     "type": "bars",
     "title": "Между Южной и карьером",
     "image": "/images/map/bars_carier.webp",
-    "description": "Пару подтягиваний на пути к закату"
+    "description": "Пара подтягиваний на пути к закату"
   },
   {
     "coordinates": [54.86551, 37.199998],
