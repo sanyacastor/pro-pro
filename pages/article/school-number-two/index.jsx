@@ -19,7 +19,7 @@ import {
 import { Paragraph, SubSection } from '../../../components/Typography';
 import { Layout } from '../../../components/Layout';
 
-import { FullWidthImage, ImagesRow } from './styles';
+import { FullWidthImage, ImagesRow, VideoContainer } from './styles';
 
 export default function Article() {
   return (
@@ -42,7 +42,7 @@ export default function Article() {
               учатся в две смены.
             </Paragraph>
             <ImageContainer>
-              <video
+              <VideoContainer
                 src="/article/school-number-two/shkola-cut.webm"
                 type="video/webm"
                 width="760"
@@ -131,6 +131,11 @@ export default function Article() {
               «в школах не только учится, но и воспитывается человек нового
               общества, воспитывается эстетически».
             </Paragraph>
+            <Paragraph>
+              От своего предшественника 2-ю школу отличает внешняя отделка:
+              здание отделано штукатуркой белого цвета и украшено
+              монументальными рельефами из металла.
+            </Paragraph>
             <ImageContainer>
               <Image
                 quality={100}
@@ -141,13 +146,19 @@ export default function Article() {
               />
             </ImageContainer>
             <Paragraph>
-              От своего предшественника 2-ю школу отличает внешняя отделка:
-              здание отделано штукатуркой белого цвета и украшено
-              монументальными рельефами из металла. Художественное украшение
-              Школы № 2 пригласили выполнить московского скульптора, члена Союза
-              художников, заслуженного художника РСФСР Марка Александровича
-              Шмакова (1919-1987).
+              Художественное украшение Школы № 2 пригласили выполнить
+              московского скульптора, члена Союза художников, заслуженного
+              художника РСФСР Марка Александровича Шмакова (1919-1987).
             </Paragraph>
+            <ImageContainer>
+              <Image
+                quality={100}
+                src="/article/school-number-two/shmakov.webp"
+                width="760"
+                height="467"
+                alt=""
+              />
+            </ImageContainer>
             <Paragraph>
               М. А. Шмаков окончил Факультет монументальной и декоративной
               скульптуры Института прикладного и декоративного искусства.

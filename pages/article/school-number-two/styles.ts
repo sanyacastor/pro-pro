@@ -22,4 +22,8 @@ export const ImagesGridOfFour = styled.div`
   gap: 4px;
 `;
 
+export const VideoContainer = styled.video`
+  width: 100%;
+`;
+
 export default function () {}
