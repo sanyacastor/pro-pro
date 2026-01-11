@@ -1,6 +1,6 @@
 import React from 'react';
 
-import s from './articles.module.scss';
+import s from './articles.module.css';
 
 import * as Styled from './styles';
 import Image from 'next/image';

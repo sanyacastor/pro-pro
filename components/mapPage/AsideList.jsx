@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { imageLoader, filterPlacesByType } from './helpers';
 import { images } from './consts';
 
-import s from '../../styles/map/asideInfo.module.scss';
+import s from '../../styles/map/asideInfo.module.css';
 
 export const AsideList = ({
   currentPoint,
