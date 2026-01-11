@@ -26,4 +26,13 @@ export const VideoContainer = styled.video`
   width: 100%;
 `;
 
+export const Materials = styled.div`
+  font-size: 14px;
+
+  li {
+    font-style: italic;
+  }
+
+`
+
 export default function () {}

@@ -22,6 +22,15 @@ function Home() {
         <GurtourBanner />
         <Articles />
         <ArticleThumbnailWide
+          link="/article/school-number-two"
+          title="Новая старая школа"
+          description=""
+          author="Аня Медведкова"
+          bgColor="#2b34b4"
+          textColor="#ffffff"
+          imageUrl="/article/school-number-two/thumbnail.jpg"
+        />
+        <ArticleThumbnailWide
           link="/article/dobrocake"
           title="Семейная кофейня доброкейк: "
           description="все началось с того, что я заказала маме на день рождения торт"
