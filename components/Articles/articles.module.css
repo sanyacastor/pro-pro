@@ -1,0 +1,31 @@
+.articlesSection {
+  width: 100%;
+  padding-top: 65px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 109px;
+}
+
+.articlesContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr 40px) 1fr;
+}
+
+.articleColumn {
+  grid-column: span 10;
+}
+
+.articleColumn + .articleColumn {
+  grid-column: 14/span 10;
+}
+
+.articleThumbnail {
+  cursor: pointer;
+}
+
+.articleThumbnail__image {
+  width: 100%;
+  height: auto;
+}
