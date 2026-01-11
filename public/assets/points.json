@@ -620,7 +620,7 @@
     "coordinates": [54.876878, 37.226544],
     "exist": true,
     "type": "bars",
-    "title": "Корты",
+    "title": "Теннисные корты",
     "image": "/images/map/bars_court.webp",
     "description": "Турник с видом на корты, удобно, если делаешь пробежку и бежишь с высоковольтки"
   },
@@ -644,7 +644,7 @@
     "coordinates": [54.864197, 37.20371],
     "exist": true,
     "type": "bars",
-    "title": "От импульса к карьеру",
+    "title": "Между Импульсом и карьером",
     "image": "/images/map/bars_impuls-carier.webp",
     "description": "Найдут те, кто задастся такой целью"
   },
@@ -652,7 +652,7 @@
     "coordinates": [54.863891, 37.205282],
     "exist": true,
     "type": "bars",
-    "title": "От Южной к карьеру",
+    "title": "Между Южной и карьером",
     "image": "/images/map/bars_carier.webp",
     "description": "Пару подтягиваний на пути к закату"
   },
