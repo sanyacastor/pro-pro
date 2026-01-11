@@ -24,7 +24,7 @@ function Home() {
         <ArticleThumbnailWide
           link="/article/school-number-two"
           title="Новая старая школа"
-          description=""
+          description="Как построить разные школы по одному проекту"
           author="Аня Медведкова"
           bgColor="#2b34b4"
           textColor="#ffffff"

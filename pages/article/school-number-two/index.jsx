@@ -26,7 +26,10 @@ import { FullWidthImage, ImagesRow, VideoContainer, Materials } from './styles';
 export default function Article() {
   return (
     <>
-      <ArticleHeadMeta title="Новая старая школа" ogDescription="" />
+      <ArticleHeadMeta
+        title="Новая старая школа"
+        ogDescription="Как построить разные школы по одному проекту"
+      />
       <Layout>
         <PostHero cover="url(/article/school-number-two/hero.png)">
           <ArticleTitle>Новая старая школа</ArticleTitle>
@@ -311,7 +314,7 @@ export default function Article() {
                 сохранено. Надеемся и верим, что это получится реализовать.
               </Paragraph>
               <Paragraph>
-                  Источники:
+                Источники:
                 <Materials>
                   <ol>
                     <li>
