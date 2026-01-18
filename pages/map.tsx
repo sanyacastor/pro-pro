@@ -1,11 +1,9 @@
-import path from 'path';
-import { promises as fs } from 'fs';
-
 import { Header } from '../components/Layout';
 import MapPage from '../components/mapPage/MapPage';
 import Head from 'next/head';
+import { POINTS_BY_TYPE } from '../components/mapPage/consts';
 
-export default function Home({ points }) {
+export default function Home({ pointsByTypeGeoJSON }) {
   return (
     <>
       <Head>
@@ -27,37 +25,40 @@ export default function Home({ points }) {
         <meta property="og:image:height" content="600" />
       </Head>
       <Header />
-      <MapPage places={points} />
+      <MapPage pointsByTypeGeoJSON={pointsByTypeGeoJSON} />
     </>
   );
 }
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), '/public/assets/points.json');
-  const fileContents = await fs.readFile(filePath, 'utf-8');
-  const parsed = await JSON.parse(fileContents);
+  const POINTS_BY_TYPE_GEOJSON = {};
 
-  const mapboxPoints = parsed.map((p) => ({
-    type: 'Feature',
-    geometry: {
-      type: 'Point',
-      coordinates: p.coordinates,
-    },
-    properties: {
-      exist: true,
-      type: p.type,
-      title: p.title,
-      image: p?.image || null,
-      description: p.description,
-    },
-  }));
+  Object.keys(POINTS_BY_TYPE).forEach((tag) => {
+    const points = POINTS_BY_TYPE[tag];
+    const features = points.map((p) => ({
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: p.coordinates.reverse(), // reverse coordinates to match Mapbox format
+      },
+      properties: {
+        exist: p.exist !== undefined ? p.exist : true,
+        type: p.type,
+        title: p.title,
+        image: p?.image || null,
+        description: p.description || '',
+      },
+    }));
+
+    POINTS_BY_TYPE_GEOJSON[tag] = {
+      type: 'FeatureCollection',
+      features,
+    };
+  });
 
   return {
     props: {
-      points: {
-        type: 'FeatureCollection',
-        features: [...mapboxPoints],
-      },
+      pointsByTypeGeoJSON: POINTS_BY_TYPE_GEOJSON,
     },
   };
 }

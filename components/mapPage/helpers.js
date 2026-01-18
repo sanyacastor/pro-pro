@@ -6,6 +6,3 @@ export const imageLoader = ({ src }) => {
 
   return url;
 };
-
-export const filterPlacesByType = (places, type) =>
-  places.features.filter((place) => place.properties.type === type);

@@ -1,21 +1,22 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { imageLoader, filterPlacesByType } from './helpers';
-import { images } from './consts';
+import { imageLoader } from './helpers';
+import { TAG_CONFIG } from './consts';
 
 import s from '../../styles/map/asideInfo.module.css';
 
 export const AsideList = ({
   currentPoint,
-  places,
+  pointsByTypeGeoJSON,
   setCurrentPoint,
   myMap,
   onClose,
   visible,
 }) => {
   const { title, description, image, type } = currentPoint;
-  const list = filterPlacesByType(places, type);
+  const featureCollection = pointsByTypeGeoJSON[type] || { features: [] };
+  const list = featureCollection.features;
   return (
     <aside
       className={
@@ -33,8 +34,8 @@ export const AsideList = ({
         >
           <Image
             loader={imageLoader}
-            src={image || images[type]}
-            key={image || images[type]}
+            src={image || TAG_CONFIG[type]?.image}
+            key={image || TAG_CONFIG[type]?.image}
             alt={title}
             width={380}
             height={285}
