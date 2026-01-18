@@ -25,12 +25,40 @@ import { Layout } from '../../../components/Layout';
 
 import { FullWidthImage, ImagesRow, VideoContainer, Materials } from './styles';
 
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Школа №2 в Протвино — История и Архитектура',
+  image: 'https://propro.media/article/school-number-two/hero.png',
+  datePublished: '2024-01-01',
+  dateModified: '2024-01-18',
+  author: {
+    '@type': 'Person',
+    name: 'Аня Медведкова',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Про про',
+    url: 'https://propro.media',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://propro.media/icon.svg',
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://propro.media/article/school-number-two',
+  },
+};
 export default function Article() {
   return (
     <>
       <ArticleHeadMeta
         title="Новая старая школа"
         ogDescription="Как построить разные школы по одному проекту"
+        ogImageUrl="/article/school-number-two/thumbnail.jpg"
+        ogUrl="https://propro.media/article/school-number-two"
+        articleSchema={articleSchema}
       />
       <Layout>
         <PostHero cover="url(/article/school-number-two/hero.png)">
@@ -160,7 +188,7 @@ export default function Article() {
                   src="/article/school-number-two/shmakov.webp"
                   width="760"
                   height="467"
-                  alt=""
+                  alt="Марк Александрович Шмаков, скульптор, автор монументальных рельефов на школе №2 в Протвино"
                 />
               </ImageContainer>
               <Paragraph>
@@ -241,7 +269,7 @@ export default function Article() {
                 src="/article/school-number-two/po-volnam.jpg"
                 width="760"
                 height="467"
-                alt=""
+                alt="Барельеф «По волнам» на корпусе начальных классов школы №2 в Протвино"
               />
             </ImageContainer>
             <ImageContainer>
@@ -250,7 +278,7 @@ export default function Article() {
                 src="/article/school-number-two/truba.jpg"
                 width="760"
                 height="467"
-                alt=""
+                alt="Деталь барельефа «По волнам» на школе №2 в Протвино"
               />
             </ImageContainer>
             <ImageContainer>
@@ -259,7 +287,7 @@ export default function Article() {
                 src="/article/school-number-two/korabl.jpg"
                 width="760"
                 height="467"
-                alt=""
+                alt="Деталь барельефа «По волнам» с изображением корабля на школе №2 в Протвино"
               />
             </ImageContainer>
             <Section>

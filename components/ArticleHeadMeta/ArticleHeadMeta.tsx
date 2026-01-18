@@ -6,6 +6,7 @@ type ArticleHeadMetaProps = {
   ogDescription: string;
   ogUrl: string;
   ogImageUrl: string;
+  articleSchema?: Record<string, any>;
 };
 
 export const ArticleHeadMeta = ({
@@ -13,6 +14,7 @@ export const ArticleHeadMeta = ({
   ogDescription,
   ogImageUrl,
   ogUrl,
+  articleSchema,
 }: ArticleHeadMetaProps) => {
   const metaTitle = `Про про | ${title}`;
 
@@ -20,6 +22,8 @@ export const ArticleHeadMeta = ({
     <Head>
       {/* <!-- HTML Meta Tags --> */}
       <title>{metaTitle}</title>
+      <meta property="og:locale" content="ru_RU" />
+      <meta property="og:site_name" content="propro.media" />
       <meta name="description" content={ogDescription} />
 
       {/* <!-- Facebook Meta Tags --> */}
@@ -36,6 +40,11 @@ export const ArticleHeadMeta = ({
       <meta name="twitter:title" content={metaTitle} />
       <meta name="twitter:description" content={ogDescription} />
       <meta name="twitter:image" content={ogImageUrl} />
+
+      {articleSchema && <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />}
     </Head>
   );
 };
