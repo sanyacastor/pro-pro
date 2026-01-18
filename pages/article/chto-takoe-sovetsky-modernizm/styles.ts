@@ -93,5 +93,3 @@ export const GradientSectionPurple = styled.div`
     rgba(241, 228, 251, 0) 100%
   );
 `;
-
-export default function () {}

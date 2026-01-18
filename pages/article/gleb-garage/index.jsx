@@ -160,7 +160,7 @@ export default function Article() {
                 src="/article/gleb-garage/garage_1.jpg"
                 width="760"
                 height="428"
-                alt=""
+                alt="Музыкальный гараж Глеба Сорокина - интерьер"
               />
             </ImageContainer>
 
@@ -216,7 +216,7 @@ export default function Article() {
                   src="/article/gleb-garage/jazz-do-it.png"
                   width="760"
                   height="471"
-                  alt=""
+                  alt="Группа JazzDoIt - репетиция в гараже"
                 />
               </ImageContainer>
 
@@ -281,7 +281,7 @@ export default function Article() {
                 src="/article/gleb-garage/kostik-dacha_1.jpg"
                 width="1200"
                 height="768"
-                alt=""
+                alt="После концерта в парке Дракино, концерт для себя на даче"
               />
               <Figcaption>
                 После концерта в парке Дракино, концерт для себя на даче
@@ -666,7 +666,7 @@ export default function Article() {
                   src="/article/gleb-garage/lamp-amp.png"
                   width="1280"
                   height="720"
-                  alt=""
+                  alt="Ламповый предусилитель, собранный Глебом Сорокиным"
                 />
               </ImageContainer>
               <Paragraph>
@@ -714,7 +714,7 @@ export default function Article() {
                   src="/article/gleb-garage/mixer.jpg"
                   width="1200"
                   height="675"
-                  alt=""
+                  alt="Цифровой микшер в музыкальном гараже"
                 />
               </ImageContainer>
             </SubSection>
@@ -746,7 +746,7 @@ export default function Article() {
                   src="/article/gleb-garage/light-box.jpg"
                   width="760"
                   height="471"
-                  alt=""
+                  alt="Световой короб с рекламным постером в гараже"
                 />
               </ImageContainer>
 
@@ -769,7 +769,7 @@ export default function Article() {
                   src="/article/gleb-garage/board.png"
                   width="760"
                   height="471"
-                  alt=""
+                  alt="Черная доска с рисунками в музыкальном гараже"
                 />
               </ImageContainer>
 
@@ -788,7 +788,7 @@ export default function Article() {
                   src="/article/gleb-garage/lamp.png"
                   width="760"
                   height="471"
-                  alt=""
+                  alt="Декоративная лампа с разноцветными огнями в гараже"
                 />
               </ImageContainer>
 

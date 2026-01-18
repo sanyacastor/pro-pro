@@ -33,5 +33,3 @@ export const Materials = styled.div`
     font-style: italic;
   }
 `;
-
-export default function () {}

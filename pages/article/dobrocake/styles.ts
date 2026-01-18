@@ -76,5 +76,3 @@ export const HeroContainer = styled.div`
     text-align: center;
   }
 `;
-
-export default function () {}

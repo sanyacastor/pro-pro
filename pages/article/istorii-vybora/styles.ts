@@ -126,5 +126,3 @@ export const TopHeaderSection = styled.div`
     margin-bottom: 32px;
   }
 `;
-
-export default function () {}

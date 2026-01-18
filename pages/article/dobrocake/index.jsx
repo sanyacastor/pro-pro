@@ -75,6 +75,7 @@ export default function Article() {
                   src="/article/dobrocake/dobrocake_2.jpg"
                   width="1280"
                   height="854"
+                  alt="Кондитерская Доброкейк - интерьер кофейни"
                 />
               </ImageContainer>
               <Paragraph>
@@ -105,28 +106,28 @@ export default function Article() {
                     src="/article/dobrocake/dobrocake_6.jpg"
                     width="378"
                     height="252"
-                    alt=""
+                    alt="Десерты кондитерской Доброкейк"
                   />
                   <Image
                     quality={100}
                     src="/article/dobrocake/dobrocake_7.jpg"
                     width="378"
                     height="252"
-                    alt=""
+                    alt="Десерты кондитерской Доброкейк"
                   />
                   <Image
                     quality={100}
                     src="/article/dobrocake/dobrocake_5.jpg"
                     width="378"
                     height="252"
-                    alt=""
+                    alt="Десерты кондитерской Доброкейк"
                   />
                   <Image
                     quality={100}
                     src="/article/dobrocake/dobrocake_8.jpg"
                     width="378"
                     height="252"
-                    alt=""
+                    alt="Десерты кондитерской Доброкейк"
                   />
                 </ImagesGridOfFour>
               </ImageContainer>
@@ -184,14 +185,14 @@ export default function Article() {
                   src="/article/dobrocake/dobrocake_10.jpg"
                   width="378"
                   height="567"
-                  alt=""
+                  alt="Десерты кондитерской Доброкейк"
                 />
                 <Image
                   quality={100}
                   src="/article/dobrocake/dobrocake_9.jpg"
                   width="378"
                   height="567"
-                  alt=""
+                  alt="Десерты кондитерской Доброкейк"
                 />
               </ImagesRow>
             </ImageContainer>
@@ -227,7 +228,7 @@ export default function Article() {
                   src="/article/dobrocake/dobrocake_1.jpg"
                   width="760"
                   height="506"
-                  alt=""
+                  alt="Десерты кондитерской Доброкейк"
                 />
               </ImageContainer>
 
@@ -305,7 +306,7 @@ export default function Article() {
                 src="/article/dobrocake/dobrocake_4.jpg"
                 width="760"
                 height="506"
-                alt=""
+                alt="Кондитерская Доброкейк - рабочий процесс"
               />
             </ImageContainer>
 

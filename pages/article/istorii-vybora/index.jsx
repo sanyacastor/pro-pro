@@ -147,7 +147,7 @@ export default function Article() {
                     src="/article/istorii_vybora/devushki_olya1.jpg"
                     width="760"
                     height="471"
-                    alt=""
+                    alt="Оля - молодая специалистка в Протвино"
                   />
                 </Figure>
                 <Paragraph>
@@ -192,7 +192,7 @@ export default function Article() {
                     src="/article/istorii_vybora/devushki_olya2.jpg"
                     width="760"
                     height="415"
-                    alt=""
+                    alt="Оля - молодой специалист в Протвино"
                   />
                 </Figure>
                 <Paragraph>
@@ -227,7 +227,7 @@ export default function Article() {
                       src="/article/istorii_vybora/devushki_olya3_1.jpg"
                       width="360"
                       height="276"
-                      alt=""
+                      alt="Оля - жизнь в Протвино"
                     />
                   </Figure>
                   <Figure>
@@ -235,7 +235,7 @@ export default function Article() {
                       src="/article/istorii_vybora/devushki_olya3_2.jpg"
                       width="365"
                       height="276"
-                      alt=""
+                      alt="Оля - жизнь в Протвино"
                     />
                   </Figure>
                 </Images>
@@ -316,7 +316,7 @@ export default function Article() {
                     src="/article/istorii_vybora/devushki_olya5.jpg"
                     width="760"
                     height="459"
-                    alt=""
+                    alt="Оля - работа в ИФВЭ"
                   />
                 </Figure>
                 <SubSection>
@@ -407,7 +407,7 @@ export default function Article() {
                     src="/article/istorii_vybora/devushki_galya1.jpeg"
                     width="760"
                     height="570"
-                    alt=""
+                    alt="Галина - молодой специалист в Протвино"
                   />
                 </Figure>
                 <SubSectionTitle>о распределении</SubSectionTitle>
@@ -502,7 +502,7 @@ export default function Article() {
                     src="/article/istorii_vybora/devushki_galya2.jpeg"
                     width="760"
                     height="570"
-                    alt=""
+                    alt="Галина - работа в ИФВЭ"
                   />
                 </Figure>
                 <SubSectionTitle>Работа</SubSectionTitle>
@@ -590,7 +590,7 @@ export default function Article() {
                     src="/article/istorii_vybora/devushki_galya3.jpg"
                     width="760"
                     height="570"
-                    alt=""
+                    alt="Галина - жизнь в Протвино"
                   />
                 </Figure>
               </Section>
@@ -611,7 +611,7 @@ export default function Article() {
                     src="/article/istorii_vybora/devushki_natalia1.jpeg"
                     width="760"
                     height="560"
-                    alt=""
+                    alt="Наталья - молодой специалист в Протвино"
                   />
                 </Figure>
                 <SubSectionTitle>распределение</SubSectionTitle>
@@ -774,7 +774,7 @@ export default function Article() {
                     src="/article/istorii_vybora/devushki_natalia2.jpeg"
                     width="760"
                     height="560"
-                    alt=""
+                    alt="Наталья - жизнь в Протвино"
                   />
                 </Figure>
                 <Paragraph>
@@ -806,7 +806,7 @@ export default function Article() {
                     src="/article/istorii_vybora/devushki_natalia3.jpeg"
                     width="760"
                     height="568"
-                    alt=""
+                    alt="Наталья - работа в ИФВЭ"
                   />
                 </Figure>
               </Section>
