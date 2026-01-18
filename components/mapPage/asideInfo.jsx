@@ -10,7 +10,7 @@ export default function AsideInfo({
   currentPoint,
   onClose,
   visible,
-  places,
+  pointsByTypeGeoJSON,
   setCurrentPoint,
   myMap,
 }) {
@@ -24,7 +24,7 @@ export default function AsideInfo({
         <Sheet.Content disableDrag>
           <AsideList
             currentPoint={currentPoint}
-            places={places}
+            pointsByTypeGeoJSON={pointsByTypeGeoJSON}
             setCurrentPoint={setCurrentPoint}
             myMap={myMap}
             visible
@@ -36,7 +36,7 @@ export default function AsideInfo({
     <AsideList
       visible={visible}
       currentPoint={currentPoint}
-      places={places}
+      pointsByTypeGeoJSON={pointsByTypeGeoJSON}
       setCurrentPoint={setCurrentPoint}
       myMap={myMap}
       onClose={onClose}

@@ -1,6 +1,6 @@
 import React from 'react';
 import s from '../../styles/map/map.module.css';
-import { colors, titles } from './consts';
+import { TAG_CONFIG } from './consts';
 
 export const Toolbar = ({ tags, types, filterPoints, isOpen }) => (
   <div className={`${s.mapToolBar} ${isOpen && s.mapToolBarOpen}`}>
@@ -11,12 +11,12 @@ export const Toolbar = ({ tags, types, filterPoints, isOpen }) => (
           key={name}
           style={
             tags && tags[name]
-              ? { borderColor: colors[name] }
-              : { background: colors[name] }
+              ? { borderColor: TAG_CONFIG[name].color }
+              : { background: TAG_CONFIG[name].color }
           }
           onClick={() => filterPoints(name)}
         >
-          {titles[name]}
+          {TAG_CONFIG[name].title}
         </span>
       ))}
     </div>
