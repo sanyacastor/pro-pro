@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import { CldImage } from 'next-cloudinary';
 
 import {
   PostGrid,
@@ -87,6 +86,7 @@ export default function Polyclinic() {
                 модернизма к&nbsp;говорящей архитектуре.
               </Paragraph>
             </Container>
+
             <Container>
               <Paragraph $indent={2} $size={28} $mt={56}>
                 Выражение
@@ -107,18 +107,17 @@ export default function Polyclinic() {
                 Малевича.
               </Paragraph>
               <PostImage $mt={64} $indent={2}>
-                <CldImage
-                  src="/articles/policlinic/image_3_1_ipsui5"
+                <img
                   width={660}
                   height={388}
                   alt="Архитекторы: А.Ларин, Е.Асс, Л.Волчек, 1973 год"
-                  quality={70}
-                />
+                  src="https://res.cloudinary.com/propromedia/image/upload/v1674498115/articles/policlinic/image_3_1_ipsui5.jpg" />
                 <figcaption>
                   Архитекторы: А.Ларин, Е.Асс, Л.Волчек, 1973 год{' '}
                 </figcaption>
               </PostImage>
             </Container>
+
             <Container>
               <SectionTitle>Малевич, дух и форма</SectionTitle>
               <Paragraph $mt={32} $indent={1}>
@@ -155,31 +154,28 @@ export default function Polyclinic() {
             <Container>
               <PoliclinicCollage>
                 <figure>
-                  <CldImage
-                    src="/articles/policlinic/image_2_1_kwz9jz"
+                  <img
+                    src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_2_1_kwz9jz"
                     width={462}
                     height={440}
-                    alt="К. С. Малевич, “Чёрный крест”, 1915"
-                    quality={70}
+                    alt="К. С. Малевич, 'Чёрный крест', 1915"
                   />
-                  <figcaption>К. С. Малевич, “Чёрный крест”, 1915</figcaption>
+                  <figcaption>К. С. Малевич, "Чёрный крест", 1915</figcaption>
                 </figure>
                 <figure>
-                  <CldImage
-                    src="/articles/policlinic/image_14_xq2poo"
+                  <img
+                    src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_14_xq2poo"
                     width={260}
                     height={451}
                     alt="Композиция из гипса"
-                    quality={70}
                   />
                 </figure>
                 <figure>
-                  <CldImage
-                    src="/articles/policlinic/image_34_mlavlb"
+                  <img
+                    src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_34_mlavlb"
                     width={360}
                     height={286}
                     alt="Композиция из гипса"
-                    quality={70}
                   />
                 </figure>
               </PoliclinicCollage>
@@ -208,8 +204,8 @@ export default function Polyclinic() {
               </ParagraphWithBackground>
 
               <PostImage $mt={64}>
-                <CldImage
-                  src="/articles/policlinic/image_1_1_khobnx"
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_1_1_khobnx"
                   width={628}
                   height={437}
                   alt="К.С. Малевич. Архитектон «Альфа», 1920. Гипс."
@@ -247,15 +243,15 @@ export default function Polyclinic() {
               </Paragraph>
 
               <PostImage $mt={64}>
-                <CldImage
-                  src="/articles/policlinic/image_4_1_zijeto"
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_4_1_zijeto"
                   width={435}
                   height={317}
                   alt="Поликлиника фасад"
                 />
 
-                <CldImage
-                  src="/articles/policlinic/image_1_2_jwokez"
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_1_2_jwokez"
                   width={460}
                   height={316}
                   alt="Чашник Илья «Архитектон» 1925-1926. Гипс"
@@ -286,8 +282,8 @@ export default function Polyclinic() {
 
             <Container>
               <PostImage $mt={64} $indent={1}>
-                <CldImage
-                  src="/articles/policlinic/image_5_1_ijcjfw"
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_5_1_ijcjfw"
                   width={460}
                   height={339}
                   alt="Поликлиника в Зеленограде"
@@ -301,9 +297,9 @@ export default function Polyclinic() {
                 графичные лестницы, свойственные парадным входам зданий совмода.
               </Paragraph>
 
-              <PostImage $mt={64}>
-                <CldImage
-                  src="/articles/policlinic/image_37_c5ecmu"
+              <PostImage $mt={64} >
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_37_c5ecmu"
                   width={455}
                   height={321}
                   alt="Поликлиника фасад"
@@ -329,8 +325,8 @@ export default function Polyclinic() {
               <RedCrosses />
 
               <PostImage $mt={64}>
-                <CldImage
-                  src="/articles/policlinic/image_6_1_rszwy4.jpg"
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_6_1_rszwy4.jpg"
                   width={960}
                   height={615}
                   alt="Поликлиника фасад"
@@ -364,15 +360,14 @@ export default function Polyclinic() {
               </Paragraph>
 
               <PostImage $mt={64}>
-                <CldImage
-                  src="/articles/policlinic/image_1_eyaz43.jpg"
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_1_eyaz43.jpg"
                   width={359}
                   height={479}
                   alt="Лестничные марши рядом с лифтами"
                 />
-                <CldImage
-                  src="/articles/policlinic/image_km6rtk"
-                  quality={100}
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_km6rtk"
                   width={359}
                   height={479}
                   alt="Oткрытые пространства напротив окон дневного света."
@@ -383,9 +378,8 @@ export default function Polyclinic() {
                 </figcaption>
               </PostImage>
               <PostImage $mt={64}>
-                <CldImage
-                  quality={100}
-                  src="/articles/policlinic/image_2_2_xkf0yo"
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_2_2_xkf0yo"
                   width={960}
                   height={598}
                   alt="Переход между зданиями поликлиники и МСЧ-57"
@@ -400,20 +394,21 @@ export default function Polyclinic() {
                 периода.
               </Paragraph>
               <PostImage $mt={64}>
-                <CldImage
-                  src="/articles/policlinic/image_11_wpfwo6"
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_11_wpfwo6"
                   width={403}
                   height={264}
                   alt="Поликлиника фасад"
                 />
-                <CldImage
-                  src="/articles/policlinic/image_10_tn3snc"
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_10_tn3snc"
                   width={418}
                   height={264}
                   alt="Поликлиника фасад"
                 />
               </PostImage>
             </Container>
+
             <Container>
               <SectionTitle>Настоящее и будущее</SectionTitle>
               <Paragraph $mt={32} $indent={1}>
@@ -433,8 +428,8 @@ export default function Polyclinic() {
                 прогулявшись по&nbsp;городу.
               </Paragraph>
               <PostImage $mt={64}>
-                <CldImage
-                  src="/articles/policlinic/image_9_1_l0o0ds"
+                <img
+                  src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_9_1_l0o0ds"
                   width={960}
                   height={419}
                   alt="Поликлиника перекрашенный фасад"
