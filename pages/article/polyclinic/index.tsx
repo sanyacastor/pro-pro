@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 
 import {
   PostGrid,
@@ -107,7 +108,7 @@ export default function Polyclinic() {
                 Малевича.
               </Paragraph>
               <PostImage $mt={64} $indent={2}>
-                <img
+                <Image
                   width={660}
                   height={388}
                   alt="Архитекторы: А.Ларин, Е.Асс, Л.Волчек, 1973 год"
@@ -154,7 +155,7 @@ export default function Polyclinic() {
             <Container>
               <PoliclinicCollage>
                 <figure>
-                  <img
+                  <Image
                     src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_2_1_kwz9jz"
                     width={462}
                     height={440}
@@ -163,7 +164,7 @@ export default function Polyclinic() {
                   <figcaption>К. С. Малевич, "Чёрный крест", 1915</figcaption>
                 </figure>
                 <figure>
-                  <img
+                  <Image
                     src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_14_xq2poo"
                     width={260}
                     height={451}
@@ -171,7 +172,7 @@ export default function Polyclinic() {
                   />
                 </figure>
                 <figure>
-                  <img
+                  <Image
                     src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_34_mlavlb"
                     width={360}
                     height={286}
@@ -204,7 +205,7 @@ export default function Polyclinic() {
               </ParagraphWithBackground>
 
               <PostImage $mt={64}>
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_1_1_khobnx"
                   width={628}
                   height={437}
@@ -243,14 +244,14 @@ export default function Polyclinic() {
               </Paragraph>
 
               <PostImage $mt={64}>
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_4_1_zijeto"
                   width={435}
                   height={317}
                   alt="Поликлиника фасад"
                 />
 
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_1_2_jwokez"
                   width={460}
                   height={316}
@@ -282,7 +283,7 @@ export default function Polyclinic() {
 
             <Container>
               <PostImage $mt={64} $indent={1}>
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_5_1_ijcjfw"
                   width={460}
                   height={339}
@@ -298,7 +299,7 @@ export default function Polyclinic() {
               </Paragraph>
 
               <PostImage $mt={64} >
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_37_c5ecmu"
                   width={455}
                   height={321}
@@ -325,7 +326,7 @@ export default function Polyclinic() {
               <RedCrosses />
 
               <PostImage $mt={64}>
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_6_1_rszwy4.jpg"
                   width={960}
                   height={615}
@@ -360,13 +361,13 @@ export default function Polyclinic() {
               </Paragraph>
 
               <PostImage $mt={64}>
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_1_eyaz43.jpg"
                   width={359}
                   height={479}
                   alt="Лестничные марши рядом с лифтами"
                 />
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_km6rtk"
                   width={359}
                   height={479}
@@ -378,7 +379,7 @@ export default function Polyclinic() {
                 </figcaption>
               </PostImage>
               <PostImage $mt={64}>
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_2_2_xkf0yo"
                   width={960}
                   height={598}
@@ -394,13 +395,13 @@ export default function Polyclinic() {
                 периода.
               </Paragraph>
               <PostImage $mt={64}>
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_11_wpfwo6"
                   width={403}
                   height={264}
                   alt="Поликлиника фасад"
                 />
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_10_tn3snc"
                   width={418}
                   height={264}
@@ -428,7 +429,7 @@ export default function Polyclinic() {
                 прогулявшись по&nbsp;городу.
               </Paragraph>
               <PostImage $mt={64}>
-                <img
+                <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_9_1_l0o0ds"
                   width={960}
                   height={419}

@@ -41,10 +41,12 @@ export const ArticleHeadMeta = ({
       <meta name="twitter:description" content={ogDescription} />
       <meta name="twitter:image" content={ogImageUrl} />
 
-      {articleSchema && <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />}
+      {articleSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      )}
     </Head>
   );
 };
