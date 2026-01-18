@@ -68,7 +68,8 @@ export async function getServerSideProps(context) {
 
   let ogDescription = defaultDescription;
   let ogTitle = defaultTitle;
-  let ogImage = 'https://res.cloudinary.com/propromedia/image/upload/c_scale,w_1000/v1673030685/duotone_4_hndnpn.png';
+  let ogImage =
+    'https://res.cloudinary.com/propromedia/image/upload/c_scale,w_1000/v1673030685/duotone_4_hndnpn.png';
   let ogUrl = 'https://propro.media/map';
 
   if (tag && TAG_CONFIG[tag]) {
