@@ -155,5 +155,3 @@ export const ImagesContainer = styled.div`
     }
   }
 `;
-
-export default function () {}

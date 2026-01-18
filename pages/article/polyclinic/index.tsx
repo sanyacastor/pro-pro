@@ -112,7 +112,8 @@ export default function Polyclinic() {
                   width={660}
                   height={388}
                   alt="Архитекторы: А.Ларин, Е.Асс, Л.Волчек, 1973 год"
-                  src="https://res.cloudinary.com/propromedia/image/upload/v1674498115/articles/policlinic/image_3_1_ipsui5.jpg" />
+                  src="https://res.cloudinary.com/propromedia/image/upload/v1674498115/articles/policlinic/image_3_1_ipsui5.jpg"
+                />
                 <figcaption>
                   Архитекторы: А.Ларин, Е.Асс, Л.Волчек, 1973 год{' '}
                 </figcaption>
@@ -161,7 +162,9 @@ export default function Polyclinic() {
                     height={440}
                     alt="К. С. Малевич, 'Чёрный крест', 1915"
                   />
-                  <figcaption>К. С. Малевич, "Чёрный крест", 1915</figcaption>
+                  <figcaption>
+                    К. С. Малевич, &quot;Чёрный крест&quot;, 1915
+                  </figcaption>
                 </figure>
                 <figure>
                   <Image
@@ -298,7 +301,7 @@ export default function Polyclinic() {
                 графичные лестницы, свойственные парадным входам зданий совмода.
               </Paragraph>
 
-              <PostImage $mt={64} >
+              <PostImage $mt={64}>
                 <Image
                   src="https://res.cloudinary.com/propromedia/image/upload/articles/policlinic/image_37_c5ecmu"
                   width={455}

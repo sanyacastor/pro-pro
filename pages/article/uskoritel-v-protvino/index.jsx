@@ -107,7 +107,7 @@ export default function Article() {
                 src="/article/uskoritel-v-protvino/f4.png"
                 width="760"
                 height="450"
-                alt=""
+                alt="Схема ускорителя частиц"
                 quality={100}
               />
             </Figure>
@@ -156,7 +156,7 @@ export default function Article() {
                   src="/article/uskoritel-v-protvino/f2.png"
                   width="760"
                   height="450"
-                  alt=""
+                  alt="Схема изучения объектов микромира"
                   quality={100}
                 />
               </Figure>
@@ -227,7 +227,7 @@ export default function Article() {
                   src="/article/uskoritel-v-protvino/f3.png"
                   width="760"
                   height="450"
-                  alt=""
+                  alt="Типы ускорителей частиц"
                   quality={100}
                 />
               </Figure>

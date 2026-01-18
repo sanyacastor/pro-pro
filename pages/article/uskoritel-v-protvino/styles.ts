@@ -70,5 +70,3 @@ export const CardTitle = styled.p`
 export const PostHeroWrapper = styled.div`
   background: #d9d9d9;
 `;
-
-export default function () {}

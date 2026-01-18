@@ -38,12 +38,22 @@ export default function GurTourPage() {
       <Layout>
         <S.PostHero>
           <S.HeroInner>
-            <Image src={TreeIcon} width="184" height="232" alt="" />
+            <Image
+              src={TreeIcon}
+              width="184"
+              height="232"
+              alt="Иконка дерева"
+            />
             <ArticleTitle>
               ЗИн-путеводитель
               <br /> по протвино
             </ArticleTitle>
-            <Image src={TreeIcon} width="184" height="232" alt="" />
+            <Image
+              src={TreeIcon}
+              width="184"
+              height="232"
+              alt="Иконка дерева"
+            />
           </S.HeroInner>
         </S.PostHero>
         <ArticleContainer>
@@ -60,7 +70,7 @@ export default function GurTourPage() {
                   src="/article/zine/ZIN1.jpeg"
                   width="248"
                   height="330"
-                  alt=""
+                  alt="Зин-путеводитель по Протвино - обложка"
                 />
               </Figure>
               <Figure>
@@ -68,7 +78,7 @@ export default function GurTourPage() {
                   src="/article/zine/ZIN2.png"
                   width="249"
                   height="330"
-                  alt=""
+                  alt="Зин-путеводитель по Протвино - страница"
                 />
               </Figure>
               <Figure>
@@ -76,7 +86,7 @@ export default function GurTourPage() {
                   src="/article/zine/ZIN3.png"
                   width="244"
                   height="330"
-                  alt=""
+                  alt="Зин-путеводитель по Протвино - страница"
                 />
               </Figure>
             </S.Images>
@@ -114,7 +124,7 @@ export default function GurTourPage() {
                   src="/article/zine/ZIN4.jpeg"
                   width="760"
                   height="569"
-                  alt=""
+                  alt="Зин-путеводитель по Протвино - разворот"
                 />
               </Figure>
             </S.Section>
@@ -139,7 +149,7 @@ export default function GurTourPage() {
                   src="/article/zine/ZIN5.jpeg"
                   width="368"
                   height="277"
-                  alt=""
+                  alt="Презентация зина на фестивале Кинолес"
                 />
               </Figure>
               <Figure>
@@ -147,7 +157,7 @@ export default function GurTourPage() {
                   src="/article/zine/ZIN7.png"
                   width="376"
                   height="277"
-                  alt=""
+                  alt="Презентация зина на фестивале Кинолес"
                 />
               </Figure>
             </S.Images>
@@ -182,7 +192,7 @@ export default function GurTourPage() {
                 src="/article/zine/ZIN8.png"
                 width="760"
                 height="510"
-                alt=""
+                alt="Новогодний зин-путеводитель по Протвино"
               />
             </Figure>
             <Figure>
@@ -190,7 +200,7 @@ export default function GurTourPage() {
                 src="/article/zine/ZIN9.png"
                 width="760"
                 height="542"
-                alt=""
+                alt="Новогодний зин-путеводитель по Протвино"
               />
             </Figure>
           </Container>

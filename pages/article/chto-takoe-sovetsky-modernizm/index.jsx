@@ -102,7 +102,7 @@ export default function Article() {
                 src="/article/chto-takoe-sovetsky-modernizm/sovmod1.png"
                 width="760"
                 height="506"
-                alt=""
+                alt="Газета «Правда», 1955 г."
               />
               <Figcaption>Газета «Правда», 1955 г.</Figcaption>
             </Figure>

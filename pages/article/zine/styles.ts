@@ -80,5 +80,3 @@ export const PostHero = styled.div`
     padding-right: 8px;
   }
 `;
-
-export default function () {}
