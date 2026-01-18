@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useLockBodyScroll } from 'react-use';
 
 import { MobileMenu } from './components';
-import { SOCIAL } from '../../../config';
 
 import * as S from './styles';
 
