@@ -44,7 +44,7 @@ export async function getServerSideProps(context) {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: p.coordinates.reverse(), // reverse coordinates to match Mapbox format
+        coordinates: [...p.coordinates].reverse(),
       },
       properties: {
         exist: p.exist !== undefined ? p.exist : true,
