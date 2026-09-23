@@ -7,6 +7,7 @@ import { SwiperSlide } from 'swiper/react';
 import {
   ArticleSubtitle,
   ArticleTitle,
+  PostAuthor,
   PostHero,
   Tooltip,
 } from '../../../components/UI/Article';
@@ -153,6 +154,7 @@ export default function Article() {
           <ArticleTitle>
             Экскурсия <br />в Дом учёных
           </ArticleTitle>
+          <PostAuthor>автор: Аня Медведкова</PostAuthor>
         </PostHero>
         <ArticleContainer>
           <Container>
@@ -172,7 +174,6 @@ export default function Article() {
               По&nbsp;согласованию с&nbsp;руководством института нам удалось
               туда попасть, чтобы запечатлеть интерьеры.
             </Paragraph>
-
             <Section>
               <ArticleSubtitle>О здании</ArticleSubtitle>
               <Paragraph>
@@ -207,7 +208,7 @@ export default function Article() {
           <Container>
             <Tooltip id="decree-1955" />
             <Quote>
-              <Paragraph>
+              <Paragraph mb={26}>
                 <b>Лиза Арестова, архитектор:</b>
               </Paragraph>
               <Paragraph>
@@ -460,7 +461,7 @@ export default function Article() {
                 height="507"
                 alt="Конференц-зал Дома учёных"
               />
-              <Figcaption>Фото: Анна Медведкова</Figcaption>
+              <Figcaption>Фото: Аня Медведкова</Figcaption>
             </ImageContainer>
 
             <Section>
@@ -470,7 +471,7 @@ export default function Article() {
                 интерьеров.
               </Paragraph>
 
-              <Gallery images={DETAILS} caption="Фото: Анна Медведкова" />
+              <Gallery images={DETAILS} caption="Фото: Аня Медведкова" />
             </Section>
 
             <Section>
