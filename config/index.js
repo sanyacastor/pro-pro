@@ -1,4 +1,6 @@
 export const COVERS = {
+  domUchenykh: '/article/dom-uchenykh/cover.webp',
+  domUchenykhMobile: '/article/dom-uchenykh/cover-mobile.webp',
   glebGarage: '/article/gleb-garage/thumbnail.jpg',
   istoriiVybora: '/article/istorii_vybora/thumbnail.png',
   policlinic:
@@ -8,9 +10,10 @@ export const COVERS = {
 };
 
 export const HERO = {
-  image: COVERS.glebGarage,
-  link: '/article/gleb-garage',
-  title: 'В ГОСТЯХ<br/> У ГЛеБА МАКкАРТНИ',
+  image: COVERS.domUchenykh,
+  imageMobile: COVERS.domUchenykhMobile,
+  link: '/article/dom-uchenykh',
+  title: 'ЭКСКУРСИЯ<br/> В ДОМ УЧЁНЫХ',
   author: 'Аня Медведкова',
 };
 

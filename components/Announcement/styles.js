@@ -72,7 +72,7 @@ export const Author = styled.div`
   font-family: 'Lack';
   font-style: normal;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 12px;
   line-height: 134%;
 
   text-align: center;

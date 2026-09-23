@@ -162,7 +162,7 @@ export default function Article() {
               Дом учёных&nbsp;&mdash; строгое, ритмичное здание с&nbsp;плоской
               крышей&nbsp;&mdash; скромно затаилось в&nbsp;одном из&nbsp;жилых
               кварталов. С&nbsp;момента постройки и&nbsp;по&nbsp;текущий день
-              он&nbsp;находится в&nbsp;ведении Института физики высоких энергий
+              оно&nbsp;находится в&nbsp;ведении Института физики высоких энергий
               имени А.А. Логунова (сейчас&nbsp;&mdash; НИЦ &laquo;Курчатовский
               институт&raquo;&nbsp;&mdash; ИФВЭ). Благодаря этому, а&nbsp;также
               бережному отношению к&nbsp;объекту, здесь прекрасно сохранились
@@ -186,11 +186,10 @@ export default function Article() {
                 Усть-Каменогорске, Челябинске, а&nbsp;также в&nbsp;Академгородке
                 под Новосибирском. Он&nbsp;автор станций Московского
                 метрополитена&nbsp;&mdash; радиальной &laquo;Киевской&raquo;
-                (1953) и&nbsp;&laquo;Университета&raquo; (1958), санаториев
-                в&nbsp;Адлере, Пятигорске, Ессентуках и&nbsp;дома отдыха
-                &laquo;Судак&raquo;. В&nbsp;последние годы жизни архитектор
-                работал в&nbsp;Протвино, где проектировал жилые
-                и&nbsp;административные здания.
+                и&nbsp;&laquo;Университета&raquo;, санаториев в&nbsp;Адлере,
+                Пятигорске, Ессентуках и&nbsp;дома отдыха &laquo;Судак&raquo;.
+                В&nbsp;последние годы жизни архитектор работал в&nbsp;Протвино,
+                где проектировал жилые и&nbsp;административные здания.
               </Paragraph>
             </Section>
           </Container>
@@ -203,6 +202,7 @@ export default function Article() {
               height="822"
               alt="Фасад Дома учёных в Протвино"
             />
+            <Figcaption>Дом Ученых, г. Протвино</Figcaption>
           </FullWidthImage>
 
           <Container>
@@ -382,10 +382,10 @@ export default function Article() {
               height="853"
               alt="Банкетный зал Дома учёных"
             />
-          </FullWidthImage>
-          <Container>
             <Figcaption>Фото: Ольга Акимова</Figcaption>
+          </FullWidthImage>
 
+          <Container>
             <Gallery images={BANQUET} caption="Фото: Ольга Акимова" />
 
             <ImageContainer>
@@ -443,10 +443,9 @@ export default function Article() {
               height="853"
               alt="Каминный зал Дома учёных"
             />
+            <Figcaption>Фото: Ольга Акимова</Figcaption>
           </FullWidthImage>
           <Container>
-            <Figcaption>Фото: Ольга Акимова</Figcaption>
-
             <Gallery images={FIREPLACE} caption="Фото: Ольга Акимова" />
 
             <Paragraph>
