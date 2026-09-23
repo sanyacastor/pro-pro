@@ -1,5 +1,3 @@
-import { withPlaiceholder } from '@plaiceholder/next';
-
 const nextConfig = {
   pageExtensions: ['tsx', 'js', 'jsx', 'md', 'mdx'],
   images: {
@@ -25,4 +23,4 @@ const nextConfig = {
   },
 };
 
-export default withPlaiceholder(nextConfig);
+export default nextConfig;
