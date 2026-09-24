@@ -11,6 +11,11 @@ export const ArticlesSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @media (max-width: 960px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 `;
 
 export const ArticlesContainer = styled.section`

@@ -22,11 +22,20 @@ function Home() {
         <GurtourBanner />
         <Articles />
         <ArticleThumbnailWide
+          link="/article/gleb-garage"
+          title="Гаражане: в гостях у Глеба Маккартни"
+          description="музыкант, который играет в The BeatLove и «ЛАВ», а репетирует в протвинском гараже"
+          author="Аня Медведкова"
+          bgColor="#2F4FD6"
+          textColor="#ffffff"
+          imageUrl="/article/gleb-garage/preview.webp"
+        />
+        <ArticleThumbnailWide
           link="/article/school-number-two"
           title="Новая старая школа"
           description="Как построить разные школы по одному проекту"
           author="Аня Медведкова"
-          bgColor="#2b34b4"
+          bgColor="#565FC3"
           textColor="#ffffff"
           imageUrl="/article/school-number-two/thumbnail.jpg"
         />
