@@ -13,7 +13,7 @@ export const HERO = {
   image: COVERS.domUchenykh,
   imageMobile: COVERS.domUchenykhMobile,
   link: '/article/dom-uchenykh',
-  title: 'ЭКСКУРСИЯ<br/> В ДОМ УЧЁНЫХ',
+  title: 'ЭКСКУРСИЯ<br/> В ДОМ УЧЕНЫХ',
   author: 'Аня Медведкова',
 };
 

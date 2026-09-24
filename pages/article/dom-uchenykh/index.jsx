@@ -25,6 +25,7 @@ import {
 
 import { Paragraph } from '../../../components/Typography';
 import { Layout } from '../../../components/Layout';
+import { COVERS } from '../../../config';
 
 import {
   FullWidthImage,
@@ -116,7 +117,7 @@ const PAPER = [
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Экскурсия в Дом учёных',
+  headline: 'Экскурсия в Дом ученых',
   image: `https://propro.media${IMAGES}/thumbnail.webp`,
   datePublished: '2026-09-22',
   dateModified: '2026-09-22',
@@ -143,16 +144,19 @@ export default function Article() {
   return (
     <>
       <ArticleHeadMeta
-        title="Экскурсия в Дом учёных"
+        title="Экскурсия в Дом ученых"
         ogDescription="Самое таинственное здание Протвино: архитектура, монументальное искусство и подлинные интерьеры Дома учёных ИФВЭ"
         ogImageUrl={`${IMAGES}/thumbnail.webp`}
         ogUrl="https://propro.media/article/dom-uchenykh"
         articleSchema={articleSchema}
       />
       <Layout>
-        <PostHero cover={`url(${IMAGES}/hero.webp)`}>
+        <PostHero
+          cover={`url(${COVERS.domUchenykh})`}
+          mobileCover={`url(${COVERS.domUchenykhMobile})`}
+        >
           <ArticleTitle>
-            Экскурсия <br />в Дом учёных
+            Экскурсия <br />в Дом учЕных
           </ArticleTitle>
           <PostAuthor>автор: Аня Медведкова</PostAuthor>
         </PostHero>
@@ -499,6 +503,9 @@ export default function Article() {
                 и&nbsp;сохранены прямые свидетельства&nbsp;&mdash; впечатления
                 и&nbsp;памятные слова, написанные после посещения.
               </Paragraph>
+
+              <Gallery images={PAPER} />
+
               <Paragraph>
                 Для ученых по&nbsp;информации от&nbsp;Т.&nbsp;В.&nbsp;Соловьевой
                 при Доме учёных работало несколько клубов. Во&nbsp;внутреннем
@@ -510,8 +517,6 @@ export default function Article() {
                 воспоминания и&nbsp;кажется, что о&nbsp;культурной жизни Дома
                 ученых можно писать отдельную статью.
               </Paragraph>
-
-              <Gallery images={PAPER} />
             </Section>
           </Container>
 
@@ -527,8 +532,8 @@ export default function Article() {
 
           <Container>
             <Thanks>
-              Благодарим за&nbsp;содействие при подготовке материала
-              Брагина&nbsp;А.А. и&nbsp;Соловьеву&nbsp;Т.В.
+              Благодарим Брагина А.А. и&nbsp;Соловьеву Т.В за&nbsp;содействие
+              при подготовке материала.
             </Thanks>
           </Container>
         </ArticleContainer>

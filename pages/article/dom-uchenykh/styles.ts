@@ -9,6 +9,12 @@ export const FullWidthImage = styled.div`
     width: 100%;
     height: auto;
   }
+
+  figcaption {
+    @media (max-width: 960px) {
+      margin: 0 8px;
+    }
+  }
 `;
 
 export const ImagesGridOfFour = styled.div`
