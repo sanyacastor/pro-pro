@@ -156,7 +156,7 @@ export default function Article() {
           mobileCover={`url(${COVERS.domUchenykhMobile})`}
         >
           <ArticleTitle>
-            Экскурсия <br />в Дом учЕных
+            Экскурсия <br />в Дом ученых
           </ArticleTitle>
           <PostAuthor>автор: Аня Медведкова</PostAuthor>
         </PostHero>
@@ -532,7 +532,7 @@ export default function Article() {
 
           <Container>
             <Thanks>
-              Благодарим Брагина А.А. и&nbsp;Соловьеву Т.В за&nbsp;содействие
+              Благодарим Брагина А.А. и&nbsp;Соловьеву Т.В. за&nbsp;содействие
               при подготовке материала.
             </Thanks>
           </Container>
