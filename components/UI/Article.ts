@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Tooltip as ReactTooltip } from 'react-tooltip';
 
 export const PostGrid = styled.div`
   padding: ${({ padding = 1 }) => `0 ${padding * 100}px`};
@@ -133,25 +132,14 @@ export const Paragraph = styled.p<{
     margin-top: 32px;
   }
 
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   @media (max-width: 1160px) {
     padding-left: 0;
   }
-`;
-
-export const Tooltip = styled(ReactTooltip)`
-  padding: 18px 25px;
-  background: #f2ecec;
-  border-radius: 15px;
-  opacity: 100%;
-
-  font-family: 'Piazzolla';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 131.5%;
-  color: #000;
-
-  max-width: 300px;
 `;
 
 export const PostImage = styled.figure<{
