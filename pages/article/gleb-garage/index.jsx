@@ -6,7 +6,6 @@ import {
   ArticleTitle,
   PostAuthor,
   PostHero,
-  Tooltip,
 } from '../../../components/UI/Article';
 
 import { ArticleHeadMeta } from '../../../components/';
@@ -25,6 +24,7 @@ import { Layout } from '../../../components/Layout';
 import { FullWidthImage, ImagesRow } from './styles';
 
 import 'react-tooltip/dist/react-tooltip.css';
+import { Tooltip } from '../../../components/UI/Tooltip';
 
 export default function Article() {
   return (
