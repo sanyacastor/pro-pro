@@ -36,7 +36,7 @@ export const PrevSlideButton = styled.button<{ isDisabled: boolean }>`
   top: 50%;
   left: -60px;
   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="45" viewBox="0 0 25 45" fill="none"><path d="M24 1L2 22.5L24 44" stroke="%23534F4F" stroke-width="2"/></svg>');
-  transform: translateY(23px);
+  transform: translateY(-23px);
 
   :disabled {
     opacity: 0.3;
