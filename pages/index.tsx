@@ -23,8 +23,8 @@ function Home() {
         <Articles />
         <ArticleThumbnailWide
           link="/article/gleb-garage"
-          title="Гаражане: в гостях у Глеба Маккартни"
-          description="музыкант, который играет в The BeatLove и «ЛАВ», а репетирует в протвинском гараже"
+          title="Гаражане: в&nbsp;гостях у&nbsp;Глеба Маккартни"
+          description="музыкант, который играет в&nbsp;The BeatLove и&nbsp;&laquo;ЛАВ&raquo;, а&nbsp;репетирует в&nbsp;протвинском гараже"
           author="Аня Медведкова"
           bgColor="#2F4FD6"
           textColor="#ffffff"
@@ -33,7 +33,7 @@ function Home() {
         <ArticleThumbnailWide
           link="/article/school-number-two"
           title="Новая старая школа"
-          description="Как построить разные школы по одному проекту"
+          description="как построить разные школы по&nbsp;одному проекту"
           author="Аня Медведкова"
           bgColor="#565FC3"
           textColor="#ffffff"
