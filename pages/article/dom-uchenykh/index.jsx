@@ -9,7 +9,6 @@ import {
   ArticleTitle,
   PostAuthor,
   PostHero,
-  Tooltip,
 } from '../../../components/UI/Article';
 
 import { ArticleHeadMeta } from '../../../components';
@@ -34,8 +33,7 @@ import {
   Thanks,
   SliderBlock,
 } from './styles';
-
-import 'react-tooltip/dist/react-tooltip.css';
+import { Tooltip } from '../../../components/UI/Tooltip';
 
 const IMAGES = '/article/dom-uchenykh';
 
@@ -210,7 +208,6 @@ export default function Article() {
           </FullWidthImage>
 
           <Container>
-            <Tooltip id="decree-1955" />
             <Quote>
               <Paragraph mb={26}>
                 <b>Лиза Арестова, архитектор:</b>
@@ -225,7 +222,8 @@ export default function Article() {
                 творческий путь автора. Он&nbsp;закончил МАРХИ в&nbsp;1951 году,
                 учился, скорее всего, преимущественно на&nbsp;классической
                 архитектуре, но&nbsp;учили его те, кто застал авангард и,
-                вероятно, работал в&nbsp;это время.{' '}
+                вероятно, работал в&nbsp;это время.
+                <Tooltip id="decree-1955" />
                 <a
                   data-tooltip-id="decree-1955"
                   data-tooltip-content="Постановление № 1871 «Об устранении излишеств в проектировании и строительстве» было принято ЦК КПСС и Советом Министров СССР 4 ноября 1955 года"

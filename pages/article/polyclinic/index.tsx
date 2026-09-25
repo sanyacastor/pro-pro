@@ -8,7 +8,6 @@ import {
   PostAuthor,
   PostImage,
   PoliclinicCollage,
-  Tooltip,
   Paragraph,
   CirceSquareCross,
   ParagraphWithBackground,
@@ -23,9 +22,9 @@ import { ArticleContainer } from '../../../components/UI/Generic';
 import { Layout } from '../../../components/Layout';
 import { SectionTitle } from '../../../components/UI';
 import { COVERS } from '../../../config';
+import { Tooltip } from '../../../components/UI/Tooltip';
 
 import { Container } from './styles';
-import 'react-tooltip/dist/react-tooltip.css';
 
 export default function Polyclinic() {
   return (
@@ -67,8 +66,8 @@ export default function Polyclinic() {
               <ArticleSubtitle>
                 «Говорящая архитектура» — <br /> что это такое?
               </ArticleSubtitle>
-              <Tooltip id="robert" />
               <Paragraph>
+                <Tooltip id="robert" />
                 Главный американский постмодернист{' '}
                 <a
                   data-tooltip-id="robert"

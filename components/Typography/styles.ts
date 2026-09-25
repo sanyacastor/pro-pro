@@ -31,6 +31,7 @@ export const Paragraph = styled.p<{
 
   a {
     border-bottom: 1px solid #000;
+    cursor: pointer;
   }
 
   @media (max-width: 1160px) {
