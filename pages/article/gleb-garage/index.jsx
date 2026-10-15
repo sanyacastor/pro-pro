@@ -648,7 +648,7 @@ export default function Article() {
 
           <Container>
             <AudioFigure>
-              <audio controls src="/article/gleb-garage/proton.wav"></audio>
+              <audio controls src="/article/gleb-garage/proton.ogg"></audio>
             </AudioFigure>
 
             <SubSection>
