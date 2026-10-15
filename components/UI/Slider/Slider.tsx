@@ -10,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 export const Slider = ({ children }) => {
-  const swiperRef = useRef<SwiperCore>();
+  const swiperRef = useRef<SwiperCore>(null);
   const [isBeginning, setIsBeginning] = useState(null);
   const [isEnd, setIsEnd] = useState(null);
 
