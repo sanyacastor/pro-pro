@@ -1,4 +1,4 @@
-.map-tool-bar {
+.bar {
   position: absolute;
   top: 86px;
   right: 16px;
@@ -9,15 +9,18 @@
   max-width: calc(100vw - 32px);
   overflow-x: auto;
 }
+.barOpen {
+  /* reserved for future open-state styling */
+}
 
-.map-tool-bar__list {
+.list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.map-tool-bar__tag {
+.tag {
   display: inline-block;
   padding: 6px 14px;
   transition: all 350ms ease;
@@ -32,18 +35,14 @@
   font-size: 18px;
   color: #171f2e;
 }
-
-.map-tool-bar__tag:hover {
+.tag:hover {
   opacity: 0.7;
 }
-
-.map-tool-bar__tag.active {
+.active {
   opacity: 1;
   color: #fff;
   border: 2px solid transparent;
 }
-
-.map-tool-bar__tag.active:hover {
+.active:hover {
   opacity: 0.6;
-  box-sizing: border-box;
 }

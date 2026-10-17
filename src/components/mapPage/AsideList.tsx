@@ -1,8 +1,7 @@
 import React from "react";
 import { TAG_CONFIG } from "./consts";
 import { imageLoader } from "./helpers";
-
-import "./AsideInfo.module.css";
+import styles from "./AsideInfo.module.css";
 
 type Props = {
   currentPoint: Record<string, any>;
@@ -12,6 +11,10 @@ type Props = {
   onClose?: () => void;
   visible: boolean;
 };
+
+function cn(...parts: (string | false | null | undefined)[]) {
+  return parts.filter(Boolean).join(" ");
+}
 
 export const AsideList = ({
   currentPoint,
@@ -25,23 +28,31 @@ export const AsideList = ({
   const featureCollection = pointsByTypeGeoJSON[type] || { features: [] };
   const list = featureCollection.features;
 
-  const asideClass = [
-    "aside-info",
-    `aside-info--${type}`,
-    visible ? "" : "aside-info--hidden",
-  ]
-    .filter(Boolean)
-    .join(" ");
+  const asideClass = cn(
+    styles.aside,
+    (styles as any)[`aside${type ? `--${type}` : ""}`],
+    !visible && styles.hidden
+  );
+
+  const imgClass = cn(
+    styles["image"],
+    (styles as any)[`image${type ? `--${type}` : ""}`]
+  );
+
+  const itemClass = cn(
+    styles["listItem"],
+    (styles as any)[`listItem${type ? `--${type}` : ""}`]
+  );
 
   return (
     <aside className={asideClass}>
-      <div className="aside-info__header">
+      <div className={styles.header}>
         <button
-          className="aside-info__close-button"
+          className={styles.closeButton}
           onClick={onClose}
           aria-label="close"
         ></button>
-        <div className={`aside-info__image aside-info__image--${type}`}>
+        <div className={imgClass}>
           {(() => {
             const src = image || (TAG_CONFIG as any)[type]?.image;
             if (!src) return null;
@@ -59,12 +70,12 @@ export const AsideList = ({
         </div>
         <h3>{title}</h3>
       </div>
-      <div className="aside-info__description">
+      <div className={styles.description}>
         <p>{description}</p>
-        <ul className="aside-info__list">
+        <ul className={styles.list}>
           {list.map((el: any, ndx: number) => (
             <li
-              className={`aside-info__list-item aside-info__list-item--${type}`}
+              className={itemClass}
               key={ndx}
               onClick={() => {
                 setCurrentPoint({

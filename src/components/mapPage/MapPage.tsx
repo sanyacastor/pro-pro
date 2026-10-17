@@ -1,5 +1,5 @@
-import mapboxgl from "mapbox-gl";
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
+import type { Map as MapboxMapInstance } from "mapbox-gl";
 
 import { TAG_CONFIG } from "./consts";
 import AsideInfo from "./AsideInfo";
@@ -30,12 +30,13 @@ type Props = {
 };
 
 function MapboxMap({ pointsByTypeGeoJSON }: Props) {
-  const [myMap, setMap] = useState<mapboxgl.Map | undefined>(undefined);
+  const [myMap, setMap] = useState<MapboxMapInstance | undefined>(undefined);
   const [tags, setTags] = useState<Record<string, boolean>>();
 
   const [currentPoint, setCurrentPoint] = useState<Record<string, any>>({});
   const [asideVisible, setAsideVisible] = useState(false);
   const [urlTag, setUrlTag] = useState<string | null>(null);
+  const [tokenAvailable, setTokenAvailable] = useState(false);
 
   const mapNode = useRef<HTMLDivElement>(null);
 
@@ -46,19 +47,32 @@ function MapboxMap({ pointsByTypeGeoJSON }: Props) {
 
   // Read URL tag from query string on mount + popstate.
   useEffect(() => {
-    const read = () => {
-      if (typeof window === "undefined") return null;
-      const params = new URLSearchParams(window.location.search);
-      return params.get("tag");
-    };
-    setUrlTag(read());
-    const handler = () => setUrlTag(read());
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    setUrlTag(params.get("tag"));
+    const handler = () =>
+      setUrlTag(new URLSearchParams(window.location.search).get("tag"));
     window.addEventListener("popstate", handler);
     return () => window.removeEventListener("popstate", handler);
   }, []);
 
+  // Detect whether a Mapbox token is available at runtime.
+  // The token may be injected by Astro's server runtime (PUBLIC_MAPBOX_TOKEN)
+  // or by Cloudflare env binding once the site is live.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const envToken =
+      (window as any).__MAPBOX_TOKEN__ ||
+      (import.meta as any).env?.PUBLIC_MAPBOX_TOKEN ||
+      "";
+    setTokenAvailable(!!envToken);
+  }, []);
+
   const initializeMap = useCallback(
-    (mapboxMap: mapboxgl.Map, tag: string | null) => {
+    async (mapboxMap: MapboxMapInstance, tag: string | null) => {
+      // Dynamic import keeps mapbox-gl out of the SSR bundle (mapbox-gl
+      // currently throws during server-side evaluation in some bundlers).
+      const mapboxgl = (await import("mapbox-gl")).default;
       mapboxMap.once("load", () => {
         mapboxMap.resize();
         setMap(mapboxMap);
@@ -126,29 +140,38 @@ function MapboxMap({ pointsByTypeGeoJSON }: Props) {
   );
 
   useEffect(() => {
-    if (typeof window === "undefined" || !mapNode.current) return;
-    const tagObj: Record<string, boolean> = {};
-    types.forEach((t) => (tagObj[t] = true));
-    if (urlTag && types.includes(urlTag)) {
-      types.forEach((t) => {
-        tagObj[t] = t !== urlTag;
-      });
+    if (!mapNode.current) return;
+    const envToken =
+      (window as any).__MAPBOX_TOKEN__ ||
+      (import.meta as any).env?.PUBLIC_MAPBOX_TOKEN ||
+      "";
+    if (!envToken) {
+      setTokenAvailable(false);
+      return;
     }
-    setTags(tagObj);
+    setTokenAvailable(true);
 
-    const mapboxMap = new mapboxgl.Map({
-      container: mapNode.current,
-      accessToken: (window as any).__MAPBOX_TOKEN__ ?? "",
-      style: "mapbox://styles/mapbox/light-v10",
-      center: [37.215213, 54.872224],
-      zoom: 13,
-    });
+    let mapboxMap: MapboxMapInstance | null = null;
+    let cancelled = false;
 
-    initializeMap(mapboxMap, urlTag);
+    (async () => {
+      const mapboxgl = (await import("mapbox-gl")).default;
+      mapboxgl.accessToken = envToken;
+      if (cancelled || !mapNode.current) return;
+      mapboxMap = new mapboxgl.Map({
+        container: mapNode.current,
+        style: "mapbox://styles/mapbox/light-v10",
+        center: [37.215213, 54.872224],
+        zoom: 13,
+      });
+      initializeMap(mapboxMap, urlTag);
+    })();
 
     return () => {
-      mapboxMap.remove();
+      cancelled = true;
+      if (mapboxMap) mapboxMap.remove();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [urlTag, pointsByTypeGeoJSON, types, initializeMap]);
 
   const filterPoints = (name: string) => {
@@ -206,6 +229,18 @@ function MapboxMap({ pointsByTypeGeoJSON }: Props) {
         isOpen={asideVisible}
       />
       <Map mapNode={mapNode} />
+      {!tokenAvailable && (
+        <div className="map-token-missing">
+          <div className="map-token-missing__inner">
+            <h3>Карта временно недоступна</h3>
+            <p>
+              Чтобы отобразить карту, добавьте публичный ключ Mapbox в
+              переменную окружения <code>PUBLIC_MAPBOX_TOKEN</code> и
+              пересоберите сайт.
+            </p>
+          </div>
+        </div>
+      )}
     </>
   );
 }

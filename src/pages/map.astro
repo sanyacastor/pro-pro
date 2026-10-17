@@ -13,11 +13,5 @@ const og = ogForTag(null);
   ogImage={og.ogImage}
   headerOnly={true}
 >
-  <MapPage client:only="react" pointsByTypeGeoJSON={pointsByTypeGeoJSON} />
+  <MapPage client:load pointsByTypeGeoJSON={pointsByTypeGeoJSON} />
 </BaseLayout>
-
-<script>
-  // Inject the Mapbox token at runtime so the static build doesn't ship it.
-  const TOKEN = (window as any).__MAPBOX_TOKEN__ || import.meta.env.PUBLIC_MAPBOX_TOKEN || "";
-  (window as any).__MAPBOX_TOKEN__ = TOKEN;
-</script>

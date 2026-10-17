@@ -1,6 +1,6 @@
 import React from "react";
 import { TAG_CONFIG } from "./consts";
-import "./Toolbar.module.css";
+import styles from "./Toolbar.module.css";
 
 type Props = {
   tags?: Record<string, boolean>;
@@ -9,14 +9,23 @@ type Props = {
   isOpen: boolean;
 };
 
+function cn(...parts: (string | false | null | undefined)[]) {
+  return parts.filter(Boolean).join(" ");
+}
+
 export const Toolbar = ({ tags, types, filterPoints, isOpen }: Props) => {
   return (
-    <div className={`map-tool-bar ${isOpen ? "map-tool-bar--open" : ""}`}>
-      <div className="map-tool-bar__list">
+    <div
+      className={cn(styles.bar, isOpen && styles.barOpen)}
+    >
+      <div className={styles.list}>
         {types.map((name) => (
           <span
             key={name}
-            className={`map-tool-bar__tag ${tags && tags[name] ? "" : "active"}`}
+            className={cn(
+              styles.tag,
+              !(tags && tags[name]) && styles.active
+            )}
             style={
               tags && tags[name]
                 ? { borderColor: (TAG_CONFIG as any)[name].color }

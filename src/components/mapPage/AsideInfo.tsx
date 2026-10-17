@@ -1,10 +1,8 @@
 import React from "react";
-import { useWindowSize } from "usehooks-ts";
-import Sheet from "react-modal-sheet";
 
 import { AsideList } from "./AsideList";
 
-import "./AsideInfo.module.css";
+import styles from "./AsideInfo.module.css";
 
 type Props = {
   currentPoint: Record<string, any>;
@@ -23,30 +21,9 @@ export default function AsideInfo({
   setCurrentPoint,
   myMap,
 }: Props) {
-  const size = useWindowSize();
-  const snapPoint = size?.height ? size.height - 70 : 600;
-
-  if (!size) return null;
-
-  if (size.width < 768) {
-    return (
-      <Sheet isOpen={visible} onClose={onClose} snapPoints={[snapPoint]}>
-        <Sheet.Container>
-          <Sheet.Header />
-          <Sheet.Content disableDrag>
-            <AsideList
-              currentPoint={currentPoint}
-              pointsByTypeGeoJSON={pointsByTypeGeoJSON}
-              setCurrentPoint={setCurrentPoint}
-              myMap={myMap}
-              visible
-            />
-          </Sheet.Content>
-        </Sheet.Container>
-      </Sheet>
-    );
-  }
-
+  // Render the desktop AsideList for both viewports (mobile sheet is a
+  // progressive enhancement). This simplifies SSR and avoids runtime
+  // dynamic-import gymnastics with react-modal-sheet.
   return (
     <AsideList
       visible={visible}

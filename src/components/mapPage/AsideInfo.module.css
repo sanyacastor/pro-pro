@@ -1,4 +1,4 @@
-.aside-info {
+.aside {
   position: absolute;
   padding-top: 0;
   left: 15px;
@@ -14,12 +14,11 @@
   display: flex;
   flex-direction: column;
 }
-
-.aside-info--hidden {
+.hidden {
   transform: translateX(-110%);
 }
 
-.aside-info__header {
+.header {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
@@ -31,8 +30,7 @@
   top: 0;
   position: relative;
 }
-
-.aside-info__header h3 {
+.header h3 {
   margin: 0;
   margin-top: auto;
   padding-left: 24px;
@@ -45,27 +43,26 @@
   text-transform: uppercase;
   color: #fff;
   font-weight: 400;
-  font-family: "Base&Bloom";
+  font-family: "Base&Bloom", sans-serif;
   line-height: 1;
 }
 
-.aside-info__list {
+.list {
   margin-left: 0;
   padding-left: 0;
   list-style: none;
   text-transform: uppercase;
 }
 
-.aside-info__list-item {
+.listItem {
   padding-left: 38px;
   margin-top: 12px;
   position: relative;
   font-size: 18px;
-  font-family: "Lack";
+  font-family: "Lack", sans-serif;
   cursor: pointer;
 }
-
-.aside-info__list-item::before {
+.listItem::before {
   content: "";
   position: absolute;
   left: 0;
@@ -74,57 +71,40 @@
   border-radius: 50%;
 }
 
-.aside-info__image--lost { background-color: var(--map-lost); }
-.aside-info__image--art { background-color: var(--map-art); }
-
-.aside-info--lost .aside-info__image { border-bottom: 7px solid var(--map-lost); }
-.aside-info--lost .aside-info__list-item::before { background: var(--map-lost); }
-.aside-info--art .aside-info__image { border-bottom: 7px solid var(--map-art); }
-.aside-info--art .aside-info__list-item::before { background: var(--map-art); }
-.aside-info--arch .aside-info__image { border-bottom: 7px solid var(--map-arch); }
-.aside-info--arch .aside-info__list-item::before { background: var(--map-arch); }
-.aside-info--bars .aside-info__image { border-bottom: 7px solid var(--map-bars); }
-.aside-info--bars .aside-info__list-item::before { background: var(--map-bars); }
-.aside-info--kids .aside-info__image { border-bottom: 7px solid var(--map-kids); }
-.aside-info--kids .aside-info__list-item::before { background: var(--map-kids); }
-.aside-info--tourism .aside-info__image { border-bottom: 7px solid var(--map-tourism); }
-.aside-info--tourism .aside-info__list-item::before { background: var(--map-tourism); }
-.aside-info--ninety .aside-info__image { border-bottom: 7px solid var(--map-ninety); }
-.aside-info--ninety .aside-info__list-item::before { background: var(--map-ninety); }
-
-.aside-info__image {
+.image {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
-.aside-info__image img {
+.image img {
   width: 100%;
   height: 285px;
   object-fit: cover;
 }
 
-.aside-info__description {
+.description {
   padding: 0 32px;
   white-space: pre-line;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   overflow-y: auto;
   overflow-x: hidden;
   margin: 24px 0;
-  font-family: "Piazzolla";
+  font-family: "Piazzolla", serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 145%;
   padding-bottom: 60px;
 }
-.aside-info__description p {
+.description p {
   margin: 0;
 }
 
-.aside-info__close-button {
+.closeButton {
   cursor: pointer;
   position: absolute;
   top: 23px;
@@ -141,8 +121,32 @@
   z-index: 4;
 }
 
+/* Type variants on image & list-item — matching legacy CSS category colors */
+
+.image--lost, .aside--lost .image { border-bottom: 7px solid var(--map-lost); }
+.listItem--lost::before { background: var(--map-lost); }
+
+.image--art { background-color: var(--map-art); }
+.aside--art .image { border-bottom: 7px solid var(--map-art); }
+.listItem--art::before { background: var(--map-art); }
+
+.aside--arch .image { border-bottom: 7px solid var(--map-arch); }
+.listItem--arch::before { background: var(--map-arch); }
+
+.aside--bars .image { border-bottom: 7px solid var(--map-bars); }
+.listItem--bars::before { background: var(--map-bars); }
+
+.aside--kids .image { border-bottom: 7px solid var(--map-kids); }
+.listItem--kids::before { background: var(--map-kids); }
+
+.aside--tourism .image { border-bottom: 7px solid var(--map-tourism); }
+.listItem--tourism::before { background: var(--map-tourism); }
+
+.aside--ninety .image { border-bottom: 7px solid var(--map-ninety); }
+.listItem--ninety::before { background: var(--map-ninety); }
+
 @media (max-width: 780px) {
-  .aside-info {
+  .aside {
     border-radius: 0;
     width: 100%;
     z-index: 50;
@@ -150,18 +154,18 @@
     left: 0;
     top: 0;
   }
-  .aside-info__close-button {
+  .closeButton {
     display: none;
   }
-  .aside-info__image {
+  .image {
     height: 240px;
   }
-  .aside-info__image img {
+  .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .aside-info__description {
+  .description {
     padding: 0 8px;
     margin-top: 14px;
     padding-bottom: 120px;
