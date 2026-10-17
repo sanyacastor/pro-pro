@@ -1,46 +1,27 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# build
+.astro/
+dist/
+.open-next/
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+node_modules/
 
-# testing
-/coverage
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
 
-# next.js
-/.next/
-/out/
+# environment variables
+.env
+.env.production
 
-# production
-/build
+# editor
+.idea/
+.vscode/
+.cursor/
+
+# os
+.DS_Store
 
 # misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# vercel
-.vercel
-
-
-# env
-.env
-
-# OpenNext
-.open-next
-
-# wrangler files
-.wrangler
-.dev.vars*
-!.dev.vars.example
+yarn-error.log

@@ -1,0 +1,189 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import { Features } from "../../components/Review/Features.tsx";
+
+export async function getStaticPaths() {
+  const reviews = await getCollection("gurtour");
+  return reviews
+    .filter((review) => !review.id.startsWith("____"))
+    .map((review) => ({
+      params: { slug: review.id },
+      props: { review },
+    }));
+}
+
+type Props = { review: CollectionEntry<"gurtour"> };
+const { review } = Astro.props as Props;
+
+const { Content, headings } = await render(review);
+
+// MDX components map. The legacy content uses <Slider>, <Slide>, and
+// <ImagesRow> as block-level wrappers. We map them to plain HTML so the
+// static output is preserved without the missing interactive runtime.
+const mdxComponents = {
+  Slider: "section",
+  Slide: "div",
+  ImagesRow: "div",
+};
+
+const { title, description, address, workingHours, avgPrice, features } =
+  review.data;
+---
+<BaseLayout
+  title={`Гур тур | ${title}`}
+  description={description}
+  ogUrl={`https://pro-pro.ru/gurtour/${review.id}`}
+  headerMode="gurtour"
+>
+  <div class="gt-hero">
+    <a href="/gurtour">
+      <img src="/images/gurtour/gur_tour_logo.svg" alt="Gur tour logo" />
+    </a>
+  </div>
+  <div class="gt-review">
+    <h1 class="gt-review__title">{title}</h1>
+    <p class="gt-review__subtitle">{description}</p>
+    <div class="gt-review__stats">
+      <div class="gt-stat">
+        <span class="gt-stat__title">Адрес</span>
+        <span class="gt-stat__content">{address}</span>
+      </div>
+      <div class="gt-stat">
+        <span class="gt-stat__title">Часы работы</span>
+        <span class="gt-stat__content">{workingHours}</span>
+      </div>
+      <div class="gt-stat">
+        <span class="gt-stat__title">Средний чек</span>
+        <span class="gt-stat__content">{avgPrice}</span>
+      </div>
+    </div>
+    <div class="gt-review__features">
+      <Features client:load features={features} />
+    </div>
+    <div class="gt-review__body">
+      <Content components={mdxComponents} />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .gt-hero {
+    background: linear-gradient(180deg, rgba(217,217,217,0) -8.33%, rgba(51,0,0,0.29) 55.43%, rgba(51,0,0,0.42) 99.44%), url("/images/content/gur_tour_background.webp");
+    background-size: cover;
+    text-align: center;
+    padding-top: 105px;
+    padding-bottom: 53px;
+    font-family: "Base&Bloom";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 88%;
+    color: #ebe6da;
+  }
+  .gt-hero img { max-width: 200px; height: auto; }
+
+  .gt-review {
+    width: 760px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    overflow: hidden;
+    font-family: "Piazzolla";
+    padding-top: 32px;
+  }
+  .gt-review a { cursor: pointer; text-decoration: underline; }
+  .gt-review ul { margin: 12px 0; }
+  .gt-review li { margin-left: 0; padding-left: 0; }
+
+  .gt-review__title {
+    font-family: "Base&Bloom";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80%;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .gt-review__subtitle {
+    font-family: "Piazzolla";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 48px;
+    margin-top: 8px;
+  }
+  .gt-review__stats {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 100px;
+    margin-top: 24px;
+  }
+  .gt-stat { width: 200px; display: flex; flex-direction: column; }
+  .gt-stat__title {
+    font-family: "Piazzolla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    border-bottom: 1px solid #000000;
+    text-transform: uppercase;
+  }
+  .gt-stat__content {
+    font-family: "Lack";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 8px;
+  }
+
+  .gt-review__features { margin-top: 24px; }
+
+  .gt-review__body { margin-bottom: 107px; }
+  .gt-review__body :global(p) {
+    font-family: "Piazzolla";
+    font-weight: 400;
+    line-height: 130%;
+    font-size: 20px;
+    margin: 0;
+  }
+  .gt-review__body :global(p + p) { margin-top: 32px; }
+  .gt-review__body :global(h3) {
+    font-family: "Piazzolla";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 64px;
+  }
+  .gt-review__body :global(figure) { margin: 32px 0; }
+  .gt-review__body :global(figure img) { max-width: 100%; height: auto; }
+  .gt-review__body :global(.swiper) {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+  .gt-review__body :global(section) { margin-top: 64px; margin-bottom: 64px; }
+  .gt-review__body :global(div > div > figure) { display: block; }
+  .gt-review__body :global(figure + figure) { margin-top: 16px; }
+
+  @media (max-width: 760px) {
+    .gt-review { width: 100%; padding: 0 8px; }
+    .gt-review__title { font-size: 36px; }
+    .gt-review__subtitle { font-size: 24px; line-height: 24px; }
+    .gt-review__stats {
+      gap: 16px;
+      flex-wrap: wrap;
+      padding-top: 10px;
+      padding-bottom: 18px;
+      border-top: 1px solid #000000;
+      border-bottom: 1px solid #000000;
+    }
+    .gt-stat { width: 100%; flex-direction: row; gap: 8px; align-items: baseline; }
+    .gt-stat__title { border: none; min-width: 35%; }
+    .gt-stat__content { border: none; margin-top: 0; }
+    .gt-review__body { margin-bottom: 32px; }
+  }
+</style>
