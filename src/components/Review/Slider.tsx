@@ -1,22 +1,16 @@
 import React from "react";
-import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
-const ImageWrapper = styled.div`
-  margin-top: 64px;
-  margin-bottom: 64px;
-  position: relative;
-`;
+import styles from "./Slider.module.css";
 
 export const Slider = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ImageWrapper>
+    <div className={styles.imageWrapper}>
       <Swiper modules={[Navigation]} navigation>
         {React.Children.map(children, (child, ndx) => (
           <SwiperSlide key={ndx}>{child}</SwiperSlide>
         ))}
       </Swiper>
-    </ImageWrapper>
+    </div>
   );
 };

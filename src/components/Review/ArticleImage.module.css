@@ -1,0 +1,16 @@
+.sliderImage {
+  display: flex;
+  flex-direction: column;
+}
+.sliderImage img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  font-family: "Lack";
+  font-size: 14px;
+  line-height: 120%;
+  color: #5f5f5f;
+  margin-top: 8px;
+}

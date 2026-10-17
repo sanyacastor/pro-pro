@@ -1,0 +1,51 @@
+.wrapper {
+  display: block;
+  font-family: "Base&Bloom";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 74px;
+  width: 100%;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  color: inherit;
+}
+@media (max-width: 760px) {
+  .wrapper {
+    font-size: 28px;
+  }
+}
+
+.bannerContainer {
+  max-width: 1600px;
+  padding: 0 32px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 760px) {
+  .bannerContainer {
+    padding: 0 8px;
+  }
+}
+
+.imageWrapper {
+  font-size: 12px;
+  font-family: monospace;
+  display: inline-block;
+}
+.imageWrapper img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 760px) {
+  .imageWrapper {
+    width: 40px;
+    height: 40px;
+  }
+  .imageWrapper img {
+    width: 40px;
+    height: 40px;
+  }
+}

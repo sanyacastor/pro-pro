@@ -1,0 +1,132 @@
+.header {
+  height: 70px;
+  display: flex;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-family: "Lack";
+  font-size: 20px;
+  line-height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  transition: background 0.3s ease;
+  padding: 16px 16px;
+}
+
+.headerGurtour {
+  background-color: #ec500e;
+  color: #ffc229;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1160px;
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 780px) {
+  .links {
+    display: none;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 780px) {
+  .list {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-bottom: 2px;
+}
+.item + .item {
+  margin-left: 40px;
+}
+.itemUnderlined {
+  padding-bottom: 0;
+  border-bottom: 1px solid #fff;
+}
+.itemUnderlinedGurtour {
+  border-color: #ffc229;
+}
+
+.socials {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+}
+@media (max-width: 780px) {
+  .socials {
+    display: none;
+  }
+}
+
+.menuIcon {
+  width: 25px;
+  height: 25px;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 780px) {
+  .menuIcon {
+    display: block;
+  }
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 2px;
+  margin: 6px 0;
+  transition: 0.4s;
+  background-color: #fff;
+}
+.bar1Gurtour, .bar2Gurtour, .bar3Gurtour {
+  background-color: #ffc229;
+}
+
+.bar1Open {
+  transform: translate(0, 10px) rotate(-45deg);
+}
+.bar2Open {
+  opacity: 0;
+}
+.bar3Open {
+  transform: translate(0, -6px) rotate(45deg);
+}
