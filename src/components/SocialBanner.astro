@@ -1,0 +1,74 @@
+---
+import { SOCIAL } from "../config";
+---
+<a
+  href={SOCIAL.telegram}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="social-banner"
+>
+  <div class="social-banner__inner">
+    <h3 class="social-banner__title">Подписывайтесь на наши соцсети,</h3>
+    <p class="social-banner__subtitle">
+      там мы будем анонсировать новые <br />
+      материалы и рассказывать <br />о деятельности ПроПро
+    </p>
+  </div>
+</a>
+
+<style>
+  .social-banner {
+    display: block;
+    font-family: "Base&Bloom";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 74px;
+    width: 100%;
+    background: #d8cbff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url("/images/icons/social_net.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+  }
+  .social-banner__inner {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .social-banner__subtitle {
+    font-family: "Piazzolla";
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 105%;
+  }
+  .social-banner__title {
+    font-family: "Base&Bloom";
+    font-size: 80px;
+    line-height: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 17px;
+  }
+  @media (max-width: 1160px) {
+    .social-banner {
+      padding-top: 52px;
+      padding-bottom: 52px;
+    }
+    .social-banner__title {
+      font-size: 36px;
+      line-height: 26px;
+      margin-bottom: 17px;
+    }
+    .social-banner__subtitle {
+      font-size: 18px;
+    }
+  }
+</style>

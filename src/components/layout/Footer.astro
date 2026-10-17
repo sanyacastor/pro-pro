@@ -1,0 +1,145 @@
+---
+import { SOCIAL } from "../../config";
+---
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__logo">
+      <span class="site-footer__logo-text">ПРОПРО</span>
+      <span class="site-footer__logo-sub">
+        локальное медиа о&nbsp;прошлом, настоящем и&nbsp;будущем
+      </span>
+    </div>
+
+    <div class="site-footer__desc">
+      <p>
+        Вместе с вами исследуем Протвино, его наследие и&nbsp;развитие,
+        создаем, поддерживаем и&nbsp;освещаем локальные инициативы.
+      </p>
+      <a class="site-footer__about-link" href="/about-us">Подробнее о проекте</a>
+    </div>
+
+    <div class="site-footer__socials">
+      <a href={SOCIAL.telegram} target="_blank" rel="noopener noreferrer">Телеграм</a>
+      <a href={SOCIAL.instagram} target="_blank" rel="noopener noreferrer">Инстаграм</a>
+      <a href={SOCIAL.youtube} target="_blank" rel="noopener noreferrer">Ютуб</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    padding-bottom: 104px;
+  }
+  .site-footer__inner {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    margin: 0 auto;
+    max-width: 1340px;
+    border-top: 1px solid #283428;
+    padding: 0 70px;
+    padding-top: 74px;
+  }
+  .site-footer__logo {
+    display: flex;
+    flex-direction: column;
+    font-family: "Base&Bloom";
+    font-style: normal;
+    font-weight: 400;
+  }
+  .site-footer__logo-text {
+    font-size: 80px;
+    line-height: 1;
+  }
+  .site-footer__logo-sub {
+    text-transform: uppercase;
+    max-width: 350px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .site-footer__desc {
+    font-family: "Piazzolla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    max-width: 360px;
+  }
+  .site-footer__about-link {
+    display: block;
+    margin-top: 23px;
+    font-style: italic;
+    text-decoration-line: underline;
+  }
+  .site-footer__socials {
+    display: flex;
+    flex-direction: column;
+  }
+  .site-footer__socials a {
+    font-family: "Piazzolla";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: left;
+    text-decoration: underline;
+  }
+  .site-footer__socials a + a {
+    margin-top: 6px;
+  }
+
+  @media (max-width: 1160px) {
+    .site-footer {
+      padding-bottom: 33px;
+    }
+    .site-footer__inner {
+      border-top: none;
+      flex-direction: column;
+      gap: 8px;
+      padding: 8px;
+    }
+    .site-footer__logo {
+      padding: 16px 0;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid #283428;
+      border-bottom: 1px solid #283428;
+    }
+    .site-footer__logo-text {
+      font-size: 74px;
+    }
+    .site-footer__logo-sub {
+      max-width: 100%;
+      text-align: center;
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 16px;
+    }
+    .site-footer__desc {
+      font-size: 16px;
+      margin: 16px auto 0;
+      text-align: center;
+    }
+    .site-footer__about-link {
+      margin-top: 16px;
+    }
+    .site-footer__socials {
+      flex-direction: row;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 68px;
+    }
+    .site-footer__socials a {
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .site-footer__socials a + a {
+      margin-top: 0;
+    }
+  }
+</style>

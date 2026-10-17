@@ -1,0 +1,38 @@
+---
+type Props = {
+  link: string;
+  heights: [number, number];
+  imageUrls: [string, string];
+};
+
+const { link, heights, imageUrls } = Astro.props;
+const [mobileHeight, desktopHeight] = heights;
+const [mobileUrl, desktopUrl] = imageUrls;
+---
+<a
+  href={link}
+  class="banner-link"
+  style={`--desktop-h: ${desktopHeight}px; --desktop-bg: url('${desktopUrl}'); --mobile-h: ${mobileHeight}px; --mobile-bg: url('${mobileUrl}');`}
+>
+  <div class="banner"></div>
+</a>
+
+<style>
+  .banner-link {
+    display: block;
+  }
+  .banner {
+    height: var(--desktop-h);
+    width: 100%;
+    background-image: var(--desktop-bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  @media (max-width: 820px) {
+    .banner {
+      height: var(--mobile-h);
+      background-image: var(--mobile-bg);
+    }
+  }
+</style>

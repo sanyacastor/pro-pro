@@ -1,0 +1,49 @@
+.map-tool-bar {
+  position: absolute;
+  top: 86px;
+  right: 16px;
+  z-index: 25;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px;
+  border-radius: 18px;
+  max-width: calc(100vw - 32px);
+  overflow-x: auto;
+}
+
+.map-tool-bar__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.map-tool-bar__tag {
+  display: inline-block;
+  padding: 6px 14px;
+  transition: all 350ms ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 18.5px;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  color: #171f2e;
+}
+
+.map-tool-bar__tag:hover {
+  opacity: 0.7;
+}
+
+.map-tool-bar__tag.active {
+  opacity: 1;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.map-tool-bar__tag.active:hover {
+  opacity: 0.6;
+  box-sizing: border-box;
+}
