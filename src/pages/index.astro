@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Announcement from "../components/Announcement.astro";
+import SingleArticleAnnouncement from "../components/SingleArticleAnnouncement.astro";
+import GurtourBanner from "../components/GurtourBanner.tsx";
+import Articles from "../components/Articles.astro";
+import ArticleThumbnailWide from "../components/ArticleThumbnailWide.astro";
+import Banner from "../components/Banner.astro";
+import { ARTICLE_INDEX } from "../config";
+
+const homeArticles = [
+  {
+    url: "/article/chto-takoe-sovetsky-modernizm",
+    title: "ПРО СОВеТСКИЙ МОдЕРНИЗМ",
+    author: "Аня Медведкова",
+    thumbnail: "/article/chto-takoe-sovetsky-modernizm/thumbnail.png",
+  },
+  {
+    url: "/article/uskoritel-v-protvino",
+    title: "УСкОРИТЕЛЬ В&nbsp;ПРОТвИНО",
+    author: "Екатерина Алейникова",
+    thumbnail: "/article/uskoritel-v-protvino/thumbnail.png",
+  },
+];
+---
+<BaseLayout
+  title="Про про | Локальное медиа про Протвино"
+  description="Вместе с вами исследуем Протвино, его наследие и развитие, создаем, поддерживаем и освещаем локальные инициативы."
+  ogUrl="https://pro-pro.ru/"
+>
+  <Announcement />
+  <SingleArticleAnnouncement />
+  <GurtourBanner client:visible />
+  <Articles items={homeArticles} />
+  {ARTICLE_INDEX.map((a) => (
+    <ArticleThumbnailWide
+      link={`/article/${a.slug}`}
+      title={a.title}
+      description={a.description}
+      author={a.author}
+      bgColor={a.bgColor}
+      textColor={a.textColor}
+      imageUrl={a.imageUrl}
+    />
+  ))}
+  <Banner
+    heights={[180, 430]}
+    imageUrls={[
+      "/images/content/banner-zine_mobile.png",
+      "/images/content/banner-zine.jpg",
+    ]}
+    link="/article/zine"
+  />
+  <Banner
+    heights={[180, 430]}
+    imageUrls={[
+      "/images/content/banner-map_mobile.png",
+      "/images/content/banner-map.jpg",
+    ]}
+    link="/map"
+  />
+</BaseLayout>

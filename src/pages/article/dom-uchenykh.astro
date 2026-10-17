@@ -1,0 +1,784 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { COVERS } from "../../config";
+
+const IMAGES = "/article/dom-uchenykh";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Экскурсия в Дом ученых",
+  image: `https://propro.media${IMAGES}/thumbnail.webp`,
+  datePublished: "2026-09-22",
+  dateModified: "2026-09-22",
+  author: {
+    "@type": "Organization",
+    name: "Про про",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Про про",
+    url: "https://propro.media",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://propro.media/icon.svg",
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://propro.media/article/dom-uchenykh",
+  },
+};
+
+const hall = [
+  { src: "hall.webp", alt: "Холл Дома учёных", width: 760, height: 507 },
+  { src: "svet-1.webp", alt: "Светильники в холле Дома учёных", width: 760, height: 507 },
+  { src: "svet-2.webp", alt: "Светильники в холле Дома учёных", width: 760, height: 507 },
+  { src: "svet-3.webp", alt: "Светильники в холле Дома учёных", width: 760, height: 507 },
+];
+
+const banquet = [
+  { src: "banquet-2.webp", alt: "Банкетный зал Дома учёных", width: 760, height: 507 },
+  { src: "banquet-3.webp", alt: "Бар в банкетном зале Дома учёных", width: 760, height: 507 },
+  { src: "banquet-4.webp", alt: "Банкетный зал Дома учёных", width: 760, height: 507 },
+];
+
+const fireplace = [
+  { src: "zal-1.webp", alt: "Каминный зал Дома учёных", width: 760, height: 507 },
+  { src: "zal-2.webp", alt: "Каминный зал Дома учёных", width: 760, height: 507 },
+  { src: "zal-3.webp", alt: "Каминный зал Дома учёных", width: 760, height: 507 },
+];
+
+const details = [
+  { src: "details.webp", alt: "Детали интерьера Дома учёных", width: 760, height: 507 },
+  { src: "details-1.webp", alt: "Детали интерьера Дома учёных", width: 760, height: 507 },
+  { src: "details-2.webp", alt: "Детали интерьера Дома учёных", width: 760, height: 507 },
+  { src: "details-3.webp", alt: "Детали интерьера Дома учёных", width: 760, height: 507 },
+  { src: "details-4.webp", alt: "Детали интерьера Дома учёных", width: 760, height: 507 },
+  { src: "details-5.webp", alt: "Детали интерьера Дома учёных", width: 760, height: 507 },
+];
+
+const album = [
+  { src: "album.webp", alt: "Альбом с автографами гостей Дома учёных", width: 760, height: 507 },
+  ...Array.from({ length: 10 }, (_, i) => ({
+    src: `album-${i + 1}.webp`,
+    alt: "Страница альбома гостей Дома учёных",
+    width: 760,
+    height: 507,
+  })),
+];
+
+const stools = [
+  { src: "bar-stools.webp", alt: "Барные стулья в Доме учёных", width: 760, height: 507 },
+  { src: "stoolya-1.webp", alt: "Барные стулья в Доме учёных", width: 760, height: 507 },
+];
+
+const paper = [
+  { src: "clubs.webp", alt: "Памятные записи гостей Дома учёных", width: 760, height: 570 },
+  ...Array.from({ length: 7 }, (_, i) => ({
+    src: `paper-${i + 1}.webp`,
+    alt: "Памятные записи гостей Дома учёных",
+    width: 760,
+    height: 570,
+  })),
+];
+---
+
+<BaseLayout
+  title="Про про | Экскурсия в Дом ученых"
+  description="Самое таинственное здание Протвино: архитектура, монументальное искусство и подлинные интерьеры Дома учёных ИФВЭ"
+  ogUrl="https://propro.media/article/dom-uchenykh"
+  ogImage={`${IMAGES}/thumbnail.webp`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <article class="article">
+    <div
+      class="article-hero"
+      style={`background-image: url(${COVERS.domUchenykh});`}
+    >
+      <h1 class="article-hero__title">
+        Экскурсия <br />в Дом ученых
+      </h1>
+      <span class="article-hero__author">автор: Аня Медведкова</span>
+    </div>
+
+    <div class="article-body">
+      <div class="article-container">
+        <p class="article-paragraph">
+          Дом учёных&nbsp;&mdash; строгое, ритмичное здание с&nbsp;плоской
+          крышей&nbsp;&mdash; скромно затаилось в&nbsp;одном из&nbsp;жилых
+          кварталов. С&nbsp;момента постройки и&nbsp;по&nbsp;текущий день
+          оно&nbsp;находится в&nbsp;ведении Института физики высоких энергий
+          имени А.А. Логунова (сейчас&nbsp;&mdash; НИЦ &laquo;Курчатовский
+          институт&raquo;&nbsp;&mdash; ИФВЭ). Благодаря этому, а&nbsp;также
+          бережному отношению к&nbsp;объекту, здесь прекрасно сохранились
+          подлинные интерьеры.
+        </p>
+        <p class="article-paragraph">
+          Для посторонних вход в&nbsp;Дом Учёных закрыт, и, пожалуй, можно
+          сказать: это самое таинственное здание в&nbsp;городе.
+          По&nbsp;согласованию с&nbsp;руководством института нам удалось
+          туда попасть, чтобы запечатлеть интерьеры.
+        </p>
+      </div>
+
+      <section class="article-section">
+        <div class="article-container">
+          <h2 class="article-subtitle">О здании</h2>
+          <p class="article-paragraph">
+            Здание построено по&nbsp;индивидуальному проекту архитектора
+            Льва Владимировича Лилье.
+          </p>
+          <p class="article-paragraph">
+            Среди его работ&nbsp;&mdash; жилые и&nbsp;административные
+            здания в&nbsp;Москве, Глазове, Дубне, Обнинске,
+            Усть-Каменогорске, Челябинске, а&nbsp;также в&nbsp;Академгородке
+            под Новосибирском. Он&nbsp;автор станций Московского
+            метрополитена&nbsp;&mdash; радиальной &laquo;Киевской&raquo;
+            и&nbsp;&laquo;Университета&raquo;, санаториев в&nbsp;Адлере,
+            Пятигорске, Ессентуках и&nbsp;дома отдыха &laquo;Судак&raquo;.
+            В&nbsp;последние годы жизни архитектор работал в&nbsp;Протвино,
+            где проектировал жилые и&nbsp;административные здания.
+          </p>
+        </div>
+      </section>
+
+      <div class="full-width-image">
+        <img
+          src={`${IMAGES}/facade.webp`}
+          width="1280"
+          height="822"
+          alt="Фасад Дома учёных в Протвино"
+        />
+        <p class="article-figcaption">Дом Ученых, г. Протвино</p>
+      </div>
+
+      <div class="article-container">
+        <div class="quote">
+          <p class="article-paragraph quote-author">
+            <b>Лиза Арестова, архитектор:</b>
+          </p>
+          <p class="article-paragraph">
+            &laquo;Когда я&nbsp;думаю про архитектуру Протвино, на&nbsp;ум
+            приходит много разных подходов, которые можно встретить
+            в&nbsp;зарубежных и&nbsp;отечественных архитектурных школах:
+            Райт, школа Баухаус, Корбюзье, авангард, модернизм. Внешне Дом
+            ученых напоминает станции метро, которые спроектировал Лилье.
+            Те&nbsp;же массивные формы и&nbsp;ритм колонн. Интересен
+            творческий путь автора. Он&nbsp;закончил МАРХИ в&nbsp;1951 году,
+            учился, скорее всего, преимущественно на&nbsp;классической
+            архитектуре, но&nbsp;учили его те, кто застал авангард и,
+            вероятно, работал в&nbsp;это время.
+            <span class="tooltip-anchor" data-tooltip-id="decree-1955">
+              <a class="decree-link" data-tooltip-id="decree-1955" data-tooltip-content="Постановление № 1871 «Об устранении излишеств в проектировании и строительстве» было принято ЦК КПСС и Советом Министров СССР 4 ноября 1955 года">
+                В&nbsp;1955 году
+              </a>
+            </span>
+            * отменяют излишества и&nbsp;начинают искать новый язык, смотря
+            в&nbsp;том числе и&nbsp;на&nbsp;запад. Примерно
+            в&nbsp;это&nbsp;же время происходит вторая волна авангарда
+            в&nbsp;архитектуре и&nbsp;искусстве. К&nbsp;60-м уже освоили
+            хороший модернизм и&nbsp;очень талантливо его применили
+            на&nbsp;Доме Ученых к&nbsp;началу 70-х. У&nbsp;здания интересная
+            форма в&nbsp;плане, а&nbsp;еще пространства внутри обеспечивают
+            связь с&nbsp;природой через двор и&nbsp;большие объемы
+            остекления&raquo;.
+          </p>
+        </div>
+
+        <div class="image-container">
+          <img
+            src={`${IMAGES}/illustration.webp`}
+            width="569"
+            height="363"
+            alt="Дом Ученых, иллюстрация Лукерьи Баталовой"
+          />
+          <p class="article-figcaption">Дом Ученых, иллюстрация Лукерьи Баталовой</p>
+        </div>
+
+        <p class="article-paragraph">
+          Дом ученых лишь скромно называют домом&nbsp;&mdash; фактически это
+          целый комплекс. Внутри расположены конференц-зал для семинаров
+          и&nbsp;концертов, кафе, банкетный зал с&nbsp;баром, каминный зал
+          и&nbsp;просторный холл.
+        </p>
+        <p class="article-paragraph">
+          Находясь внутри, обращаешь внимание на&nbsp;несколько
+          особенностей. Во-первых, на&nbsp;планировку: как ловко здесь всё
+          скомпоновано, сколько разных зон&nbsp;&mdash; и&nbsp;при этом
+          никакой тесноты или разобщённости. Во-вторых, здесь возникает
+          ощущение единства с&nbsp;природой&nbsp;&mdash; деревья
+          и&nbsp;окружающий ландшафт словно становятся продолжением
+          интерьера.
+        </p>
+
+        <div class="image-container">
+          <img
+            src={`${IMAGES}/interior-view.webp`}
+            width="760"
+            height="507"
+            alt="Дом учёных, вид изнутри"
+          />
+          <p class="article-figcaption">Дом учёных, вид изнутри</p>
+        </div>
+
+        <p class="article-paragraph">
+          Существует подход в&nbsp;архитектуре, когда здание проектируют
+          &laquo;изнутри наружу&raquo;. В&nbsp;таком случае внутреннее
+          пространство определяет внешний облик. Такие постройки нередко
+          выглядят необычно, но&nbsp;их&nbsp;главная цель, чтобы человеку
+          внутри было комфортно и&nbsp;удобно. В&nbsp;этой концепции функция
+          определяет форму: планировка, свет, движение людей первичны,
+          а&nbsp;фасад лишь отражает внутреннюю структуру. Такой подход
+          характерен для музеев, культурных центров и&nbsp;пространств, где
+          важен не&nbsp;столько внешний вид здания, сколько опыт пребывания
+          в&nbsp;нем.
+        </p>
+        <p class="article-paragraph">
+          В&nbsp;Доме ученых такое ощущение гармонии и&nbsp;продуманности
+          пространства сочетается с&nbsp;лаконичным внешним видом. Более
+          того, по&nbsp;свидетельству очевидцев, панорамные окна в&nbsp;пол
+          в&nbsp;зале ресторана спроектированы с&nbsp;раздвижным механизмом.
+          Таким образом полностью стиралась граница: окна раздвигались
+          и&nbsp;отдыхающие могли выйти на&nbsp;площадь перед входом
+          и&nbsp;на&nbsp;задний двор напрямую.
+        </p>
+      </div>
+
+      <section class="article-section">
+        <div class="article-container">
+          <h2 class="article-subtitle">Монументальное искусство</h2>
+          <p class="article-paragraph">
+            Особенность архитектуры советского модернизма в&nbsp;сочетании
+            строгих форм и&nbsp;монументального искусства. Это отличает его
+            от&nbsp;западного модернизма и&nbsp;хорошо заметно по&nbsp;всему
+            городу Протвино. Важные общественные и&nbsp;уникальные здания,
+            например, школы, обязательно чем-то украшены. Дом Ученых украшен
+            керамическими панно. Композиции &laquo;Букет&raquo;
+            и&nbsp;&laquo;Калейдоскоп&raquo; выполнены в&nbsp;1973 году
+            керамистками Любовью Ненашевой и&nbsp;ее&nbsp;ученицей Галиной
+            Одинокой и&nbsp;располагаются во&nbsp;внутреннем дворике
+            и&nbsp;на&nbsp;внешней стене конференц-зала. В&nbsp;обоих
+            случаях керамику видно в&nbsp;первую очередь через стекло
+            изнутри здания, из&nbsp;банкетного и&nbsp;конференц залов,
+            а&nbsp;не&nbsp;снаружи.
+          </p>
+
+          <div class="image-container">
+            <img
+              src={`${IMAGES}/panno-1.webp`}
+              width="760"
+              height="570"
+              alt="Керамическое панно «Калейдоскоп»"
+            />
+            <p class="article-figcaption">
+              Керамическое панно &laquo;Калейдоскоп&raquo;, авт. Надежда
+              Ненашева и&nbsp;Галина Одинокова, 1973 (фото: Ольга Ажгирей)
+            </p>
+          </div>
+
+          <div class="image-container">
+            <img
+              src={`${IMAGES}/panno-2.webp`}
+              width="760"
+              height="571"
+              alt="Керамическое панно «Калейдоскоп»"
+            />
+            <p class="article-figcaption">
+              Керамическое панно &laquo;Калейдоскоп&raquo;, авт. Надежда
+              Ненашева и&nbsp;Галина Одинокова, 1973 (фото: Ольга Ажгирей)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <div class="article-container">
+          <h2 class="article-subtitle">Экскурсия</h2>
+          <p class="article-paragraph">
+            Предлагаем в&nbsp;формате экскурсии вместе прогуляться
+            по&nbsp;Дому ученых.
+          </p>
+          <p class="article-paragraph">
+            Заходим через прозрачные двери парадного входа и&nbsp;попадаем
+            в&nbsp;просторный холл. Стены внутри облицованы штукатуркой
+            &laquo;шуба&raquo; не&nbsp;только классического для Протвино
+            серого, а&nbsp;также коричневого и&nbsp;черного цветов. Стены
+            также украшены световым акцентным ритмичным декором
+            из&nbsp;алюминиевых ламп. Светильники были изготовлены
+            специально для Дома ученых в&nbsp;ИФВЭ в&nbsp;отделе ЦЭМ.
+          </p>
+
+          <div class="slider-block">
+            <div class="slider-strip">
+              {hall.map(({ src, alt, width, height }) => (
+                <figure>
+                  <img
+                    src={`${IMAGES}/${src}`}
+                    width={width}
+                    height={height}
+                    alt={alt}
+                  />
+                </figure>
+              ))}
+            </div>
+            <p class="article-figcaption">Фото: Ольга Акимова</p>
+          </div>
+
+          <p class="article-paragraph">
+            Из&nbsp;холла мы&nbsp;можем пройти сразу
+            и&nbsp;в&nbsp;конференц, и&nbsp;в&nbsp;банкетный зал,
+            и&nbsp;в&nbsp;каминный залы. Пройдем в&nbsp;банкетный зал
+            с&nbsp;баром.
+          </p>
+        </div>
+      </section>
+
+      <div class="full-width-image">
+        <img
+          src={`${IMAGES}/banquet-hall.webp`}
+          width="1280"
+          height="853"
+          alt="Банкетный зал Дома учёных"
+        />
+        <p class="article-figcaption">Фото: Ольга Акимова</p>
+      </div>
+
+      <div class="article-container">
+        <div class="slider-block">
+          <div class="slider-strip">
+            {banquet.map(({ src, alt, width, height }) => (
+              <figure>
+                <img
+                  src={`${IMAGES}/${src}`}
+                  width={width}
+                  height={height}
+                  alt={alt}
+                />
+              </figure>
+            ))}
+          </div>
+          <p class="article-figcaption">Фото: Ольга Акимова</p>
+        </div>
+
+        <div class="image-container">
+          <div class="images-grid-of-four">
+            <img
+              src={`${IMAGES}/bar-1.webp`}
+              width="378"
+              height="252"
+              alt="Бар в банкетном зале Дома учёных"
+            />
+            <img
+              src={`${IMAGES}/bar-2.webp`}
+              width="378"
+              height="252"
+              alt="Бар в банкетном зале Дома учёных"
+            />
+            <img
+              src={`${IMAGES}/bar-3.webp`}
+              width="378"
+              height="252"
+              alt="Бар в банкетном зале Дома учёных"
+            />
+            <img
+              src={`${IMAGES}/bar-4.webp`}
+              width="378"
+              height="252"
+              alt="Бар в банкетном зале Дома учёных"
+            />
+          </div>
+          <p class="article-figcaption">Фото: Ольга Акимова</p>
+        </div>
+
+        <p class="article-paragraph">
+          Бар сейчас не&nbsp;работает как бар, но&nbsp;мы&nbsp;можем увидеть
+          фотогеничные барные стулья.
+        </p>
+
+        <div class="slider-block">
+          <div class="slider-strip">
+            {stools.map(({ src, alt, width, height }) => (
+              <figure>
+                <img
+                  src={`${IMAGES}/${src}`}
+                  width={width}
+                  height={height}
+                  alt={alt}
+                />
+              </figure>
+            ))}
+          </div>
+          <p class="article-figcaption">Фото: Ольга Акимова</p>
+        </div>
+
+        <p class="article-paragraph">
+          Из&nbsp;банкетного зала мы&nbsp;можем пройти в&nbsp;каминный зал
+          (а&nbsp;выйдя оттуда, оказаться опять в&nbsp;холле).
+        </p>
+      </div>
+
+      <div class="full-width-image">
+        <img
+          src={`${IMAGES}/fireplace-hall.webp`}
+          width="1280"
+          height="853"
+          alt="Каминный зал Дома учёных"
+        />
+        <p class="article-figcaption">Фото: Ольга Акимова</p>
+      </div>
+
+      <div class="article-container">
+        <div class="slider-block">
+          <div class="slider-strip">
+            {fireplace.map(({ src, alt, width, height }) => (
+              <figure>
+                <img
+                  src={`${IMAGES}/${src}`}
+                  width={width}
+                  height={height}
+                  alt={alt}
+                />
+              </figure>
+            ))}
+          </div>
+          <p class="article-figcaption">Фото: Ольга Акимова</p>
+        </div>
+
+        <p class="article-paragraph">
+          Вернувшись в&nbsp;холл, заглянем отсюда в&nbsp;конференц-зал:
+        </p>
+
+        <div class="image-container">
+          <img
+            src={`${IMAGES}/conference-hall.webp`}
+            width="760"
+            height="507"
+            alt="Конференц-зал Дома учёных"
+          />
+          <p class="article-figcaption">Фото: Аня Медведкова</p>
+        </div>
+
+        <section class="article-section">
+          <h2 class="article-subtitle">Детали</h2>
+          <p class="article-paragraph">
+            Отдельно собрали карусель с&nbsp;характерными деталями
+            интерьеров.
+          </p>
+
+          <div class="slider-block">
+            <div class="slider-strip">
+              {details.map(({ src, alt, width, height }) => (
+                <figure>
+                  <img
+                    src={`${IMAGES}/${src}`}
+                    width={width}
+                    height={height}
+                    alt={alt}
+                  />
+                </figure>
+              ))}
+            </div>
+            <p class="article-figcaption">Фото: Аня Медведкова</p>
+          </div>
+        </section>
+
+        <section class="article-section">
+          <h2 class="article-subtitle">Культурная жизнь</h2>
+          <p class="article-paragraph">
+            В&nbsp;разное время в&nbsp;Доме ученых бывали многие известные
+            люди: учёный и&nbsp;общественный деятель Андрей Сахаров, поэт
+            Арсений Тарковский и&nbsp;многие другие.
+          </p>
+          <p class="article-paragraph">
+            Мы&nbsp;с&nbsp;вами можем заглянуть в&nbsp;альбом,
+            в&nbsp;котором гости ДУ&nbsp;оставляли автографы и&nbsp;памятные
+            надписи. Объем и&nbsp;список знаменитостей поражает: кажется,
+            что здесь побывали все артисты и&nbsp;знаменитости союза.
+            Вы&nbsp;можете посмотреть на&nbsp;часть из&nbsp;них
+            в&nbsp;карусели.
+          </p>
+
+          <div class="slider-block">
+            <div class="slider-strip">
+              {album.map(({ src, alt, width, height }) => (
+                <figure>
+                  <img
+                    src={`${IMAGES}/${src}`}
+                    width={width}
+                    height={height}
+                    alt={alt}
+                  />
+                </figure>
+              ))}
+            </div>
+          </div>
+
+          <p class="article-paragraph">
+            Здесь бывали не&nbsp;только артисты, но&nbsp;и&nbsp;другие
+            выдающиеся личности&nbsp;&mdash; летчики, космонавты,
+            иностранные делегации. В&nbsp;Доме ученых найдены
+            и&nbsp;сохранены прямые свидетельства&nbsp;&mdash; впечатления
+            и&nbsp;памятные слова, написанные после посещения.
+          </p>
+
+          <div class="slider-block">
+            <div class="slider-strip">
+              {paper.map(({ src, alt, width, height }) => (
+                <figure>
+                  <img
+                    src={`${IMAGES}/${src}`}
+                    width={width}
+                    height={height}
+                    alt={alt}
+                  />
+                </figure>
+              ))}
+            </div>
+          </div>
+
+          <p class="article-paragraph">
+            Для ученых по&nbsp;информации от&nbsp;Т.&nbsp;В.&nbsp;Соловьевой
+            при Доме учёных работало несколько клубов. Во&nbsp;внутреннем
+            дворе располагались спортивный и&nbsp;музыкальный,
+            а&nbsp;в&nbsp;доме напротив на&nbsp;1-м этаже&nbsp;&mdash;
+            шахматный клуб. В&nbsp;спортклубе можно было брать любой
+            необходимый инвентарь, а&nbsp;в&nbsp;музыкальном была целая
+            музыкальная база, где собирались музыканты-любители. Послушали
+            воспоминания и&nbsp;кажется, что о&nbsp;культурной жизни Дома
+            ученых можно писать отдельную статью.
+          </p>
+        </section>
+      </div>
+
+      <div class="full-width-image">
+        <img
+          src={`${IMAGES}/outro.webp`}
+          width="1280"
+          height="853"
+          alt="Дом учёных в Протвино"
+        />
+      </div>
+
+      <div class="article-container">
+        <p class="thanks">
+          Благодарим Брагина А.А. и&nbsp;Соловьеву Т.В. за&nbsp;содействие
+          при подготовке материала.
+        </p>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .article {
+    font-family: "Piazzolla";
+    color: #171f2e;
+  }
+  .article-hero {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 70px;
+    height: 430px;
+    font-family: "Base&Bloom";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 88%;
+    color: #ebe6da;
+  }
+  .article-hero__title {
+    text-transform: uppercase;
+    line-height: 120%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 70px;
+    margin: 0;
+    color: #f8f3f3;
+  }
+  .article-hero__author {
+    margin-top: 12px;
+    display: block;
+    font-family: "Lack";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #eceaea;
+  }
+  .article-body {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .article-container {
+    width: 760px;
+    margin: 0 auto;
+    font-size: 18px;
+    position: relative;
+  }
+  .article-paragraph {
+    position: relative;
+    font-family: "Piazzolla";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    max-width: 760px;
+    z-index: 11;
+  }
+  .article-paragraph + .article-paragraph {
+    margin-top: 32px;
+  }
+  .article-paragraph a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .article-section {
+    margin-top: 98px;
+  }
+  .article-subtitle {
+    font-family: "Piazzolla";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 100%;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+  .article-figcaption {
+    color: #5f5f5f;
+    font-family: "Lack";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    margin-top: 4px;
+  }
+  .full-width-image {
+    width: 100%;
+    max-width: 1280px;
+    margin: 32px auto;
+  }
+  .full-width-image img {
+    width: 100%;
+    height: auto;
+  }
+  .image-container {
+    margin: 32px 0;
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  .images-grid-of-four {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+  }
+  .images-grid-of-four img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .quote {
+    margin-top: 32px;
+  }
+  .quote .quote-author {
+    margin-bottom: 26px;
+  }
+  .quote p + p {
+    margin-top: 0;
+  }
+  .thanks {
+    margin: 32px 0 0;
+    font-family: "Piazzolla";
+    font-style: italic;
+    font-size: 20px;
+    line-height: 130%;
+  }
+  .slider-block {
+    margin: 32px 0;
+  }
+  .slider-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .slider-strip figure {
+    margin: 0;
+    width: 100%;
+  }
+  .slider-strip figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .decree-link {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 1160px) {
+    .article-paragraph {
+      padding-left: 0;
+    }
+  }
+  @media (max-width: 960px) {
+    .article-hero {
+      background-image: var(--mobile-cover) !important;
+      min-height: 375px;
+      margin-top: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 8px;
+    }
+    .article-hero__title {
+      font-size: 36px;
+      line-height: 32px;
+    }
+    .article-body {
+      margin-top: 34px;
+      margin-bottom: 34px;
+    }
+    .article-container {
+      max-width: 760px;
+      width: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+      padding: 0 8px;
+    }
+    .article-section {
+      margin-top: 64px;
+    }
+    .article-subtitle {
+      font-size: 36px;
+      line-height: 100%;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+    .full-width-image .article-figcaption {
+      margin: 0 8px;
+    }
+    .image-container {
+      margin: 32px 0;
+      padding-left: 0;
+    }
+  }
+</style>

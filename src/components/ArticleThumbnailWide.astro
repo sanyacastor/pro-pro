@@ -1,0 +1,108 @@
+---
+import { Image } from "astro:assets";
+
+type Props = {
+  link: string;
+  title: string;
+  description: string;
+  author: string;
+  imageUrl: string;
+  bgColor?: string;
+  textColor?: string;
+};
+
+const {
+  link,
+  title,
+  description,
+  author,
+  imageUrl,
+  bgColor = "#fff",
+  textColor = "#000",
+} = Astro.props;
+---
+<a href={link} class="atw" style={`background: ${bgColor}; color: ${textColor};`}>
+  <div class="atw__image">
+    <Image src={imageUrl} alt={title} width={600} height={480} />
+  </div>
+  <div class="atw__desc">
+    <h3 class="atw__title">{title}</h3>
+    <p class="atw__text">{description}</p>
+    <div class="atw__author">Автор: {author}</div>
+  </div>
+</a>
+
+<style>
+  .atw {
+    width: 100%;
+    display: flex;
+    margin-top: 104px;
+    margin-bottom: 104px;
+  }
+  .atw__image :global(img) {
+    height: auto;
+  }
+  .atw__desc {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .atw__title {
+    font-family: "Base&Bloom";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 90%;
+    text-transform: uppercase;
+    margin-top: 48px;
+    margin-bottom: 0;
+    max-width: 380px;
+  }
+  .atw__text {
+    font-family: "Piazzolla";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 105%;
+    margin-top: 8px;
+    margin-bottom: 0;
+    position: relative;
+    max-width: 380px;
+  }
+  .atw__author {
+    font-family: "Lack";
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: auto;
+  }
+
+  @media (max-width: 960px) {
+    .atw {
+      padding: 0 8px;
+      margin-top: 45px;
+      margin-bottom: 26px;
+      overflow: hidden;
+    }
+    .atw__image :global(img) {
+      width: 100%;
+      height: auto;
+    }
+    .atw__desc {
+      padding: 0 26px;
+      padding-bottom: 28px;
+      max-width: 100%;
+      padding-top: 32px;
+    }
+    .atw__title {
+      margin-top: 0;
+      font-size: 32px;
+    }
+    .atw__text {
+      margin-top: 0;
+      font-size: 28px;
+    }
+    .atw__author {
+      margin-top: 16px;
+    }
+  }
+</style>
