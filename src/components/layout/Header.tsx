@@ -7,7 +7,7 @@ type Mode = "default" | "gurtour";
 
 type Props = { mode?: Mode };
 
-const HeaderEl = styled.header<{ $mode: Mode }>`
+const HeaderEl = styled("header")<{ $mode: Mode }>`
   height: 70px;
   display: flex;
   background: rgba(0, 0, 0, 0.4);
@@ -69,7 +69,7 @@ const NavList = styled.ul`
   }
 `;
 
-const NavListItem = styled.li<{
+const NavListItem = styled("li")<{
   $isUnderlined?: boolean;
   $mode?: Mode;
 }>`
@@ -95,7 +95,7 @@ const NavListItem = styled.li<{
     `}
 `;
 
-const MenuIcon = styled.div<{ $cross?: boolean; $mode: Mode }>`
+const MenuIcon = styled("div")<{ $cross?: boolean; $mode: Mode }>`
   width: 25px;
   height: 25px;
   display: none;

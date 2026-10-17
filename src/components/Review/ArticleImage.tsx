@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const SliderImage = styled.div<{ $pl?: number; $mt?: number }>`
+const SliderImage = styled("div")<{ $pl?: number; $mt?: number }>`
   margin-top: ${({ $mt }) => `${$mt ?? 0}px`};
   display: flex;
   flex-direction: column;

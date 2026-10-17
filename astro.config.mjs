@@ -29,7 +29,17 @@ export default defineConfig({
   },
   vite: {
     ssr: {
-      noExternal: ["react-modal-sheet", "react-use", "mapbox-gl"],
+      noExternal: [
+        "react-modal-sheet",
+        "react-use",
+        "mapbox-gl",
+        "swiper",
+        "react-tooltip",
+        "usehooks-ts",
+      ],
+    },
+    optimizeDeps: {
+      include: ["@emotion/stylis", "@emotion/unitless", "@emotion/is-prop-valid", "shallowequal"],
     },
   },
 });

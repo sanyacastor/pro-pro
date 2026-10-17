@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled, { css } from "styled-components";
 import { SOCIAL } from "../../config";
 
-const MenuContainer = styled.div<{ $isVisible: boolean }>`
+const MenuContainer = styled("div")<{ $isVisible: boolean }>`
   height: 100vh;
   width: 100vw;
   position: fixed;
