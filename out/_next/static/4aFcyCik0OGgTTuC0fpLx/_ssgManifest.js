@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fgurtour\u002F[slug]","\u002Fmap"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
