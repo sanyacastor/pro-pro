@@ -1,5 +1,6 @@
 # build
 .astro/
+.next/
 dist/
 .open-next/
 
